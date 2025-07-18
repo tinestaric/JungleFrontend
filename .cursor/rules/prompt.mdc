@@ -1,0 +1,159 @@
+# Conference Booth Game System - Simple Integration
+
+## Project Overview
+A web-based lead capture system for conference booths where visitors register their details and play a game. After registration, users are redirected to the existing game at `/Game/index.html` with query parameters.
+
+## System Flow
+```
+QR Code Scan → Registration Form → Redirect to Game → Time Tracking → Lead Data
+```
+
+## User Journey
+
+### 1. QR Code Scan
+- User scans QR code at booth
+- Redirects to registration page: `https://yourdomain.com/register`
+
+### 2. Registration Phase
+- **Form Fields:**
+  - Full Name (required)
+  - Email Address (required)
+  - Company/Organization (required)
+- **Validation:** Basic form validation
+- **Duplicate Handling:** If email exists, update player info and create new session
+- **Action:** After successful registration/update, redirect to game
+
+### 3. Game Redirect
+- Redirect to: `/Game/index.html?playerName=John%20Doe&sessionId=sess_abc123`
+- Game is already built and located at `/Game/index.html`
+- Game receives player name and session ID via URL parameters
+- Game tracks time elapsed internally
+
+### 4. Data Collection
+- Lead information stored during registration
+- Optional: Game completion tracking via API call from game
+
+## Technical Requirements
+
+### Frontend
+- **Framework:** Next.js 14 with App Router
+- **Styling:** Tailwind CSS
+- **Pages Needed:**
+  - `/register` - Registration form
+  - `/Game/index.html` - Existing game (already implemented)
+
+### Backend
+- **API:** Next.js API routes
+- **Database:** Supabase (PostgreSQL)
+
+### Database Schema
+
+```sql
+-- Players table (one record per unique email)
+CREATE TABLE players (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) UNIQUE NOT NULL,
+  company VARCHAR(255),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- Game sessions table (one record per game play)
+CREATE TABLE game_sessions (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  session_id VARCHAR(255) UNIQUE NOT NULL,
+  player_id UUID REFERENCES players(id),
+  time_elapsed DECIMAL(10,3), -- more precise than seconds for tight timing
+  game_data JSONB, -- additional game metrics if needed
+  completed_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- Indexes
+CREATE INDEX idx_players_email ON players(email);
+CREATE INDEX idx_game_sessions_session_id ON game_sessions(session_id);
+CREATE INDEX idx_game_sessions_player_id ON game_sessions(player_id);
+CREATE INDEX idx_game_sessions_time_elapsed ON game_sessions(time_elapsed ASC); -- for leaderboard
+```
+
+## API Endpoints
+
+### 1. Player Registration
+```
+POST /api/register
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "company": "Acme Corp"
+}
+
+Response:
+{
+  "success": true,
+  "sessionId": "sess_abc123def456",
+  "isNewPlayer": false, // true if first time, false if returning player
+  "redirectUrl": "/Game/index.html?playerName=John%20Doe&sessionId=sess_abc123def456"
+}
+```
+
+### 2. Game Completion (Optional)
+```
+POST /api/game-complete
+Content-Type: application/json
+
+{
+  "sessionId": "sess_abc123def456",
+  "timeElapsed": 45.123,
+  "gameData": {
+    "level": 3,
+    "completed": true
+  }
+}
+
+Response:
+{
+  "success": true
+}
+```
+
+### 3. Leaderboard (Top 10 Best Times)
+```
+GET /api/leaderboard?limit=10
+
+Response:
+{
+  "leaderboard": [
+    {
+      "rank": 1,
+      "name": "Jane Smith",
+      "company": "Tech Corp",
+      "bestTime": 32.456,
+      "completedAt": "2024-01-15T10:30:00Z"
+    }
+  ]
+}
+```
+
+## Implementation Notes
+
+- **Game Integration:** Simple query parameter passing to existing game
+- **No Complex Embedding:** Game runs standalone at `/Game/index.html`
+- **Lead Focus:** Primary goal is lead capture, game is engagement tool
+- **Time Tracking:** More precise than seconds (using DECIMAL) for competitive timing
+- **Optional Completion:** Game can optionally report completion but not required for lead capture
+- **Repeat Players:** Each game session gets unique session ID, player info is updated if email exists
+- **Leaderboard Logic:** Shows only best time per player (MIN time_elapsed grouped by player_id)
+
+## Registration Flow Logic
+
+### New Player
+1. Email not in database → Create new player record
+2. Generate session ID and create game_sessions record
+3. Redirect to game
+
+### Returning Player
+1. Email exists in database → Update player info (name, company, updated_at)
+2. Generate new session ID and create new game_sessions record
+3. Redirect to game with updated player name
