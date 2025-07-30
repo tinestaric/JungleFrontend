@@ -9,7 +9,6 @@ export const registrationSchema = z.object({
 export const gameCompleteSchema = z.object({
   sessionId: z.string().min(1, 'Session ID is required'),
   timeElapsed: z.number().positive('Time elapsed must be positive'),
-  gameData: z.record(z.string(), z.unknown()).optional(),
 })
 
 export type RegistrationFormData = z.infer<typeof registrationSchema>

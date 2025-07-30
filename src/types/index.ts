@@ -32,7 +32,6 @@ export interface RegistrationResponse {
 export interface GameCompleteRequest {
   sessionId: string
   timeElapsed: number
-  gameData?: Record<string, unknown>
 }
 
 export interface LeaderboardEntry {

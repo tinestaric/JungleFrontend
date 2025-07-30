@@ -19,7 +19,7 @@ export async function POST(request: Request) {
       )
     }
 
-    const { sessionId, timeElapsed, gameData } = validationResult.data
+    const { sessionId, timeElapsed } = validationResult.data
 
     // Find the game session
     const { data: gameSession, error: findError } = await supabase
@@ -41,7 +41,6 @@ export async function POST(request: Request) {
       .from('game_sessions')
       .update({
         time_elapsed: timeElapsed,
-        game_data: gameData || null,
         completed_at: new Date().toISOString(),
       })
       .eq('id', gameSession.id)

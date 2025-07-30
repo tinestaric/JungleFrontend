@@ -70,7 +70,7 @@ Visit `http://localhost:3000` to see the application.
 3. **Game Redirect** → Redirect to `/Game/index.html?playerName=John&sessionId=sess_123`
 4. **Game Play** → Existing game runs with player info and session tracking
 5. **Completion** → Game optionally calls `/api/game-complete` to record time
-6. **Leaderboard** → Best times displayed at `/leaderboard`
+6. **Leaderboard** → Redirect to `/leaderboard?sessionId=sess_123` to show rankings with player position highlighted
 
 ## API Endpoints
 
@@ -103,11 +103,7 @@ Record game completion time (optional).
 ```json
 {
   "sessionId": "sess_abc123",
-  "timeElapsed": 45.123,
-  "gameData": {
-    "level": 3,
-    "completed": true
-  }
+  "timeElapsed": 45.123
 }
 ```
 
