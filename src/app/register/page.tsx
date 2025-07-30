@@ -54,7 +54,7 @@ export default function RegisterPage() {
     <div style={{
       minHeight: '100vh',
       backgroundColor: '#f8fafc',
-      padding: '2rem',
+      padding: '1rem',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center'

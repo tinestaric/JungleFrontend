@@ -1,0 +1,3 @@
+# Ignore Supabase files during Vercel deployment
+# Edge Functions are deployed separately to Supabase
+supabase/

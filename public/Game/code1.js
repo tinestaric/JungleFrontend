@@ -30,8 +30,8 @@ gdjs.FinishCode.GDScoreboardNameObjects1= [];
 gdjs.FinishCode.GDScoreboardNameObjects2= [];
 gdjs.FinishCode.GDScoreboardTimeObjects1= [];
 gdjs.FinishCode.GDScoreboardTimeObjects2= [];
-gdjs.FinishCode.GDBlackDecoratedButtonObjects1= [];
-gdjs.FinishCode.GDBlackDecoratedButtonObjects2= [];
+gdjs.FinishCode.GDLeaderboardButtonObjects1= [];
+gdjs.FinishCode.GDLeaderboardButtonObjects2= [];
 gdjs.FinishCode.GDTransitionObjects1= [];
 gdjs.FinishCode.GDTransitionObjects2= [];
 
@@ -43,7 +43,7 @@ gdjs.FinishCode.eventsList0 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (gdjs.evtTools.common.mod(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("FinalTime")), 60) < 10);
+{isConditionTrue_0 = (gdjs.evtTools.common.mod(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)), 60) < 10);
 }
 if (isConditionTrue_0) {
 /* Reuse gdjs.FinishCode.GDScoreboardTimeObjects1 */
@@ -87,20 +87,20 @@ gdjs.FinishCode.eventsList0(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("BlackDecoratedButton"), gdjs.FinishCode.GDBlackDecoratedButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("LeaderboardButton"), gdjs.FinishCode.GDLeaderboardButtonObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.FinishCode.GDBlackDecoratedButtonObjects1.length;i<l;++i) {
-    if ( gdjs.FinishCode.GDBlackDecoratedButtonObjects1[i].IsActivated((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+for (var i = 0, k = 0, l = gdjs.FinishCode.GDLeaderboardButtonObjects1.length;i<l;++i) {
+    if ( gdjs.FinishCode.GDLeaderboardButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
-        gdjs.FinishCode.GDBlackDecoratedButtonObjects1[k] = gdjs.FinishCode.GDBlackDecoratedButtonObjects1[i];
+        gdjs.FinishCode.GDLeaderboardButtonObjects1[k] = gdjs.FinishCode.GDLeaderboardButtonObjects1[i];
         ++k;
     }
 }
-gdjs.FinishCode.GDBlackDecoratedButtonObjects1.length = k;
+gdjs.FinishCode.GDLeaderboardButtonObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtsExt__URLTools__Redirect.func(runtimeScene, "https://jungle-frontend.vercel.app//leaderboard?sessionId=" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(4)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__URLTools__Redirect.func(runtimeScene, "https://companial-jungle.vercel.app/leaderboard?sessionId=" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(4)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }}
 
 }
@@ -141,8 +141,8 @@ gdjs.FinishCode.GDScoreboardNameObjects1.length = 0;
 gdjs.FinishCode.GDScoreboardNameObjects2.length = 0;
 gdjs.FinishCode.GDScoreboardTimeObjects1.length = 0;
 gdjs.FinishCode.GDScoreboardTimeObjects2.length = 0;
-gdjs.FinishCode.GDBlackDecoratedButtonObjects1.length = 0;
-gdjs.FinishCode.GDBlackDecoratedButtonObjects2.length = 0;
+gdjs.FinishCode.GDLeaderboardButtonObjects1.length = 0;
+gdjs.FinishCode.GDLeaderboardButtonObjects2.length = 0;
 gdjs.FinishCode.GDTransitionObjects1.length = 0;
 gdjs.FinishCode.GDTransitionObjects2.length = 0;
 
@@ -177,8 +177,8 @@ gdjs.FinishCode.GDScoreboardNameObjects1.length = 0;
 gdjs.FinishCode.GDScoreboardNameObjects2.length = 0;
 gdjs.FinishCode.GDScoreboardTimeObjects1.length = 0;
 gdjs.FinishCode.GDScoreboardTimeObjects2.length = 0;
-gdjs.FinishCode.GDBlackDecoratedButtonObjects1.length = 0;
-gdjs.FinishCode.GDBlackDecoratedButtonObjects2.length = 0;
+gdjs.FinishCode.GDLeaderboardButtonObjects1.length = 0;
+gdjs.FinishCode.GDLeaderboardButtonObjects2.length = 0;
 gdjs.FinishCode.GDTransitionObjects1.length = 0;
 gdjs.FinishCode.GDTransitionObjects2.length = 0;
 

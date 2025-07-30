@@ -20,6 +20,124 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
+/* Mobile-first responsive design */
+/* Show mobile cards by default, hide desktop table */
+.desktop-table {
+  display: none;
+}
+
+.mobile-cards {
+  display: block;
+}
+
+/* Add smooth animations for mobile cards */
+.mobile-cards > div {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.mobile-cards > div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+.mobile-cards > div:active {
+  transform: translateY(0px);
+  transition: transform 0.1s ease-in-out;
+}
+
+/* Better button interactions */
+.action-buttons button:active,
+.action-buttons a:active {
+  transform: scale(0.98);
+  transition: transform 0.1s ease-in-out;
+}
+
+/* On larger screens (768px and up), show desktop table and hide mobile cards */
+@media (min-width: 768px) {
+  .desktop-table {
+    display: block;
+  }
+  
+  .mobile-cards {
+    display: none;
+  }
+}
+
+/* Ensure mobile viewport handling */
+@media (max-width: 767px) {
+  /* Reduce padding on mobile for better space utilization */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Make sure buttons stack vertically on mobile */
+  .action-buttons {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  .action-buttons > * {
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: center !important;
+    min-height: 48px !important; /* Larger touch targets on mobile */
+    box-sizing: border-box !important;
+    white-space: normal !important; /* Allow text wrapping if needed */
+    text-align: center !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+  
+  /* Improve mobile card spacing */
+  .mobile-cards > div {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* Ensure no horizontal overflow */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Ensure all containers are properly constrained */
+  div {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+/* Extra small screens (iPhone SE, etc.) */
+@media (max-width: 375px) {
+  .action-buttons > * {
+    font-size: 0.875rem !important;
+    padding: 0.75rem 1rem !important;
+  }
+  
+  .mobile-cards > div {
+    padding: 0.875rem !important;
+  }
+}
+
+/* For medium screens (768px to 1023px), adjust button layout */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  .action-buttons > * {
+    flex: 1;
+    min-width: 120px;
+    max-width: 200px;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
