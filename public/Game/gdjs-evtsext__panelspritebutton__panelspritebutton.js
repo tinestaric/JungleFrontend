@@ -91,6 +91,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.o
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDHoveredObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDPressedObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDPressedObjects2= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDNewSpriteObjects2= [];
 
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.mapOfGDgdjs_9546evtsExt_9595_9595PanelSpriteButton_9595_9595PanelSpriteButton_9546PanelSpriteButton_9546prototype_9546onCreatedContext_9546GDHoveredObjects1Objects = Hashtable.newFrom({"Hovered": gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDHoveredObjects1});
@@ -159,6 +161,8 @@ var thisGDHoveredObjectsList = [...runtimeScene.getObjects("Hovered")];
 var GDHoveredObjects = Hashtable.newFrom({"Hovered": thisGDHoveredObjectsList});
 var thisGDPressedObjectsList = [...runtimeScene.getObjects("Pressed")];
 var GDPressedObjects = Hashtable.newFrom({"Pressed": thisGDPressedObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -166,6 +170,7 @@ var eventsFunctionContext = {
 , "Idle": GDIdleObjects
 , "Hovered": GDHoveredObjects
 , "Pressed": GDPressedObjects
+, "NewSprite": GDNewSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -173,6 +178,7 @@ var eventsFunctionContext = {
 , "Idle": thisGDIdleObjectsList
 , "Hovered": thisGDHoveredObjectsList
 , "Pressed": thisGDPressedObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -231,6 +237,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.o
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDNewSpriteObjects2.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDObjectObjects1.length = 0;
@@ -243,6 +251,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.o
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDNewSpriteObjects2.length = 0;
 
 gdjs.CustomRuntimeObject.prototype.onCreated.call(this);
 
@@ -259,6 +269,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.o
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDHoveredObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDPressedObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDPressedObjects2= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDNewSpriteObjects2= [];
 
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -317,6 +329,8 @@ var thisGDHoveredObjectsList = [...runtimeScene.getObjects("Hovered")];
 var GDHoveredObjects = Hashtable.newFrom({"Hovered": thisGDHoveredObjectsList});
 var thisGDPressedObjectsList = [...runtimeScene.getObjects("Pressed")];
 var GDPressedObjects = Hashtable.newFrom({"Pressed": thisGDPressedObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -324,6 +338,7 @@ var eventsFunctionContext = {
 , "Idle": GDIdleObjects
 , "Hovered": GDHoveredObjects
 , "Pressed": GDPressedObjects
+, "NewSprite": GDNewSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -331,6 +346,7 @@ var eventsFunctionContext = {
 , "Idle": thisGDIdleObjectsList
 , "Hovered": thisGDHoveredObjectsList
 , "Pressed": thisGDPressedObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -389,6 +405,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.o
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDNewSpriteObjects2.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDObjectObjects1.length = 0;
@@ -401,6 +419,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.o
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDNewSpriteObjects2.length = 0;
 
 
 return;
@@ -426,6 +446,10 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.d
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDPressedObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDPressedObjects3= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDPressedObjects4= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDNewSpriteObjects2= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDNewSpriteObjects3= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDNewSpriteObjects4= [];
 
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -501,7 +525,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(12398500);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(15903988);
 }
 }
 if (isConditionTrue_0) {
@@ -568,7 +592,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(10044484);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(15907372);
 }
 }
 if (isConditionTrue_0) {
@@ -615,7 +639,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(15089620);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(15909276);
 }
 }
 if (isConditionTrue_0) {
@@ -656,7 +680,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(22007412);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(15910596);
 }
 }
 if (isConditionTrue_0) {
@@ -706,6 +730,8 @@ var thisGDHoveredObjectsList = [...runtimeScene.getObjects("Hovered")];
 var GDHoveredObjects = Hashtable.newFrom({"Hovered": thisGDHoveredObjectsList});
 var thisGDPressedObjectsList = [...runtimeScene.getObjects("Pressed")];
 var GDPressedObjects = Hashtable.newFrom({"Pressed": thisGDPressedObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -713,6 +739,7 @@ var eventsFunctionContext = {
 , "Idle": GDIdleObjects
 , "Hovered": GDHoveredObjects
 , "Pressed": GDPressedObjects
+, "NewSprite": GDNewSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -720,6 +747,7 @@ var eventsFunctionContext = {
 , "Idle": thisGDIdleObjectsList
 , "Hovered": thisGDHoveredObjectsList
 , "Pressed": thisGDPressedObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -788,6 +816,10 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.d
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDPressedObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDPressedObjects3.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDPressedObjects4.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDNewSpriteObjects3.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDNewSpriteObjects4.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.eventsList2(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects1.length = 0;
@@ -810,6 +842,10 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.d
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDPressedObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDPressedObjects3.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDPressedObjects4.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDNewSpriteObjects3.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDNewSpriteObjects4.length = 0;
 
 
 return;
@@ -825,6 +861,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDHoveredObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDPressedObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDPressedObjects2= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDNewSpriteObjects2= [];
 
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -865,6 +903,8 @@ var thisGDHoveredObjectsList = [...runtimeScene.getObjects("Hovered")];
 var GDHoveredObjects = Hashtable.newFrom({"Hovered": thisGDHoveredObjectsList});
 var thisGDPressedObjectsList = [...runtimeScene.getObjects("Pressed")];
 var GDPressedObjects = Hashtable.newFrom({"Pressed": thisGDPressedObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -872,6 +912,7 @@ var eventsFunctionContext = {
 , "Idle": GDIdleObjects
 , "Hovered": GDHoveredObjects
 , "Pressed": GDPressedObjects
+, "NewSprite": GDNewSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -879,6 +920,7 @@ var eventsFunctionContext = {
 , "Idle": thisGDIdleObjectsList
 , "Hovered": thisGDHoveredObjectsList
 , "Pressed": thisGDPressedObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -937,6 +979,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDNewSpriteObjects2.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDObjectObjects1.length = 0;
@@ -949,6 +993,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDNewSpriteObjects2.length = 0;
 
 
 return !!eventsFunctionContext.returnValue;
@@ -964,6 +1010,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDHoveredObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDPressedObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDPressedObjects2= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDNewSpriteObjects2= [];
 
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -1004,6 +1052,8 @@ var thisGDHoveredObjectsList = [...runtimeScene.getObjects("Hovered")];
 var GDHoveredObjects = Hashtable.newFrom({"Hovered": thisGDHoveredObjectsList});
 var thisGDPressedObjectsList = [...runtimeScene.getObjects("Pressed")];
 var GDPressedObjects = Hashtable.newFrom({"Pressed": thisGDPressedObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -1011,6 +1061,7 @@ var eventsFunctionContext = {
 , "Idle": GDIdleObjects
 , "Hovered": GDHoveredObjects
 , "Pressed": GDPressedObjects
+, "NewSprite": GDNewSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -1018,6 +1069,7 @@ var eventsFunctionContext = {
 , "Idle": thisGDIdleObjectsList
 , "Hovered": thisGDHoveredObjectsList
 , "Pressed": thisGDPressedObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -1076,6 +1128,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDNewSpriteObjects2.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDObjectObjects1.length = 0;
@@ -1088,6 +1142,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDNewSpriteObjects2.length = 0;
 
 
 return !!eventsFunctionContext.returnValue;
@@ -1103,6 +1159,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDHoveredObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDPressedObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDPressedObjects2= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDNewSpriteObjects2= [];
 
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -1143,6 +1201,8 @@ var thisGDHoveredObjectsList = [...runtimeScene.getObjects("Hovered")];
 var GDHoveredObjects = Hashtable.newFrom({"Hovered": thisGDHoveredObjectsList});
 var thisGDPressedObjectsList = [...runtimeScene.getObjects("Pressed")];
 var GDPressedObjects = Hashtable.newFrom({"Pressed": thisGDPressedObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -1150,6 +1210,7 @@ var eventsFunctionContext = {
 , "Idle": GDIdleObjects
 , "Hovered": GDHoveredObjects
 , "Pressed": GDPressedObjects
+, "NewSprite": GDNewSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -1157,6 +1218,7 @@ var eventsFunctionContext = {
 , "Idle": thisGDIdleObjectsList
 , "Hovered": thisGDHoveredObjectsList
 , "Pressed": thisGDPressedObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -1215,6 +1277,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDNewSpriteObjects2.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDObjectObjects1.length = 0;
@@ -1227,6 +1291,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDNewSpriteObjects2.length = 0;
 
 
 return !!eventsFunctionContext.returnValue;
@@ -1242,6 +1308,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDHoveredObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDPressedObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDPressedObjects2= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDNewSpriteObjects2= [];
 
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -1282,6 +1350,8 @@ var thisGDHoveredObjectsList = [...runtimeScene.getObjects("Hovered")];
 var GDHoveredObjects = Hashtable.newFrom({"Hovered": thisGDHoveredObjectsList});
 var thisGDPressedObjectsList = [...runtimeScene.getObjects("Pressed")];
 var GDPressedObjects = Hashtable.newFrom({"Pressed": thisGDPressedObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -1289,6 +1359,7 @@ var eventsFunctionContext = {
 , "Idle": GDIdleObjects
 , "Hovered": GDHoveredObjects
 , "Pressed": GDPressedObjects
+, "NewSprite": GDNewSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -1296,6 +1367,7 @@ var eventsFunctionContext = {
 , "Idle": thisGDIdleObjectsList
 , "Hovered": thisGDHoveredObjectsList
 , "Pressed": thisGDPressedObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -1354,6 +1426,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDNewSpriteObjects2.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDObjectObjects1.length = 0;
@@ -1366,6 +1440,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDNewSpriteObjects2.length = 0;
 
 
 return !!eventsFunctionContext.returnValue;
@@ -1381,6 +1457,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDHoveredObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDPressedObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDPressedObjects2= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDNewSpriteObjects2= [];
 
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -1421,6 +1499,8 @@ var thisGDHoveredObjectsList = [...runtimeScene.getObjects("Hovered")];
 var GDHoveredObjects = Hashtable.newFrom({"Hovered": thisGDHoveredObjectsList});
 var thisGDPressedObjectsList = [...runtimeScene.getObjects("Pressed")];
 var GDPressedObjects = Hashtable.newFrom({"Pressed": thisGDPressedObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -1428,6 +1508,7 @@ var eventsFunctionContext = {
 , "Idle": GDIdleObjects
 , "Hovered": GDHoveredObjects
 , "Pressed": GDPressedObjects
+, "NewSprite": GDNewSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -1435,6 +1516,7 @@ var eventsFunctionContext = {
 , "Idle": thisGDIdleObjectsList
 , "Hovered": thisGDHoveredObjectsList
 , "Pressed": thisGDPressedObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -1493,6 +1575,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDNewSpriteObjects2.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDObjectObjects1.length = 0;
@@ -1505,6 +1589,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDNewSpriteObjects2.length = 0;
 
 
 return !!eventsFunctionContext.returnValue;
@@ -1520,6 +1606,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.S
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDHoveredObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDPressedObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDPressedObjects2= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDNewSpriteObjects2= [];
 
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -1554,6 +1642,8 @@ var thisGDHoveredObjectsList = [...runtimeScene.getObjects("Hovered")];
 var GDHoveredObjects = Hashtable.newFrom({"Hovered": thisGDHoveredObjectsList});
 var thisGDPressedObjectsList = [...runtimeScene.getObjects("Pressed")];
 var GDPressedObjects = Hashtable.newFrom({"Pressed": thisGDPressedObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -1561,6 +1651,7 @@ var eventsFunctionContext = {
 , "Idle": GDIdleObjects
 , "Hovered": GDHoveredObjects
 , "Pressed": GDPressedObjects
+, "NewSprite": GDNewSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -1568,6 +1659,7 @@ var eventsFunctionContext = {
 , "Idle": thisGDIdleObjectsList
 , "Hovered": thisGDHoveredObjectsList
 , "Pressed": thisGDPressedObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -1627,6 +1719,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.S
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDNewSpriteObjects2.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDObjectObjects1.length = 0;
@@ -1639,6 +1733,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.S
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDNewSpriteObjects2.length = 0;
 
 
 return;
@@ -1654,6 +1750,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.S
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDHoveredObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDPressedObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDPressedObjects2= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDNewSpriteObjects2= [];
 
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -1688,6 +1786,8 @@ var thisGDHoveredObjectsList = [...runtimeScene.getObjects("Hovered")];
 var GDHoveredObjects = Hashtable.newFrom({"Hovered": thisGDHoveredObjectsList});
 var thisGDPressedObjectsList = [...runtimeScene.getObjects("Pressed")];
 var GDPressedObjects = Hashtable.newFrom({"Pressed": thisGDPressedObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -1695,6 +1795,7 @@ var eventsFunctionContext = {
 , "Idle": GDIdleObjects
 , "Hovered": GDHoveredObjects
 , "Pressed": GDPressedObjects
+, "NewSprite": GDNewSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -1702,6 +1803,7 @@ var eventsFunctionContext = {
 , "Idle": thisGDIdleObjectsList
 , "Hovered": thisGDHoveredObjectsList
 , "Pressed": thisGDPressedObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -1761,6 +1863,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.S
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDNewSpriteObjects2.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDObjectObjects1.length = 0;
@@ -1773,6 +1877,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.S
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDNewSpriteObjects2.length = 0;
 
 
 return;
@@ -1788,6 +1894,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.L
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDHoveredObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDPressedObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDPressedObjects2= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDNewSpriteObjects2= [];
 
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -1819,6 +1927,8 @@ var thisGDHoveredObjectsList = [...runtimeScene.getObjects("Hovered")];
 var GDHoveredObjects = Hashtable.newFrom({"Hovered": thisGDHoveredObjectsList});
 var thisGDPressedObjectsList = [...runtimeScene.getObjects("Pressed")];
 var GDPressedObjects = Hashtable.newFrom({"Pressed": thisGDPressedObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -1826,6 +1936,7 @@ var eventsFunctionContext = {
 , "Idle": GDIdleObjects
 , "Hovered": GDHoveredObjects
 , "Pressed": GDPressedObjects
+, "NewSprite": GDNewSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -1833,6 +1944,7 @@ var eventsFunctionContext = {
 , "Idle": thisGDIdleObjectsList
 , "Hovered": thisGDHoveredObjectsList
 , "Pressed": thisGDPressedObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -1891,6 +2003,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.L
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDNewSpriteObjects2.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDObjectObjects1.length = 0;
@@ -1903,6 +2017,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.L
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDNewSpriteObjects2.length = 0;
 
 
 return "" + eventsFunctionContext.returnValue;
@@ -1918,6 +2034,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.A
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDHoveredObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDPressedObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDPressedObjects2= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDNewSpriteObjects2= [];
 
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -1972,6 +2090,8 @@ var thisGDHoveredObjectsList = [...runtimeScene.getObjects("Hovered")];
 var GDHoveredObjects = Hashtable.newFrom({"Hovered": thisGDHoveredObjectsList});
 var thisGDPressedObjectsList = [...runtimeScene.getObjects("Pressed")];
 var GDPressedObjects = Hashtable.newFrom({"Pressed": thisGDPressedObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -1979,6 +2099,7 @@ var eventsFunctionContext = {
 , "Idle": GDIdleObjects
 , "Hovered": GDHoveredObjects
 , "Pressed": GDPressedObjects
+, "NewSprite": GDNewSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -1986,6 +2107,7 @@ var eventsFunctionContext = {
 , "Idle": thisGDIdleObjectsList
 , "Hovered": thisGDHoveredObjectsList
 , "Pressed": thisGDPressedObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -2045,6 +2167,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.A
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDNewSpriteObjects2.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDObjectObjects1.length = 0;
@@ -2057,6 +2181,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.A
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDNewSpriteObjects2.length = 0;
 
 
 return;
@@ -2072,6 +2198,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDHoveredObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDPressedObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDPressedObjects2= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDNewSpriteObjects2= [];
 
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -2112,6 +2240,8 @@ var thisGDHoveredObjectsList = [...runtimeScene.getObjects("Hovered")];
 var GDHoveredObjects = Hashtable.newFrom({"Hovered": thisGDHoveredObjectsList});
 var thisGDPressedObjectsList = [...runtimeScene.getObjects("Pressed")];
 var GDPressedObjects = Hashtable.newFrom({"Pressed": thisGDPressedObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -2119,6 +2249,7 @@ var eventsFunctionContext = {
 , "Idle": GDIdleObjects
 , "Hovered": GDHoveredObjects
 , "Pressed": GDPressedObjects
+, "NewSprite": GDNewSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -2126,6 +2257,7 @@ var eventsFunctionContext = {
 , "Idle": thisGDIdleObjectsList
 , "Hovered": thisGDHoveredObjectsList
 , "Pressed": thisGDPressedObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -2184,6 +2316,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDNewSpriteObjects2.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDObjectObjects1.length = 0;
@@ -2196,6 +2330,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDNewSpriteObjects2.length = 0;
 
 
 return !!eventsFunctionContext.returnValue;
@@ -2211,6 +2347,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.L
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDHoveredObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDPressedObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDPressedObjects2= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDNewSpriteObjects2= [];
 
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -2241,6 +2379,8 @@ var thisGDHoveredObjectsList = [...runtimeScene.getObjects("Hovered")];
 var GDHoveredObjects = Hashtable.newFrom({"Hovered": thisGDHoveredObjectsList});
 var thisGDPressedObjectsList = [...runtimeScene.getObjects("Pressed")];
 var GDPressedObjects = Hashtable.newFrom({"Pressed": thisGDPressedObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -2248,6 +2388,7 @@ var eventsFunctionContext = {
 , "Idle": GDIdleObjects
 , "Hovered": GDHoveredObjects
 , "Pressed": GDPressedObjects
+, "NewSprite": GDNewSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -2255,6 +2396,7 @@ var eventsFunctionContext = {
 , "Idle": thisGDIdleObjectsList
 , "Hovered": thisGDHoveredObjectsList
 , "Pressed": thisGDPressedObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -2313,6 +2455,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.L
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDNewSpriteObjects2.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDObjectObjects1.length = 0;
@@ -2325,6 +2469,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.L
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDNewSpriteObjects2.length = 0;
 
 
 return Number(eventsFunctionContext.returnValue) || 0;
@@ -2340,6 +2486,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.S
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDHoveredObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDPressedObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDPressedObjects2= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDNewSpriteObjects2= [];
 
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -2375,6 +2523,8 @@ var thisGDHoveredObjectsList = [...runtimeScene.getObjects("Hovered")];
 var GDHoveredObjects = Hashtable.newFrom({"Hovered": thisGDHoveredObjectsList});
 var thisGDPressedObjectsList = [...runtimeScene.getObjects("Pressed")];
 var GDPressedObjects = Hashtable.newFrom({"Pressed": thisGDPressedObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -2382,6 +2532,7 @@ var eventsFunctionContext = {
 , "Idle": GDIdleObjects
 , "Hovered": GDHoveredObjects
 , "Pressed": GDPressedObjects
+, "NewSprite": GDNewSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -2389,6 +2540,7 @@ var eventsFunctionContext = {
 , "Idle": thisGDIdleObjectsList
 , "Hovered": thisGDHoveredObjectsList
 , "Pressed": thisGDPressedObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -2448,6 +2600,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.S
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDNewSpriteObjects2.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDObjectObjects1.length = 0;
@@ -2460,6 +2614,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.S
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDHoveredObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDPressedObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDPressedObjects2.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDNewSpriteObjects2.length = 0;
 
 
 return;
