@@ -376,7 +376,7 @@ gdjs.evtsExt__FlashTransitionPainter__FlashTransitionPainter.FlashTransitionPain
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(15832028);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(15788476);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FlashTransitionPainter__FlashTransitionPainter.FlashTransitionPainter.prototype.doStepPostEventsContext.GDObjectObjects1);
@@ -777,7 +777,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__FlashTransitionPainter__FlashTransition
 }
 gdjs.evtsExt__FlashTransitionPainter__FlashTransitionPainter.FlashTransitionPainter.prototype.PaintEffectIsEndContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
+{eventsFunctionContext.returnValue = true;}}
 
 }
 

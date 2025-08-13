@@ -28,10 +28,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') {
-gdjs.Variable.copy(eventsFunctionContext.getArgument("Response"), runtimeScene.getScene().getVariables().get("__AdvancedHTTP").getChild("Response"), false);
-}
-}{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("__AdvancedHTTP").getChild("StatusTexts").getChild(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("__AdvancedHTTP").getChild("Response").getChild("status")))); }}}
+{gdjs.Variable.copy(eventsFunctionContext.getArgument("Response"), runtimeScene.getScene().getVariables().get("__AdvancedHTTP").getChild("Response"), false);
+}{eventsFunctionContext.returnValue = gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("__AdvancedHTTP").getChild("StatusTexts").getChild(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("__AdvancedHTTP").getChild("Response").getChild("status"))));}}
 
 }
 

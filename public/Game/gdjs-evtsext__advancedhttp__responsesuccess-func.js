@@ -15,9 +15,7 @@ gdjs.evtsExt__AdvancedHTTP__ResponseSuccess.eventsList0 = function(runtimeScene,
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') {
-gdjs.Variable.copy(eventsFunctionContext.getArgument("Response"), runtimeScene.getScene().getVariables().get("__AdvancedHTTP").getChild("Response"), false);
-}
+{gdjs.Variable.copy(eventsFunctionContext.getArgument("Response"), runtimeScene.getScene().getVariables().get("__AdvancedHTTP").getChild("Response"), false);
 }}
 
 }
@@ -30,7 +28,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getScene().getVariables().get("__AdvancedHTTP").getChild("Response").getChild("ok"), true);
 if (isConditionTrue_0) {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
+{eventsFunctionContext.returnValue = true;}}
 
 }
 

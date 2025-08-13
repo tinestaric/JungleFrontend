@@ -69,7 +69,7 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueConte
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0]._getMainTextValue(); }}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0]._getMainTextValue();}}
 
 }
 
@@ -295,7 +295,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDObjectObjects1[i].SetMainTextValue(eventsFunctionContext.getArgument("TextToShow"), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDObjectObjects1[i].SetMainTextValue(eventsFunctionContext.getArgument("TextToShow"), eventsFunctionContext);
 }
 }{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDObjectObjects1[i].hide(false);

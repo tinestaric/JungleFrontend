@@ -259,7 +259,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.onCreatedContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.onCreatedContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.onCreatedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimation((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.onCreatedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimation(eventsFunctionContext);
 }
 }}
 
@@ -358,7 +358,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.onActivateContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.onActivateContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.onActivateContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimation((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.onActivateContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimation(eventsFunctionContext);
 }
 }}
 
@@ -455,7 +455,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.doStepPostEventsContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimation((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimation(eventsFunctionContext);
 }
 }}
 
@@ -552,7 +552,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationDirection((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationDirection(eventsFunctionContext);
 }
 }}
 
@@ -569,7 +569,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationSpeedScale((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationSpeedScale(eventsFunctionContext);
 }
 }}
 
@@ -586,7 +586,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationPause((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationPause(eventsFunctionContext);
 }
 }}
 
@@ -681,7 +681,7 @@ gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAn
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAnimationName(); }}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAnimationName();}}
 
 }
 
@@ -787,10 +787,10 @@ if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetAnimationNameContext.GDObjectObjects1);
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAnimationName(eventsFunctionContext.getArgument("Value"))
 }{for(var i = 0, len = gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetAnimationNameContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetAnimationNameContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationName((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetAnimationNameContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationName(eventsFunctionContext);
 }
 }{for(var i = 0, len = gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetAnimationNameContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetAnimationNameContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationDirection((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetAnimationNameContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationDirection(eventsFunctionContext);
 }
 }}
 
@@ -889,7 +889,7 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsPausingAnimation();
 }
 if (isConditionTrue_0) {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
+{eventsFunctionContext.returnValue = true;}}
 
 }
 
@@ -1006,7 +1006,7 @@ if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetIsPausingAnimationContext.GDObjectObjects1);
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsPausingAnimation(true)
 }{for(var i = 0, len = gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetIsPausingAnimationContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetIsPausingAnimationContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationPause((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetIsPausingAnimationContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationPause(eventsFunctionContext);
 }
 }}
 
@@ -1105,7 +1105,7 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsScalingAnimation();
 }
 if (isConditionTrue_0) {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
+{eventsFunctionContext.returnValue = true;}}
 
 }
 
@@ -1222,7 +1222,7 @@ if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetIsScalingAnimationContext.GDObjectObjects1);
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsScalingAnimation(true)
 }{for(var i = 0, len = gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetIsScalingAnimationContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetIsScalingAnimationContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationSpeedScale((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetIsScalingAnimationContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationSpeedScale(eventsFunctionContext);
 }
 }}
 
@@ -1581,7 +1581,7 @@ gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAn
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.DirectionContext.GDObjectObjects1);
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = ((( gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.DirectionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.DirectionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("TopDownMovement")).getAngle()) + eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleOffset()) * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDirectionCount() / 360; }}}
+{eventsFunctionContext.returnValue = ((( gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.DirectionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.DirectionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("TopDownMovement")).getAngle()) + eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleOffset()) * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDirectionCount() / 360;}}
 
 }
 
@@ -1674,7 +1674,7 @@ gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAn
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = gdjs.evtTools.common.mod(gdjs.evtTools.common.mod(eventsFunctionContext.getArgument("Direction") - eventsFunctionContext.getArgument("OtherDirection"), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDirectionCount()) + eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDirectionCount() / 2, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDirectionCount()) - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDirectionCount() / 2; }}}
+{eventsFunctionContext.returnValue = gdjs.evtTools.common.mod(gdjs.evtTools.common.mod(eventsFunctionContext.getArgument("Direction") - eventsFunctionContext.getArgument("OtherDirection"), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDirectionCount()) + eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDirectionCount() / 2, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDirectionCount()) - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDirectionCount() / 2;}}
 
 }
 
@@ -1782,7 +1782,7 @@ let isConditionTrue_0 = false;
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAnimationDirection(gdjs.evtTools.common.mod(gdjs.evtTools.common.mod(Math.round(eventsFunctionContext.localVariables[0].getFromIndex(0).getAsNumber()), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDirectionCount()) + eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDirectionCount(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDirectionCount()))
 }{eventsFunctionContext.localVariables[1].getFromIndex(0).setNumber((( gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Animation")).getAnimationElapsedTime()));
 }{for(var i = 0, len = gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationName((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdateAnimationName(eventsFunctionContext);
 }
 }{for(var i = 0, len = gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Animation")).setAnimationElapsedTime(eventsFunctionContext.localVariables[1].getFromIndex(0).getAsNumber());
@@ -1808,7 +1808,7 @@ eventsFunctionContext.localVariables.pop();
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (Math.abs((( gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).DirectionDifference(eventsFunctionContext.localVariables[0].getFromIndex(0).getAsNumber(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAnimationDirection(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)))) > 0.5 + 0.03125);
+{isConditionTrue_0 = (Math.abs((( gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).DirectionDifference(eventsFunctionContext.localVariables[0].getFromIndex(0).getAsNumber(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAnimationDirection(), eventsFunctionContext))) > 0.5 + 0.03125);
 }
 if (isConditionTrue_0) {
 
@@ -1843,7 +1843,7 @@ eventsFunctionContext.localVariables.push(variables);
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1);
-{eventsFunctionContext.localVariables[0].getFromIndex(0).setNumber((( gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).Direction((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
+{eventsFunctionContext.localVariables[0].getFromIndex(0).setNumber((( gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).Direction(eventsFunctionContext)));
 }
 { //Subevents
 gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.eventsList1(runtimeScene, eventsFunctionContext);} //End of subevents

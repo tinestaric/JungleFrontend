@@ -15,9 +15,7 @@ gdjs.evtsExt__AdvancedHTTP__SetJSONRequestBody.eventsList0 = function(runtimeSce
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') {
-gdjs.Variable.copy(eventsFunctionContext.getArgument("Body"), runtimeScene.getScene().getVariables().get("__AdvancedHTTP").getChild("Body"), false);
-}
+{gdjs.Variable.copy(eventsFunctionContext.getArgument("Body"), runtimeScene.getScene().getVariables().get("__AdvancedHTTP").getChild("Body"), false);
 }{runtimeScene.getGame().getVariables().get("__AdvancedHTTP").getChild("Requests").getChild(eventsFunctionContext.getArgument("Request")).getChild("Options").getChild("body").setString(gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getScene().getVariables().get("__AdvancedHTTP").getChild("Body")));
 }}
 

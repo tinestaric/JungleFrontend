@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__URLTools__Reload !== "undefined") {
 gdjs.evtsExt__URLTools__Reload = {};
 
 
-gdjs.evtsExt__URLTools__Reload.userFunc0x10236d0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__URLTools__Reload.userFunc0x10123b0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 location.reload();
 
@@ -18,7 +18,7 @@ gdjs.evtsExt__URLTools__Reload.eventsList0 = function(runtimeScene, eventsFuncti
 {
 
 
-gdjs.evtsExt__URLTools__Reload.userFunc0x10236d0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__URLTools__Reload.userFunc0x10123b0(runtimeScene, eventsFunctionContext);
 
 }
 

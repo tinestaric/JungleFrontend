@@ -251,7 +251,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextDialogObjects2);
 {for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(gdjs.OverworldCode.localVariables[0].getFromIndex(0).getAsString(), "TextDialogTimer", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(gdjs.OverworldCode.localVariables[0].getFromIndex(0).getAsString(), "TextDialogTimer", null);
 }
 }}
 
@@ -550,7 +550,7 @@ if (isConditionTrue_0) {
 /* Reuse gdjs.OverworldCode.GDInventorySlotObjects4 */
 gdjs.OverworldCode.GDInventoryIconObjects4.length = 0;
 
-{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDInventoryIconObjects4Objects, (( gdjs.OverworldCode.GDInventorySlotObjects4.length === 0 ) ? 0 :gdjs.OverworldCode.GDInventorySlotObjects4[0].getPointX("")) + 25, (( gdjs.OverworldCode.GDInventorySlotObjects4.length === 0 ) ? 0 :gdjs.OverworldCode.GDInventorySlotObjects4[0].getPointY("")) + 25, "UI");
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDInventoryIconObjects4Objects, (( gdjs.OverworldCode.GDInventorySlotObjects4.length === 0 ) ? 0 :gdjs.OverworldCode.GDInventorySlotObjects4[0].getPointX("")) + 25, (( gdjs.OverworldCode.GDInventorySlotObjects4.length === 0 ) ? 0 :gdjs.OverworldCode.GDInventorySlotObjects4[0].getPointY("")) + 25, "UI");
 }{for(var i = 0, len = gdjs.OverworldCode.GDInventoryIconObjects4.length ;i < len;++i) {
     gdjs.OverworldCode.GDInventoryIconObjects4[i].getBehavior("Animation").setAnimationName(runtimeScene.getGame().getVariables().getFromIndex(0).getChild(gdjs.OverworldCode.localVariables[0].getFromIndex(0).getAsNumber()).getChild("Name").getAsString());
 }
@@ -691,7 +691,7 @@ gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextD
 }
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "PickupDelay");
 }{for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(((gdjs.OverworldCode.GDSwordObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDHammerObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDRingObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDRingObjects2[0].getVariables()) : gdjs.OverworldCode.GDHammerObjects2[0].getVariables()) : gdjs.OverworldCode.GDSwordObjects2[0].getVariables()).get("PickupText").getAsString(), "TextDialogTimer", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(((gdjs.OverworldCode.GDSwordObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDHammerObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDRingObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDRingObjects2[0].getVariables()) : gdjs.OverworldCode.GDHammerObjects2[0].getVariables()) : gdjs.OverworldCode.GDSwordObjects2[0].getVariables()).get("PickupText").getAsString(), "TextDialogTimer", null);
 }
 }
 { //Subevents
@@ -762,7 +762,7 @@ if (isConditionTrue_0) {
 /* Reuse gdjs.OverworldCode.GDSign_95951Objects2 */
 gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextDialogObjects2);
 {for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(((gdjs.OverworldCode.GDSign_95951Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDNPClvl2Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDNPCObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPCObjects2[0].getVariables()) : gdjs.OverworldCode.GDNPClvl2Objects2[0].getVariables()) : gdjs.OverworldCode.GDSign_95951Objects2[0].getVariables()).get("Text").getAsString(), "TextDialogTimer", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(((gdjs.OverworldCode.GDSign_95951Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDNPClvl2Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDNPCObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPCObjects2[0].getVariables()) : gdjs.OverworldCode.GDNPClvl2Objects2[0].getVariables()) : gdjs.OverworldCode.GDSign_95951Objects2[0].getVariables()).get("Text").getAsString(), "TextDialogTimer", null);
 }
 }}
 
@@ -823,7 +823,7 @@ gdjs.copyArray(runtimeScene.getObjects("ShadedDarkJoystick"), gdjs.OverworldCode
     gdjs.OverworldCode.GDShadedDarkJoystickObjects2[i].hide();
 }
 }{for(var i = 0, len = gdjs.OverworldCode.GDShadedDarkJoystickObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDShadedDarkJoystickObjects2[i].ActivateControl(false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.OverworldCode.GDShadedDarkJoystickObjects2[i].ActivateControl(false, null);
 }
 }
 { //Subevents
@@ -862,7 +862,7 @@ isConditionTrue_0 = !isConditionTrue_1;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("ShadedDarkJoystick"), gdjs.OverworldCode.GDShadedDarkJoystickObjects1);
 {for(var i = 0, len = gdjs.OverworldCode.GDShadedDarkJoystickObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDShadedDarkJoystickObjects1[i].TeleportAndPress((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.OverworldCode.GDShadedDarkJoystickObjects1[i].TeleportAndPress(null);
 }
 }}
 
@@ -909,7 +909,7 @@ gdjs.OverworldCode.eventsList15(runtimeScene);} //End of subevents
 
 };gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.OverworldCode.GDPlayerObjects1});
 gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDTreasure_95959595ChestObjects1Objects = Hashtable.newFrom({"Treasure_Chest": gdjs.OverworldCode.GDTreasure_9595ChestObjects1});
-gdjs.OverworldCode.asyncCallback16004948 = function (runtimeScene, asyncObjectsList) {
+gdjs.OverworldCode.asyncCallback15975924 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.OverworldCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Finish", false);
 }gdjs.OverworldCode.localVariables.length = 0;
@@ -924,21 +924,21 @@ const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(gdjs.OverworldCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1.25), (runtimeScene) => (gdjs.OverworldCode.asyncCallback16004948(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1.25), (runtimeScene) => (gdjs.OverworldCode.asyncCallback15975924(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.OverworldCode.asyncCallback16004156 = function (runtimeScene, asyncObjectsList) {
+};gdjs.OverworldCode.asyncCallback15975132 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.OverworldCode.localVariables);
 gdjs.copyArray(runtimeScene.getObjects("Transition"), gdjs.OverworldCode.GDTransitionObjects2);
 {for(var i = 0, len = gdjs.OverworldCode.GDTransitionObjects2.length ;i < len;++i) {
     gdjs.OverworldCode.GDTransitionObjects2[i].hide(false);
 }
 }{for(var i = 0, len = gdjs.OverworldCode.GDTransitionObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTransitionObjects2[i].getBehavior("FlashTransitionPainter").PaintEffect("157;146;146", 1, "Circular", "Forward", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.OverworldCode.GDTransitionObjects2[i].getBehavior("FlashTransitionPainter").PaintEffect("157;146;146", 1, "Circular", "Forward", 0, null);
 }
 }
 { //Subevents
@@ -954,7 +954,7 @@ gdjs.OverworldCode.eventsList18 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.OverworldCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "SendFinishScore", runtimeScene.getScene().getVariables().getFromIndex(2), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.OverworldCode.asyncCallback16004156(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "SendFinishScore", runtimeScene.getScene().getVariables().getFromIndex(2), null), (runtimeScene) => (gdjs.OverworldCode.asyncCallback15975132(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1004,11 +1004,11 @@ if (isConditionTrue_0) {
 }{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber(runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber());
 }{runtimeScene.getScene().getVariables().getFromIndex(3).getChild("sessionId").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(4)));
 }{runtimeScene.getScene().getVariables().getFromIndex(3).getChild("timeElapsed").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)));
-}{gdjs.evtsExt__AdvancedHTTP__CreateRequest.func(runtimeScene, "SendFinishScore", "https://lcthnghtpgwbeamphgey.supabase.co/functions/v1/game-complete", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{gdjs.evtsExt__AdvancedHTTP__SetRequestMethod.func(runtimeScene, "SendFinishScore", "POST", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getAsString() + gdjs.OverworldCode.localVariables[0].getFromIndex(0).getAsString() + runtimeScene.getScene().getVariables().getFromIndex(4).getAsString() + runtimeScene.getGame().getVariables().getFromIndex(5).getAsString() + gdjs.OverworldCode.localVariables[0].getFromIndex(1).getAsString() + runtimeScene.getScene().getVariables().getFromIndex(5).getAsString(), "SendFinishScore", "Authorization", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, "application/json", "SendFinishScore", "Content-Type", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{gdjs.evtsExt__AdvancedHTTP__SetJSONRequestBody.func(runtimeScene, "SendFinishScore", runtimeScene.getScene().getVariables().getFromIndex(3), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__AdvancedHTTP__CreateRequest.func(runtimeScene, "SendFinishScore", "https://lcthnghtpgwbeamphgey.supabase.co/functions/v1/game-complete", null);
+}{gdjs.evtsExt__AdvancedHTTP__SetRequestMethod.func(runtimeScene, "SendFinishScore", "POST", null);
+}{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getAsString() + gdjs.OverworldCode.localVariables[0].getFromIndex(0).getAsString() + runtimeScene.getScene().getVariables().getFromIndex(4).getAsString() + runtimeScene.getGame().getVariables().getFromIndex(5).getAsString() + gdjs.OverworldCode.localVariables[0].getFromIndex(1).getAsString() + runtimeScene.getScene().getVariables().getFromIndex(5).getAsString(), "SendFinishScore", "Authorization", null);
+}{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, "application/json", "SendFinishScore", "Content-Type", null);
+}{gdjs.evtsExt__AdvancedHTTP__SetJSONRequestBody.func(runtimeScene, "SendFinishScore", runtimeScene.getScene().getVariables().getFromIndex(3), null);
 }
 { //Subevents
 gdjs.OverworldCode.eventsList18(runtimeScene);} //End of subevents
@@ -1101,8 +1101,8 @@ for(var i = 0, len = gdjs.OverworldCode.GDHammerObjects1.length ;i < len;++i) {
 for(var i = 0, len = gdjs.OverworldCode.GDSwordObjects1.length ;i < len;++i) {
     gdjs.OverworldCode.GDSwordObjects1[i].returnVariable(gdjs.OverworldCode.GDSwordObjects1[i].getVariables().get("BaseY")).setNumber((gdjs.OverworldCode.GDSwordObjects1[i].getPointY("")));
 }
-}{runtimeScene.getGame().getVariables().getFromIndex(2).setString(gdjs.evtsExt__URLTools__URLQueryStringParameter.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "playerName", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
-}{runtimeScene.getGame().getVariables().getFromIndex(4).setString(gdjs.evtsExt__URLTools__URLQueryStringParameter.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "sessionId", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}{runtimeScene.getGame().getVariables().getFromIndex(2).setString(gdjs.evtsExt__URLTools__URLQueryStringParameter.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, null), "playerName", null));
+}{runtimeScene.getGame().getVariables().getFromIndex(4).setString(gdjs.evtsExt__URLTools__URLQueryStringParameter.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, null), "sessionId", null));
 }{for(var i = 0, len = gdjs.OverworldCode.GDNameTextObjects1.length ;i < len;++i) {
     gdjs.OverworldCode.GDNameTextObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(2).getAsString());
 }

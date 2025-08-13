@@ -130,7 +130,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouc
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed4Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Left", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed4Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Left", eventsFunctionContext);
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects2, gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects3);
 
@@ -147,7 +147,7 @@ gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.T
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed4Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Right", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed4Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Right", eventsFunctionContext);
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects2, gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects3);
 
@@ -164,7 +164,7 @@ gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.T
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed4Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Up", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed4Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Up", eventsFunctionContext);
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects2, gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects3);
 
@@ -181,7 +181,7 @@ gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.T
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed4Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Down", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed4Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Down", eventsFunctionContext);
 if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects2.length ;i < len;++i) {
@@ -199,7 +199,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Left", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Left", eventsFunctionContext);
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1, gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects2);
 
@@ -216,7 +216,7 @@ gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.T
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Right", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Right", eventsFunctionContext);
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1, gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects2);
 
@@ -233,7 +233,7 @@ gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.T
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Up", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Up", eventsFunctionContext);
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1, gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects2);
 
@@ -250,7 +250,7 @@ gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.T
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Down", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "Down", eventsFunctionContext);
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1, gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects2);
 
@@ -267,7 +267,7 @@ gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.T
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "UpLeft", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "UpLeft", eventsFunctionContext);
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1, gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects2);
 
@@ -287,7 +287,7 @@ gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.T
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "UpRight", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "UpRight", eventsFunctionContext);
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1, gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects2);
 
@@ -307,7 +307,7 @@ gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.T
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "DownLeft", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "DownLeft", eventsFunctionContext);
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1, gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects2);
 
@@ -327,7 +327,7 @@ gdjs.copyArray(gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.T
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "DownRight", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), "DownRight", eventsFunctionContext);
 if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1.length ;i < len;++i) {
@@ -401,7 +401,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("TopDownMovement")).simulateStick(gdjs.evtsExt__SpriteMultitouchJoystick__StickAngle.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), gdjs.evtsExt__SpriteMultitouchJoystick__StickForce.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+    gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("TopDownMovement")).simulateStick(gdjs.evtsExt__SpriteMultitouchJoystick__StickAngle.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), eventsFunctionContext), gdjs.evtsExt__SpriteMultitouchJoystick__StickForce.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), eventsFunctionContext));
 }
 }}
 
@@ -418,7 +418,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("TopDownMovement")).simulateStick(gdjs.evtsExt__SpriteMultitouchJoystick__StickAngle.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), gdjs.evtTools.common.sign(gdjs.evtsExt__SpriteMultitouchJoystick__StickForce.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
+    gdjs.evtsExt__SpriteMultitouchJoystick__TopDownMultitouchMapper.TopDownMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("TopDownMovement")).simulateStick(gdjs.evtsExt__SpriteMultitouchJoystick__StickAngle.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), eventsFunctionContext), gdjs.evtTools.common.sign(gdjs.evtsExt__SpriteMultitouchJoystick__StickForce.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getJoystickIdentifier(), eventsFunctionContext)));
 }
 }}
 
