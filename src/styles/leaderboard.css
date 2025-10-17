@@ -18,6 +18,12 @@
 .leaderboard-rank { text-align: center; font-weight: bold; color: var(--color-accent); }
 .leaderboard-table td.leaderboard-time { color: var(--color-time); font-weight: bold; text-align: right; }
 
+/* Highlight current player's row in top 10 */
+.leaderboard-row-me { position: relative; background: linear-gradient(90deg, rgba(255,184,28,0.15), rgba(255,184,28,0.06)); }
+.leaderboard-row-me td, .leaderboard-row-me th { border-bottom-color: rgba(255,184,28,0.35); }
+.leaderboard-row-me .leaderboard-rank { color: #ffb81c; }
+.leaderboard-row-me .leaderboard-time { color: #ffb81c; }
+
 /* Desktop column widths */
 .leaderboard-table th:nth-child(1), .leaderboard-table td:nth-child(1) { width: var(--col-rank); }
 .leaderboard-table th:nth-child(2), .leaderboard-table td:nth-child(2) { width: var(--col-player); word-wrap: break-word; white-space: normal; }

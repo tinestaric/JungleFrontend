@@ -140,7 +140,7 @@ function LeaderboardContent() {
               </thead>
               <tbody>
                 {leaderboard.map((entry) => (
-                  <tr key={entry.rank}>
+                  <tr key={entry.rank} className={entry.name === currentPlayer?.name ? 'leaderboard-row-me' : undefined}>
                     <td className="leaderboard-rank">
                       {entry.rank <= 3 ? (
                         <span>
