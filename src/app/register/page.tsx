@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { registrationSchema, type RegistrationFormData } from '@/lib/validation'
 import { RegistrationResponse } from '@/types'
+import Image from 'next/image'
 
 export default function RegisterPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -51,183 +52,73 @@ export default function RegisterPage() {
   }
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      backgroundColor: '#f8fafc',
-      padding: '1rem',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center'
-    }}>
-      <div style={{
-        width: '100%',
-        maxWidth: '400px'
-      }}>
-        {/* Header Tile */}
-        <div style={{
-          backgroundColor: 'white',
-          borderRadius: '16px',
-          padding: '2rem',
-          marginBottom: '1rem',
-          boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
-          textAlign: 'center'
-        }}>
+    <div className="landing-page">
+      <div className="landing-container">
+        {/* Header with Logo and Title */}
+        <div className="landing-header">
+          
+          {/* Dynamics Explorer Title Image */}
           <div style={{
-            width: '64px',
-            height: '64px',
-            backgroundColor: '#3b82f6',
-            borderRadius: '16px',
-            margin: '0 auto 1.5rem',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
+            marginBottom: '1rem'
           }}>
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
-              <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
-            </svg>
+            <Image 
+              src="/landing/images/Dynamics explorer.png" 
+              alt="DYNAMICS EXPLORER"
+              className="landing-title"
+              width={500}
+              height={120}
+            />
           </div>
-          <h1 style={{
-            fontSize: '1.875rem',
-            fontWeight: '700',
-            color: '#1f2937',
-            margin: '0 0 0.5rem 0'
-          }}>
-            Join the Game
-          </h1>
-          <p style={{
-            color: '#6b7280',
-            fontSize: '1rem',
-            margin: 0,
-            lineHeight: '1.5'
-          }}>
+          
+          {/* Subtitle */}
+          <p className="landing-text-large">
             Register to start your conference challenge
           </p>
         </div>
 
         {/* Form Tile */}
-        <div style={{
-          backgroundColor: 'white',
-          borderRadius: '16px',
-          padding: '2rem',
-          marginBottom: '1rem',
-          boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)'
-        }}>
-          <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="landing-form-container">
+          <form onSubmit={handleSubmit(onSubmit)} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             {/* Name Field */}
-            <div style={{ marginBottom: '1.5rem' }}>
-              <label style={{
-                display: 'block',
-                fontSize: '0.875rem',
-                fontWeight: '600',
-                color: '#374151',
-                marginBottom: '0.5rem'
-              }}>
-                Full Name
-              </label>
+            <div className="landing-form-field">
               <input
                 type="text"
                 {...register('name')}
-                placeholder="Enter your full name"
-                style={{
-                  width: '100%',
-                  padding: '0.75rem 1rem',
-                  border: '1px solid #d1d5db',
-                  borderRadius: '8px',
-                  fontSize: '1rem',
-                  outline: 'none',
-                  transition: 'border-color 0.2s',
-                  boxSizing: 'border-box'
-                }}
-                onFocus={(e) => e.target.style.borderColor = '#3b82f6'}
-                onBlur={(e) => e.target.style.borderColor = '#d1d5db'}
+                placeholder="Full Name"
+                className="landing-form-input"
               />
               {errors.name && (
-                <p style={{
-                  color: '#ef4444',
-                  fontSize: '0.875rem',
-                  marginTop: '0.25rem',
-                  margin: '0.25rem 0 0 0'
-                }}>
+                <p className="landing-form-error">
                   {errors.name.message}
                 </p>
               )}
             </div>
 
             {/* Email Field */}
-            <div style={{ marginBottom: '1.5rem' }}>
-              <label style={{
-                display: 'block',
-                fontSize: '0.875rem',
-                fontWeight: '600',
-                color: '#374151',
-                marginBottom: '0.5rem'
-              }}>
-                Email Address
-              </label>
+            <div className="landing-form-field">
               <input
                 type="email"
                 {...register('email')}
-                placeholder="Enter your email"
-                style={{
-                  width: '100%',
-                  padding: '0.75rem 1rem',
-                  border: '1px solid #d1d5db',
-                  borderRadius: '8px',
-                  fontSize: '1rem',
-                  outline: 'none',
-                  transition: 'border-color 0.2s',
-                  boxSizing: 'border-box'
-                }}
-                onFocus={(e) => e.target.style.borderColor = '#3b82f6'}
-                onBlur={(e) => e.target.style.borderColor = '#d1d5db'}
+                placeholder="Email Address"
+                className="landing-form-input"
               />
               {errors.email && (
-                <p style={{
-                  color: '#ef4444',
-                  fontSize: '0.875rem',
-                  marginTop: '0.25rem',
-                  margin: '0.25rem 0 0 0'
-                }}>
+                <p className="landing-form-error">
                   {errors.email.message}
                 </p>
               )}
             </div>
 
             {/* Company Field */}
-            <div style={{ marginBottom: '1.5rem' }}>
-              <label style={{
-                display: 'block',
-                fontSize: '0.875rem',
-                fontWeight: '600',
-                color: '#374151',
-                marginBottom: '0.5rem'
-              }}>
-                Company/Organization
-              </label>
+            <div className="landing-form-field">
               <input
                 type="text"
                 {...register('company')}
-                placeholder="Enter your company"
-                style={{
-                  width: '100%',
-                  padding: '0.75rem 1rem',
-                  border: '1px solid #d1d5db',
-                  borderRadius: '8px',
-                  fontSize: '1rem',
-                  outline: 'none',
-                  transition: 'border-color 0.2s',
-                  boxSizing: 'border-box'
-                }}
-                onFocus={(e) => e.target.style.borderColor = '#3b82f6'}
-                onBlur={(e) => e.target.style.borderColor = '#d1d5db'}
+                placeholder="Company/Organization"
+                className="landing-form-input"
               />
               {errors.company && (
-                <p style={{
-                  color: '#ef4444',
-                  fontSize: '0.875rem',
-                  marginTop: '0.25rem',
-                  margin: '0.25rem 0 0 0'
-                }}>
+                <p className="landing-form-error">
                   {errors.company.message}
                 </p>
               )}
@@ -235,80 +126,46 @@ export default function RegisterPage() {
 
             {/* Error Message */}
             {error && (
-              <div style={{
-                backgroundColor: '#fef2f2',
-                border: '1px solid #fecaca',
-                borderRadius: '8px',
-                padding: '0.75rem',
-                marginBottom: '1.5rem'
-              }}>
-                <p style={{
-                  color: '#dc2626',
-                  fontSize: '0.875rem',
-                  margin: 0
-                }}>
+              <div className="landing-form-error-container">
+                <p className="landing-form-error-text">
                   {error}
                 </p>
               </div>
             )}
 
             {/* Submit Button */}
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              style={{
-                width: '100%',
-                backgroundColor: isSubmitting ? '#9ca3af' : '#3b82f6',
-                color: 'white',
-                padding: '0.75rem 1rem',
-                borderRadius: '8px',
-                border: 'none',
-                fontSize: '1rem',
-                fontWeight: '600',
-                cursor: isSubmitting ? 'not-allowed' : 'pointer',
-                transition: 'background-color 0.2s',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}
-                             onMouseEnter={(e) => {
-                 if (!isSubmitting) (e.target as HTMLButtonElement).style.backgroundColor = '#2563eb'
-               }}
-               onMouseLeave={(e) => {
-                 if (!isSubmitting) (e.target as HTMLButtonElement).style.backgroundColor = '#3b82f6'
-               }}
-            >
-              {isSubmitting ? (
-                <>
-                  <svg style={{ marginRight: '0.5rem', animation: 'spin 1s linear infinite' }} width="16" height="16" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" opacity="0.25"/>
-                    <path fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" opacity="0.75"/>
-                  </svg>
-                  Registering...
-                </>
-                              ) : (
-                 "Start Playing"
-                )}
-            </button>
+            <div style={{ position: 'relative', width: '100%' }}>
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                style={{
+                  width: '100%',
+                  background: 'none',
+                  border: 'none',
+                  padding: 0,
+                  cursor: isSubmitting ? 'not-allowed' : 'pointer',
+                  position: 'relative'
+                }}
+              >
+                <Image 
+                  src="/landing/images/BTN-orange.png" 
+                  alt="Start Playing"
+                  className="landing-button"
+                  width={450}
+                  height={60}
+                  style={{
+                    opacity: isSubmitting ? 0.6 : 1,
+                    transition: 'opacity 0.2s'
+                  }}
+                />
+                <div className="landing-button-text">
+                  {isSubmitting ? 'Registering...' : 'Start Playing'}
+                </div>
+              </button>
+            </div>
           </form>
         </div>
 
-        {/* Footer Tile */}
-        <div style={{
-          backgroundColor: 'white',
-          borderRadius: '16px',
-          padding: '1rem',
-          boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
-          textAlign: 'center'
-        }}>
-          <p style={{
-            color: '#6b7280',
-            fontSize: '0.875rem',
-            margin: 0
-          }}>
-                         🎮 Ready to compete? Let&apos;s go!
-          </p>
-        </div>
       </div>
 
       <style jsx>{`

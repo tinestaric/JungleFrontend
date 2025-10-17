@@ -137,26 +137,34 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDThumbObjects1.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(eventsFunctionContext, gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.mapOfGDgdjs_9546evtsExt_9595_9595SpriteMultitouchJoystick_9595_9595SpriteMultitouchJoystick_9546SpriteMultitouchJoystick_9546prototype_9546onCreatedContext_9546GDBorderObjects1Objects, 0, 0, "");
-}{gdjs.evtTools.object.createObjectOnScene(eventsFunctionContext, gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.mapOfGDgdjs_9546evtsExt_9595_9595SpriteMultitouchJoystick_9595_9595SpriteMultitouchJoystick_9546SpriteMultitouchJoystick_9546prototype_9546onCreatedContext_9546GDThumbObjects1Objects, 0, 0, "");
-}{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDBorderObjects1.length ;i < len;++i) {
+}
+{gdjs.evtTools.object.createObjectOnScene(eventsFunctionContext, gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.mapOfGDgdjs_9546evtsExt_9595_9595SpriteMultitouchJoystick_9595_9595SpriteMultitouchJoystick_9546SpriteMultitouchJoystick_9546prototype_9546onCreatedContext_9546GDThumbObjects1Objects, 0, 0, "");
+}
+{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDBorderObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDBorderObjects1[i].setZOrder(1);
 }
-}{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDThumbObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDThumbObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDThumbObjects1[i].setZOrder(2);
 }
-}{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDBorderObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDBorderObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDBorderObjects1[i].setCenterPositionInScene(0,0);
 }
-}{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDThumbObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDThumbObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDThumbObjects1[i].setCenterPositionInScene(0,0);
 }
-}{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDObjectObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDObjectObjects1[i].UpdateConfiguration(eventsFunctionContext);
 }
-}{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDThumbObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDThumbObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDThumbObjects1[i].setIncludedInParentCollisionMask(false);
 }
-}}
+}
+}
 
 }
 
@@ -167,6 +175,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -201,14 +210,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -216,7 +226,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -271,7 +281,8 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Thumb"), gdjs.evtsExt__SpriteMu
 {for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDThumbObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDThumbObjects1[i].putAroundObject((gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects1.length !== 0 ? gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects1[0] : null), (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickForce(eventsFunctionContext)) * (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects1[0].getWidth()) / 2, (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickAngle(eventsFunctionContext)));
 }
-}}
+}
+}
 
 }
 
@@ -300,11 +311,14 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDObjectObjects1[i].hide();
 }
-}{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDObjectObjects1[i].ActivateControl(false, eventsFunctionContext);
 }
-}{eventsFunctionContext.getObjects("Object")[0]._setShouldBeHiddenWhenReleased(false)
-}}
+}
+{eventsFunctionContext.getObjects("Object")[0]._setShouldBeHiddenWhenReleased(false)
+}
+}
 
 }
 
@@ -315,6 +329,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -349,14 +364,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -364,7 +380,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -417,7 +433,8 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteM
 {for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onHotReloadingContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onHotReloadingContext.GDObjectObjects1[i].UpdateConfiguration(eventsFunctionContext);
 }
-}}
+}
+}
 
 }
 
@@ -428,6 +445,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -462,14 +480,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -477,7 +496,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -530,13 +549,16 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteM
 {for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.UpdateConfigurationContext.GDBorderObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.UpdateConfigurationContext.GDBorderObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).SetControllerIdentifier(eventsFunctionContext.getObjects("Object")[0]._getControllerIdentifier(), eventsFunctionContext);
 }
-}{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.UpdateConfigurationContext.GDBorderObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.UpdateConfigurationContext.GDBorderObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.UpdateConfigurationContext.GDBorderObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).SetJoystickIdentifier(eventsFunctionContext.getObjects("Object")[0]._getJoystickIdentifier(), eventsFunctionContext);
 }
-}{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.UpdateConfigurationContext.GDBorderObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.UpdateConfigurationContext.GDBorderObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.UpdateConfigurationContext.GDBorderObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).SetDeadZoneRadius(eventsFunctionContext.getObjects("Object")[0]._getDeadZoneRadius(), eventsFunctionContext);
 }
-}}
+}
+}
 
 }
 
@@ -547,6 +569,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -581,14 +604,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -596,7 +620,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -652,17 +676,22 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteM
 {for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDObjectObjects1[i].setPosition((gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDObjectObjects1[i].ParentTouchX(gdjs.evtTools.input.getStartedTouchOrMouseIdentifier(runtimeScene, 0), eventsFunctionContext)),(gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDObjectObjects1[i].ParentTouchY(gdjs.evtTools.input.getStartedTouchOrMouseIdentifier(runtimeScene, 0), eventsFunctionContext)));
 }
-}{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDObjectObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDObjectObjects1[i].ActivateControl(true, eventsFunctionContext);
 }
-}{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDObjectObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDObjectObjects1[i].hide(false);
 }
-}{eventsFunctionContext.getObjects("Object")[0]._setShouldBeHiddenWhenReleased(true)
-}{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDBorderObjects1.length ;i < len;++i) {
+}
+{eventsFunctionContext.getObjects("Object")[0]._setShouldBeHiddenWhenReleased(true)
+}
+{for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDBorderObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDBorderObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).ForceStartPressing(gdjs.evtTools.input.getStartedTouchOrMouseIdentifier(runtimeScene, 0), eventsFunctionContext);
 }
-}}
+}
+}
 
 }
 
@@ -673,6 +702,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -707,14 +737,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -722,7 +753,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -764,7 +795,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.GDBorderObjects2= [];
 
 
-gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.userFunc0x109df90 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.userFunc0xa61508 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const touchId = eventsFunctionContext.getArgument("TouchId");
@@ -786,9 +817,8 @@ let isConditionTrue_0 = false;
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.GDObjectObjects1);
 
-var objects = [];
-objects.push.apply(objects,gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.GDObjectObjects1);
-gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.userFunc0x109df90(runtimeScene, objects, eventsFunctionContext);
+const objects = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.GDObjectObjects1;
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.userFunc0xa61508(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -799,6 +829,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -833,14 +864,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -848,7 +880,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -891,7 +923,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.GDBorderObjects2= [];
 
 
-gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.userFunc0x10980f8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.userFunc0xa61678 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const touchId = eventsFunctionContext.getArgument("TouchId");
@@ -913,9 +945,8 @@ let isConditionTrue_0 = false;
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.GDObjectObjects1);
 
-var objects = [];
-objects.push.apply(objects,gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.GDObjectObjects1);
-gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.userFunc0x10980f8(runtimeScene, objects, eventsFunctionContext);
+const objects = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.GDObjectObjects1;
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.userFunc0xa61678(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -926,6 +957,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -960,14 +992,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -975,7 +1008,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1032,7 +1065,8 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteM
 {for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ActivateControlContext.GDBorderObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ActivateControlContext.GDBorderObjects1[i].activateBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick"), false);
 }
-}}
+}
+}
 
 }
 
@@ -1049,7 +1083,8 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteM
 {for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ActivateControlContext.GDBorderObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ActivateControlContext.GDBorderObjects1[i].activateBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick"), true);
 }
-}}
+}
+}
 
 }
 
@@ -1060,6 +1095,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -1094,14 +1130,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1109,7 +1146,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1169,7 +1206,8 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultito
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsPressedContext.GDBorderObjects1.length = k;
 if (isConditionTrue_0) {
-{eventsFunctionContext.returnValue = true;}}
+{eventsFunctionContext.returnValue = true;}
+}
 
 }
 
@@ -1180,6 +1218,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -1214,14 +1253,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1229,7 +1269,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1279,7 +1319,8 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickForceContext.GDBorderObjects1);
-{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickForceContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickForceContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickForce(eventsFunctionContext));}}
+{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickForceContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickForceContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickForce(eventsFunctionContext));}
+}
 
 }
 
@@ -1290,6 +1331,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -1324,14 +1366,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1339,7 +1382,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1389,7 +1432,8 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceContext.GDBorderObjects1);
-{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickForce(eventsFunctionContext));}}
+{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickForce(eventsFunctionContext));}
+}
 
 }
 
@@ -1400,6 +1444,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -1434,14 +1479,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1449,7 +1495,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1499,7 +1545,8 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceXContext.GDBorderObjects1);
-{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceXContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceXContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).StickForceX(eventsFunctionContext));}}
+{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceXContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceXContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).StickForceX(eventsFunctionContext));}
+}
 
 }
 
@@ -1510,6 +1557,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -1544,14 +1592,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1559,7 +1608,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1609,7 +1658,8 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceYContext.GDBorderObjects1);
-{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceYContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceYContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).StickForceY(eventsFunctionContext));}}
+{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceYContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceYContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).StickForceY(eventsFunctionContext));}
+}
 
 }
 
@@ -1620,6 +1670,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -1654,14 +1705,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1669,7 +1721,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1719,7 +1771,8 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickAngleContext.GDBorderObjects1);
-{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickAngleContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickAngleContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickAngle(eventsFunctionContext));}}
+{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickAngleContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickAngleContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickAngle(eventsFunctionContext));}
+}
 
 }
 
@@ -1730,6 +1783,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -1764,14 +1818,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1779,7 +1834,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1829,7 +1884,8 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickAngleContext.GDBorderObjects1);
-{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickAngleContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickAngleContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickAngle(eventsFunctionContext));}}
+{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickAngleContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickAngleContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickAngle(eventsFunctionContext));}
+}
 
 }
 
@@ -1840,6 +1896,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -1874,14 +1931,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1889,7 +1947,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1948,7 +2006,8 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultito
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsDirectionPushed4WayContext.GDBorderObjects1.length = k;
 if (isConditionTrue_0) {
-{eventsFunctionContext.returnValue = true;}}
+{eventsFunctionContext.returnValue = true;}
+}
 
 }
 
@@ -1959,6 +2018,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -1993,14 +2053,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -2008,7 +2069,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -2068,7 +2129,8 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultito
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsDirectionPushed8WayContext.GDBorderObjects1.length = k;
 if (isConditionTrue_0) {
-{eventsFunctionContext.returnValue = true;}}
+{eventsFunctionContext.returnValue = true;}
+}
 
 }
 
@@ -2079,6 +2141,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -2113,14 +2176,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -2128,7 +2192,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -2179,7 +2243,8 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ControllerIdentifierContext.GDBorderObjects1);
-{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ControllerIdentifierContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ControllerIdentifierContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick"))._getControllerIdentifier());}}
+{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ControllerIdentifierContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ControllerIdentifierContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick"))._getControllerIdentifier());}
+}
 
 }
 
@@ -2190,6 +2255,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -2224,14 +2290,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -2239,7 +2306,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -2292,7 +2359,8 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteM
 {for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetControllerIdentifierContext.GDBorderObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetControllerIdentifierContext.GDBorderObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).SetControllerIdentifier(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
-}}
+}
+}
 
 }
 
@@ -2303,6 +2371,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -2337,14 +2406,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -2352,7 +2422,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -2403,7 +2473,8 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickIdentifierContext.GDBorderObjects1);
-{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickIdentifierContext.GDBorderObjects1.length === 0 ) ? "" :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickIdentifierContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick"))._getJoystickIdentifier());}}
+{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickIdentifierContext.GDBorderObjects1.length === 0 ) ? "" :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickIdentifierContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick"))._getJoystickIdentifier());}
+}
 
 }
 
@@ -2414,6 +2485,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -2448,14 +2520,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -2463,7 +2536,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -2516,7 +2589,8 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteM
 {for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetJoystickIdentifierContext.GDBorderObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetJoystickIdentifierContext.GDBorderObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).SetJoystickIdentifier(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
-}}
+}
+}
 
 }
 
@@ -2527,6 +2601,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -2561,14 +2636,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -2576,7 +2652,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -2627,7 +2703,8 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.DeadZoneRadiusContext.GDBorderObjects1);
-{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.DeadZoneRadiusContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.DeadZoneRadiusContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick"))._getDeadZoneRadius());}}
+{eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.DeadZoneRadiusContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.DeadZoneRadiusContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick"))._getDeadZoneRadius());}
+}
 
 }
 
@@ -2638,6 +2715,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -2672,14 +2750,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -2687,7 +2766,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -2740,7 +2819,8 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteM
 {for(var i = 0, len = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetDeadZoneRadiusContext.GDBorderObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetDeadZoneRadiusContext.GDBorderObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).SetDeadZoneRadius(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
-}}
+}
+}
 
 }
 
@@ -2751,6 +2831,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDThumbObjectsList = [...runtimeScene.getObjects("Thumb")];
@@ -2785,14 +2866,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -2800,7 +2882,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }

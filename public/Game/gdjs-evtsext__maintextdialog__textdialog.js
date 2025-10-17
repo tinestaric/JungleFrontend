@@ -69,7 +69,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueConte
 
 let isConditionTrue_0 = false;
 {
-{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0]._getMainTextValue();}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0]._getMainTextValue();}
+}
 
 }
 
@@ -80,6 +81,7 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValue = fu
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDMainTextObjectsList = [...runtimeScene.getObjects("MainText")];
@@ -114,14 +116,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -129,7 +132,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -180,10 +183,12 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("MainText"), gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDMainTextObjects1);
 {eventsFunctionContext.getObjects("Object")[0]._setMainTextValue(eventsFunctionContext.getArgument("Value"))
-}{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDMainTextObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDMainTextObjects1.length ;i < len;++i) {
     gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDMainTextObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText(eventsFunctionContext.getObjects("Object")[0]._getMainTextValue());
 }
-}}
+}
+}
 
 }
 
@@ -194,6 +199,7 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValue =
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDMainTextObjectsList = [...runtimeScene.getObjects("MainText")];
@@ -228,14 +234,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -243,7 +250,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -297,11 +304,14 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__MainTex
 {for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDObjectObjects1[i].SetMainTextValue(eventsFunctionContext.getArgument("TextToShow"), eventsFunctionContext);
 }
-}{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDObjectObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDObjectObjects1[i].hide(false);
 }
-}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, eventsFunctionContext.getArgument("TimerName"));
-}}
+}
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, eventsFunctionContext.getArgument("TimerName"));
+}
+}
 
 }
 
@@ -312,6 +322,7 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayText = func
 
 var that = this;
 var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
 var thisObjectList = [this];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var thisGDMainTextObjectsList = [...runtimeScene.getObjects("MainText")];
@@ -346,14 +357,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -361,7 +373,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }

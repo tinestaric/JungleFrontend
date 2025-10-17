@@ -17,7 +17,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.variableChildExists(runtimeScene.getGame().getVariables().get("__AdvancedHTTP").getChild("Requests").getChild(eventsFunctionContext.getArgument("Request")).getChild("Options"), "method");
 if (isConditionTrue_0) {
-{eventsFunctionContext.returnValue = gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("__AdvancedHTTP").getChild("Requests").getChild(eventsFunctionContext.getArgument("Request")).getChild("Options").getChild("method"));}}
+{eventsFunctionContext.returnValue = gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("__AdvancedHTTP").getChild("Requests").getChild(eventsFunctionContext.getArgument("Request")).getChild("Options").getChild("method"));}
+}
 
 }
 
@@ -29,7 +30,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtTools.variable.variableChildExists(runtimeScene.getGame().getVariables().get("__AdvancedHTTP").getChild("Requests").getChild(eventsFunctionContext.getArgument("Request")).getChild("Options"), "method"));
 if (isConditionTrue_0) {
-{eventsFunctionContext.returnValue = "GET";}}
+{eventsFunctionContext.returnValue = "GET";}
+}
 
 }
 
@@ -37,6 +39,7 @@ if (isConditionTrue_0) {
 };
 
 gdjs.evtsExt__AdvancedHTTP__RequestMethod.func = function(runtimeScene, Request, parentEventsFunctionContext) {
+let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -59,14 +62,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -74,7 +78,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }

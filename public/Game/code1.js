@@ -50,7 +50,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.FinishCode.GDScoreboardTimeObjects1.length ;i < len;++i) {
     gdjs.FinishCode.GDScoreboardTimeObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(Math.floor(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) / 60)) + ":0" + gdjs.evtTools.common.toString(Math.floor(gdjs.evtTools.common.mod(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)), 60))));
 }
-}}
+}
+}
 
 }
 
@@ -70,14 +71,18 @@ gdjs.copyArray(runtimeScene.getObjects("Transition"), gdjs.FinishCode.GDTransiti
 {for(var i = 0, len = gdjs.FinishCode.GDTransitionObjects1.length ;i < len;++i) {
     gdjs.FinishCode.GDTransitionObjects1[i].getBehavior("FlashTransitionPainter").PaintEffect("157;146;146", 1, "Circular", "Backward", 0, null);
 }
-}{gdjs.evtTools.camera.setCameraZoom(runtimeScene, 4, "", 0);
-}{for(var i = 0, len = gdjs.FinishCode.GDScoreboardNameObjects1.length ;i < len;++i) {
+}
+{gdjs.evtTools.camera.setCameraZoom(runtimeScene, 4, "", 0);
+}
+{for(var i = 0, len = gdjs.FinishCode.GDScoreboardNameObjects1.length ;i < len;++i) {
     gdjs.FinishCode.GDScoreboardNameObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(2).getAsString());
 }
-}{for(var i = 0, len = gdjs.FinishCode.GDScoreboardTimeObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.FinishCode.GDScoreboardTimeObjects1.length ;i < len;++i) {
     gdjs.FinishCode.GDScoreboardTimeObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(Math.floor(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) / 60)) + ":" + gdjs.evtTools.common.toString(Math.floor(gdjs.evtTools.common.mod(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)), 60))));
 }
 }
+
 { //Subevents
 gdjs.FinishCode.eventsList0(runtimeScene);} //End of subevents
 }
@@ -101,7 +106,8 @@ for (var i = 0, k = 0, l = gdjs.FinishCode.GDLeaderboardButtonObjects1.length;i<
 gdjs.FinishCode.GDLeaderboardButtonObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtsExt__URLTools__Redirect.func(runtimeScene, "https://companial-jungle.vercel.app/leaderboard?sessionId=" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(4)), null);
-}}
+}
+}
 
 }
 

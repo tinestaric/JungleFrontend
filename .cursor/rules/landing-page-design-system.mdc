@@ -1,0 +1,131 @@
+---
+alwaysApply: true
+description: Complete landing page design system and architecture
+---
+
+# Landing Page Design System & Architecture
+
+## Project Overview
+Retro pixel-art gaming landing pages with unified design system. Two main pages: Home (Frame 1) and Registration (Frame 2) with consistent styling and responsive behavior.
+
+## Design Aesthetic
+- **Theme**: Retro 8-bit/16-bit pixel-art gaming
+- **Background**: Pixelated jungle forest (`/public/landing/images/background.png`)
+- **Font**: BoldPixels throughout all text elements
+- **Colors**: Orange/yellow accents, white text, dark backgrounds
+- **Style**: Pixelated, chunky, arcade-game inspired
+
+## CSS Architecture (globals.css)
+All styling centralized in unified CSS classes - NO inline styles except dynamic states:
+
+### Layout Classes
+- `.landing-page` - Main container with jungle background and flex centering
+- `.landing-container` - Content wrapper with responsive max-widths
+- `.landing-header` - Header section with centered text alignment
+
+### Content Classes
+- `.landing-title` - Dynamics Explorer title image (max-width responsive)
+- `.landing-text` - Standard white text (1.25rem, BoldPixels font)
+- `.landing-text-large` - Larger subtitle text (2rem, for single-line content)
+
+### Button System
+- `.landing-button` - Button image containers (BTN-orange.png, BTN-gray.png)
+- `.landing-button-text` - Overlay text with responsive font sizes:
+  - Phone (≤768px): 1.25rem
+  - iPad (769px-1024px): 2rem
+  - Web (≥1025px): 2rem
+
+### Form System
+- `.landing-form-container` - Transparent form wrapper (no background)
+- `.landing-form-field` - Individual field containers with max-width
+- `.landing-form-input` - Input styling with textfill-back.png background (60px height)
+- `.landing-form-error` - Error message styling
+
+## Responsive Breakpoints
+Mobile-first approach with specific sizing:
+
+### Phone (≤768px)
+- Container: 320px max-width
+- Title: 280px max-width  
+- Buttons/Inputs: 280px max-width
+- Button text: 1.25rem
+
+### iPad (769px-1024px)
+- Container: 550px max-width
+- Title: 500px max-width
+- Buttons/Inputs: 450px max-width
+- Button text: 2rem
+
+### Web (≥1025px)
+- Container: 500px max-width
+- Title: 450px max-width
+- Buttons/Inputs: 400px max-width
+- Button text: 2rem
+
+## Component Structure
+
+### Home Page (page.tsx)
+```
+- Dynamics Explorer title image (with embedded companial logo)
+- Welcome text with line break after "gaming experience!"
+- Start Your Adventure button (BTN-orange)
+- View Leaderboard button (BTN-gray)
+- NO footer text
+```
+
+### Registration Page (register/page.tsx)
+```
+- Dynamics Explorer title image (with embedded companial logo)
+- "Register to start your conference challenge" subtitle (landing-text-large)
+- Form with 3 inputs: Full Name, Email, Company (NO labels)
+- Start Playing button (BTN-orange)
+- NO footer text
+```
+
+### Leaderboard Page (leaderboard/page.tsx)
+```
+- Jungle background (same as landing pages)
+- "Leaderboard" title (retro gaming style)
+- Semi-transparent dark container with table
+- Table with: Rank, Player, Company, Best Time, Date
+- Medal icons for top 3 positions
+- Three buttons using BTN-SM images: Play Again, Refresh, Home
+- Responsive design matching landing page breakpoints
+```
+
+## Image Optimization
+- Use Next.js `Image` component with required `width` and `height` props
+- Add `priority` prop for above-the-fold images (Dynamics Explorer title)
+- Handle aspect ratios in CSS, not inline styles
+- Assets in `/public/landing/images/` and `/public/landing/fonts/`
+
+## Key Design Principles
+1. **No Duplicate Branding**: Companial logo only in Dynamics Explorer image
+2. **Transparent Overlays**: Forms appear over jungle background
+3. **Consistent Spacing**: Unified margin/padding system
+4. **Pixelated Assets**: All images maintain retro aesthetic
+5. **Responsive Font**: Button text scales with screen size
+6. **Clean Forms**: No labels, placeholders indicate requirements
+
+## Technical Implementation
+- Next.js App Router with TypeScript
+- React Hook Form with Zod validation
+- Tailwind CSS for utilities (minimal usage)
+- Unified CSS classes for all styling
+- Mobile-first responsive design
+- Font-face declaration for BoldPixels in globals.css
+
+## File Organization
+- `/src/app/` - Pages and layouts
+- `/src/lib/` - Validation schemas and utilities  
+- `/src/types/` - TypeScript definitions
+- `/public/landing/` - All landing page assets
+- `/supabase/functions/` - Serverless functions
+
+## Development Guidelines
+- Always use CSS classes, avoid inline styles
+- Maintain responsive behavior across all breakpoints
+- Keep design consistent between pages
+- Use semantic HTML with proper accessibility
+- Optimize images for performance
+- Follow mobile-first responsive design principles

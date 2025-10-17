@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom fonts */
+@font-face {
+  font-family: 'BoldPixels';
+  src: url('/landing/fonts/BoldPixels1.4.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -141,5 +149,630 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+/* Utility: hide on phone/iPad, show on web (≥1025px) */
+.hide-on-tablet-and-down {
+  display: none;
+}
+
+/* Force-hide on ≤1024px for table headers and cells */
+@media (max-width: 1400px) {
+  th.hide-on-tablet-and-down,
+  td.hide-on-tablet-and-down {
+    display: none !important;
+  }
+}
+
+/* Compact 4-column layout on tablet-and-down: Rank | Player | Company | Best Time */
+@media (max-width: 1024px) {
+  .leaderboard-table {
+    table-layout: fixed; /* Prevent unexplained extra space by fixing column widths */
+    width: 100%;
+  }
+
+  /* 1st column (Rank) */
+  .leaderboard-table th:nth-child(1),
+  .leaderboard-table td:nth-child(1) {
+    width: 12%;
+  }
+
+  /* 2nd column (Player) - Allow wrapping */
+  .leaderboard-table th:nth-child(2),
+  .leaderboard-table td:nth-child(2) {
+    width: 48%;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  /* 3rd column (Company) - Less space, single row with ellipsis */
+  .leaderboard-table th:nth-child(3),
+  .leaderboard-table td:nth-child(3) {
+    width: 20%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  /* 4th column (Best Time) */
+  .leaderboard-table th:nth-child(4),
+  .leaderboard-table td:nth-child(4) {
+    width: 20%;
+    text-align: right;
+  }
+}
+
+/* iPad-specific styling for column widths */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* 1st column (Rank) */
+  .leaderboard-table th:nth-child(1),
+  .leaderboard-table td:nth-child(1) {
+    width: 8%;
+  }
+
+  /* 2nd column (Player) - Allow wrapping on iPad */
+  .leaderboard-table th:nth-child(2),
+  .leaderboard-table td:nth-child(2) {
+    width: 52%;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  /* 3rd column (Company) - Less space, single row with ellipsis */
+  .leaderboard-table th:nth-child(3),
+  .leaderboard-table td:nth-child(3) {
+    width: 20%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  /* 4th column (Best Time) */
+  .leaderboard-table th:nth-child(4),
+  .leaderboard-table td:nth-child(4) {
+    width: 20%;
+    text-align: right;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hide-on-tablet-and-down {
+    display: table-cell !important;
+  }
+
+  /* Desktop column widths for 5 columns: Rank | Player | Company | Best Time | Date */
+
+  .leaderboard-table th:nth-child(1),
+  .leaderboard-table td:nth-child(1) {
+    width: 8%;
+  }
+
+  .leaderboard-table th:nth-child(2),
+  .leaderboard-table td:nth-child(2) {
+    width: 35%;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  .leaderboard-table th:nth-child(3),
+  .leaderboard-table td:nth-child(3) {
+    width: 25%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .leaderboard-table th:nth-child(4),
+  .leaderboard-table td:nth-child(4) {
+    width: 17%;
+    text-align: right;
+  }
+
+  .leaderboard-table th:nth-child(5),
+  .leaderboard-table td:nth-child(5) {
+    width: 15%;
+    text-align: center;
+  }
+}
+
+/* Landing page unified styles */
+.landing-page {
+  min-height: 100vh;
+  background-image: url('/landing/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'BoldPixels', sans-serif;
+}
+
+.landing-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 0 1rem;
+}
+
+.landing-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.landing-title {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+}
+
+.landing-text {
+  color: white;
+  font-size: 1.25rem;
+  margin: 0;
+  line-height: 1.5;
+  font-family: 'BoldPixels', sans-serif;
+}
+
+.landing-text-large {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1.25;
+  font-family: 'BoldPixels', sans-serif;
+}
+
+.landing-button {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+.landing-button-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-weight: bold;
+  font-family: 'BoldPixels', sans-serif;
+  text-align: center;
+  pointer-events: none;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.landing-form-container {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-family: 'BoldPixels', sans-serif;
+}
+
+.landing-form-input {
+  width: 100%;
+  max-width: 400px;
+  height: 60px;
+  background-image: url('/landing/images/textfill-back.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0;
+  font-size: 1.25rem;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'BoldPixels', sans-serif;
+  background-color: transparent;
+  padding: 0 1rem;
+  color: #555;
+}
+
+.landing-form-error {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  margin: 0.25rem 0 0 0;
+  font-family: 'BoldPixels', sans-serif;
+}
+
+.landing-form-error-container {
+  background-color: #fef2f2;
+  border: 2px solid #dc2626;
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.landing-form-error-text {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin: 0;
+  font-family: 'BoldPixels', sans-serif;
+}
+
+.landing-form-field {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Landing page responsive styles */
+@media (max-width: 768px) {
+  .landing-container {
+    max-width: 320px !important;
+  }
+  .landing-title {
+    max-width: 280px !important;
+  }
+  .landing-button {
+    max-width: 280px !important;
+  }
+  .landing-button-text {
+    font-size: 1.25rem !important; /* Phone size - keep current */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .landing-container {
+    max-width: 550px !important; /* iPad - bigger container */
+  }
+  .landing-title {
+    max-width: 500px !important; /* iPad - bigger title */
+  }
+  .landing-button {
+    max-width: 450px !important; /* iPad - bigger buttons */
+  }
+  .landing-form-input {
+    max-width: 450px !important; /* iPad - bigger form inputs */
+  }
+  .landing-form-field {
+    max-width: 450px !important; /* iPad - bigger form field containers */
+  }
+  .landing-button-text {
+    font-size: 2rem !important; /* iPad size - bigger */
+  }
+}
+
+@media (min-width: 1025px) {
+  .landing-button-text {
+    font-size: 2rem !important; /* Web size - even bigger */
+  }
+}
+
+/* Leaderboard Styling */
+.leaderboard-page {
+  min-height: 100vh;
+  background-image: url('/landing/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'BoldPixels', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.leaderboard-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.leaderboard-title {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: 'BoldPixels', monospace;
+}
+
+.leaderboard-table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  table-layout: fixed;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 0.75rem;
+  text-align: left;
+  color: #e6e6e6;
+  font-family: system-ui, -apple-system, sans-serif;
+  box-sizing: border-box;
+}
+
+.leaderboard-table th {
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 1.125rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.leaderboard-table td {
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.leaderboard-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.leaderboard-rank {
+  text-align: center;
+  font-weight: bold;
+  color: #fbbf24;
+}
+
+.leaderboard-table td.leaderboard-time {
+  color: #b27600;
+  font-weight: bold;
+  text-align: right;
+}
+
+.leaderboard-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.leaderboard-button {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.leaderboard-button img {
+  width: 200px;
+  height: 56px;
+  max-width: 200px;
+  height: auto;
+}
+
+.leaderboard-button-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: bold;
+  font-family: 'BoldPixels', monospace;
+  font-size: 1rem;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+  pointer-events: none;
+}
+
+.leaderboard-loading {
+  color: white;
+  font-size: 1.25rem;
+  font-family: 'BoldPixels', monospace;
+}
+
+.leaderboard-error {
+  color: #ef4444;
+  font-size: 1.125rem;
+  font-family: 'BoldPixels', monospace;
+  margin-bottom: 2rem;
+}
+
+/* Medal Icons */
+.medal-gold {
+  color: #fbbf24;
+}
+
+.medal-silver {
+  color: #9ca3af;
+}
+
+.medal-bronze {
+  color: #cd7f32;
+}
+
+/* Responsive Design for Leaderboard */
+@media (max-width: 768px) {
+  .leaderboard-container {
+    max-width: 95vw;
+    padding: 1rem;
+  }
+  
+  .leaderboard-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.75rem;
+  }
+  
+  .leaderboard-button img {
+    width: 180px;
+    height: 50px;
+  }
+  
+  .leaderboard-button-text {
+    font-size: 1.5rem;
+  }
+  
+  .leaderboard-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .leaderboard-container {
+    max-width: 90vw;
+    padding: 1.5rem;
+  }
+  
+  .leaderboard-title {
+    font-size: 2.25rem;
+  }
+  
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .leaderboard-button img {
+    width: 200px;
+    height: 56px;
+  }
+  
+  .leaderboard-button-text {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .leaderboard-container {
+    max-width: 90vw;
+    padding: 2rem;
+  }
+  
+  .leaderboard-title {
+    font-size: 2.5rem;
+  }
+  
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 0.75rem;
+    font-size: 1.125rem;
+  }
+  
+  .leaderboard-button img {
+    width: 220px;
+    height: 60px;
+  }
+  
+  .leaderboard-button-text {
+    font-size: 1.25rem;
+  }
+}
+
+/* Landscape handling: keep compact/mobile layout on short, wide screens */
+@media (max-width: 768px) and (orientation: landscape) {
+  /* Leaderboard */
+  .leaderboard-container {
+    max-width: 95vw;
+    padding: 0.75rem;
+  }
+  .leaderboard-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  .leaderboard-table {
+    display: table; /* keep table layout so columns fill width */
+  }
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  .leaderboard-buttons {
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+  .leaderboard-button img {
+    width: 180px;
+    height: 50px;
+  }
+  .leaderboard-button-text {
+    font-size: 1rem;
+  }
+
+  /* Landing pages (home/register) */
+  .landing-container {
+    max-width: 560px;
+    padding: 0 0.75rem;
+  }
+  .landing-header {
+    margin-bottom: 1.25rem;
+  }
+  .landing-title {
+    max-width: 420px;
+  }
+  .landing-button {
+    max-width: 380px;
+  }
+  .landing-button-text {
+    font-size: 1rem !important;
+  }
+}
+
+/* Short landscape viewports (e.g., phone landscape that exceeds 768px width) */
+@media (max-height: 600px) and (orientation: landscape) {
+  /* Leaderboard */
+  .leaderboard-container {
+    max-width: 800px;
+    padding: 0.75rem 1rem;
+  }
+  .leaderboard-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  .leaderboard-table {
+    display: table; /* keep table layout so columns fill width */
+  }
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 0.5rem 0.625rem;
+    font-size: 0.875rem;
+  }
+  .leaderboard-buttons {
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+  .leaderboard-button img {
+    width: 190px;
+    height: 54px;
+  }
+  .leaderboard-button-text {
+    font-size: 1.125rem;
+  }
+
+  /* Landing pages (home/register) */
+  .landing-container {
+    max-width: 680px;
+    padding: 0 1rem;
+  }
+  .landing-header {
+    margin-bottom: 1.25rem;
+  }
+  .landing-title {
+    max-width: 460px;
+  }
+  .landing-button {
+    max-width: 420px;
+  }
+  .landing-button-text {
+    font-size: 1.25rem !important;
   }
 }

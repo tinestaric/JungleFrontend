@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__AdvancedHTTP__ExecuteRequest !== "undefined") {
 gdjs.evtsExt__AdvancedHTTP__ExecuteRequest = {};
 
 
-gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.userFunc0x1049030 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.userFunc0x106b138 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const logger = (this.logger || (this.logger = new gdjs.Logger("Advanced HTTP")));
 const advancedHTTP = (gdjs._advancedHTTP || (gdjs._advancedHTTP = { responses: new Map(), id: 1 }));
@@ -104,7 +104,7 @@ gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.eventsList0 = function(runtimeScene, 
 {
 
 
-gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.userFunc0x1049030(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.userFunc0x106b138(runtimeScene, eventsFunctionContext);
 
 }
 
@@ -112,6 +112,7 @@ gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.userFunc0x1049030(runtimeScene, event
 };
 
 gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func = function(runtimeScene, Request, Response, parentEventsFunctionContext) {
+let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   task: new gdjs.ManuallyResolvableTask(),
   _objectsMap: {
@@ -135,14 +136,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -150,7 +152,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
