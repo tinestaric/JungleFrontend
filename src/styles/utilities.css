@@ -1,0 +1,20 @@
+/* Utilities used across pages */
+.hide-on-tablet-and-down { display: none; }
+
+@media (min-width: 1400px) { /* desktop */
+  .hide-on-tablet-and-down { display: table-cell !important; }
+}
+
+.overlay-card {
+  background-color: var(--bg-overlay);
+  border: var(--border-overlay);
+  border-radius: var(--radius-md);
+}
+
+.button-sprite { position: relative; display: inline-block; }
+.button-sprite-text {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  font-weight: bold; text-align: center; white-space: nowrap; width: 100%; pointer-events: none;
+}
+
+

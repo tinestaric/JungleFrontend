@@ -1,0 +1,45 @@
+/* Landing pages (home/register) */
+.landing-page {
+  min-height: 100vh;
+  background-image: url('/landing/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'BoldPixels', sans-serif;
+}
+
+.landing-container { width: 100%; max-width: 500px; padding: 0 1rem; }
+.landing-header { text-align: center; margin-bottom: 2rem; }
+.landing-title { width: 100%; height: auto; max-width: 450px; }
+
+.landing-text { color: white; font-size: 1.25rem; margin: 0; line-height: 1.5; font-family: 'BoldPixels', sans-serif; }
+.landing-text-large { color: white; font-size: 2rem; margin: 0; line-height: 1.25; font-family: 'BoldPixels', sans-serif; }
+
+.landing-button { width: 100%; height: auto; max-width: 400px; }
+.landing-button-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #000; font-weight: bold; font-family: 'BoldPixels', sans-serif; font-size: 2rem; text-align: center; pointer-events: none; white-space: nowrap; width: 100%; }
+
+.landing-form-container { background-color: transparent; border-radius: 0; padding: 0; margin-bottom: 1rem; box-shadow: none; border: none; display: flex; flex-direction: column; align-items: center; }
+.landing-form-input { width: 100%; max-width: 400px; height: 60px; background-image: url('/landing/images/textfill-back.png'); background-size: 100% 100%; background-repeat: no-repeat; border: none; border-radius: 0; font-size: 1.25rem; outline: none; box-sizing: border-box; font-family: 'BoldPixels', sans-serif; background-color: transparent; padding: 0 1rem; color: #555; }
+.landing-form-error { color: #ef4444; font-size: 0.875rem; margin: 0.25rem 0 0 0; font-family: 'BoldPixels', sans-serif; }
+.landing-form-field { margin-bottom: 1.5rem; width: 100%; max-width: 400px; }
+
+@media (max-width: 768px) { /* phone */
+  .landing-container { max-width: 320px !important; }
+  .landing-title { max-width: 280px !important; }
+  .landing-button { max-width: 280px !important; }
+  .landing-button-text { font-size: 1.5rem !important; }
+}
+
+@media (min-width: 769px) and (max-width: 1400px) { /* tablet */
+  .landing-container { max-width: 550px !important; }
+  .landing-title { max-width: 500px !important; }
+  .landing-button { max-width: 450px !important; }
+  .landing-form-input { max-width: 450px !important; }
+  .landing-form-field { max-width: 450px !important; }
+}
+
+

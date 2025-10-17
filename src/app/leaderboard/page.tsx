@@ -168,6 +168,31 @@ function LeaderboardContent() {
               </tbody>
             </table>
 
+            {/* Your Position (outside top 10) */}
+            {currentPlayer && hasCompleted && currentPlayer.rank > 10 && (
+              <div className="leaderboard-your-section">
+                <div className="leaderboard-your-heading">Your Position</div>
+                <div className="leaderboard-your-row">
+                  <div className="leaderboard-your-cell leaderboard-your-rank">
+                    #{currentPlayer.rank}
+                  </div>
+                  <div className="leaderboard-your-cell leaderboard-your-name">
+                    {currentPlayer.name}
+                  </div>
+                  <div className="leaderboard-your-cell leaderboard-your-company">
+                    {currentPlayer.company || 'N/A'}
+                  </div>
+                  <div className="leaderboard-your-cell leaderboard-your-time">
+                    {formatTime(currentPlayer.bestTime, currentPlayer.rank)}
+                  </div>
+                  <div className="leaderboard-your-cell leaderboard-your-date hide-on-tablet-and-down">
+                    {new Date(currentPlayer.completedAt).toLocaleDateString()}
+                  </div>
+                </div>
+                <div className="leaderboard-your-meta">Out of {totalPlayers} players</div>
+              </div>
+            )}
+
             {/* Action Buttons */}
             <div className="leaderboard-buttons">
               <button

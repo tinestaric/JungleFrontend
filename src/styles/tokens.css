@@ -1,0 +1,30 @@
+:root {
+  /* Colors */
+  --color-text: #ffffff;
+  --color-text-muted: #cfcfcf;
+  --color-accent: #fbbf24; /* medals/rank */
+  --color-time: #b27600;   /* best time */
+  --bg-overlay: rgba(0, 0, 0, 0.7);
+  --bg-overlay-strong: rgba(0, 0, 0, 0.8);
+
+  /* Borders & Radius */
+  --border-overlay: 2px solid rgba(255, 255, 255, 0.2);
+  --radius-md: 8px;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  /* Leaderboard column widths (desktop defaults) */
+  --col-rank: 8%;
+  --col-player: 35%;
+  --col-company: 25%;
+  --col-time: 17%;
+  --col-date: 15%;
+}
+
+
