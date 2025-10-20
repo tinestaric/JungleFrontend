@@ -58,9 +58,17 @@
 
 /* Buttons */
 .leaderboard-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-.leaderboard-button { position: relative; display: inline-block; text-decoration: none; }
-.leaderboard-button img { width: 200px; height: 56px; max-width: 200px; height: auto; }
+.leaderboard-button { position: relative; display: inline-block; text-decoration: none; cursor: pointer; }
+.leaderboard-button img { width: 200px; max-width: 200px; height: auto; }
+.leaderboard-button-reset { border: none; background: none; }
+.leaderboard-tag-me { margin-left: 0.5rem; color: #fbbf24; }
 .leaderboard-button-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-weight: bold; font-family: 'BoldPixels', monospace; font-size: 2rem; text-align: center; white-space: nowrap; width: 100%; pointer-events: none; }
+
+/* Hover/focus affordance; DARK sprite only on press (handled in TS) */
+.leaderboard-button img { transition: transform 120ms ease, filter 120ms ease; }
+.leaderboard-button:hover img { transform: translateY(-2px); filter: brightness(1.06) saturate(1.05); }
+.leaderboard-button:active img { transform: translateY(0); }
+.leaderboard-button:focus-visible { outline: 2px dashed rgba(255,255,255,0.9); outline-offset: 4px; }
 
 /* Your Position */
 .leaderboard-your-section { background-color: var(--bg-overlay-strong); border: var(--border-overlay); border-radius: var(--radius-md); padding: var(--space-3) var(--space-4); margin: 0 auto var(--space-6) auto; color: #e6e6e6; max-width: 100%; box-sizing: border-box; text-align: center; }

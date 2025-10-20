@@ -10,6 +10,7 @@ import Image from 'next/image'
 export default function RegisterPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [submitPressed, setSubmitPressed] = useState(false)
 
   const {
     register,
@@ -58,17 +59,15 @@ export default function RegisterPage() {
         <div className="landing-header">
           
           {/* Dynamics Explorer Title Image */}
-          <div style={{
-            marginBottom: '1rem'
-          }}>
-            <Image 
-              src="/landing/images/Dynamics explorer.png" 
-              alt="DYNAMICS EXPLORER"
-              className="landing-title"
-              width={500}
-              height={120}
-            />
-          </div>
+          <h1 className="sr-only">DYNAMICS EXPLORER</h1>
+          <Image 
+            src="/landing/images/Dynamics explorer.png" 
+            alt="DYNAMICS EXPLORER"
+            className="landing-title"
+            width={500}
+            height={120}
+            priority
+          />
           
           {/* Subtitle */}
           <p className="landing-text-large">
@@ -78,7 +77,7 @@ export default function RegisterPage() {
 
         {/* Form Tile */}
         <div className="landing-form-container">
-          <form onSubmit={handleSubmit(onSubmit)} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <form onSubmit={handleSubmit(onSubmit)} className="landing-form">
             {/* Name Field */}
             <div className="landing-form-field">
               <input
@@ -134,29 +133,26 @@ export default function RegisterPage() {
             )}
 
             {/* Submit Button */}
-            <div style={{ position: 'relative', width: '100%' }}>
+            <div className="landing-submit-wrapper">
               <button
                 type="submit"
                 disabled={isSubmitting}
-                style={{
-                  width: '100%',
-                  background: 'none',
-                  border: 'none',
-                  padding: 0,
-                  cursor: isSubmitting ? 'not-allowed' : 'pointer',
-                  position: 'relative'
-                }}
+                style={{ width: '100%', background: 'none', border: 'none', padding: 0, cursor: isSubmitting ? 'not-allowed' : 'pointer', position: 'relative' }}
+                onMouseDown={() => setSubmitPressed(true)}
+                onMouseUp={() => setSubmitPressed(false)}
+                onMouseLeave={() => setSubmitPressed(false)}
+                onTouchStart={() => setSubmitPressed(true)}
+                onTouchEnd={() => setSubmitPressed(false)}
+                onTouchCancel={() => setSubmitPressed(false)}
+                aria-label={isSubmitting ? 'Registering' : 'Start playing'}
               >
                 <Image 
-                  src="/landing/images/BTN-orange.png" 
+                  src={submitPressed || isSubmitting ? '/landing/images/BTN-orange DARK.png' : '/landing/images/BTN-orange.png'} 
                   alt="Start Playing"
                   className="landing-button"
                   width={450}
                   height={60}
-                  style={{
-                    opacity: isSubmitting ? 0.6 : 1,
-                    transition: 'opacity 0.2s'
-                  }}
+                  style={{ opacity: isSubmitting ? 0.6 : 1, transition: 'opacity 0.2s' }}
                 />
                 <div className="landing-button-text">
                   {isSubmitting ? 'Registering...' : 'Start Playing'}

@@ -14,6 +14,9 @@ function LeaderboardContent() {
   const [hasCompleted, setHasCompleted] = useState(false)
   const [totalPlayers, setTotalPlayers] = useState(0)
   const [isCreatingNewSession, setIsCreatingNewSession] = useState(false)
+  const [playPressed, setPlayPressed] = useState(false)
+  const [refreshPressed, setRefreshPressed] = useState(false)
+  const [homePressed, setHomePressed] = useState(false)
   
   const searchParams = useSearchParams()
   const sessionId = searchParams.get('sessionId')
@@ -154,11 +157,11 @@ function LeaderboardContent() {
                     </td>
                     <td>
                       {entry.name}
-                      {entry.name === currentPlayer?.name && (
-                        <span style={{ marginLeft: '0.5rem', color: '#fbbf24' }}>
-                          (You)
-                        </span>
-                      )}
+                    {entry.name === currentPlayer?.name && (
+                      <span className="leaderboard-tag-me">
+                        (You)
+                      </span>
+                    )}
                     </td>
                     <td>{entry.company || 'N/A'}</td>
                     <td className="leaderboard-time">{formatTime(entry.bestTime, entry.rank)}</td>
@@ -198,11 +201,18 @@ function LeaderboardContent() {
               <button
                 onClick={handlePlayButton}
                 disabled={isCreatingNewSession}
-                className="leaderboard-button"
-                style={{ border: 'none', background: 'none', cursor: isCreatingNewSession ? 'not-allowed' : 'pointer' }}
+                className="leaderboard-button leaderboard-button-reset"
+                style={{ cursor: isCreatingNewSession ? 'not-allowed' : 'pointer' }}
+                onMouseDown={() => setPlayPressed(true)}
+                onMouseUp={() => setPlayPressed(false)}
+                onMouseLeave={() => setPlayPressed(false)}
+                onTouchStart={() => setPlayPressed(true)}
+                onTouchEnd={() => setPlayPressed(false)}
+                onTouchCancel={() => setPlayPressed(false)}
+                aria-label={sessionId ? "Play again" : "Play game"}
               >
                 <Image 
-                  src="/landing/images/BTN-orange-SM.png" 
+                  src={playPressed ? "/landing/images/BTN-orange-SM DARK.png" : "/landing/images/BTN-orange-SM.png"}
                   alt={sessionId ? "Play Again" : "Play Game"}
                   width={220}
                   height={60}
@@ -215,11 +225,18 @@ function LeaderboardContent() {
               <button
                 onClick={fetchLeaderboard}
                 disabled={loading}
-                className="leaderboard-button"
-                style={{ border: 'none', background: 'none', cursor: loading ? 'not-allowed' : 'pointer' }}
+                className="leaderboard-button leaderboard-button-reset"
+                style={{ cursor: loading ? 'not-allowed' : 'pointer' }}
+                onMouseDown={() => setRefreshPressed(true)}
+                onMouseUp={() => setRefreshPressed(false)}
+                onMouseLeave={() => setRefreshPressed(false)}
+                onTouchStart={() => setRefreshPressed(true)}
+                onTouchEnd={() => setRefreshPressed(false)}
+                onTouchCancel={() => setRefreshPressed(false)}
+                aria-label="Refresh leaderboard"
               >
                 <Image 
-                  src="/landing/images/BTN-orange-SM.png" 
+                  src={refreshPressed ? "/landing/images/BTN-orange-SM DARK.png" : "/landing/images/BTN-orange-SM.png"}
                   alt="Refresh"
                   width={220}
                   height={60}
@@ -229,9 +246,16 @@ function LeaderboardContent() {
                 </div>
               </button>
 
-              <Link href="/" className="leaderboard-button">
+              <Link href="/" className="leaderboard-button" aria-label="Home"
+                onMouseDown={() => setHomePressed(true)}
+                onMouseUp={() => setHomePressed(false)}
+                onMouseLeave={() => setHomePressed(false)}
+                onTouchStart={() => setHomePressed(true)}
+                onTouchEnd={() => setHomePressed(false)}
+                onTouchCancel={() => setHomePressed(false)}
+              >
                 <Image 
-                  src="/landing/images/BTN-gray-SM.png" 
+                  src={homePressed ? "/landing/images/BTN-gray-SM DARK.png" : "/landing/images/BTN-gray-SM.png"}
                   alt="Home"
                   width={220}
                   height={60}
