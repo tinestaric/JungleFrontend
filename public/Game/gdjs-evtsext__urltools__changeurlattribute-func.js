@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__URLTools__ChangeURLAttribute !== "undefined") {
 gdjs.evtsExt__URLTools__ChangeURLAttribute = {};
 
 
-gdjs.evtsExt__URLTools__ChangeURLAttribute.userFunc0x1031868 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__URLTools__ChangeURLAttribute.userFunc0x1466df8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const url = new URL(eventsFunctionContext.getArgument("URL"));
 url[eventsFunctionContext.getArgument("part")] = eventsFunctionContext.getArgument("val");
@@ -20,7 +20,7 @@ gdjs.evtsExt__URLTools__ChangeURLAttribute.eventsList0 = function(runtimeScene, 
 {
 
 
-gdjs.evtsExt__URLTools__ChangeURLAttribute.userFunc0x1031868(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__URLTools__ChangeURLAttribute.userFunc0x1466df8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -28,7 +28,6 @@ gdjs.evtsExt__URLTools__ChangeURLAttribute.userFunc0x1031868(runtimeScene, event
 };
 
 gdjs.evtsExt__URLTools__ChangeURLAttribute.func = function(runtimeScene, URL, part, val, parentEventsFunctionContext) {
-let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -51,15 +50,14 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
+      const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;
-    }
+      return object;    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -67,7 +65,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
+        count += parentEventsFunctionContext ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }

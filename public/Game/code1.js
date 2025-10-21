@@ -10,10 +10,6 @@ gdjs.FinishCode.GDTree2Objects1= [];
 gdjs.FinishCode.GDTree2Objects2= [];
 gdjs.FinishCode.GDBush1Objects1= [];
 gdjs.FinishCode.GDBush1Objects2= [];
-gdjs.FinishCode.GDHouse1Objects1= [];
-gdjs.FinishCode.GDHouse1Objects2= [];
-gdjs.FinishCode.GDHouse2Objects1= [];
-gdjs.FinishCode.GDHouse2Objects2= [];
 gdjs.FinishCode.GDTilemap_9595GroundObjects1= [];
 gdjs.FinishCode.GDTilemap_9595GroundObjects2= [];
 gdjs.FinishCode.GDNPClvl2Objects1= [];
@@ -32,6 +28,8 @@ gdjs.FinishCode.GDScoreboardTimeObjects1= [];
 gdjs.FinishCode.GDScoreboardTimeObjects2= [];
 gdjs.FinishCode.GDLeaderboardButtonObjects1= [];
 gdjs.FinishCode.GDLeaderboardButtonObjects2= [];
+gdjs.FinishCode.GDNewTileMapScoreObjects1= [];
+gdjs.FinishCode.GDNewTileMapScoreObjects2= [];
 gdjs.FinishCode.GDTransitionObjects1= [];
 gdjs.FinishCode.GDTransitionObjects2= [];
 
@@ -50,8 +48,7 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.FinishCode.GDScoreboardTimeObjects1.length ;i < len;++i) {
     gdjs.FinishCode.GDScoreboardTimeObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(Math.floor(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) / 60)) + ":0" + gdjs.evtTools.common.toString(Math.floor(gdjs.evtTools.common.mod(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)), 60))));
 }
-}
-}
+}}
 
 }
 
@@ -69,20 +66,16 @@ gdjs.copyArray(runtimeScene.getObjects("ScoreboardName"), gdjs.FinishCode.GDScor
 gdjs.copyArray(runtimeScene.getObjects("ScoreboardTime"), gdjs.FinishCode.GDScoreboardTimeObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Transition"), gdjs.FinishCode.GDTransitionObjects1);
 {for(var i = 0, len = gdjs.FinishCode.GDTransitionObjects1.length ;i < len;++i) {
-    gdjs.FinishCode.GDTransitionObjects1[i].getBehavior("FlashTransitionPainter").PaintEffect("157;146;146", 1, "Circular", "Backward", 0, null);
+    gdjs.FinishCode.GDTransitionObjects1[i].getBehavior("FlashTransitionPainter").PaintEffect("157;146;146", 1, "Circular", "Backward", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
-}
-{gdjs.evtTools.camera.setCameraZoom(runtimeScene, 4, "", 0);
-}
-{for(var i = 0, len = gdjs.FinishCode.GDScoreboardNameObjects1.length ;i < len;++i) {
+}{gdjs.evtTools.camera.setCameraZoom(runtimeScene, 4, "", 0);
+}{for(var i = 0, len = gdjs.FinishCode.GDScoreboardNameObjects1.length ;i < len;++i) {
     gdjs.FinishCode.GDScoreboardNameObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(2).getAsString());
 }
-}
-{for(var i = 0, len = gdjs.FinishCode.GDScoreboardTimeObjects1.length ;i < len;++i) {
+}{for(var i = 0, len = gdjs.FinishCode.GDScoreboardTimeObjects1.length ;i < len;++i) {
     gdjs.FinishCode.GDScoreboardTimeObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(Math.floor(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) / 60)) + ":" + gdjs.evtTools.common.toString(Math.floor(gdjs.evtTools.common.mod(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)), 60))));
 }
 }
-
 { //Subevents
 gdjs.FinishCode.eventsList0(runtimeScene);} //End of subevents
 }
@@ -97,7 +90,7 @@ gdjs.copyArray(runtimeScene.getObjects("LeaderboardButton"), gdjs.FinishCode.GDL
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.FinishCode.GDLeaderboardButtonObjects1.length;i<l;++i) {
-    if ( gdjs.FinishCode.GDLeaderboardButtonObjects1[i].IsClicked(null) ) {
+    if ( gdjs.FinishCode.GDLeaderboardButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
         gdjs.FinishCode.GDLeaderboardButtonObjects1[k] = gdjs.FinishCode.GDLeaderboardButtonObjects1[i];
         ++k;
@@ -105,9 +98,8 @@ for (var i = 0, k = 0, l = gdjs.FinishCode.GDLeaderboardButtonObjects1.length;i<
 }
 gdjs.FinishCode.GDLeaderboardButtonObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtsExt__URLTools__Redirect.func(runtimeScene, "https://companial-jungle.vercel.app/leaderboard?sessionId=" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(4)), null);
-}
-}
+{gdjs.evtsExt__URLTools__Redirect.func(runtimeScene, "https://companial-jungle.vercel.app/leaderboard?sessionId=" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(4)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
 
 }
 
@@ -127,10 +119,6 @@ gdjs.FinishCode.GDTree2Objects1.length = 0;
 gdjs.FinishCode.GDTree2Objects2.length = 0;
 gdjs.FinishCode.GDBush1Objects1.length = 0;
 gdjs.FinishCode.GDBush1Objects2.length = 0;
-gdjs.FinishCode.GDHouse1Objects1.length = 0;
-gdjs.FinishCode.GDHouse1Objects2.length = 0;
-gdjs.FinishCode.GDHouse2Objects1.length = 0;
-gdjs.FinishCode.GDHouse2Objects2.length = 0;
 gdjs.FinishCode.GDTilemap_9595GroundObjects1.length = 0;
 gdjs.FinishCode.GDTilemap_9595GroundObjects2.length = 0;
 gdjs.FinishCode.GDNPClvl2Objects1.length = 0;
@@ -149,6 +137,8 @@ gdjs.FinishCode.GDScoreboardTimeObjects1.length = 0;
 gdjs.FinishCode.GDScoreboardTimeObjects2.length = 0;
 gdjs.FinishCode.GDLeaderboardButtonObjects1.length = 0;
 gdjs.FinishCode.GDLeaderboardButtonObjects2.length = 0;
+gdjs.FinishCode.GDNewTileMapScoreObjects1.length = 0;
+gdjs.FinishCode.GDNewTileMapScoreObjects2.length = 0;
 gdjs.FinishCode.GDTransitionObjects1.length = 0;
 gdjs.FinishCode.GDTransitionObjects2.length = 0;
 
@@ -163,10 +153,6 @@ gdjs.FinishCode.GDTree2Objects1.length = 0;
 gdjs.FinishCode.GDTree2Objects2.length = 0;
 gdjs.FinishCode.GDBush1Objects1.length = 0;
 gdjs.FinishCode.GDBush1Objects2.length = 0;
-gdjs.FinishCode.GDHouse1Objects1.length = 0;
-gdjs.FinishCode.GDHouse1Objects2.length = 0;
-gdjs.FinishCode.GDHouse2Objects1.length = 0;
-gdjs.FinishCode.GDHouse2Objects2.length = 0;
 gdjs.FinishCode.GDTilemap_9595GroundObjects1.length = 0;
 gdjs.FinishCode.GDTilemap_9595GroundObjects2.length = 0;
 gdjs.FinishCode.GDNPClvl2Objects1.length = 0;
@@ -185,6 +171,8 @@ gdjs.FinishCode.GDScoreboardTimeObjects1.length = 0;
 gdjs.FinishCode.GDScoreboardTimeObjects2.length = 0;
 gdjs.FinishCode.GDLeaderboardButtonObjects1.length = 0;
 gdjs.FinishCode.GDLeaderboardButtonObjects2.length = 0;
+gdjs.FinishCode.GDNewTileMapScoreObjects1.length = 0;
+gdjs.FinishCode.GDNewTileMapScoreObjects2.length = 0;
 gdjs.FinishCode.GDTransitionObjects1.length = 0;
 gdjs.FinishCode.GDTransitionObjects2.length = 0;
 

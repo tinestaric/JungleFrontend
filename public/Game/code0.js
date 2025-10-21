@@ -2,11 +2,35 @@ gdjs.OverworldCode = {};
 gdjs.OverworldCode.localVariables = [];
 gdjs.OverworldCode.forEachIndex2 = 0;
 
+gdjs.OverworldCode.forEachIndex3 = 0;
+
+gdjs.OverworldCode.forEachIndex4 = 0;
+
+gdjs.OverworldCode.forEachIndex5 = 0;
+
 gdjs.OverworldCode.forEachObjects2 = [];
+
+gdjs.OverworldCode.forEachObjects3 = [];
+
+gdjs.OverworldCode.forEachObjects4 = [];
+
+gdjs.OverworldCode.forEachObjects5 = [];
 
 gdjs.OverworldCode.forEachTemporary2 = null;
 
+gdjs.OverworldCode.forEachTemporary3 = null;
+
+gdjs.OverworldCode.forEachTemporary4 = null;
+
+gdjs.OverworldCode.forEachTemporary5 = null;
+
 gdjs.OverworldCode.forEachTotalCount2 = 0;
+
+gdjs.OverworldCode.forEachTotalCount3 = 0;
+
+gdjs.OverworldCode.forEachTotalCount4 = 0;
+
+gdjs.OverworldCode.forEachTotalCount5 = 0;
 
 gdjs.OverworldCode.GDTextDialogObjects1= [];
 gdjs.OverworldCode.GDTextDialogObjects2= [];
@@ -20,12 +44,12 @@ gdjs.OverworldCode.GDPlayerObjects3= [];
 gdjs.OverworldCode.GDPlayerObjects4= [];
 gdjs.OverworldCode.GDPlayerObjects5= [];
 gdjs.OverworldCode.GDPlayerObjects6= [];
-gdjs.OverworldCode.GDNPCObjects1= [];
-gdjs.OverworldCode.GDNPCObjects2= [];
-gdjs.OverworldCode.GDNPCObjects3= [];
-gdjs.OverworldCode.GDNPCObjects4= [];
-gdjs.OverworldCode.GDNPCObjects5= [];
-gdjs.OverworldCode.GDNPCObjects6= [];
+gdjs.OverworldCode.GDNPC_95951Objects1= [];
+gdjs.OverworldCode.GDNPC_95951Objects2= [];
+gdjs.OverworldCode.GDNPC_95951Objects3= [];
+gdjs.OverworldCode.GDNPC_95951Objects4= [];
+gdjs.OverworldCode.GDNPC_95951Objects5= [];
+gdjs.OverworldCode.GDNPC_95951Objects6= [];
 gdjs.OverworldCode.GDTree1Objects1= [];
 gdjs.OverworldCode.GDTree1Objects2= [];
 gdjs.OverworldCode.GDTree1Objects3= [];
@@ -44,18 +68,6 @@ gdjs.OverworldCode.GDBush1Objects3= [];
 gdjs.OverworldCode.GDBush1Objects4= [];
 gdjs.OverworldCode.GDBush1Objects5= [];
 gdjs.OverworldCode.GDBush1Objects6= [];
-gdjs.OverworldCode.GDHouse1Objects1= [];
-gdjs.OverworldCode.GDHouse1Objects2= [];
-gdjs.OverworldCode.GDHouse1Objects3= [];
-gdjs.OverworldCode.GDHouse1Objects4= [];
-gdjs.OverworldCode.GDHouse1Objects5= [];
-gdjs.OverworldCode.GDHouse1Objects6= [];
-gdjs.OverworldCode.GDHouse2Objects1= [];
-gdjs.OverworldCode.GDHouse2Objects2= [];
-gdjs.OverworldCode.GDHouse2Objects3= [];
-gdjs.OverworldCode.GDHouse2Objects4= [];
-gdjs.OverworldCode.GDHouse2Objects5= [];
-gdjs.OverworldCode.GDHouse2Objects6= [];
 gdjs.OverworldCode.GDShadedDarkJoystickObjects1= [];
 gdjs.OverworldCode.GDShadedDarkJoystickObjects2= [];
 gdjs.OverworldCode.GDShadedDarkJoystickObjects3= [];
@@ -74,72 +86,48 @@ gdjs.OverworldCode.GDTilemap_9595GroundObjects3= [];
 gdjs.OverworldCode.GDTilemap_9595GroundObjects4= [];
 gdjs.OverworldCode.GDTilemap_9595GroundObjects5= [];
 gdjs.OverworldCode.GDTilemap_9595GroundObjects6= [];
-gdjs.OverworldCode.GDNPClvl2Objects1= [];
-gdjs.OverworldCode.GDNPClvl2Objects2= [];
-gdjs.OverworldCode.GDNPClvl2Objects3= [];
-gdjs.OverworldCode.GDNPClvl2Objects4= [];
-gdjs.OverworldCode.GDNPClvl2Objects5= [];
-gdjs.OverworldCode.GDNPClvl2Objects6= [];
-gdjs.OverworldCode.GDTokenObjects1= [];
-gdjs.OverworldCode.GDTokenObjects2= [];
-gdjs.OverworldCode.GDTokenObjects3= [];
-gdjs.OverworldCode.GDTokenObjects4= [];
-gdjs.OverworldCode.GDTokenObjects5= [];
-gdjs.OverworldCode.GDTokenObjects6= [];
-gdjs.OverworldCode.GDBoulderObjects1= [];
-gdjs.OverworldCode.GDBoulderObjects2= [];
-gdjs.OverworldCode.GDBoulderObjects3= [];
-gdjs.OverworldCode.GDBoulderObjects4= [];
-gdjs.OverworldCode.GDBoulderObjects5= [];
-gdjs.OverworldCode.GDBoulderObjects6= [];
+gdjs.OverworldCode.GDNPC_95952Objects1= [];
+gdjs.OverworldCode.GDNPC_95952Objects2= [];
+gdjs.OverworldCode.GDNPC_95952Objects3= [];
+gdjs.OverworldCode.GDNPC_95952Objects4= [];
+gdjs.OverworldCode.GDNPC_95952Objects5= [];
+gdjs.OverworldCode.GDNPC_95952Objects6= [];
 gdjs.OverworldCode.GDInventorySlotObjects1= [];
 gdjs.OverworldCode.GDInventorySlotObjects2= [];
 gdjs.OverworldCode.GDInventorySlotObjects3= [];
 gdjs.OverworldCode.GDInventorySlotObjects4= [];
 gdjs.OverworldCode.GDInventorySlotObjects5= [];
 gdjs.OverworldCode.GDInventorySlotObjects6= [];
-gdjs.OverworldCode.GDSwordObjects1= [];
-gdjs.OverworldCode.GDSwordObjects2= [];
-gdjs.OverworldCode.GDSwordObjects3= [];
-gdjs.OverworldCode.GDSwordObjects4= [];
-gdjs.OverworldCode.GDSwordObjects5= [];
-gdjs.OverworldCode.GDSwordObjects6= [];
-gdjs.OverworldCode.GDHammerObjects1= [];
-gdjs.OverworldCode.GDHammerObjects2= [];
-gdjs.OverworldCode.GDHammerObjects3= [];
-gdjs.OverworldCode.GDHammerObjects4= [];
-gdjs.OverworldCode.GDHammerObjects5= [];
-gdjs.OverworldCode.GDHammerObjects6= [];
-gdjs.OverworldCode.GDRingObjects1= [];
-gdjs.OverworldCode.GDRingObjects2= [];
-gdjs.OverworldCode.GDRingObjects3= [];
-gdjs.OverworldCode.GDRingObjects4= [];
-gdjs.OverworldCode.GDRingObjects5= [];
-gdjs.OverworldCode.GDRingObjects6= [];
+gdjs.OverworldCode.GDBootsObjects1= [];
+gdjs.OverworldCode.GDBootsObjects2= [];
+gdjs.OverworldCode.GDBootsObjects3= [];
+gdjs.OverworldCode.GDBootsObjects4= [];
+gdjs.OverworldCode.GDBootsObjects5= [];
+gdjs.OverworldCode.GDBootsObjects6= [];
+gdjs.OverworldCode.GDAxeObjects1= [];
+gdjs.OverworldCode.GDAxeObjects2= [];
+gdjs.OverworldCode.GDAxeObjects3= [];
+gdjs.OverworldCode.GDAxeObjects4= [];
+gdjs.OverworldCode.GDAxeObjects5= [];
+gdjs.OverworldCode.GDAxeObjects6= [];
+gdjs.OverworldCode.GDBackpackObjects1= [];
+gdjs.OverworldCode.GDBackpackObjects2= [];
+gdjs.OverworldCode.GDBackpackObjects3= [];
+gdjs.OverworldCode.GDBackpackObjects4= [];
+gdjs.OverworldCode.GDBackpackObjects5= [];
+gdjs.OverworldCode.GDBackpackObjects6= [];
 gdjs.OverworldCode.GDInventoryIconObjects1= [];
 gdjs.OverworldCode.GDInventoryIconObjects2= [];
 gdjs.OverworldCode.GDInventoryIconObjects3= [];
 gdjs.OverworldCode.GDInventoryIconObjects4= [];
 gdjs.OverworldCode.GDInventoryIconObjects5= [];
 gdjs.OverworldCode.GDInventoryIconObjects6= [];
-gdjs.OverworldCode.GDVinesObjects1= [];
-gdjs.OverworldCode.GDVinesObjects2= [];
-gdjs.OverworldCode.GDVinesObjects3= [];
-gdjs.OverworldCode.GDVinesObjects4= [];
-gdjs.OverworldCode.GDVinesObjects5= [];
-gdjs.OverworldCode.GDVinesObjects6= [];
-gdjs.OverworldCode.GDSign_95951Objects1= [];
-gdjs.OverworldCode.GDSign_95951Objects2= [];
-gdjs.OverworldCode.GDSign_95951Objects3= [];
-gdjs.OverworldCode.GDSign_95951Objects4= [];
-gdjs.OverworldCode.GDSign_95951Objects5= [];
-gdjs.OverworldCode.GDSign_95951Objects6= [];
-gdjs.OverworldCode.GDWallObjects1= [];
-gdjs.OverworldCode.GDWallObjects2= [];
-gdjs.OverworldCode.GDWallObjects3= [];
-gdjs.OverworldCode.GDWallObjects4= [];
-gdjs.OverworldCode.GDWallObjects5= [];
-gdjs.OverworldCode.GDWallObjects6= [];
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects1= [];
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects2= [];
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects3= [];
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects4= [];
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects5= [];
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects6= [];
 gdjs.OverworldCode.GDNameTextObjects1= [];
 gdjs.OverworldCode.GDNameTextObjects2= [];
 gdjs.OverworldCode.GDNameTextObjects3= [];
@@ -152,36 +140,150 @@ gdjs.OverworldCode.GDTimerObjects3= [];
 gdjs.OverworldCode.GDTimerObjects4= [];
 gdjs.OverworldCode.GDTimerObjects5= [];
 gdjs.OverworldCode.GDTimerObjects6= [];
-gdjs.OverworldCode.GDTreasure_9595ChestObjects1= [];
-gdjs.OverworldCode.GDTreasure_9595ChestObjects2= [];
-gdjs.OverworldCode.GDTreasure_9595ChestObjects3= [];
-gdjs.OverworldCode.GDTreasure_9595ChestObjects4= [];
-gdjs.OverworldCode.GDTreasure_9595ChestObjects5= [];
-gdjs.OverworldCode.GDTreasure_9595ChestObjects6= [];
-gdjs.OverworldCode.GDSwordSpawnPointObjects1= [];
-gdjs.OverworldCode.GDSwordSpawnPointObjects2= [];
-gdjs.OverworldCode.GDSwordSpawnPointObjects3= [];
-gdjs.OverworldCode.GDSwordSpawnPointObjects4= [];
-gdjs.OverworldCode.GDSwordSpawnPointObjects5= [];
-gdjs.OverworldCode.GDSwordSpawnPointObjects6= [];
-gdjs.OverworldCode.GDRingSpawnPointObjects1= [];
-gdjs.OverworldCode.GDRingSpawnPointObjects2= [];
-gdjs.OverworldCode.GDRingSpawnPointObjects3= [];
-gdjs.OverworldCode.GDRingSpawnPointObjects4= [];
-gdjs.OverworldCode.GDRingSpawnPointObjects5= [];
-gdjs.OverworldCode.GDRingSpawnPointObjects6= [];
-gdjs.OverworldCode.GDHammerSpawnPointObjects1= [];
-gdjs.OverworldCode.GDHammerSpawnPointObjects2= [];
-gdjs.OverworldCode.GDHammerSpawnPointObjects3= [];
-gdjs.OverworldCode.GDHammerSpawnPointObjects4= [];
-gdjs.OverworldCode.GDHammerSpawnPointObjects5= [];
-gdjs.OverworldCode.GDHammerSpawnPointObjects6= [];
-gdjs.OverworldCode.GDTallGrassObjects1= [];
-gdjs.OverworldCode.GDTallGrassObjects2= [];
-gdjs.OverworldCode.GDTallGrassObjects3= [];
-gdjs.OverworldCode.GDTallGrassObjects4= [];
-gdjs.OverworldCode.GDTallGrassObjects5= [];
-gdjs.OverworldCode.GDTallGrassObjects6= [];
+gdjs.OverworldCode.GDTree3Objects1= [];
+gdjs.OverworldCode.GDTree3Objects2= [];
+gdjs.OverworldCode.GDTree3Objects3= [];
+gdjs.OverworldCode.GDTree3Objects4= [];
+gdjs.OverworldCode.GDTree3Objects5= [];
+gdjs.OverworldCode.GDTree3Objects6= [];
+gdjs.OverworldCode.GDTree4Objects1= [];
+gdjs.OverworldCode.GDTree4Objects2= [];
+gdjs.OverworldCode.GDTree4Objects3= [];
+gdjs.OverworldCode.GDTree4Objects4= [];
+gdjs.OverworldCode.GDTree4Objects5= [];
+gdjs.OverworldCode.GDTree4Objects6= [];
+gdjs.OverworldCode.GDSign_9595LeftObjects1= [];
+gdjs.OverworldCode.GDSign_9595LeftObjects2= [];
+gdjs.OverworldCode.GDSign_9595LeftObjects3= [];
+gdjs.OverworldCode.GDSign_9595LeftObjects4= [];
+gdjs.OverworldCode.GDSign_9595LeftObjects5= [];
+gdjs.OverworldCode.GDSign_9595LeftObjects6= [];
+gdjs.OverworldCode.GDSign_9595RightObjects1= [];
+gdjs.OverworldCode.GDSign_9595RightObjects2= [];
+gdjs.OverworldCode.GDSign_9595RightObjects3= [];
+gdjs.OverworldCode.GDSign_9595RightObjects4= [];
+gdjs.OverworldCode.GDSign_9595RightObjects5= [];
+gdjs.OverworldCode.GDSign_9595RightObjects6= [];
+gdjs.OverworldCode.GDNPC_95953Objects1= [];
+gdjs.OverworldCode.GDNPC_95953Objects2= [];
+gdjs.OverworldCode.GDNPC_95953Objects3= [];
+gdjs.OverworldCode.GDNPC_95953Objects4= [];
+gdjs.OverworldCode.GDNPC_95953Objects5= [];
+gdjs.OverworldCode.GDNPC_95953Objects6= [];
+gdjs.OverworldCode.GDServer1Objects1= [];
+gdjs.OverworldCode.GDServer1Objects2= [];
+gdjs.OverworldCode.GDServer1Objects3= [];
+gdjs.OverworldCode.GDServer1Objects4= [];
+gdjs.OverworldCode.GDServer1Objects5= [];
+gdjs.OverworldCode.GDServer1Objects6= [];
+gdjs.OverworldCode.GDBush2Objects1= [];
+gdjs.OverworldCode.GDBush2Objects2= [];
+gdjs.OverworldCode.GDBush2Objects3= [];
+gdjs.OverworldCode.GDBush2Objects4= [];
+gdjs.OverworldCode.GDBush2Objects5= [];
+gdjs.OverworldCode.GDBush2Objects6= [];
+gdjs.OverworldCode.GDStone1Objects1= [];
+gdjs.OverworldCode.GDStone1Objects2= [];
+gdjs.OverworldCode.GDStone1Objects3= [];
+gdjs.OverworldCode.GDStone1Objects4= [];
+gdjs.OverworldCode.GDStone1Objects5= [];
+gdjs.OverworldCode.GDStone1Objects6= [];
+gdjs.OverworldCode.GDStone2Objects1= [];
+gdjs.OverworldCode.GDStone2Objects2= [];
+gdjs.OverworldCode.GDStone2Objects3= [];
+gdjs.OverworldCode.GDStone2Objects4= [];
+gdjs.OverworldCode.GDStone2Objects5= [];
+gdjs.OverworldCode.GDStone2Objects6= [];
+gdjs.OverworldCode.GDServer2Objects1= [];
+gdjs.OverworldCode.GDServer2Objects2= [];
+gdjs.OverworldCode.GDServer2Objects3= [];
+gdjs.OverworldCode.GDServer2Objects4= [];
+gdjs.OverworldCode.GDServer2Objects5= [];
+gdjs.OverworldCode.GDServer2Objects6= [];
+gdjs.OverworldCode.GDServer3Objects1= [];
+gdjs.OverworldCode.GDServer3Objects2= [];
+gdjs.OverworldCode.GDServer3Objects3= [];
+gdjs.OverworldCode.GDServer3Objects4= [];
+gdjs.OverworldCode.GDServer3Objects5= [];
+gdjs.OverworldCode.GDServer3Objects6= [];
+gdjs.OverworldCode.GDAxeSpawnPointObjects1= [];
+gdjs.OverworldCode.GDAxeSpawnPointObjects2= [];
+gdjs.OverworldCode.GDAxeSpawnPointObjects3= [];
+gdjs.OverworldCode.GDAxeSpawnPointObjects4= [];
+gdjs.OverworldCode.GDAxeSpawnPointObjects5= [];
+gdjs.OverworldCode.GDAxeSpawnPointObjects6= [];
+gdjs.OverworldCode.GDBootsSpawnPointObjects1= [];
+gdjs.OverworldCode.GDBootsSpawnPointObjects2= [];
+gdjs.OverworldCode.GDBootsSpawnPointObjects3= [];
+gdjs.OverworldCode.GDBootsSpawnPointObjects4= [];
+gdjs.OverworldCode.GDBootsSpawnPointObjects5= [];
+gdjs.OverworldCode.GDBootsSpawnPointObjects6= [];
+gdjs.OverworldCode.GDBackpackSpawnPointObjects1= [];
+gdjs.OverworldCode.GDBackpackSpawnPointObjects2= [];
+gdjs.OverworldCode.GDBackpackSpawnPointObjects3= [];
+gdjs.OverworldCode.GDBackpackSpawnPointObjects4= [];
+gdjs.OverworldCode.GDBackpackSpawnPointObjects5= [];
+gdjs.OverworldCode.GDBackpackSpawnPointObjects6= [];
+gdjs.OverworldCode.GDServerSpawnPointObjects1= [];
+gdjs.OverworldCode.GDServerSpawnPointObjects2= [];
+gdjs.OverworldCode.GDServerSpawnPointObjects3= [];
+gdjs.OverworldCode.GDServerSpawnPointObjects4= [];
+gdjs.OverworldCode.GDServerSpawnPointObjects5= [];
+gdjs.OverworldCode.GDServerSpawnPointObjects6= [];
+gdjs.OverworldCode.GDBottleSpawnPointObjects1= [];
+gdjs.OverworldCode.GDBottleSpawnPointObjects2= [];
+gdjs.OverworldCode.GDBottleSpawnPointObjects3= [];
+gdjs.OverworldCode.GDBottleSpawnPointObjects4= [];
+gdjs.OverworldCode.GDBottleSpawnPointObjects5= [];
+gdjs.OverworldCode.GDBottleSpawnPointObjects6= [];
+gdjs.OverworldCode.GDBottleObjects1= [];
+gdjs.OverworldCode.GDBottleObjects2= [];
+gdjs.OverworldCode.GDBottleObjects3= [];
+gdjs.OverworldCode.GDBottleObjects4= [];
+gdjs.OverworldCode.GDBottleObjects5= [];
+gdjs.OverworldCode.GDBottleObjects6= [];
+gdjs.OverworldCode.GDBridgeObjects1= [];
+gdjs.OverworldCode.GDBridgeObjects2= [];
+gdjs.OverworldCode.GDBridgeObjects3= [];
+gdjs.OverworldCode.GDBridgeObjects4= [];
+gdjs.OverworldCode.GDBridgeObjects5= [];
+gdjs.OverworldCode.GDBridgeObjects6= [];
+gdjs.OverworldCode.GDRuggedTerrainObjects1= [];
+gdjs.OverworldCode.GDRuggedTerrainObjects2= [];
+gdjs.OverworldCode.GDRuggedTerrainObjects3= [];
+gdjs.OverworldCode.GDRuggedTerrainObjects4= [];
+gdjs.OverworldCode.GDRuggedTerrainObjects5= [];
+gdjs.OverworldCode.GDRuggedTerrainObjects6= [];
+gdjs.OverworldCode.GDClose_9595ButtonObjects1= [];
+gdjs.OverworldCode.GDClose_9595ButtonObjects2= [];
+gdjs.OverworldCode.GDClose_9595ButtonObjects3= [];
+gdjs.OverworldCode.GDClose_9595ButtonObjects4= [];
+gdjs.OverworldCode.GDClose_9595ButtonObjects5= [];
+gdjs.OverworldCode.GDClose_9595ButtonObjects6= [];
+gdjs.OverworldCode.GDCableObjects1= [];
+gdjs.OverworldCode.GDCableObjects2= [];
+gdjs.OverworldCode.GDCableObjects3= [];
+gdjs.OverworldCode.GDCableObjects4= [];
+gdjs.OverworldCode.GDCableObjects5= [];
+gdjs.OverworldCode.GDCableObjects6= [];
+gdjs.OverworldCode.GDButtonSpawnpointObjects1= [];
+gdjs.OverworldCode.GDButtonSpawnpointObjects2= [];
+gdjs.OverworldCode.GDButtonSpawnpointObjects3= [];
+gdjs.OverworldCode.GDButtonSpawnpointObjects4= [];
+gdjs.OverworldCode.GDButtonSpawnpointObjects5= [];
+gdjs.OverworldCode.GDButtonSpawnpointObjects6= [];
+gdjs.OverworldCode.GDBatteriesObjects1= [];
+gdjs.OverworldCode.GDBatteriesObjects2= [];
+gdjs.OverworldCode.GDBatteriesObjects3= [];
+gdjs.OverworldCode.GDBatteriesObjects4= [];
+gdjs.OverworldCode.GDBatteriesObjects5= [];
+gdjs.OverworldCode.GDBatteriesObjects6= [];
+gdjs.OverworldCode.GDBatterySpawnPointObjects1= [];
+gdjs.OverworldCode.GDBatterySpawnPointObjects2= [];
+gdjs.OverworldCode.GDBatterySpawnPointObjects3= [];
+gdjs.OverworldCode.GDBatterySpawnPointObjects4= [];
+gdjs.OverworldCode.GDBatterySpawnPointObjects5= [];
+gdjs.OverworldCode.GDBatterySpawnPointObjects6= [];
 gdjs.OverworldCode.GDTransitionObjects1= [];
 gdjs.OverworldCode.GDTransitionObjects2= [];
 gdjs.OverworldCode.GDTransitionObjects3= [];
@@ -190,84 +292,326 @@ gdjs.OverworldCode.GDTransitionObjects5= [];
 gdjs.OverworldCode.GDTransitionObjects6= [];
 
 
-gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDHammerSpawnPointObjects2Objects = Hashtable.newFrom({"HammerSpawnPoint": gdjs.OverworldCode.GDHammerSpawnPointObjects2});
-gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDHammerObjects2Objects = Hashtable.newFrom({"Hammer": gdjs.OverworldCode.GDHammerObjects2});
-gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDSwordSpawnPointObjects2Objects = Hashtable.newFrom({"SwordSpawnPoint": gdjs.OverworldCode.GDSwordSpawnPointObjects2});
-gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDSwordObjects2Objects = Hashtable.newFrom({"Sword": gdjs.OverworldCode.GDSwordObjects2});
-gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDRingSpawnPointObjects2Objects = Hashtable.newFrom({"RingSpawnPoint": gdjs.OverworldCode.GDRingSpawnPointObjects2});
-gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDRingObjects2Objects = Hashtable.newFrom({"Ring": gdjs.OverworldCode.GDRingObjects2});
-gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDHammerSpawnPointObjects2Objects = Hashtable.newFrom({"HammerSpawnPoint": gdjs.OverworldCode.GDHammerSpawnPointObjects2});
-gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDSwordSpawnPointObjects2Objects = Hashtable.newFrom({"SwordSpawnPoint": gdjs.OverworldCode.GDSwordSpawnPointObjects2});
-gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDRingSpawnPointObjects2Objects = Hashtable.newFrom({"RingSpawnPoint": gdjs.OverworldCode.GDRingSpawnPointObjects2});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDAxeSpawnPointObjects3Objects = Hashtable.newFrom({"AxeSpawnPoint": gdjs.OverworldCode.GDAxeSpawnPointObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDAxeObjects3Objects = Hashtable.newFrom({"Axe": gdjs.OverworldCode.GDAxeObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBootsSpawnPointObjects3Objects = Hashtable.newFrom({"BootsSpawnPoint": gdjs.OverworldCode.GDBootsSpawnPointObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBootsObjects3Objects = Hashtable.newFrom({"Boots": gdjs.OverworldCode.GDBootsObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBackpackSpawnPointObjects3Objects = Hashtable.newFrom({"BackpackSpawnPoint": gdjs.OverworldCode.GDBackpackSpawnPointObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBackpackObjects3Objects = Hashtable.newFrom({"Backpack": gdjs.OverworldCode.GDBackpackObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBottleSpawnPointObjects3Objects = Hashtable.newFrom({"BottleSpawnPoint": gdjs.OverworldCode.GDBottleSpawnPointObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBottleObjects3Objects = Hashtable.newFrom({"Bottle": gdjs.OverworldCode.GDBottleObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDAxeSpawnPointObjects3Objects = Hashtable.newFrom({"AxeSpawnPoint": gdjs.OverworldCode.GDAxeSpawnPointObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBootsSpawnPointObjects3Objects = Hashtable.newFrom({"BootsSpawnPoint": gdjs.OverworldCode.GDBootsSpawnPointObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBackpackSpawnPointObjects3Objects = Hashtable.newFrom({"BackpackSpawnPoint": gdjs.OverworldCode.GDBackpackSpawnPointObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBottleSpawnPointObjects3Objects = Hashtable.newFrom({"BottleSpawnPoint": gdjs.OverworldCode.GDBottleSpawnPointObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDServerSpawnPointObjects3Objects = Hashtable.newFrom({"ServerSpawnPoint": gdjs.OverworldCode.GDServerSpawnPointObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDServer1Objects3Objects = Hashtable.newFrom({"Server1": gdjs.OverworldCode.GDServer1Objects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBatteriesObjects5Objects = Hashtable.newFrom({"Batteries": gdjs.OverworldCode.GDBatteriesObjects5});
 gdjs.OverworldCode.eventsList0 = function(runtimeScene) {
+
+};gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBatterySpawnPointObjects3Objects = Hashtable.newFrom({"BatterySpawnPoint": gdjs.OverworldCode.GDBatterySpawnPointObjects3});
+gdjs.OverworldCode.eventsList1 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("BatterySpawnPoint"), gdjs.OverworldCode.GDBatterySpawnPointObjects4);
+
+for (gdjs.OverworldCode.forEachIndex5 = 0;gdjs.OverworldCode.forEachIndex5 < gdjs.OverworldCode.GDBatterySpawnPointObjects4.length;++gdjs.OverworldCode.forEachIndex5) {
+gdjs.copyArray(gdjs.OverworldCode.GDServerSpawnPointObjects3, gdjs.OverworldCode.GDServerSpawnPointObjects5);
+
+gdjs.OverworldCode.GDBatteriesObjects5.length = 0;
+
+gdjs.OverworldCode.GDBatterySpawnPointObjects5.length = 0;
+
+
+gdjs.OverworldCode.forEachTemporary5 = gdjs.OverworldCode.GDBatterySpawnPointObjects4[gdjs.OverworldCode.forEachIndex5];
+gdjs.OverworldCode.GDBatterySpawnPointObjects5.push(gdjs.OverworldCode.forEachTemporary5);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (((gdjs.OverworldCode.GDServerSpawnPointObjects5.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDServerSpawnPointObjects5[0].getVariables()).getFromIndex(1).getAsNumber() == ((gdjs.OverworldCode.GDBatterySpawnPointObjects5.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDBatterySpawnPointObjects5[0].getVariables()).getFromIndex(0).getAsNumber());
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBatteriesObjects5Objects, (( gdjs.OverworldCode.GDBatterySpawnPointObjects5.length === 0 ) ? 0 :gdjs.OverworldCode.GDBatterySpawnPointObjects5[0].getPointX("")), (( gdjs.OverworldCode.GDBatterySpawnPointObjects5.length === 0 ) ? 0 :gdjs.OverworldCode.GDBatterySpawnPointObjects5[0].getPointY("")), "");
+}}
+}
+
+}
+
 
 {
 
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("HammerSpawnPoint"), gdjs.OverworldCode.GDHammerSpawnPointObjects2);
-gdjs.copyArray(runtimeScene.getObjects("RingSpawnPoint"), gdjs.OverworldCode.GDRingSpawnPointObjects2);
-gdjs.copyArray(runtimeScene.getObjects("SwordSpawnPoint"), gdjs.OverworldCode.GDSwordSpawnPointObjects2);
-gdjs.OverworldCode.GDHammerObjects2.length = 0;
-
-gdjs.OverworldCode.GDRingObjects2.length = 0;
-
-gdjs.OverworldCode.GDSwordObjects2.length = 0;
-
-{gdjs.evtTools.object.pickRandomObject(runtimeScene, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDHammerSpawnPointObjects2Objects);
+gdjs.copyArray(runtimeScene.getObjects("BatterySpawnPoint"), gdjs.OverworldCode.GDBatterySpawnPointObjects3);
+/* Reuse gdjs.OverworldCode.GDServerSpawnPointObjects3 */
+{for(var i = 0, len = gdjs.OverworldCode.GDServerSpawnPointObjects3.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServerSpawnPointObjects3[i].deleteFromScene(runtimeScene);
 }
-{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDHammerObjects2Objects, (( gdjs.OverworldCode.GDHammerSpawnPointObjects2.length === 0 ) ? 0 :gdjs.OverworldCode.GDHammerSpawnPointObjects2[0].getPointX("")), (( gdjs.OverworldCode.GDHammerSpawnPointObjects2.length === 0 ) ? 0 :gdjs.OverworldCode.GDHammerSpawnPointObjects2[0].getPointY("")), "");
+}{gdjs.evtTools.object.pickAllObjects((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBatterySpawnPointObjects3Objects);
+}{for(var i = 0, len = gdjs.OverworldCode.GDBatterySpawnPointObjects3.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBatterySpawnPointObjects3[i].deleteFromScene(runtimeScene);
 }
-{gdjs.evtTools.object.pickRandomObject(runtimeScene, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDSwordSpawnPointObjects2Objects);
-}
-{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDSwordObjects2Objects, (( gdjs.OverworldCode.GDSwordSpawnPointObjects2.length === 0 ) ? 0 :gdjs.OverworldCode.GDSwordSpawnPointObjects2[0].getPointX("")), (( gdjs.OverworldCode.GDSwordSpawnPointObjects2.length === 0 ) ? 0 :gdjs.OverworldCode.GDSwordSpawnPointObjects2[0].getPointY("")), "");
-}
-{gdjs.evtTools.object.pickRandomObject(runtimeScene, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDRingSpawnPointObjects2Objects);
-}
-{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDRingObjects2Objects, (( gdjs.OverworldCode.GDRingSpawnPointObjects2.length === 0 ) ? 0 :gdjs.OverworldCode.GDRingSpawnPointObjects2[0].getPointX("")), (( gdjs.OverworldCode.GDRingSpawnPointObjects2.length === 0 ) ? 0 :gdjs.OverworldCode.GDRingSpawnPointObjects2[0].getPointY("")), "");
-}
-{gdjs.evtTools.object.pickAllObjects(runtimeScene, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDHammerSpawnPointObjects2Objects);
-}
-{gdjs.evtTools.object.pickAllObjects(runtimeScene, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDSwordSpawnPointObjects2Objects);
-}
-{gdjs.evtTools.object.pickAllObjects(runtimeScene, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDRingSpawnPointObjects2Objects);
-}
-{for(var i = 0, len = gdjs.OverworldCode.GDSwordSpawnPointObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDSwordSpawnPointObjects2[i].deleteFromScene(runtimeScene);
-}
-}
-{for(var i = 0, len = gdjs.OverworldCode.GDRingSpawnPointObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDRingSpawnPointObjects2[i].deleteFromScene(runtimeScene);
-}
-}
-{for(var i = 0, len = gdjs.OverworldCode.GDHammerSpawnPointObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDHammerSpawnPointObjects2[i].deleteFromScene(runtimeScene);
-}
-}
-{for(var i = 0, len = gdjs.OverworldCode.GDRingObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDRingObjects2[i].returnVariable(gdjs.OverworldCode.GDRingObjects2[i].getVariables().get("BaseY")).setNumber((gdjs.OverworldCode.GDRingObjects2[i].getPointY("")));
-}
-for(var i = 0, len = gdjs.OverworldCode.GDHammerObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDHammerObjects2[i].returnVariable(gdjs.OverworldCode.GDHammerObjects2[i].getVariables().get("BaseY")).setNumber((gdjs.OverworldCode.GDHammerObjects2[i].getPointY("")));
-}
-for(var i = 0, len = gdjs.OverworldCode.GDSwordObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDSwordObjects2[i].returnVariable(gdjs.OverworldCode.GDSwordObjects2[i].getVariables().get("BaseY")).setNumber((gdjs.OverworldCode.GDSwordObjects2[i].getPointY("")));
-}
-}
-}
+}}
 
 }
 
 
-};gdjs.OverworldCode.eventsList1 = function(runtimeScene) {
+};gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDServerSpawnPointObjects3Objects = Hashtable.newFrom({"ServerSpawnPoint": gdjs.OverworldCode.GDServerSpawnPointObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDServer2Objects3Objects = Hashtable.newFrom({"Server2": gdjs.OverworldCode.GDServer2Objects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDClose_95959595ButtonObjects5Objects = Hashtable.newFrom({"Close_Button": gdjs.OverworldCode.GDClose_9595ButtonObjects5});
+gdjs.OverworldCode.eventsList2 = function(runtimeScene) {
 
-};gdjs.OverworldCode.eventsList2 = function(runtimeScene) {
+};gdjs.OverworldCode.eventsList3 = function(runtimeScene) {
+
+};gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDButtonSpawnpointObjects3Objects = Hashtable.newFrom({"ButtonSpawnpoint": gdjs.OverworldCode.GDButtonSpawnpointObjects3});
+gdjs.OverworldCode.eventsList4 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ButtonSpawnpoint"), gdjs.OverworldCode.GDButtonSpawnpointObjects4);
+
+for (gdjs.OverworldCode.forEachIndex5 = 0;gdjs.OverworldCode.forEachIndex5 < gdjs.OverworldCode.GDButtonSpawnpointObjects4.length;++gdjs.OverworldCode.forEachIndex5) {
+gdjs.copyArray(gdjs.OverworldCode.GDServerSpawnPointObjects3, gdjs.OverworldCode.GDServerSpawnPointObjects5);
+
+gdjs.OverworldCode.GDClose_9595ButtonObjects5.length = 0;
+
+gdjs.OverworldCode.GDButtonSpawnpointObjects5.length = 0;
+
+
+gdjs.OverworldCode.forEachTemporary5 = gdjs.OverworldCode.GDButtonSpawnpointObjects4[gdjs.OverworldCode.forEachIndex5];
+gdjs.OverworldCode.GDButtonSpawnpointObjects5.push(gdjs.OverworldCode.forEachTemporary5);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (((gdjs.OverworldCode.GDServerSpawnPointObjects5.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDServerSpawnPointObjects5[0].getVariables()).getFromIndex(1).getAsNumber() == ((gdjs.OverworldCode.GDButtonSpawnpointObjects5.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDButtonSpawnpointObjects5[0].getVariables()).getFromIndex(0).getAsNumber());
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDClose_95959595ButtonObjects5Objects, (( gdjs.OverworldCode.GDButtonSpawnpointObjects5.length === 0 ) ? 0 :gdjs.OverworldCode.GDButtonSpawnpointObjects5[0].getPointX("")), (( gdjs.OverworldCode.GDButtonSpawnpointObjects5.length === 0 ) ? 0 :gdjs.OverworldCode.GDButtonSpawnpointObjects5[0].getPointY("")), "");
+}{for(var i = 0, len = gdjs.OverworldCode.GDClose_9595ButtonObjects5.length ;i < len;++i) {
+    gdjs.OverworldCode.GDClose_9595ButtonObjects5[i].returnVariable(gdjs.OverworldCode.GDClose_9595ButtonObjects5[i].getVariables().getFromIndex(1)).setNumber(((gdjs.OverworldCode.GDServerSpawnPointObjects5.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDServerSpawnPointObjects5[0].getVariables()).getFromIndex(1).getAsNumber());
+}
+}{for(var i = 0, len = gdjs.OverworldCode.GDClose_9595ButtonObjects5.length ;i < len;++i) {
+    gdjs.OverworldCode.GDClose_9595ButtonObjects5[i].setZOrder(-(500));
+}
+}}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Cable"), gdjs.OverworldCode.GDCableObjects4);
+
+for (gdjs.OverworldCode.forEachIndex5 = 0;gdjs.OverworldCode.forEachIndex5 < gdjs.OverworldCode.GDCableObjects4.length;++gdjs.OverworldCode.forEachIndex5) {
+gdjs.copyArray(gdjs.OverworldCode.GDServerSpawnPointObjects3, gdjs.OverworldCode.GDServerSpawnPointObjects5);
+
+gdjs.OverworldCode.GDCableObjects5.length = 0;
+
+
+gdjs.OverworldCode.forEachTemporary5 = gdjs.OverworldCode.GDCableObjects4[gdjs.OverworldCode.forEachIndex5];
+gdjs.OverworldCode.GDCableObjects5.push(gdjs.OverworldCode.forEachTemporary5);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (((gdjs.OverworldCode.GDCableObjects5.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDCableObjects5[0].getVariables()).getFromIndex(1).getAsNumber() == ((gdjs.OverworldCode.GDServerSpawnPointObjects5.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDServerSpawnPointObjects5[0].getVariables()).getFromIndex(1).getAsNumber());
+}
+if (isConditionTrue_0) {
+{for(var i = 0, len = gdjs.OverworldCode.GDCableObjects5.length ;i < len;++i) {
+    gdjs.OverworldCode.GDCableObjects5[i].returnVariable(gdjs.OverworldCode.GDCableObjects5[i].getVariables().getFromIndex(0)).setNumber(gdjs.evtTools.common.mod(gdjs.OverworldCode.GDCableObjects5[i].getVariables().getFromIndex(0).getAsNumber() + gdjs.randomInRange(1, 3), 4));
+}
+}}
+}
+
+}
+
 
 {
 
 
-gdjs.OverworldCode.eventsList0(runtimeScene);
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("ButtonSpawnpoint"), gdjs.OverworldCode.GDButtonSpawnpointObjects3);
+/* Reuse gdjs.OverworldCode.GDServerSpawnPointObjects3 */
+{for(var i = 0, len = gdjs.OverworldCode.GDServerSpawnPointObjects3.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServerSpawnPointObjects3[i].deleteFromScene(runtimeScene);
+}
+}{gdjs.evtTools.object.pickAllObjects((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDButtonSpawnpointObjects3Objects);
+}{for(var i = 0, len = gdjs.OverworldCode.GDButtonSpawnpointObjects3.length ;i < len;++i) {
+    gdjs.OverworldCode.GDButtonSpawnpointObjects3[i].deleteFromScene(runtimeScene);
+}
+}}
+
+}
+
+
+};gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDServerSpawnPointObjects3Objects = Hashtable.newFrom({"ServerSpawnPoint": gdjs.OverworldCode.GDServerSpawnPointObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDServer3Objects3Objects = Hashtable.newFrom({"Server3": gdjs.OverworldCode.GDServer3Objects3});
+gdjs.OverworldCode.eventsList5 = function(runtimeScene) {
+
+};gdjs.OverworldCode.eventsList6 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("AxeSpawnPoint"), gdjs.OverworldCode.GDAxeSpawnPointObjects3);
+gdjs.copyArray(runtimeScene.getObjects("BackpackSpawnPoint"), gdjs.OverworldCode.GDBackpackSpawnPointObjects3);
+gdjs.copyArray(runtimeScene.getObjects("BootsSpawnPoint"), gdjs.OverworldCode.GDBootsSpawnPointObjects3);
+gdjs.copyArray(runtimeScene.getObjects("BottleSpawnPoint"), gdjs.OverworldCode.GDBottleSpawnPointObjects3);
+gdjs.OverworldCode.GDAxeObjects3.length = 0;
+
+gdjs.OverworldCode.GDBackpackObjects3.length = 0;
+
+gdjs.OverworldCode.GDBootsObjects3.length = 0;
+
+gdjs.OverworldCode.GDBottleObjects3.length = 0;
+
+{gdjs.evtTools.object.pickRandomObject((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDAxeSpawnPointObjects3Objects);
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDAxeObjects3Objects, (( gdjs.OverworldCode.GDAxeSpawnPointObjects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDAxeSpawnPointObjects3[0].getPointX("")), (( gdjs.OverworldCode.GDAxeSpawnPointObjects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDAxeSpawnPointObjects3[0].getPointY("")), "");
+}{gdjs.evtTools.object.pickRandomObject((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBootsSpawnPointObjects3Objects);
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBootsObjects3Objects, (( gdjs.OverworldCode.GDBootsSpawnPointObjects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDBootsSpawnPointObjects3[0].getPointX("")), (( gdjs.OverworldCode.GDBootsSpawnPointObjects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDBootsSpawnPointObjects3[0].getPointY("")), "");
+}{gdjs.evtTools.object.pickRandomObject((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBackpackSpawnPointObjects3Objects);
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBackpackObjects3Objects, (( gdjs.OverworldCode.GDBackpackSpawnPointObjects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDBackpackSpawnPointObjects3[0].getPointX("")), (( gdjs.OverworldCode.GDBackpackSpawnPointObjects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDBackpackSpawnPointObjects3[0].getPointY("")), "");
+}{gdjs.evtTools.object.pickRandomObject((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBottleSpawnPointObjects3Objects);
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBottleObjects3Objects, (( gdjs.OverworldCode.GDBottleSpawnPointObjects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDBottleSpawnPointObjects3[0].getPointX("")), (( gdjs.OverworldCode.GDBottleSpawnPointObjects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDBottleSpawnPointObjects3[0].getPointY("")), "");
+}{gdjs.evtTools.object.pickAllObjects((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDAxeSpawnPointObjects3Objects);
+}{gdjs.evtTools.object.pickAllObjects((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBootsSpawnPointObjects3Objects);
+}{gdjs.evtTools.object.pickAllObjects((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBackpackSpawnPointObjects3Objects);
+}{gdjs.evtTools.object.pickAllObjects((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBottleSpawnPointObjects3Objects);
+}{for(var i = 0, len = gdjs.OverworldCode.GDAxeSpawnPointObjects3.length ;i < len;++i) {
+    gdjs.OverworldCode.GDAxeSpawnPointObjects3[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.OverworldCode.GDBootsSpawnPointObjects3.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBootsSpawnPointObjects3[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.OverworldCode.GDBackpackSpawnPointObjects3.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBackpackSpawnPointObjects3[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.OverworldCode.GDBottleSpawnPointObjects3.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBottleSpawnPointObjects3[i].deleteFromScene(runtimeScene);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("ServerSpawnPoint"), gdjs.OverworldCode.GDServerSpawnPointObjects3);
+gdjs.copyArray(gdjs.OverworldCode.GDServer1Objects1, gdjs.OverworldCode.GDServer1Objects3);
+
+{gdjs.evtTools.object.pickRandomObject((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDServerSpawnPointObjects3Objects);
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDServer1Objects3Objects, (( gdjs.OverworldCode.GDServerSpawnPointObjects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDServerSpawnPointObjects3[0].getPointX("")), (( gdjs.OverworldCode.GDServerSpawnPointObjects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDServerSpawnPointObjects3[0].getPointY("")), "");
+}
+{ //Subevents
+gdjs.OverworldCode.eventsList1(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("ServerSpawnPoint"), gdjs.OverworldCode.GDServerSpawnPointObjects3);
+gdjs.copyArray(gdjs.OverworldCode.GDServer2Objects1, gdjs.OverworldCode.GDServer2Objects3);
+
+{gdjs.evtTools.object.pickRandomObject((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDServerSpawnPointObjects3Objects);
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDServer2Objects3Objects, (( gdjs.OverworldCode.GDServerSpawnPointObjects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDServerSpawnPointObjects3[0].getPointX("")), (( gdjs.OverworldCode.GDServerSpawnPointObjects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDServerSpawnPointObjects3[0].getPointY("")), "");
+}{for(var i = 0, len = gdjs.OverworldCode.GDServer2Objects3.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer2Objects3[i].returnVariable(gdjs.OverworldCode.GDServer2Objects3[i].getVariables().getFromIndex(0)).setNumber(((gdjs.OverworldCode.GDServerSpawnPointObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDServerSpawnPointObjects3[0].getVariables()).getFromIndex(0).getAsNumber());
+}
+}
+{ //Subevents
+gdjs.OverworldCode.eventsList4(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("ServerSpawnPoint"), gdjs.OverworldCode.GDServerSpawnPointObjects3);
+gdjs.copyArray(gdjs.OverworldCode.GDServer3Objects1, gdjs.OverworldCode.GDServer3Objects3);
+
+{gdjs.evtTools.object.pickRandomObject((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDServerSpawnPointObjects3Objects);
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDServer3Objects3Objects, (( gdjs.OverworldCode.GDServerSpawnPointObjects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDServerSpawnPointObjects3[0].getPointX("")), (( gdjs.OverworldCode.GDServerSpawnPointObjects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDServerSpawnPointObjects3[0].getPointY("")), "");
+}{for(var i = 0, len = gdjs.OverworldCode.GDServerSpawnPointObjects3.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServerSpawnPointObjects3[i].deleteFromScene(runtimeScene);
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Cable"), gdjs.OverworldCode.GDCableObjects3);
+
+for (gdjs.OverworldCode.forEachIndex4 = 0;gdjs.OverworldCode.forEachIndex4 < gdjs.OverworldCode.GDCableObjects3.length;++gdjs.OverworldCode.forEachIndex4) {
+gdjs.OverworldCode.GDCableObjects4.length = 0;
+
+
+gdjs.OverworldCode.forEachTemporary4 = gdjs.OverworldCode.GDCableObjects3[gdjs.OverworldCode.forEachIndex4];
+gdjs.OverworldCode.GDCableObjects4.push(gdjs.OverworldCode.forEachTemporary4);
+let isConditionTrue_0 = false;
+if (true) {
+{for(var i = 0, len = gdjs.OverworldCode.GDCableObjects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDCableObjects4[i].getBehavior("Animation").setAnimationIndex(gdjs.OverworldCode.GDCableObjects4[i].getVariables().getFromIndex(0).getAsNumber());
+}
+}}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("Axe"), gdjs.OverworldCode.GDAxeObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Backpack"), gdjs.OverworldCode.GDBackpackObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Batteries"), gdjs.OverworldCode.GDBatteriesObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Boots"), gdjs.OverworldCode.GDBootsObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Bottle"), gdjs.OverworldCode.GDBottleObjects2);
+{for(var i = 0, len = gdjs.OverworldCode.GDBackpackObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBackpackObjects2[i].returnVariable(gdjs.OverworldCode.GDBackpackObjects2[i].getVariables().get("BaseY")).setNumber((gdjs.OverworldCode.GDBackpackObjects2[i].getPointY("")));
+}
+for(var i = 0, len = gdjs.OverworldCode.GDAxeObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDAxeObjects2[i].returnVariable(gdjs.OverworldCode.GDAxeObjects2[i].getVariables().get("BaseY")).setNumber((gdjs.OverworldCode.GDAxeObjects2[i].getPointY("")));
+}
+for(var i = 0, len = gdjs.OverworldCode.GDBootsObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBootsObjects2[i].returnVariable(gdjs.OverworldCode.GDBootsObjects2[i].getVariables().get("BaseY")).setNumber((gdjs.OverworldCode.GDBootsObjects2[i].getPointY("")));
+}
+for(var i = 0, len = gdjs.OverworldCode.GDBottleObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBottleObjects2[i].returnVariable(gdjs.OverworldCode.GDBottleObjects2[i].getVariables().get("BaseY")).setNumber((gdjs.OverworldCode.GDBottleObjects2[i].getPointY("")));
+}
+for(var i = 0, len = gdjs.OverworldCode.GDBatteriesObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBatteriesObjects2[i].returnVariable(gdjs.OverworldCode.GDBatteriesObjects2[i].getVariables().get("BaseY")).setNumber((gdjs.OverworldCode.GDBatteriesObjects2[i].getPointY("")));
+}
+}}
+
+}
+
+
+};gdjs.OverworldCode.eventsList7 = function(runtimeScene) {
+
+};gdjs.OverworldCode.eventsList8 = function(runtimeScene) {
+
+{
+
+
+gdjs.OverworldCode.eventsList6(runtimeScene);
 }
 
 
@@ -284,67 +628,469 @@ gdjs.OverworldCode.GDInventorySlotObjects2.push(gdjs.OverworldCode.forEachTempor
 let isConditionTrue_0 = false;
 if (true) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).getChild(((gdjs.OverworldCode.GDInventorySlotObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDInventorySlotObjects2[0].getVariables()).getFromIndex(0).getAsNumber()).getChild("Name").setString("Empty");
-}
-}
-}
-
+}}
 }
 
+}
 
-};gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDTree1Objects1ObjectsGDgdjs_9546OverworldCode_9546GDBush1Objects1ObjectsGDgdjs_9546OverworldCode_9546GDTree2Objects1ObjectsGDgdjs_9546OverworldCode_9546GDHouse1Objects1ObjectsGDgdjs_9546OverworldCode_9546GDHouse2Objects1ObjectsGDgdjs_9546OverworldCode_9546GDNPCObjects1ObjectsGDgdjs_9546OverworldCode_9546GDTilemap_95959595GroundObjects1ObjectsGDgdjs_9546OverworldCode_9546GDNPClvl2Objects1ObjectsGDgdjs_9546OverworldCode_9546GDTokenObjects1ObjectsGDgdjs_9546OverworldCode_9546GDBoulderObjects1ObjectsGDgdjs_9546OverworldCode_9546GDVinesObjects1ObjectsGDgdjs_9546OverworldCode_9546GDSign_959595951Objects1ObjectsGDgdjs_9546OverworldCode_9546GDWallObjects1ObjectsGDgdjs_9546OverworldCode_9546GDTreasure_95959595ChestObjects1Objects = Hashtable.newFrom({"Tree1": gdjs.OverworldCode.GDTree1Objects1, "Bush1": gdjs.OverworldCode.GDBush1Objects1, "Tree2": gdjs.OverworldCode.GDTree2Objects1, "House1": gdjs.OverworldCode.GDHouse1Objects1, "House2": gdjs.OverworldCode.GDHouse2Objects1, "NPC": gdjs.OverworldCode.GDNPCObjects1, "Tilemap_Ground": gdjs.OverworldCode.GDTilemap_9595GroundObjects1, "NPClvl2": gdjs.OverworldCode.GDNPClvl2Objects1, "Token": gdjs.OverworldCode.GDTokenObjects1, "Boulder": gdjs.OverworldCode.GDBoulderObjects1, "Vines": gdjs.OverworldCode.GDVinesObjects1, "Sign_1": gdjs.OverworldCode.GDSign_95951Objects1, "Wall": gdjs.OverworldCode.GDWallObjects1, "Treasure_Chest": gdjs.OverworldCode.GDTreasure_9595ChestObjects1});
-gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.OverworldCode.GDPlayerObjects2});
-gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBoulderObjects2ObjectsGDgdjs_9546OverworldCode_9546GDVinesObjects2ObjectsGDgdjs_9546OverworldCode_9546GDWallObjects2Objects = Hashtable.newFrom({"Boulder": gdjs.OverworldCode.GDBoulderObjects2, "Vines": gdjs.OverworldCode.GDVinesObjects2, "Wall": gdjs.OverworldCode.GDWallObjects2});
-gdjs.OverworldCode.eventsList3 = function(runtimeScene) {
+
+};gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDTree1Objects1ObjectsGDgdjs_9546OverworldCode_9546GDBush1Objects1ObjectsGDgdjs_9546OverworldCode_9546GDTree2Objects1ObjectsGDgdjs_9546OverworldCode_9546GDNPC_959595951Objects1ObjectsGDgdjs_9546OverworldCode_9546GDTilemap_95959595GroundObjects1ObjectsGDgdjs_9546OverworldCode_9546GDNPC_959595952Objects1ObjectsGDgdjs_9546OverworldCode_9546GDSign_95959595Left_95959595RightObjects1ObjectsGDgdjs_9546OverworldCode_9546GDTree3Objects1ObjectsGDgdjs_9546OverworldCode_9546GDTree4Objects1ObjectsGDgdjs_9546OverworldCode_9546GDSign_95959595LeftObjects1ObjectsGDgdjs_9546OverworldCode_9546GDSign_95959595RightObjects1ObjectsGDgdjs_9546OverworldCode_9546GDBush2Objects1ObjectsGDgdjs_9546OverworldCode_9546GDStone1Objects1ObjectsGDgdjs_9546OverworldCode_9546GDStone2Objects1ObjectsGDgdjs_9546OverworldCode_9546GDBridgeObjects1ObjectsGDgdjs_9546OverworldCode_9546GDRuggedTerrainObjects1ObjectsGDgdjs_9546OverworldCode_9546GDNPC_959595953Objects1ObjectsGDgdjs_9546OverworldCode_9546GDServer1Objects1ObjectsGDgdjs_9546OverworldCode_9546GDServer2Objects1ObjectsGDgdjs_9546OverworldCode_9546GDServer3Objects1Objects = Hashtable.newFrom({"Tree1": gdjs.OverworldCode.GDTree1Objects1, "Bush1": gdjs.OverworldCode.GDBush1Objects1, "Tree2": gdjs.OverworldCode.GDTree2Objects1, "NPC_1": gdjs.OverworldCode.GDNPC_95951Objects1, "Tilemap_Ground": gdjs.OverworldCode.GDTilemap_9595GroundObjects1, "NPC_2": gdjs.OverworldCode.GDNPC_95952Objects1, "Sign_Left_Right": gdjs.OverworldCode.GDSign_9595Left_9595RightObjects1, "Tree3": gdjs.OverworldCode.GDTree3Objects1, "Tree4": gdjs.OverworldCode.GDTree4Objects1, "Sign_Left": gdjs.OverworldCode.GDSign_9595LeftObjects1, "Sign_Right": gdjs.OverworldCode.GDSign_9595RightObjects1, "Bush2": gdjs.OverworldCode.GDBush2Objects1, "Stone1": gdjs.OverworldCode.GDStone1Objects1, "Stone2": gdjs.OverworldCode.GDStone2Objects1, "Bridge": gdjs.OverworldCode.GDBridgeObjects1, "RuggedTerrain": gdjs.OverworldCode.GDRuggedTerrainObjects1, "NPC_3": gdjs.OverworldCode.GDNPC_95953Objects1, "Server1": gdjs.OverworldCode.GDServer1Objects1, "Server2": gdjs.OverworldCode.GDServer2Objects1, "Server3": gdjs.OverworldCode.GDServer3Objects1});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects3Objects = Hashtable.newFrom({"Player": gdjs.OverworldCode.GDPlayerObjects3});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBridgeObjects3ObjectsGDgdjs_9546OverworldCode_9546GDRuggedTerrainObjects3ObjectsGDgdjs_9546OverworldCode_9546GDServer1Objects3ObjectsGDgdjs_9546OverworldCode_9546GDServer3Objects3ObjectsGDgdjs_9546OverworldCode_9546GDServer2Objects3Objects = Hashtable.newFrom({"Bridge": gdjs.OverworldCode.GDBridgeObjects3, "RuggedTerrain": gdjs.OverworldCode.GDRuggedTerrainObjects3, "Server1": gdjs.OverworldCode.GDServer1Objects3, "Server3": gdjs.OverworldCode.GDServer3Objects3, "Server2": gdjs.OverworldCode.GDServer2Objects3});
+gdjs.OverworldCode.eventsList9 = function(runtimeScene) {
+
+};gdjs.OverworldCode.eventsList10 = function(runtimeScene) {
 
 {
 
-gdjs.copyArray(gdjs.OverworldCode.GDBoulderObjects2, gdjs.OverworldCode.GDBoulderObjects3);
+gdjs.copyArray(runtimeScene.getObjects("InventorySlot"), gdjs.OverworldCode.GDInventorySlotObjects4);
 
-gdjs.copyArray(gdjs.OverworldCode.GDVinesObjects2, gdjs.OverworldCode.GDVinesObjects3);
+for (gdjs.OverworldCode.forEachIndex5 = 0;gdjs.OverworldCode.forEachIndex5 < gdjs.OverworldCode.GDInventorySlotObjects4.length;++gdjs.OverworldCode.forEachIndex5) {
+gdjs.OverworldCode.GDInventorySlotObjects5.length = 0;
 
-gdjs.copyArray(gdjs.OverworldCode.GDWallObjects2, gdjs.OverworldCode.GDWallObjects3);
+
+gdjs.OverworldCode.forEachTemporary5 = gdjs.OverworldCode.GDInventorySlotObjects4[gdjs.OverworldCode.forEachIndex5];
+gdjs.OverworldCode.GDInventorySlotObjects5.push(gdjs.OverworldCode.forEachTemporary5);
+let isConditionTrue_0 = false;
+if (true) {
+{runtimeScene.getGame().getVariables().getFromIndex(0).getChild(((gdjs.OverworldCode.GDInventorySlotObjects5.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDInventorySlotObjects5[0].getVariables()).getFromIndex(0).getAsNumber()).getChild("Name").setString("Empty");
+}}
+}
+
+}
+
+
+};gdjs.OverworldCode.eventsList11 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(gdjs.OverworldCode.GDBridgeObjects3, gdjs.OverworldCode.GDBridgeObjects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDRuggedTerrainObjects3, gdjs.OverworldCode.GDRuggedTerrainObjects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer1Objects3, gdjs.OverworldCode.GDServer1Objects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer2Objects3, gdjs.OverworldCode.GDServer2Objects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer3Objects3, gdjs.OverworldCode.GDServer3Objects4);
 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(0).getChild(((gdjs.OverworldCode.GDWallObjects3.length === 0 ) ? ((gdjs.OverworldCode.GDVinesObjects3.length === 0 ) ? ((gdjs.OverworldCode.GDBoulderObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDBoulderObjects3[0].getVariables()) : gdjs.OverworldCode.GDVinesObjects3[0].getVariables()) : gdjs.OverworldCode.GDWallObjects3[0].getVariables()).get("ChallengeNo").getAsNumber()).getChild("Name").getAsString() != "Empty");
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(0).getChild(0).getChild("Name").getAsString() != "Empty");
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.OverworldCode.GDBoulderObjects3 */
-/* Reuse gdjs.OverworldCode.GDVinesObjects3 */
-/* Reuse gdjs.OverworldCode.GDWallObjects3 */
-{for(var i = 0, len = gdjs.OverworldCode.GDBoulderObjects3.length ;i < len;++i) {
-    gdjs.OverworldCode.GDBoulderObjects3[i].getBehavior("Animation").setAnimationName("Break");
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDBridgeObjects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDBridgeObjects4[i].getVariableString(gdjs.OverworldCode.GDBridgeObjects4[i].getVariables().get("ChallengeName")) == "Bridge" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDBridgeObjects4[k] = gdjs.OverworldCode.GDBridgeObjects4[i];
+        ++k;
+    }
 }
-for(var i = 0, len = gdjs.OverworldCode.GDVinesObjects3.length ;i < len;++i) {
-    gdjs.OverworldCode.GDVinesObjects3[i].getBehavior("Animation").setAnimationName("Break");
+gdjs.OverworldCode.GDBridgeObjects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDRuggedTerrainObjects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getVariableString(gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getVariables().get("ChallengeName")) == "Bridge" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDRuggedTerrainObjects4[k] = gdjs.OverworldCode.GDRuggedTerrainObjects4[i];
+        ++k;
+    }
 }
-for(var i = 0, len = gdjs.OverworldCode.GDWallObjects3.length ;i < len;++i) {
-    gdjs.OverworldCode.GDWallObjects3[i].getBehavior("Animation").setAnimationName("Break");
+gdjs.OverworldCode.GDRuggedTerrainObjects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer1Objects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer1Objects4[i].getVariableString(gdjs.OverworldCode.GDServer1Objects4[i].getVariables().get("ChallengeName")) == "Bridge" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer1Objects4[k] = gdjs.OverworldCode.GDServer1Objects4[i];
+        ++k;
+    }
 }
+gdjs.OverworldCode.GDServer1Objects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer3Objects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer3Objects4[i].getVariableString(gdjs.OverworldCode.GDServer3Objects4[i].getVariables().get("ChallengeName")) == "Bridge" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer3Objects4[k] = gdjs.OverworldCode.GDServer3Objects4[i];
+        ++k;
+    }
 }
-{for(var i = 0, len = gdjs.OverworldCode.GDBoulderObjects3.length ;i < len;++i) {
-    gdjs.OverworldCode.GDBoulderObjects3[i].resetTimer("Break");
+gdjs.OverworldCode.GDServer3Objects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer2Objects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer2Objects4[i].getVariableString(gdjs.OverworldCode.GDServer2Objects4[i].getVariables().get("ChallengeName")) == "Bridge" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer2Objects4[k] = gdjs.OverworldCode.GDServer2Objects4[i];
+        ++k;
+    }
 }
-for(var i = 0, len = gdjs.OverworldCode.GDVinesObjects3.length ;i < len;++i) {
-    gdjs.OverworldCode.GDVinesObjects3[i].resetTimer("Break");
+gdjs.OverworldCode.GDServer2Objects4.length = k;
 }
-for(var i = 0, len = gdjs.OverworldCode.GDWallObjects3.length ;i < len;++i) {
-    gdjs.OverworldCode.GDWallObjects3[i].resetTimer("Break");
+if (isConditionTrue_0) {
+/* Reuse gdjs.OverworldCode.GDBridgeObjects4 */
+/* Reuse gdjs.OverworldCode.GDRuggedTerrainObjects4 */
+/* Reuse gdjs.OverworldCode.GDServer1Objects4 */
+/* Reuse gdjs.OverworldCode.GDServer2Objects4 */
+/* Reuse gdjs.OverworldCode.GDServer3Objects4 */
+{for(var i = 0, len = gdjs.OverworldCode.GDBridgeObjects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBridgeObjects4[i].getBehavior("Animation").setAnimationName("Bridge Animation");
 }
+}{for(var i = 0, len = gdjs.OverworldCode.GDBridgeObjects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBridgeObjects4[i].returnVariable(gdjs.OverworldCode.GDBridgeObjects4[i].getVariables().get("CanPass")).setBoolean(true);
 }
-{for(var i = 0, len = gdjs.OverworldCode.GDBoulderObjects3.length ;i < len;++i) {
-    gdjs.OverworldCode.GDBoulderObjects3[i].returnVariable(gdjs.OverworldCode.GDBoulderObjects3[i].getVariables().get("IsBreaking")).setBoolean(true);
+for(var i = 0, len = gdjs.OverworldCode.GDRuggedTerrainObjects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDRuggedTerrainObjects4[i].returnVariable(gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getVariables().get("CanPass")).setBoolean(true);
 }
-for(var i = 0, len = gdjs.OverworldCode.GDVinesObjects3.length ;i < len;++i) {
-    gdjs.OverworldCode.GDVinesObjects3[i].returnVariable(gdjs.OverworldCode.GDVinesObjects3[i].getVariables().get("IsBreaking")).setBoolean(true);
+for(var i = 0, len = gdjs.OverworldCode.GDServer1Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer1Objects4[i].returnVariable(gdjs.OverworldCode.GDServer1Objects4[i].getVariables().get("CanPass")).setBoolean(true);
 }
-for(var i = 0, len = gdjs.OverworldCode.GDWallObjects3.length ;i < len;++i) {
-    gdjs.OverworldCode.GDWallObjects3[i].returnVariable(gdjs.OverworldCode.GDWallObjects3[i].getVariables().get("IsBreaking")).setBoolean(true);
+for(var i = 0, len = gdjs.OverworldCode.GDServer3Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer3Objects4[i].returnVariable(gdjs.OverworldCode.GDServer3Objects4[i].getVariables().get("CanPass")).setBoolean(true);
 }
+for(var i = 0, len = gdjs.OverworldCode.GDServer2Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer2Objects4[i].returnVariable(gdjs.OverworldCode.GDServer2Objects4[i].getVariables().get("CanPass")).setBoolean(true);
 }
-{gdjs.OverworldCode.localVariables[0].getFromIndex(0).setString(((gdjs.OverworldCode.GDWallObjects3.length === 0 ) ? ((gdjs.OverworldCode.GDVinesObjects3.length === 0 ) ? ((gdjs.OverworldCode.GDBoulderObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDBoulderObjects3[0].getVariables()) : gdjs.OverworldCode.GDVinesObjects3[0].getVariables()) : gdjs.OverworldCode.GDWallObjects3[0].getVariables()).get("CompleteText").getAsString());
+}}
+
 }
+
+
+{
+
+gdjs.copyArray(gdjs.OverworldCode.GDBridgeObjects3, gdjs.OverworldCode.GDBridgeObjects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDRuggedTerrainObjects3, gdjs.OverworldCode.GDRuggedTerrainObjects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer1Objects3, gdjs.OverworldCode.GDServer1Objects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer2Objects3, gdjs.OverworldCode.GDServer2Objects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer3Objects3, gdjs.OverworldCode.GDServer3Objects4);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(0).getChild(2).getChild("Name").getAsString() != "Empty");
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDBridgeObjects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDBridgeObjects4[i].getVariableString(gdjs.OverworldCode.GDBridgeObjects4[i].getVariables().get("ChallengeName")) == "Terrain" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDBridgeObjects4[k] = gdjs.OverworldCode.GDBridgeObjects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDBridgeObjects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDRuggedTerrainObjects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getVariableString(gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getVariables().get("ChallengeName")) == "Terrain" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDRuggedTerrainObjects4[k] = gdjs.OverworldCode.GDRuggedTerrainObjects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDRuggedTerrainObjects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer1Objects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer1Objects4[i].getVariableString(gdjs.OverworldCode.GDServer1Objects4[i].getVariables().get("ChallengeName")) == "Terrain" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer1Objects4[k] = gdjs.OverworldCode.GDServer1Objects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer1Objects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer3Objects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer3Objects4[i].getVariableString(gdjs.OverworldCode.GDServer3Objects4[i].getVariables().get("ChallengeName")) == "Terrain" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer3Objects4[k] = gdjs.OverworldCode.GDServer3Objects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer3Objects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer2Objects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer2Objects4[i].getVariableString(gdjs.OverworldCode.GDServer2Objects4[i].getVariables().get("ChallengeName")) == "Terrain" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer2Objects4[k] = gdjs.OverworldCode.GDServer2Objects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer2Objects4.length = k;
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.OverworldCode.GDBridgeObjects4 */
+/* Reuse gdjs.OverworldCode.GDRuggedTerrainObjects4 */
+/* Reuse gdjs.OverworldCode.GDServer1Objects4 */
+/* Reuse gdjs.OverworldCode.GDServer2Objects4 */
+/* Reuse gdjs.OverworldCode.GDServer3Objects4 */
+{for(var i = 0, len = gdjs.OverworldCode.GDBridgeObjects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBridgeObjects4[i].returnVariable(gdjs.OverworldCode.GDBridgeObjects4[i].getVariables().get("CanPass")).setBoolean(true);
+}
+for(var i = 0, len = gdjs.OverworldCode.GDRuggedTerrainObjects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDRuggedTerrainObjects4[i].returnVariable(gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getVariables().get("CanPass")).setBoolean(true);
+}
+for(var i = 0, len = gdjs.OverworldCode.GDServer1Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer1Objects4[i].returnVariable(gdjs.OverworldCode.GDServer1Objects4[i].getVariables().get("CanPass")).setBoolean(true);
+}
+for(var i = 0, len = gdjs.OverworldCode.GDServer3Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer3Objects4[i].returnVariable(gdjs.OverworldCode.GDServer3Objects4[i].getVariables().get("CanPass")).setBoolean(true);
+}
+for(var i = 0, len = gdjs.OverworldCode.GDServer2Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer2Objects4[i].returnVariable(gdjs.OverworldCode.GDServer2Objects4[i].getVariables().get("CanPass")).setBoolean(true);
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.OverworldCode.GDBridgeObjects3, gdjs.OverworldCode.GDBridgeObjects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDRuggedTerrainObjects3, gdjs.OverworldCode.GDRuggedTerrainObjects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer1Objects3, gdjs.OverworldCode.GDServer1Objects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer2Objects3, gdjs.OverworldCode.GDServer2Objects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer3Objects3, gdjs.OverworldCode.GDServer3Objects4);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(0).getChild(0).getChild("Name").getAsString() != "Empty");
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDBridgeObjects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDBridgeObjects4[i].getVariableString(gdjs.OverworldCode.GDBridgeObjects4[i].getVariables().get("ChallengeName")) == "Server1" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDBridgeObjects4[k] = gdjs.OverworldCode.GDBridgeObjects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDBridgeObjects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDRuggedTerrainObjects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getVariableString(gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getVariables().get("ChallengeName")) == "Server1" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDRuggedTerrainObjects4[k] = gdjs.OverworldCode.GDRuggedTerrainObjects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDRuggedTerrainObjects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer1Objects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer1Objects4[i].getVariableString(gdjs.OverworldCode.GDServer1Objects4[i].getVariables().get("ChallengeName")) == "Server1" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer1Objects4[k] = gdjs.OverworldCode.GDServer1Objects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer1Objects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer3Objects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer3Objects4[i].getVariableString(gdjs.OverworldCode.GDServer3Objects4[i].getVariables().get("ChallengeName")) == "Server1" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer3Objects4[k] = gdjs.OverworldCode.GDServer3Objects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer3Objects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer2Objects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer2Objects4[i].getVariableString(gdjs.OverworldCode.GDServer2Objects4[i].getVariables().get("ChallengeName")) == "Server1" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer2Objects4[k] = gdjs.OverworldCode.GDServer2Objects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer2Objects4.length = k;
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.OverworldCode.GDBridgeObjects4 */
+/* Reuse gdjs.OverworldCode.GDRuggedTerrainObjects4 */
+/* Reuse gdjs.OverworldCode.GDServer1Objects4 */
+/* Reuse gdjs.OverworldCode.GDServer2Objects4 */
+/* Reuse gdjs.OverworldCode.GDServer3Objects4 */
+{for(var i = 0, len = gdjs.OverworldCode.GDBridgeObjects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBridgeObjects4[i].returnVariable(gdjs.OverworldCode.GDBridgeObjects4[i].getVariables().get("CanPass")).setBoolean(true);
+}
+for(var i = 0, len = gdjs.OverworldCode.GDRuggedTerrainObjects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDRuggedTerrainObjects4[i].returnVariable(gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getVariables().get("CanPass")).setBoolean(true);
+}
+for(var i = 0, len = gdjs.OverworldCode.GDServer1Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer1Objects4[i].returnVariable(gdjs.OverworldCode.GDServer1Objects4[i].getVariables().get("CanPass")).setBoolean(true);
+}
+for(var i = 0, len = gdjs.OverworldCode.GDServer3Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer3Objects4[i].returnVariable(gdjs.OverworldCode.GDServer3Objects4[i].getVariables().get("CanPass")).setBoolean(true);
+}
+for(var i = 0, len = gdjs.OverworldCode.GDServer2Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer2Objects4[i].returnVariable(gdjs.OverworldCode.GDServer2Objects4[i].getVariables().get("CanPass")).setBoolean(true);
+}
+}{for(var i = 0, len = gdjs.OverworldCode.GDServer1Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer1Objects4[i].getBehavior("Animation").setAnimationName("On");
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.OverworldCode.GDBridgeObjects3, gdjs.OverworldCode.GDBridgeObjects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDRuggedTerrainObjects3, gdjs.OverworldCode.GDRuggedTerrainObjects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer1Objects3, gdjs.OverworldCode.GDServer1Objects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer2Objects3, gdjs.OverworldCode.GDServer2Objects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer3Objects3, gdjs.OverworldCode.GDServer3Objects4);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDBridgeObjects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDBridgeObjects4[i].getVariableString(gdjs.OverworldCode.GDBridgeObjects4[i].getVariables().get("ChallengeName")) == "Server3" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDBridgeObjects4[k] = gdjs.OverworldCode.GDBridgeObjects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDBridgeObjects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDRuggedTerrainObjects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getVariableString(gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getVariables().get("ChallengeName")) == "Server3" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDRuggedTerrainObjects4[k] = gdjs.OverworldCode.GDRuggedTerrainObjects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDRuggedTerrainObjects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer1Objects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer1Objects4[i].getVariableString(gdjs.OverworldCode.GDServer1Objects4[i].getVariables().get("ChallengeName")) == "Server3" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer1Objects4[k] = gdjs.OverworldCode.GDServer1Objects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer1Objects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer3Objects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer3Objects4[i].getVariableString(gdjs.OverworldCode.GDServer3Objects4[i].getVariables().get("ChallengeName")) == "Server3" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer3Objects4[k] = gdjs.OverworldCode.GDServer3Objects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer3Objects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer2Objects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer2Objects4[i].getVariableString(gdjs.OverworldCode.GDServer2Objects4[i].getVariables().get("ChallengeName")) == "Server3" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer2Objects4[k] = gdjs.OverworldCode.GDServer2Objects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer2Objects4.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.OverworldCode.GDBridgeObjects4 */
+/* Reuse gdjs.OverworldCode.GDRuggedTerrainObjects4 */
+/* Reuse gdjs.OverworldCode.GDServer1Objects4 */
+/* Reuse gdjs.OverworldCode.GDServer2Objects4 */
+/* Reuse gdjs.OverworldCode.GDServer3Objects4 */
+{for(var i = 0, len = gdjs.OverworldCode.GDBridgeObjects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBridgeObjects4[i].returnVariable(gdjs.OverworldCode.GDBridgeObjects4[i].getVariables().get("CanPass")).setBoolean(true);
+}
+for(var i = 0, len = gdjs.OverworldCode.GDRuggedTerrainObjects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDRuggedTerrainObjects4[i].returnVariable(gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getVariables().get("CanPass")).setBoolean(true);
+}
+for(var i = 0, len = gdjs.OverworldCode.GDServer1Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer1Objects4[i].returnVariable(gdjs.OverworldCode.GDServer1Objects4[i].getVariables().get("CanPass")).setBoolean(true);
+}
+for(var i = 0, len = gdjs.OverworldCode.GDServer3Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer3Objects4[i].returnVariable(gdjs.OverworldCode.GDServer3Objects4[i].getVariables().get("CanPass")).setBoolean(true);
+}
+for(var i = 0, len = gdjs.OverworldCode.GDServer2Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer2Objects4[i].returnVariable(gdjs.OverworldCode.GDServer2Objects4[i].getVariables().get("CanPass")).setBoolean(true);
+}
+}{for(var i = 0, len = gdjs.OverworldCode.GDServer3Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer3Objects4[i].getBehavior("Animation").setAnimationName("On");
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.OverworldCode.GDBridgeObjects3, gdjs.OverworldCode.GDBridgeObjects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDRuggedTerrainObjects3, gdjs.OverworldCode.GDRuggedTerrainObjects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer1Objects3, gdjs.OverworldCode.GDServer1Objects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer2Objects3, gdjs.OverworldCode.GDServer2Objects4);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer3Objects3, gdjs.OverworldCode.GDServer3Objects4);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDBridgeObjects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDBridgeObjects4[i].getVariableBoolean(gdjs.OverworldCode.GDBridgeObjects4[i].getVariables().get("CanPass"), true, false) ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDBridgeObjects4[k] = gdjs.OverworldCode.GDBridgeObjects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDBridgeObjects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDRuggedTerrainObjects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getVariableBoolean(gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getVariables().get("CanPass"), true, false) ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDRuggedTerrainObjects4[k] = gdjs.OverworldCode.GDRuggedTerrainObjects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDRuggedTerrainObjects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer1Objects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer1Objects4[i].getVariableBoolean(gdjs.OverworldCode.GDServer1Objects4[i].getVariables().get("CanPass"), true, false) ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer1Objects4[k] = gdjs.OverworldCode.GDServer1Objects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer1Objects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer3Objects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer3Objects4[i].getVariableBoolean(gdjs.OverworldCode.GDServer3Objects4[i].getVariables().get("CanPass"), true, false) ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer3Objects4[k] = gdjs.OverworldCode.GDServer3Objects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer3Objects4.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer2Objects4.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer2Objects4[i].getVariableBoolean(gdjs.OverworldCode.GDServer2Objects4[i].getVariables().get("CanPass"), true, false) ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer2Objects4[k] = gdjs.OverworldCode.GDServer2Objects4[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer2Objects4.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.OverworldCode.GDBridgeObjects4 */
+/* Reuse gdjs.OverworldCode.GDRuggedTerrainObjects4 */
+/* Reuse gdjs.OverworldCode.GDServer1Objects4 */
+/* Reuse gdjs.OverworldCode.GDServer2Objects4 */
+/* Reuse gdjs.OverworldCode.GDServer3Objects4 */
+{for(var i = 0, len = gdjs.OverworldCode.GDBridgeObjects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBridgeObjects4[i].resetTimer("Break");
+}
+for(var i = 0, len = gdjs.OverworldCode.GDRuggedTerrainObjects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDRuggedTerrainObjects4[i].resetTimer("Break");
+}
+for(var i = 0, len = gdjs.OverworldCode.GDServer1Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer1Objects4[i].resetTimer("Break");
+}
+for(var i = 0, len = gdjs.OverworldCode.GDServer3Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer3Objects4[i].resetTimer("Break");
+}
+for(var i = 0, len = gdjs.OverworldCode.GDServer2Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer2Objects4[i].resetTimer("Break");
+}
+}{gdjs.OverworldCode.localVariables[0].getFromIndex(0).setString(((gdjs.OverworldCode.GDServer2Objects4.length === 0 ) ? ((gdjs.OverworldCode.GDServer3Objects4.length === 0 ) ? ((gdjs.OverworldCode.GDServer1Objects4.length === 0 ) ? ((gdjs.OverworldCode.GDRuggedTerrainObjects4.length === 0 ) ? ((gdjs.OverworldCode.GDBridgeObjects4.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDBridgeObjects4[0].getVariables()) : gdjs.OverworldCode.GDRuggedTerrainObjects4[0].getVariables()) : gdjs.OverworldCode.GDServer1Objects4[0].getVariables()) : gdjs.OverworldCode.GDServer3Objects4[0].getVariables()) : gdjs.OverworldCode.GDServer2Objects4[0].getVariables()).get("CompleteText").getAsString());
+}{runtimeScene.getGame().getVariables().getFromIndex(1).setBoolean(true);
+}
+{ //Subevents
+gdjs.OverworldCode.eventsList10(runtimeScene);} //End of subevents
 }
 
 }
@@ -355,24 +1101,282 @@ for(var i = 0, len = gdjs.OverworldCode.GDWallObjects3.length ;i < len;++i) {
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextDialogObjects2);
-{for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(gdjs.OverworldCode.localVariables[0].getFromIndex(0).getAsString(), "TextDialogTimer", null);
+gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextDialogObjects3);
+{for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects3.length ;i < len;++i) {
+    gdjs.OverworldCode.GDTextDialogObjects3[i].DisplayText(gdjs.OverworldCode.localVariables[0].getFromIndex(0).getAsString(), "TextDialogTimer", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
-}
-}
+}}
 
 }
 
 
-};gdjs.OverworldCode.eventsList4 = function(runtimeScene) {
+};gdjs.OverworldCode.eventsList12 = function(runtimeScene) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Boulder"), gdjs.OverworldCode.GDBoulderObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.OverworldCode.GDPlayerObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Vines"), gdjs.OverworldCode.GDVinesObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Wall"), gdjs.OverworldCode.GDWallObjects2);
+gdjs.copyArray(gdjs.OverworldCode.GDBridgeObjects2, gdjs.OverworldCode.GDBridgeObjects3);
+
+gdjs.copyArray(gdjs.OverworldCode.GDRuggedTerrainObjects2, gdjs.OverworldCode.GDRuggedTerrainObjects3);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer1Objects2, gdjs.OverworldCode.GDServer1Objects3);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer2Objects2, gdjs.OverworldCode.GDServer2Objects3);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer3Objects2, gdjs.OverworldCode.GDServer3Objects3);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDBridgeObjects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDBridgeObjects3[i].getVariableString(gdjs.OverworldCode.GDBridgeObjects3[i].getVariables().get("ChallengeName")) == "Bridge" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDBridgeObjects3[k] = gdjs.OverworldCode.GDBridgeObjects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDBridgeObjects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDRuggedTerrainObjects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDRuggedTerrainObjects3[i].getVariableString(gdjs.OverworldCode.GDRuggedTerrainObjects3[i].getVariables().get("ChallengeName")) == "Bridge" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDRuggedTerrainObjects3[k] = gdjs.OverworldCode.GDRuggedTerrainObjects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDRuggedTerrainObjects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer1Objects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer1Objects3[i].getVariableString(gdjs.OverworldCode.GDServer1Objects3[i].getVariables().get("ChallengeName")) == "Bridge" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer1Objects3[k] = gdjs.OverworldCode.GDServer1Objects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer1Objects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer3Objects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer3Objects3[i].getVariableString(gdjs.OverworldCode.GDServer3Objects3[i].getVariables().get("ChallengeName")) == "Bridge" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer3Objects3[k] = gdjs.OverworldCode.GDServer3Objects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer3Objects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer2Objects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer2Objects3[i].getVariableString(gdjs.OverworldCode.GDServer2Objects3[i].getVariables().get("ChallengeName")) == "Bridge" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer2Objects3[k] = gdjs.OverworldCode.GDServer2Objects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer2Objects3.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.OverworldCode.GDBridgeObjects3 */
+{for(var i = 0, len = gdjs.OverworldCode.GDBridgeObjects3.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBridgeObjects3[i].getBehavior("Animation").setAnimationName("Built");
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.OverworldCode.GDBridgeObjects2, gdjs.OverworldCode.GDBridgeObjects3);
+
+gdjs.copyArray(gdjs.OverworldCode.GDRuggedTerrainObjects2, gdjs.OverworldCode.GDRuggedTerrainObjects3);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer1Objects2, gdjs.OverworldCode.GDServer1Objects3);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer2Objects2, gdjs.OverworldCode.GDServer2Objects3);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer3Objects2, gdjs.OverworldCode.GDServer3Objects3);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDBridgeObjects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDBridgeObjects3[i].getVariableString(gdjs.OverworldCode.GDBridgeObjects3[i].getVariables().get("ChallengeName")) == "Terrain" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDBridgeObjects3[k] = gdjs.OverworldCode.GDBridgeObjects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDBridgeObjects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDRuggedTerrainObjects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDRuggedTerrainObjects3[i].getVariableString(gdjs.OverworldCode.GDRuggedTerrainObjects3[i].getVariables().get("ChallengeName")) == "Terrain" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDRuggedTerrainObjects3[k] = gdjs.OverworldCode.GDRuggedTerrainObjects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDRuggedTerrainObjects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer1Objects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer1Objects3[i].getVariableString(gdjs.OverworldCode.GDServer1Objects3[i].getVariables().get("ChallengeName")) == "Terrain" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer1Objects3[k] = gdjs.OverworldCode.GDServer1Objects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer1Objects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer3Objects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer3Objects3[i].getVariableString(gdjs.OverworldCode.GDServer3Objects3[i].getVariables().get("ChallengeName")) == "Terrain" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer3Objects3[k] = gdjs.OverworldCode.GDServer3Objects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer3Objects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer2Objects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer2Objects3[i].getVariableString(gdjs.OverworldCode.GDServer2Objects3[i].getVariables().get("ChallengeName")) == "Terrain" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer2Objects3[k] = gdjs.OverworldCode.GDServer2Objects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer2Objects3.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.OverworldCode.GDRuggedTerrainObjects3 */
+{for(var i = 0, len = gdjs.OverworldCode.GDRuggedTerrainObjects3.length ;i < len;++i) {
+    gdjs.OverworldCode.GDRuggedTerrainObjects3[i].getBehavior("Animation").setAnimationName("Passable");
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.OverworldCode.GDBridgeObjects2, gdjs.OverworldCode.GDBridgeObjects3);
+
+gdjs.copyArray(gdjs.OverworldCode.GDRuggedTerrainObjects2, gdjs.OverworldCode.GDRuggedTerrainObjects3);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer1Objects2, gdjs.OverworldCode.GDServer1Objects3);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer2Objects2, gdjs.OverworldCode.GDServer2Objects3);
+
+gdjs.copyArray(gdjs.OverworldCode.GDServer3Objects2, gdjs.OverworldCode.GDServer3Objects3);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDBridgeObjects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDBridgeObjects3[i].getVariableString(gdjs.OverworldCode.GDBridgeObjects3[i].getVariables().get("ChallengeName")) == "Server1" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDBridgeObjects3[k] = gdjs.OverworldCode.GDBridgeObjects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDBridgeObjects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDRuggedTerrainObjects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDRuggedTerrainObjects3[i].getVariableString(gdjs.OverworldCode.GDRuggedTerrainObjects3[i].getVariables().get("ChallengeName")) == "Server1" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDRuggedTerrainObjects3[k] = gdjs.OverworldCode.GDRuggedTerrainObjects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDRuggedTerrainObjects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer1Objects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer1Objects3[i].getVariableString(gdjs.OverworldCode.GDServer1Objects3[i].getVariables().get("ChallengeName")) == "Server1" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer1Objects3[k] = gdjs.OverworldCode.GDServer1Objects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer1Objects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer3Objects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer3Objects3[i].getVariableString(gdjs.OverworldCode.GDServer3Objects3[i].getVariables().get("ChallengeName")) == "Server1" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer3Objects3[k] = gdjs.OverworldCode.GDServer3Objects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer3Objects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer2Objects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer2Objects3[i].getVariableString(gdjs.OverworldCode.GDServer2Objects3[i].getVariables().get("ChallengeName")) == "Server1" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer2Objects3[k] = gdjs.OverworldCode.GDServer2Objects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer2Objects3.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("NPC_3"), gdjs.OverworldCode.GDNPC_95953Objects3);
+{for(var i = 0, len = gdjs.OverworldCode.GDNPC_95953Objects3.length ;i < len;++i) {
+    gdjs.OverworldCode.GDNPC_95953Objects3[i].getBehavior("Animation").setAnimationIndex(gdjs.OverworldCode.GDNPC_95953Objects3[i].getBehavior("Animation").getAnimationIndex() + (1));
+}
+}}
+
+}
+
+
+{
+
+/* Reuse gdjs.OverworldCode.GDBridgeObjects2 */
+/* Reuse gdjs.OverworldCode.GDRuggedTerrainObjects2 */
+/* Reuse gdjs.OverworldCode.GDServer1Objects2 */
+/* Reuse gdjs.OverworldCode.GDServer2Objects2 */
+/* Reuse gdjs.OverworldCode.GDServer3Objects2 */
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDBridgeObjects2.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDBridgeObjects2[i].getVariableString(gdjs.OverworldCode.GDBridgeObjects2[i].getVariables().get("ChallengeName")) == "Server3" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDBridgeObjects2[k] = gdjs.OverworldCode.GDBridgeObjects2[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDBridgeObjects2.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDRuggedTerrainObjects2.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDRuggedTerrainObjects2[i].getVariableString(gdjs.OverworldCode.GDRuggedTerrainObjects2[i].getVariables().get("ChallengeName")) == "Server3" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDRuggedTerrainObjects2[k] = gdjs.OverworldCode.GDRuggedTerrainObjects2[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDRuggedTerrainObjects2.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer1Objects2.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer1Objects2[i].getVariableString(gdjs.OverworldCode.GDServer1Objects2[i].getVariables().get("ChallengeName")) == "Server3" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer1Objects2[k] = gdjs.OverworldCode.GDServer1Objects2[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer1Objects2.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer3Objects2.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer3Objects2[i].getVariableString(gdjs.OverworldCode.GDServer3Objects2[i].getVariables().get("ChallengeName")) == "Server3" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer3Objects2[k] = gdjs.OverworldCode.GDServer3Objects2[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer3Objects2.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer2Objects2.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer2Objects2[i].getVariableString(gdjs.OverworldCode.GDServer2Objects2[i].getVariables().get("ChallengeName")) == "Server3" ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer2Objects2[k] = gdjs.OverworldCode.GDServer2Objects2[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer2Objects2.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("NPC_3"), gdjs.OverworldCode.GDNPC_95953Objects2);
+{for(var i = 0, len = gdjs.OverworldCode.GDNPC_95953Objects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDNPC_95953Objects2[i].getBehavior("Animation").setAnimationIndex(gdjs.OverworldCode.GDNPC_95953Objects2[i].getBehavior("Animation").getAnimationIndex() + (1));
+}
+}}
+
+}
+
+
+};gdjs.OverworldCode.eventsList13 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Bridge"), gdjs.OverworldCode.GDBridgeObjects3);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.OverworldCode.GDPlayerObjects3);
+gdjs.copyArray(runtimeScene.getObjects("RuggedTerrain"), gdjs.OverworldCode.GDRuggedTerrainObjects3);
+gdjs.copyArray(runtimeScene.getObjects("Server1"), gdjs.OverworldCode.GDServer1Objects3);
+gdjs.copyArray(runtimeScene.getObjects("Server2"), gdjs.OverworldCode.GDServer2Objects3);
+gdjs.copyArray(runtimeScene.getObjects("Server3"), gdjs.OverworldCode.GDServer3Objects3);
 
 {
 const variables = new gdjs.VariablesContainer();
@@ -385,43 +1389,60 @@ gdjs.OverworldCode.localVariables.push(variables);
 }
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects2Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBoulderObjects2ObjectsGDgdjs_9546OverworldCode_9546GDVinesObjects2ObjectsGDgdjs_9546OverworldCode_9546GDWallObjects2Objects, false, runtimeScene, false);
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects3Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBridgeObjects3ObjectsGDgdjs_9546OverworldCode_9546GDRuggedTerrainObjects3ObjectsGDgdjs_9546OverworldCode_9546GDServer1Objects3ObjectsGDgdjs_9546OverworldCode_9546GDServer3Objects3ObjectsGDgdjs_9546OverworldCode_9546GDServer2Objects3Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.OverworldCode.GDBoulderObjects2.length;i<l;++i) {
-    if ( gdjs.OverworldCode.GDBoulderObjects2[i].getVariableBoolean(gdjs.OverworldCode.GDBoulderObjects2[i].getVariables().get("IsBreaking"), false, false) ) {
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDBridgeObjects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDBridgeObjects3[i].getVariableBoolean(gdjs.OverworldCode.GDBridgeObjects3[i].getVariables().get("CanPass"), false, false) ) {
         isConditionTrue_0 = true;
-        gdjs.OverworldCode.GDBoulderObjects2[k] = gdjs.OverworldCode.GDBoulderObjects2[i];
+        gdjs.OverworldCode.GDBridgeObjects3[k] = gdjs.OverworldCode.GDBridgeObjects3[i];
         ++k;
     }
 }
-gdjs.OverworldCode.GDBoulderObjects2.length = k;
-for (var i = 0, k = 0, l = gdjs.OverworldCode.GDVinesObjects2.length;i<l;++i) {
-    if ( gdjs.OverworldCode.GDVinesObjects2[i].getVariableBoolean(gdjs.OverworldCode.GDVinesObjects2[i].getVariables().get("IsBreaking"), false, false) ) {
+gdjs.OverworldCode.GDBridgeObjects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDRuggedTerrainObjects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDRuggedTerrainObjects3[i].getVariableBoolean(gdjs.OverworldCode.GDRuggedTerrainObjects3[i].getVariables().get("CanPass"), false, false) ) {
         isConditionTrue_0 = true;
-        gdjs.OverworldCode.GDVinesObjects2[k] = gdjs.OverworldCode.GDVinesObjects2[i];
+        gdjs.OverworldCode.GDRuggedTerrainObjects3[k] = gdjs.OverworldCode.GDRuggedTerrainObjects3[i];
         ++k;
     }
 }
-gdjs.OverworldCode.GDVinesObjects2.length = k;
-for (var i = 0, k = 0, l = gdjs.OverworldCode.GDWallObjects2.length;i<l;++i) {
-    if ( gdjs.OverworldCode.GDWallObjects2[i].getVariableBoolean(gdjs.OverworldCode.GDWallObjects2[i].getVariables().get("IsBreaking"), false, false) ) {
+gdjs.OverworldCode.GDRuggedTerrainObjects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer1Objects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer1Objects3[i].getVariableBoolean(gdjs.OverworldCode.GDServer1Objects3[i].getVariables().get("CanPass"), false, false) ) {
         isConditionTrue_0 = true;
-        gdjs.OverworldCode.GDWallObjects2[k] = gdjs.OverworldCode.GDWallObjects2[i];
+        gdjs.OverworldCode.GDServer1Objects3[k] = gdjs.OverworldCode.GDServer1Objects3[i];
         ++k;
     }
 }
-gdjs.OverworldCode.GDWallObjects2.length = k;
+gdjs.OverworldCode.GDServer1Objects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer3Objects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer3Objects3[i].getVariableBoolean(gdjs.OverworldCode.GDServer3Objects3[i].getVariables().get("CanPass"), false, false) ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer3Objects3[k] = gdjs.OverworldCode.GDServer3Objects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer3Objects3.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer2Objects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer2Objects3[i].getVariableBoolean(gdjs.OverworldCode.GDServer2Objects3[i].getVariables().get("CanPass"), false, false) ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer2Objects3[k] = gdjs.OverworldCode.GDServer2Objects3[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer2Objects3.length = k;
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.OverworldCode.GDBoulderObjects2 */
-/* Reuse gdjs.OverworldCode.GDVinesObjects2 */
-/* Reuse gdjs.OverworldCode.GDWallObjects2 */
-{gdjs.OverworldCode.localVariables[0].getFromIndex(0).setString(((gdjs.OverworldCode.GDWallObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDVinesObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDBoulderObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDBoulderObjects2[0].getVariables()) : gdjs.OverworldCode.GDVinesObjects2[0].getVariables()) : gdjs.OverworldCode.GDWallObjects2[0].getVariables()).get("StartText").getAsString());
+/* Reuse gdjs.OverworldCode.GDBridgeObjects3 */
+/* Reuse gdjs.OverworldCode.GDRuggedTerrainObjects3 */
+/* Reuse gdjs.OverworldCode.GDServer1Objects3 */
+/* Reuse gdjs.OverworldCode.GDServer2Objects3 */
+/* Reuse gdjs.OverworldCode.GDServer3Objects3 */
+{gdjs.OverworldCode.localVariables[0].getFromIndex(0).setString(((gdjs.OverworldCode.GDServer2Objects3.length === 0 ) ? ((gdjs.OverworldCode.GDServer3Objects3.length === 0 ) ? ((gdjs.OverworldCode.GDServer1Objects3.length === 0 ) ? ((gdjs.OverworldCode.GDRuggedTerrainObjects3.length === 0 ) ? ((gdjs.OverworldCode.GDBridgeObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDBridgeObjects3[0].getVariables()) : gdjs.OverworldCode.GDRuggedTerrainObjects3[0].getVariables()) : gdjs.OverworldCode.GDServer1Objects3[0].getVariables()) : gdjs.OverworldCode.GDServer3Objects3[0].getVariables()) : gdjs.OverworldCode.GDServer2Objects3[0].getVariables()).get("StartText").getAsString());
 }
-
 { //Subevents
-gdjs.OverworldCode.eventsList3(runtimeScene);} //End of subevents
+gdjs.OverworldCode.eventsList11(runtimeScene);} //End of subevents
 }
 gdjs.OverworldCode.localVariables.pop();
 
@@ -430,70 +1451,288 @@ gdjs.OverworldCode.localVariables.pop();
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Boulder"), gdjs.OverworldCode.GDBoulderObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Vines"), gdjs.OverworldCode.GDVinesObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Wall"), gdjs.OverworldCode.GDWallObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Bridge"), gdjs.OverworldCode.GDBridgeObjects2);
+gdjs.copyArray(runtimeScene.getObjects("RuggedTerrain"), gdjs.OverworldCode.GDRuggedTerrainObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Server1"), gdjs.OverworldCode.GDServer1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("Server2"), gdjs.OverworldCode.GDServer2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("Server3"), gdjs.OverworldCode.GDServer3Objects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.OverworldCode.GDBoulderObjects1.length;i<l;++i) {
-    if ( gdjs.OverworldCode.GDBoulderObjects1[i].getTimerElapsedTimeInSecondsOrNaN("Break") >= 2 ) {
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDBridgeObjects2.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDBridgeObjects2[i].getTimerElapsedTimeInSecondsOrNaN("Break") >= 2 ) {
         isConditionTrue_0 = true;
-        gdjs.OverworldCode.GDBoulderObjects1[k] = gdjs.OverworldCode.GDBoulderObjects1[i];
+        gdjs.OverworldCode.GDBridgeObjects2[k] = gdjs.OverworldCode.GDBridgeObjects2[i];
         ++k;
     }
 }
-gdjs.OverworldCode.GDBoulderObjects1.length = k;
-for (var i = 0, k = 0, l = gdjs.OverworldCode.GDVinesObjects1.length;i<l;++i) {
-    if ( gdjs.OverworldCode.GDVinesObjects1[i].getTimerElapsedTimeInSecondsOrNaN("Break") >= 2 ) {
+gdjs.OverworldCode.GDBridgeObjects2.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDRuggedTerrainObjects2.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDRuggedTerrainObjects2[i].getTimerElapsedTimeInSecondsOrNaN("Break") >= 2 ) {
         isConditionTrue_0 = true;
-        gdjs.OverworldCode.GDVinesObjects1[k] = gdjs.OverworldCode.GDVinesObjects1[i];
+        gdjs.OverworldCode.GDRuggedTerrainObjects2[k] = gdjs.OverworldCode.GDRuggedTerrainObjects2[i];
         ++k;
     }
 }
-gdjs.OverworldCode.GDVinesObjects1.length = k;
-for (var i = 0, k = 0, l = gdjs.OverworldCode.GDWallObjects1.length;i<l;++i) {
-    if ( gdjs.OverworldCode.GDWallObjects1[i].getTimerElapsedTimeInSecondsOrNaN("Break") >= 2 ) {
+gdjs.OverworldCode.GDRuggedTerrainObjects2.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer1Objects2.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer1Objects2[i].getTimerElapsedTimeInSecondsOrNaN("Break") >= 2 ) {
         isConditionTrue_0 = true;
-        gdjs.OverworldCode.GDWallObjects1[k] = gdjs.OverworldCode.GDWallObjects1[i];
+        gdjs.OverworldCode.GDServer1Objects2[k] = gdjs.OverworldCode.GDServer1Objects2[i];
         ++k;
     }
 }
-gdjs.OverworldCode.GDWallObjects1.length = k;
+gdjs.OverworldCode.GDServer1Objects2.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer3Objects2.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer3Objects2[i].getTimerElapsedTimeInSecondsOrNaN("Break") >= 2 ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer3Objects2[k] = gdjs.OverworldCode.GDServer3Objects2[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer3Objects2.length = k;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDServer2Objects2.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDServer2Objects2[i].getTimerElapsedTimeInSecondsOrNaN("Break") >= 2 ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDServer2Objects2[k] = gdjs.OverworldCode.GDServer2Objects2[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDServer2Objects2.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.OverworldCode.GDBoulderObjects1 */
-/* Reuse gdjs.OverworldCode.GDVinesObjects1 */
-/* Reuse gdjs.OverworldCode.GDWallObjects1 */
-{for(var i = 0, len = gdjs.OverworldCode.GDBoulderObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDBoulderObjects1[i].deleteFromScene(runtimeScene);
+/* Reuse gdjs.OverworldCode.GDBridgeObjects2 */
+/* Reuse gdjs.OverworldCode.GDRuggedTerrainObjects2 */
+/* Reuse gdjs.OverworldCode.GDServer1Objects2 */
+/* Reuse gdjs.OverworldCode.GDServer2Objects2 */
+/* Reuse gdjs.OverworldCode.GDServer3Objects2 */
+{for(var i = 0, len = gdjs.OverworldCode.GDBridgeObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBridgeObjects2[i].removeTimer("Break");
 }
-for(var i = 0, len = gdjs.OverworldCode.GDVinesObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDVinesObjects1[i].deleteFromScene(runtimeScene);
+for(var i = 0, len = gdjs.OverworldCode.GDRuggedTerrainObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDRuggedTerrainObjects2[i].removeTimer("Break");
 }
-for(var i = 0, len = gdjs.OverworldCode.GDWallObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDWallObjects1[i].deleteFromScene(runtimeScene);
+for(var i = 0, len = gdjs.OverworldCode.GDServer1Objects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer1Objects2[i].removeTimer("Break");
 }
+for(var i = 0, len = gdjs.OverworldCode.GDServer3Objects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer3Objects2[i].removeTimer("Break");
 }
-{for(var i = 0, len = gdjs.OverworldCode.GDBoulderObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDBoulderObjects1[i].removeTimer("Break");
+for(var i = 0, len = gdjs.OverworldCode.GDServer2Objects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer2Objects2[i].removeTimer("Break");
 }
-for(var i = 0, len = gdjs.OverworldCode.GDVinesObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDVinesObjects1[i].removeTimer("Break");
+}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "TextDialogTimer");
 }
-for(var i = 0, len = gdjs.OverworldCode.GDWallObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDWallObjects1[i].removeTimer("Break");
-}
-}
-{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "TextDialogTimer");
-}
+{ //Subevents
+gdjs.OverworldCode.eventsList12(runtimeScene);} //End of subevents
 }
 
 }
 
 
 };gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.OverworldCode.GDPlayerObjects2});
-gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDRingObjects2ObjectsGDgdjs_9546OverworldCode_9546GDHammerObjects2ObjectsGDgdjs_9546OverworldCode_9546GDSwordObjects2Objects = Hashtable.newFrom({"Ring": gdjs.OverworldCode.GDRingObjects2, "Hammer": gdjs.OverworldCode.GDHammerObjects2, "Sword": gdjs.OverworldCode.GDSwordObjects2});
-gdjs.OverworldCode.eventsList5 = function(runtimeScene) {
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDClose_95959595ButtonObjects2Objects = Hashtable.newFrom({"Close_Button": gdjs.OverworldCode.GDClose_9595ButtonObjects2});
+gdjs.OverworldCode.eventsList14 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(gdjs.OverworldCode.GDCableObjects4, gdjs.OverworldCode.GDCableObjects5);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDCableObjects5.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDCableObjects5[i].getVariableNumber(gdjs.OverworldCode.GDCableObjects5[i].getVariables().getFromIndex(0)) > 3 ) {
+        isConditionTrue_0 = true;
+        gdjs.OverworldCode.GDCableObjects5[k] = gdjs.OverworldCode.GDCableObjects5[i];
+        ++k;
+    }
+}
+gdjs.OverworldCode.GDCableObjects5.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.OverworldCode.GDCableObjects5 */
+{for(var i = 0, len = gdjs.OverworldCode.GDCableObjects5.length ;i < len;++i) {
+    gdjs.OverworldCode.GDCableObjects5[i].returnVariable(gdjs.OverworldCode.GDCableObjects5[i].getVariables().getFromIndex(0)).setNumber(0);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+/* Reuse gdjs.OverworldCode.GDCableObjects4 */
+{for(var i = 0, len = gdjs.OverworldCode.GDCableObjects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDCableObjects4[i].getBehavior("Animation").setAnimationIndex(gdjs.OverworldCode.GDCableObjects4[i].getVariables().getFromIndex(0).getAsNumber());
+}
+}}
+
+}
+
+
+};gdjs.OverworldCode.eventsList15 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(gdjs.OverworldCode.GDCableObjects3, gdjs.OverworldCode.GDCableObjects4);
+
+gdjs.copyArray(runtimeScene.getObjects("Server2"), gdjs.OverworldCode.GDServer2Objects4);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (((gdjs.OverworldCode.GDCableObjects4.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDCableObjects4[0].getVariables()).getFromIndex(0).getAsNumber() != ((gdjs.OverworldCode.GDServer2Objects4.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDServer2Objects4[0].getVariables()).getFromIndex(0).getAsNumber());
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.OverworldCode.GDCableObjects4 */
+{for(var i = 0, len = gdjs.OverworldCode.GDCableObjects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDCableObjects4[i].returnVariable(gdjs.OverworldCode.GDCableObjects4[i].getVariables().getFromIndex(0)).add(1);
+}
+}
+{ //Subevents
+gdjs.OverworldCode.eventsList14(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.OverworldCode.GDCableObjects3, gdjs.OverworldCode.GDCableObjects4);
+
+gdjs.copyArray(runtimeScene.getObjects("Server2"), gdjs.OverworldCode.GDServer2Objects4);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (((gdjs.OverworldCode.GDCableObjects4.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDCableObjects4[0].getVariables()).getFromIndex(0).getAsNumber() == ((gdjs.OverworldCode.GDServer2Objects4.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDServer2Objects4[0].getVariables()).getFromIndex(0).getAsNumber());
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("NPC_3"), gdjs.OverworldCode.GDNPC_95953Objects4);
+/* Reuse gdjs.OverworldCode.GDServer2Objects4 */
+{for(var i = 0, len = gdjs.OverworldCode.GDServer2Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer2Objects4[i].getBehavior("Animation").setAnimationName("On");
+}
+}{for(var i = 0, len = gdjs.OverworldCode.GDNPC_95953Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDNPC_95953Objects4[i].getBehavior("Animation").setAnimationIndex(gdjs.OverworldCode.GDNPC_95953Objects4[i].getBehavior("Animation").getAnimationIndex() + (1));
+}
+}{for(var i = 0, len = gdjs.OverworldCode.GDServer2Objects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer2Objects4[i].returnVariable(gdjs.OverworldCode.GDServer2Objects4[i].getVariables().getFromIndex(5)).setBoolean(true);
+}
+}}
+
+}
+
+
+};gdjs.OverworldCode.eventsList16 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Cable"), gdjs.OverworldCode.GDCableObjects2);
+
+for (gdjs.OverworldCode.forEachIndex3 = 0;gdjs.OverworldCode.forEachIndex3 < gdjs.OverworldCode.GDCableObjects2.length;++gdjs.OverworldCode.forEachIndex3) {
+gdjs.copyArray(gdjs.OverworldCode.GDClose_9595ButtonObjects2, gdjs.OverworldCode.GDClose_9595ButtonObjects3);
+
+gdjs.OverworldCode.GDCableObjects3.length = 0;
+
+
+gdjs.OverworldCode.forEachTemporary3 = gdjs.OverworldCode.GDCableObjects2[gdjs.OverworldCode.forEachIndex3];
+gdjs.OverworldCode.GDCableObjects3.push(gdjs.OverworldCode.forEachTemporary3);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (((gdjs.OverworldCode.GDCableObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDCableObjects3[0].getVariables()).getFromIndex(1).getAsNumber() == ((gdjs.OverworldCode.GDClose_9595ButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDClose_9595ButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber());
+}
+if (isConditionTrue_0) {
+
+{ //Subevents: 
+gdjs.OverworldCode.eventsList15(runtimeScene);} //Subevents end.
+}
+}
+
+}
+
+
+};gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.OverworldCode.GDPlayerObjects1});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDClose_95959595ButtonObjects1Objects = Hashtable.newFrom({"Close_Button": gdjs.OverworldCode.GDClose_9595ButtonObjects1});
+gdjs.OverworldCode.eventsList17 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Close_Button"), gdjs.OverworldCode.GDClose_9595ButtonObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.OverworldCode.GDPlayerObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects2Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDClose_95959595ButtonObjects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28298780);
+}
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.OverworldCode.GDClose_9595ButtonObjects2 */
+{for(var i = 0, len = gdjs.OverworldCode.GDClose_9595ButtonObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDClose_9595ButtonObjects2[i].getBehavior("Animation").setAnimationName("Blank");
+}
+}
+{ //Subevents
+gdjs.OverworldCode.eventsList16(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Close_Button"), gdjs.OverworldCode.GDClose_9595ButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.OverworldCode.GDPlayerObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects1Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDClose_95959595ButtonObjects1Objects, true, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(27507476);
+}
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.OverworldCode.GDClose_9595ButtonObjects1 */
+{for(var i = 0, len = gdjs.OverworldCode.GDClose_9595ButtonObjects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDClose_9595ButtonObjects1[i].getBehavior("Animation").setAnimationName("Close");
+}
+}}
+
+}
+
+
+};gdjs.OverworldCode.eventsList18 = function(runtimeScene) {
+
+{
+
+
+gdjs.OverworldCode.eventsList17(runtimeScene);
+}
+
+
+};gdjs.OverworldCode.eventsList19 = function(runtimeScene) {
+
+{
+
+
+gdjs.OverworldCode.eventsList13(runtimeScene);
+}
+
+
+{
+
+
+gdjs.OverworldCode.eventsList18(runtimeScene);
+}
+
+
+};gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.OverworldCode.GDPlayerObjects2});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBackpackObjects2ObjectsGDgdjs_9546OverworldCode_9546GDAxeObjects2ObjectsGDgdjs_9546OverworldCode_9546GDBootsObjects2ObjectsGDgdjs_9546OverworldCode_9546GDBottleObjects2ObjectsGDgdjs_9546OverworldCode_9546GDBatteriesObjects2Objects = Hashtable.newFrom({"Backpack": gdjs.OverworldCode.GDBackpackObjects2, "Axe": gdjs.OverworldCode.GDAxeObjects2, "Boots": gdjs.OverworldCode.GDBootsObjects2, "Bottle": gdjs.OverworldCode.GDBottleObjects2, "Batteries": gdjs.OverworldCode.GDBatteriesObjects2});
+gdjs.OverworldCode.eventsList20 = function(runtimeScene) {
 
 {
 
@@ -508,17 +1747,19 @@ isConditionTrue_0 = false;
 }
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(gdjs.OverworldCode.GDHammerObjects2, gdjs.OverworldCode.GDHammerObjects5);
+gdjs.copyArray(gdjs.OverworldCode.GDAxeObjects2, gdjs.OverworldCode.GDAxeObjects5);
 
-gdjs.copyArray(gdjs.OverworldCode.GDRingObjects2, gdjs.OverworldCode.GDRingObjects5);
+gdjs.copyArray(gdjs.OverworldCode.GDBackpackObjects2, gdjs.OverworldCode.GDBackpackObjects5);
 
-gdjs.copyArray(gdjs.OverworldCode.GDSwordObjects2, gdjs.OverworldCode.GDSwordObjects5);
+gdjs.copyArray(gdjs.OverworldCode.GDBatteriesObjects2, gdjs.OverworldCode.GDBatteriesObjects5);
 
-{runtimeScene.getGame().getVariables().getFromIndex(0).getChild(gdjs.OverworldCode.localVariables[1].getFromIndex(0).getAsNumber()).getChild("Name").setString((( gdjs.OverworldCode.GDSwordObjects5.length === 0 ) ? (( gdjs.OverworldCode.GDHammerObjects5.length === 0 ) ? (( gdjs.OverworldCode.GDRingObjects5.length === 0 ) ? "" :gdjs.OverworldCode.GDRingObjects5[0].getName()) :gdjs.OverworldCode.GDHammerObjects5[0].getName()) :gdjs.OverworldCode.GDSwordObjects5[0].getName()));
-}
-{gdjs.OverworldCode.localVariables[0].getFromIndex(0).setBoolean(true);
-}
-}
+gdjs.copyArray(gdjs.OverworldCode.GDBootsObjects2, gdjs.OverworldCode.GDBootsObjects5);
+
+gdjs.copyArray(gdjs.OverworldCode.GDBottleObjects2, gdjs.OverworldCode.GDBottleObjects5);
+
+{runtimeScene.getGame().getVariables().getFromIndex(0).getChild(gdjs.OverworldCode.localVariables[1].getFromIndex(0).getAsNumber()).getChild("Name").setString((( gdjs.OverworldCode.GDBatteriesObjects5.length === 0 ) ? (( gdjs.OverworldCode.GDBottleObjects5.length === 0 ) ? (( gdjs.OverworldCode.GDBootsObjects5.length === 0 ) ? (( gdjs.OverworldCode.GDAxeObjects5.length === 0 ) ? (( gdjs.OverworldCode.GDBackpackObjects5.length === 0 ) ? "" :gdjs.OverworldCode.GDBackpackObjects5[0].getName()) :gdjs.OverworldCode.GDAxeObjects5[0].getName()) :gdjs.OverworldCode.GDBootsObjects5[0].getName()) :gdjs.OverworldCode.GDBottleObjects5[0].getName()) :gdjs.OverworldCode.GDBatteriesObjects5[0].getName()));
+}{gdjs.OverworldCode.localVariables[0].getFromIndex(0).setBoolean(true);
+}}
 
 }
 
@@ -529,13 +1770,12 @@ gdjs.copyArray(gdjs.OverworldCode.GDSwordObjects2, gdjs.OverworldCode.GDSwordObj
 let isConditionTrue_0 = false;
 {
 {gdjs.OverworldCode.localVariables[1].getFromIndex(0).add(1);
-}
-}
+}}
 
 }
 
 
-};gdjs.OverworldCode.eventsList6 = function(runtimeScene) {
+};gdjs.OverworldCode.eventsList21 = function(runtimeScene) {
 
 {
 
@@ -548,14 +1788,14 @@ if (true)
 {
 
 { //Subevents: 
-gdjs.OverworldCode.eventsList5(runtimeScene);} //Subevents end.
+gdjs.OverworldCode.eventsList20(runtimeScene);} //Subevents end.
 }
 }
 
 }
 
 
-};gdjs.OverworldCode.eventsList7 = function(runtimeScene) {
+};gdjs.OverworldCode.eventsList22 = function(runtimeScene) {
 
 {
 
@@ -573,7 +1813,7 @@ let isConditionTrue_0 = false;
 {
 
 { //Subevents
-gdjs.OverworldCode.eventsList6(runtimeScene);} //End of subevents
+gdjs.OverworldCode.eventsList21(runtimeScene);} //End of subevents
 }
 gdjs.OverworldCode.localVariables.pop();
 
@@ -588,27 +1828,33 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = gdjs.OverworldCode.localVariables[0].getFromIndex(0).getAsBoolean();
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.OverworldCode.GDHammerObjects2 */
-/* Reuse gdjs.OverworldCode.GDRingObjects2 */
-/* Reuse gdjs.OverworldCode.GDSwordObjects2 */
-{for(var i = 0, len = gdjs.OverworldCode.GDRingObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDRingObjects2[i].deleteFromScene(runtimeScene);
+/* Reuse gdjs.OverworldCode.GDAxeObjects2 */
+/* Reuse gdjs.OverworldCode.GDBackpackObjects2 */
+/* Reuse gdjs.OverworldCode.GDBatteriesObjects2 */
+/* Reuse gdjs.OverworldCode.GDBootsObjects2 */
+/* Reuse gdjs.OverworldCode.GDBottleObjects2 */
+{for(var i = 0, len = gdjs.OverworldCode.GDBackpackObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBackpackObjects2[i].deleteFromScene(runtimeScene);
 }
-for(var i = 0, len = gdjs.OverworldCode.GDHammerObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDHammerObjects2[i].deleteFromScene(runtimeScene);
+for(var i = 0, len = gdjs.OverworldCode.GDAxeObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDAxeObjects2[i].deleteFromScene(runtimeScene);
 }
-for(var i = 0, len = gdjs.OverworldCode.GDSwordObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDSwordObjects2[i].deleteFromScene(runtimeScene);
+for(var i = 0, len = gdjs.OverworldCode.GDBootsObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBootsObjects2[i].deleteFromScene(runtimeScene);
 }
+for(var i = 0, len = gdjs.OverworldCode.GDBottleObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBottleObjects2[i].deleteFromScene(runtimeScene);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(1).setBoolean(true);
+for(var i = 0, len = gdjs.OverworldCode.GDBatteriesObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBatteriesObjects2[i].deleteFromScene(runtimeScene);
 }
-}
+}{runtimeScene.getGame().getVariables().getFromIndex(1).setBoolean(true);
+}}
 
 }
 
 
-};gdjs.OverworldCode.eventsList8 = function(runtimeScene) {
+};gdjs.OverworldCode.eventsList23 = function(runtimeScene) {
 
 {
 
@@ -633,7 +1879,7 @@ let isConditionTrue_0 = false;
 {
 
 { //Subevents
-gdjs.OverworldCode.eventsList7(runtimeScene);} //End of subevents
+gdjs.OverworldCode.eventsList22(runtimeScene);} //End of subevents
 }
 gdjs.OverworldCode.localVariables.pop();
 
@@ -641,7 +1887,7 @@ gdjs.OverworldCode.localVariables.pop();
 
 
 };gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDInventoryIconObjects4Objects = Hashtable.newFrom({"InventoryIcon": gdjs.OverworldCode.GDInventoryIconObjects4});
-gdjs.OverworldCode.eventsList9 = function(runtimeScene) {
+gdjs.OverworldCode.eventsList24 = function(runtimeScene) {
 
 {
 
@@ -666,17 +1912,14 @@ if (isConditionTrue_0) {
 /* Reuse gdjs.OverworldCode.GDInventorySlotObjects4 */
 gdjs.OverworldCode.GDInventoryIconObjects4.length = 0;
 
-{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDInventoryIconObjects4Objects, (( gdjs.OverworldCode.GDInventorySlotObjects4.length === 0 ) ? 0 :gdjs.OverworldCode.GDInventorySlotObjects4[0].getPointX("")) + 25, (( gdjs.OverworldCode.GDInventorySlotObjects4.length === 0 ) ? 0 :gdjs.OverworldCode.GDInventorySlotObjects4[0].getPointY("")) + 25, "UI");
-}
-{for(var i = 0, len = gdjs.OverworldCode.GDInventoryIconObjects4.length ;i < len;++i) {
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDInventoryIconObjects4Objects, (( gdjs.OverworldCode.GDInventorySlotObjects4.length === 0 ) ? 0 :gdjs.OverworldCode.GDInventorySlotObjects4[0].getPointX("")) + 25, (( gdjs.OverworldCode.GDInventorySlotObjects4.length === 0 ) ? 0 :gdjs.OverworldCode.GDInventorySlotObjects4[0].getPointY("")) + 25, "UI");
+}{for(var i = 0, len = gdjs.OverworldCode.GDInventoryIconObjects4.length ;i < len;++i) {
     gdjs.OverworldCode.GDInventoryIconObjects4[i].getBehavior("Animation").setAnimationName(runtimeScene.getGame().getVariables().getFromIndex(0).getChild(gdjs.OverworldCode.localVariables[0].getFromIndex(0).getAsNumber()).getChild("Name").getAsString());
 }
-}
-{for(var i = 0, len = gdjs.OverworldCode.GDInventoryIconObjects4.length ;i < len;++i) {
+}{for(var i = 0, len = gdjs.OverworldCode.GDInventoryIconObjects4.length ;i < len;++i) {
     gdjs.OverworldCode.GDInventoryIconObjects4[i].getBehavior("Scale").setScale(3.125);
 }
-}
-}
+}}
 
 }
 
@@ -687,13 +1930,12 @@ gdjs.OverworldCode.GDInventoryIconObjects4.length = 0;
 let isConditionTrue_0 = false;
 {
 {gdjs.OverworldCode.localVariables[0].getFromIndex(0).add(1);
-}
-}
+}}
 
 }
 
 
-};gdjs.OverworldCode.eventsList10 = function(runtimeScene) {
+};gdjs.OverworldCode.eventsList25 = function(runtimeScene) {
 
 {
 
@@ -706,14 +1948,14 @@ if (true)
 {
 
 { //Subevents: 
-gdjs.OverworldCode.eventsList9(runtimeScene);} //Subevents end.
+gdjs.OverworldCode.eventsList24(runtimeScene);} //Subevents end.
 }
 }
 
 }
 
 
-};gdjs.OverworldCode.eventsList11 = function(runtimeScene) {
+};gdjs.OverworldCode.eventsList26 = function(runtimeScene) {
 
 {
 
@@ -731,8 +1973,7 @@ gdjs.copyArray(runtimeScene.getObjects("InventoryIcon"), gdjs.OverworldCode.GDIn
 {for(var i = 0, len = gdjs.OverworldCode.GDInventoryIconObjects3.length ;i < len;++i) {
     gdjs.OverworldCode.GDInventoryIconObjects3[i].deleteFromScene(runtimeScene);
 }
-}
-}
+}}
 
 }
 
@@ -753,82 +1994,82 @@ let isConditionTrue_0 = false;
 {
 
 { //Subevents
-gdjs.OverworldCode.eventsList10(runtimeScene);} //End of subevents
+gdjs.OverworldCode.eventsList25(runtimeScene);} //End of subevents
 }
 gdjs.OverworldCode.localVariables.pop();
 
 }
 
 
-};gdjs.OverworldCode.eventsList12 = function(runtimeScene) {
+};gdjs.OverworldCode.eventsList27 = function(runtimeScene) {
 
 {
 
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("Hammer"), gdjs.OverworldCode.GDHammerObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Ring"), gdjs.OverworldCode.GDRingObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Sword"), gdjs.OverworldCode.GDSwordObjects2);
-{for(var i = 0, len = gdjs.OverworldCode.GDRingObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDRingObjects2[i].setY((gdjs.RuntimeObject.getVariableNumber(gdjs.OverworldCode.GDRingObjects2[i].getVariables().get("BaseY"))) + Math.sin(runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() * 3) * 5);
+gdjs.copyArray(runtimeScene.getObjects("Axe"), gdjs.OverworldCode.GDAxeObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Backpack"), gdjs.OverworldCode.GDBackpackObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Batteries"), gdjs.OverworldCode.GDBatteriesObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Boots"), gdjs.OverworldCode.GDBootsObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Bottle"), gdjs.OverworldCode.GDBottleObjects2);
+{for(var i = 0, len = gdjs.OverworldCode.GDBackpackObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBackpackObjects2[i].setY((gdjs.RuntimeObject.getVariableNumber(gdjs.OverworldCode.GDBackpackObjects2[i].getVariables().get("BaseY"))) + Math.sin(runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() * 3) * 5);
 }
-for(var i = 0, len = gdjs.OverworldCode.GDHammerObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDHammerObjects2[i].setY((gdjs.RuntimeObject.getVariableNumber(gdjs.OverworldCode.GDHammerObjects2[i].getVariables().get("BaseY"))) + Math.sin(runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() * 3) * 5);
+for(var i = 0, len = gdjs.OverworldCode.GDAxeObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDAxeObjects2[i].setY((gdjs.RuntimeObject.getVariableNumber(gdjs.OverworldCode.GDAxeObjects2[i].getVariables().get("BaseY"))) + Math.sin(runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() * 3) * 5);
 }
-for(var i = 0, len = gdjs.OverworldCode.GDSwordObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDSwordObjects2[i].setY((gdjs.RuntimeObject.getVariableNumber(gdjs.OverworldCode.GDSwordObjects2[i].getVariables().get("BaseY"))) + Math.sin(runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() * 3) * 5);
+for(var i = 0, len = gdjs.OverworldCode.GDBootsObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBootsObjects2[i].setY((gdjs.RuntimeObject.getVariableNumber(gdjs.OverworldCode.GDBootsObjects2[i].getVariables().get("BaseY"))) + Math.sin(runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() * 3) * 5);
 }
+for(var i = 0, len = gdjs.OverworldCode.GDBottleObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBottleObjects2[i].setY((gdjs.RuntimeObject.getVariableNumber(gdjs.OverworldCode.GDBottleObjects2[i].getVariables().get("BaseY"))) + Math.sin(runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() * 3) * 5);
 }
-{runtimeScene.getScene().getVariables().getFromIndex(0).add(gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene));
+for(var i = 0, len = gdjs.OverworldCode.GDBatteriesObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBatteriesObjects2[i].setY((gdjs.RuntimeObject.getVariableNumber(gdjs.OverworldCode.GDBatteriesObjects2[i].getVariables().get("BaseY"))) + Math.sin(runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() * 3) * 5);
 }
-}
+}{runtimeScene.getScene().getVariables().getFromIndex(0).add(gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene));
+}}
 
 }
 
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Hammer"), gdjs.OverworldCode.GDHammerObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Axe"), gdjs.OverworldCode.GDAxeObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Backpack"), gdjs.OverworldCode.GDBackpackObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Batteries"), gdjs.OverworldCode.GDBatteriesObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Boots"), gdjs.OverworldCode.GDBootsObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Bottle"), gdjs.OverworldCode.GDBottleObjects2);
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.OverworldCode.GDPlayerObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Ring"), gdjs.OverworldCode.GDRingObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Sword"), gdjs.OverworldCode.GDSwordObjects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects2Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDRingObjects2ObjectsGDgdjs_9546OverworldCode_9546GDHammerObjects2ObjectsGDgdjs_9546OverworldCode_9546GDSwordObjects2Objects, false, runtimeScene, false);
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects2Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDBackpackObjects2ObjectsGDgdjs_9546OverworldCode_9546GDAxeObjects2ObjectsGDgdjs_9546OverworldCode_9546GDBootsObjects2ObjectsGDgdjs_9546OverworldCode_9546GDBottleObjects2ObjectsGDgdjs_9546OverworldCode_9546GDBatteriesObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16136764);
-}
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.OverworldCode.GDHammerObjects2 */
+/* Reuse gdjs.OverworldCode.GDAxeObjects2 */
+/* Reuse gdjs.OverworldCode.GDBackpackObjects2 */
+/* Reuse gdjs.OverworldCode.GDBatteriesObjects2 */
+/* Reuse gdjs.OverworldCode.GDBootsObjects2 */
+/* Reuse gdjs.OverworldCode.GDBottleObjects2 */
 /* Reuse gdjs.OverworldCode.GDPlayerObjects2 */
-/* Reuse gdjs.OverworldCode.GDRingObjects2 */
-/* Reuse gdjs.OverworldCode.GDSwordObjects2 */
 gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextDialogObjects2);
 {for(var i = 0, len = gdjs.OverworldCode.GDPlayerObjects2.length ;i < len;++i) {
     gdjs.OverworldCode.GDPlayerObjects2[i].activateBehavior("TopDownMovement", false);
 }
-}
-{for(var i = 0, len = gdjs.OverworldCode.GDPlayerObjects2.length ;i < len;++i) {
+}{for(var i = 0, len = gdjs.OverworldCode.GDPlayerObjects2.length ;i < len;++i) {
     gdjs.OverworldCode.GDPlayerObjects2[i].activateBehavior("TopDownMovementAnimator", false);
 }
-}
-{for(var i = 0, len = gdjs.OverworldCode.GDPlayerObjects2.length ;i < len;++i) {
+}{for(var i = 0, len = gdjs.OverworldCode.GDPlayerObjects2.length ;i < len;++i) {
     gdjs.OverworldCode.GDPlayerObjects2[i].getBehavior("Animation").pauseAnimation();
 }
-}
-{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "PickupDelay");
-}
-{for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(((gdjs.OverworldCode.GDSwordObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDHammerObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDRingObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDRingObjects2[0].getVariables()) : gdjs.OverworldCode.GDHammerObjects2[0].getVariables()) : gdjs.OverworldCode.GDSwordObjects2[0].getVariables()).get("PickupText").getAsString(), "TextDialogTimer", null);
+}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "PickupDelay");
+}{for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(((gdjs.OverworldCode.GDBatteriesObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDBottleObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDBootsObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDAxeObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDBackpackObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDBackpackObjects2[0].getVariables()) : gdjs.OverworldCode.GDAxeObjects2[0].getVariables()) : gdjs.OverworldCode.GDBootsObjects2[0].getVariables()) : gdjs.OverworldCode.GDBottleObjects2[0].getVariables()) : gdjs.OverworldCode.GDBatteriesObjects2[0].getVariables()).get("PickupText").getAsString(), "TextDialogTimer", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }
-
 { //Subevents
-gdjs.OverworldCode.eventsList8(runtimeScene);} //End of subevents
+gdjs.OverworldCode.eventsList23(runtimeScene);} //End of subevents
 }
 
 }
@@ -844,9 +2085,8 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(1).setBoolean(false);
 }
-
 { //Subevents
-gdjs.OverworldCode.eventsList11(runtimeScene);} //End of subevents
+gdjs.OverworldCode.eventsList26(runtimeScene);} //End of subevents
 }
 
 }
@@ -863,53 +2103,65 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.OverworldCode.GDPlayerObj
 {for(var i = 0, len = gdjs.OverworldCode.GDPlayerObjects1.length ;i < len;++i) {
     gdjs.OverworldCode.GDPlayerObjects1[i].activateBehavior("TopDownMovement", true);
 }
-}
-{for(var i = 0, len = gdjs.OverworldCode.GDPlayerObjects1.length ;i < len;++i) {
+}{for(var i = 0, len = gdjs.OverworldCode.GDPlayerObjects1.length ;i < len;++i) {
     gdjs.OverworldCode.GDPlayerObjects1[i].activateBehavior("TopDownMovementAnimator", true);
 }
-}
-{for(var i = 0, len = gdjs.OverworldCode.GDPlayerObjects1.length ;i < len;++i) {
+}{for(var i = 0, len = gdjs.OverworldCode.GDPlayerObjects1.length ;i < len;++i) {
     gdjs.OverworldCode.GDPlayerObjects1[i].getBehavior("Animation").resumeAnimation();
 }
-}
-{gdjs.evtTools.runtimeScene.removeTimer(runtimeScene, "PickupDelay");
-}
-{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "TextDialogTimer");
-}
-}
+}{gdjs.evtTools.runtimeScene.removeTimer(runtimeScene, "PickupDelay");
+}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "TextDialogTimer");
+}}
 
 }
 
 
 };gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.OverworldCode.GDPlayerObjects2});
-gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDNPCObjects2ObjectsGDgdjs_9546OverworldCode_9546GDNPClvl2Objects2ObjectsGDgdjs_9546OverworldCode_9546GDSign_959595951Objects2Objects = Hashtable.newFrom({"NPC": gdjs.OverworldCode.GDNPCObjects2, "NPClvl2": gdjs.OverworldCode.GDNPClvl2Objects2, "Sign_1": gdjs.OverworldCode.GDSign_95951Objects2});
-gdjs.OverworldCode.eventsList13 = function(runtimeScene) {
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDNPC_959595951Objects2ObjectsGDgdjs_9546OverworldCode_9546GDNPC_959595952Objects2ObjectsGDgdjs_9546OverworldCode_9546GDSign_95959595Left_95959595RightObjects2ObjectsGDgdjs_9546OverworldCode_9546GDSign_95959595LeftObjects2ObjectsGDgdjs_9546OverworldCode_9546GDSign_95959595RightObjects2Objects = Hashtable.newFrom({"NPC_1": gdjs.OverworldCode.GDNPC_95951Objects2, "NPC_2": gdjs.OverworldCode.GDNPC_95952Objects2, "Sign_Left_Right": gdjs.OverworldCode.GDSign_9595Left_9595RightObjects2, "Sign_Left": gdjs.OverworldCode.GDSign_9595LeftObjects2, "Sign_Right": gdjs.OverworldCode.GDSign_9595RightObjects2});
+gdjs.OverworldCode.eventsList28 = function(runtimeScene) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("NPC"), gdjs.OverworldCode.GDNPCObjects2);
-gdjs.copyArray(runtimeScene.getObjects("NPClvl2"), gdjs.OverworldCode.GDNPClvl2Objects2);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.OverworldCode.GDPlayerObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Sign_1"), gdjs.OverworldCode.GDSign_95951Objects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects2Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDNPCObjects2ObjectsGDgdjs_9546OverworldCode_9546GDNPClvl2Objects2ObjectsGDgdjs_9546OverworldCode_9546GDSign_959595951Objects2Objects, false, runtimeScene, false);
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
+/* Reuse gdjs.OverworldCode.GDTextDialogObjects2 */
+{for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDTextDialogObjects2[i].hide();
+}
+}{gdjs.evtTools.runtimeScene.removeTimer(runtimeScene, "TextDialogTimer");
+}}
+
+}
+
+
+};gdjs.OverworldCode.eventsList29 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("NPC_1"), gdjs.OverworldCode.GDNPC_95951Objects2);
+gdjs.copyArray(runtimeScene.getObjects("NPC_2"), gdjs.OverworldCode.GDNPC_95952Objects2);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.OverworldCode.GDPlayerObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Sign_Left"), gdjs.OverworldCode.GDSign_9595LeftObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Sign_Left_Right"), gdjs.OverworldCode.GDSign_9595Left_9595RightObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Sign_Right"), gdjs.OverworldCode.GDSign_9595RightObjects2);
+
+let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16141484);
-}
-}
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects2Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDNPC_959595951Objects2ObjectsGDgdjs_9546OverworldCode_9546GDNPC_959595952Objects2ObjectsGDgdjs_9546OverworldCode_9546GDSign_95959595Left_95959595RightObjects2ObjectsGDgdjs_9546OverworldCode_9546GDSign_95959595LeftObjects2ObjectsGDgdjs_9546OverworldCode_9546GDSign_95959595RightObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
-/* Reuse gdjs.OverworldCode.GDNPCObjects2 */
-/* Reuse gdjs.OverworldCode.GDNPClvl2Objects2 */
-/* Reuse gdjs.OverworldCode.GDSign_95951Objects2 */
+/* Reuse gdjs.OverworldCode.GDNPC_95951Objects2 */
+/* Reuse gdjs.OverworldCode.GDNPC_95952Objects2 */
+/* Reuse gdjs.OverworldCode.GDSign_9595LeftObjects2 */
+/* Reuse gdjs.OverworldCode.GDSign_9595Left_9595RightObjects2 */
+/* Reuse gdjs.OverworldCode.GDSign_9595RightObjects2 */
 gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextDialogObjects2);
 {for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(((gdjs.OverworldCode.GDSign_95951Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDNPClvl2Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDNPCObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPCObjects2[0].getVariables()) : gdjs.OverworldCode.GDNPClvl2Objects2[0].getVariables()) : gdjs.OverworldCode.GDSign_95951Objects2[0].getVariables()).get("Text").getAsString(), "TextDialogTimer", null);
+    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(((gdjs.OverworldCode.GDSign_9595RightObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDSign_9595LeftObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDSign_9595Left_9595RightObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDNPC_95952Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDNPC_95951Objects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPC_95951Objects2[0].getVariables()) : gdjs.OverworldCode.GDNPC_95952Objects2[0].getVariables()) : gdjs.OverworldCode.GDSign_9595Left_9595RightObjects2[0].getVariables()) : gdjs.OverworldCode.GDSign_9595LeftObjects2[0].getVariables()) : gdjs.OverworldCode.GDSign_9595RightObjects2[0].getVariables()).get("Text").getAsString(), "TextDialogTimer", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
-}
-}
+}}
 
 }
 
@@ -921,19 +2173,36 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "TextDialogTimer") >= 2;
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextDialogObjects2);
+{for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDTextDialogObjects2[i].SetShowSkipText(true, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}
+{ //Subevents
+gdjs.OverworldCode.eventsList28(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "TextDialogTimer") >= 5;
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextDialogObjects1);
 {for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects1.length ;i < len;++i) {
     gdjs.OverworldCode.GDTextDialogObjects1[i].hide();
 }
-}
-{gdjs.evtTools.runtimeScene.removeTimer(runtimeScene, "TextDialogTimer");
-}
-}
+}{gdjs.evtTools.runtimeScene.removeTimer(runtimeScene, "TextDialogTimer");
+}}
 
 }
 
 
-};gdjs.OverworldCode.eventsList14 = function(runtimeScene) {
+};gdjs.OverworldCode.eventsList30 = function(runtimeScene) {
 
 {
 
@@ -950,14 +2219,13 @@ gdjs.copyArray(runtimeScene.getObjects("TargetRoundButton"), gdjs.OverworldCode.
 for(var i = 0, len = gdjs.OverworldCode.GDTargetRoundButtonObjects2.length ;i < len;++i) {
     gdjs.OverworldCode.GDTargetRoundButtonObjects2[i].deleteFromScene(runtimeScene);
 }
-}
-}
+}}
 
 }
 
 
 };gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDTargetRoundButtonObjects1Objects = Hashtable.newFrom({"TargetRoundButton": gdjs.OverworldCode.GDTargetRoundButtonObjects1});
-gdjs.OverworldCode.eventsList15 = function(runtimeScene) {
+gdjs.OverworldCode.eventsList31 = function(runtimeScene) {
 
 {
 
@@ -970,14 +2238,12 @@ gdjs.copyArray(runtimeScene.getObjects("ShadedDarkJoystick"), gdjs.OverworldCode
 {for(var i = 0, len = gdjs.OverworldCode.GDShadedDarkJoystickObjects2.length ;i < len;++i) {
     gdjs.OverworldCode.GDShadedDarkJoystickObjects2[i].hide();
 }
+}{for(var i = 0, len = gdjs.OverworldCode.GDShadedDarkJoystickObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDShadedDarkJoystickObjects2[i].ActivateControl(false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
-{for(var i = 0, len = gdjs.OverworldCode.GDShadedDarkJoystickObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDShadedDarkJoystickObjects2[i].ActivateControl(false, null);
 }
-}
-
 { //Subevents
-gdjs.OverworldCode.eventsList14(runtimeScene);} //End of subevents
+gdjs.OverworldCode.eventsList30(runtimeScene);} //End of subevents
 }
 
 }
@@ -1012,15 +2278,14 @@ isConditionTrue_0 = !isConditionTrue_1;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("ShadedDarkJoystick"), gdjs.OverworldCode.GDShadedDarkJoystickObjects1);
 {for(var i = 0, len = gdjs.OverworldCode.GDShadedDarkJoystickObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDShadedDarkJoystickObjects1[i].TeleportAndPress(null);
+    gdjs.OverworldCode.GDShadedDarkJoystickObjects1[i].TeleportAndPress((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
-}
-}
+}}
 
 }
 
 
-};gdjs.OverworldCode.eventsList16 = function(runtimeScene) {
+};gdjs.OverworldCode.eventsList32 = function(runtimeScene) {
 
 {
 
@@ -1034,140 +2299,113 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.OverworldCode.GDTimerObjects1.length ;i < len;++i) {
     gdjs.OverworldCode.GDTimerObjects1[i].getBehavior("Text").setText("Time: " + gdjs.evtTools.common.toString(Math.floor(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) / 60)) + ":0" + gdjs.evtTools.common.toString(Math.floor(gdjs.evtTools.common.mod(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)), 60))));
 }
-}
-}
+}}
 
 }
 
 
-};gdjs.OverworldCode.eventsList17 = function(runtimeScene) {
+};gdjs.OverworldCode.eventsList33 = function(runtimeScene) {
 
 {
 
 
 let isConditionTrue_0 = false;
-{
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(3).getAsNumber() == 0);
+}
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Timer"), gdjs.OverworldCode.GDTimerObjects1);
 {for(var i = 0, len = gdjs.OverworldCode.GDTimerObjects1.length ;i < len;++i) {
     gdjs.OverworldCode.GDTimerObjects1[i].getBehavior("Text").setText("Time: " + gdjs.evtTools.common.toString(Math.floor(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) / 60)) + ":" + gdjs.evtTools.common.toString(Math.floor(gdjs.evtTools.common.mod(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)), 60))));
 }
 }
-
 { //Subevents
-gdjs.OverworldCode.eventsList16(runtimeScene);} //End of subevents
+gdjs.OverworldCode.eventsList32(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects3Objects = Hashtable.newFrom({"Player": gdjs.OverworldCode.GDPlayerObjects3});
-gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDTallGrassObjects3Objects = Hashtable.newFrom({"TallGrass": gdjs.OverworldCode.GDTallGrassObjects3});
-gdjs.OverworldCode.eventsList18 = function(runtimeScene) {
+};gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.OverworldCode.GDPlayerObjects2});
+gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDNPC_959595953Objects2Objects = Hashtable.newFrom({"NPC_3": gdjs.OverworldCode.GDNPC_95953Objects2});
+gdjs.OverworldCode.eventsList34 = function(runtimeScene) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.OverworldCode.GDPlayerObjects3);
-gdjs.copyArray(gdjs.OverworldCode.GDTallGrassObjects2, gdjs.OverworldCode.GDTallGrassObjects3);
+gdjs.copyArray(gdjs.OverworldCode.GDNPC_95953Objects2, gdjs.OverworldCode.GDNPC_95953Objects3);
 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects3Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDTallGrassObjects3Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.OverworldCode.GDPlayerObjects3.length;i<l;++i) {
-    if ( gdjs.OverworldCode.GDPlayerObjects3[i].getBehavior("TopDownMovement").getSpeed() > 0 ) {
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDNPC_95953Objects3.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDNPC_95953Objects3[i].getBehavior("Animation").getAnimationIndex() < 3 ) {
         isConditionTrue_0 = true;
-        gdjs.OverworldCode.GDPlayerObjects3[k] = gdjs.OverworldCode.GDPlayerObjects3[i];
+        gdjs.OverworldCode.GDNPC_95953Objects3[k] = gdjs.OverworldCode.GDNPC_95953Objects3[i];
         ++k;
     }
 }
-gdjs.OverworldCode.GDPlayerObjects3.length = k;
-}
+gdjs.OverworldCode.GDNPC_95953Objects3.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.OverworldCode.GDTallGrassObjects3 */
-{for(var i = 0, len = gdjs.OverworldCode.GDTallGrassObjects3.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTallGrassObjects3[i].getBehavior("Animation").setAnimationName("Moving");
+/* Reuse gdjs.OverworldCode.GDNPC_95953Objects3 */
+gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextDialogObjects3);
+{for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects3.length ;i < len;++i) {
+    gdjs.OverworldCode.GDTextDialogObjects3[i].DisplayText(((gdjs.OverworldCode.GDNPC_95953Objects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPC_95953Objects3[0].getVariables()).getFromIndex(3).getChild((( gdjs.OverworldCode.GDNPC_95953Objects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDNPC_95953Objects3[0].getBehavior("Animation").getAnimationIndex())).getAsString(), "TextDialogTimer", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
-}
-{for(var i = 0, len = gdjs.OverworldCode.GDTallGrassObjects3.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTallGrassObjects3[i].resetTimer("MovingAnimation");
-}
-}
-}
+}}
 
 }
 
 
 {
 
-gdjs.copyArray(gdjs.OverworldCode.GDTallGrassObjects2, gdjs.OverworldCode.GDTallGrassObjects3);
-
+/* Reuse gdjs.OverworldCode.GDNPC_95953Objects2 */
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.OverworldCode.GDTallGrassObjects3.length;i<l;++i) {
-    if ( gdjs.OverworldCode.GDTallGrassObjects3[i].getTimerElapsedTimeInSecondsOrNaN("MovingAnimation") >= 1 ) {
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDNPC_95953Objects2.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDNPC_95953Objects2[i].getBehavior("Animation").getAnimationIndex() == 3 ) {
         isConditionTrue_0 = true;
-        gdjs.OverworldCode.GDTallGrassObjects3[k] = gdjs.OverworldCode.GDTallGrassObjects3[i];
+        gdjs.OverworldCode.GDNPC_95953Objects2[k] = gdjs.OverworldCode.GDNPC_95953Objects2[i];
         ++k;
     }
 }
-gdjs.OverworldCode.GDTallGrassObjects3.length = k;
+gdjs.OverworldCode.GDNPC_95953Objects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.OverworldCode.GDTallGrassObjects3.length;i<l;++i) {
-    if ( gdjs.OverworldCode.GDTallGrassObjects3[i].getBehavior("Animation").hasAnimationEnded() ) {
-        isConditionTrue_0 = true;
-        gdjs.OverworldCode.GDTallGrassObjects3[k] = gdjs.OverworldCode.GDTallGrassObjects3[i];
-        ++k;
-    }
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(26808316);
 }
-gdjs.OverworldCode.GDTallGrassObjects3.length = k;
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.OverworldCode.GDTallGrassObjects3 */
-{for(var i = 0, len = gdjs.OverworldCode.GDTallGrassObjects3.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTallGrassObjects3[i].getBehavior("Animation").setAnimationName("Base");
+/* Reuse gdjs.OverworldCode.GDNPC_95953Objects2 */
+/* Reuse gdjs.OverworldCode.GDPlayerObjects2 */
+gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextDialogObjects2);
+{for(var i = 0, len = gdjs.OverworldCode.GDPlayerObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDPlayerObjects2[i].activateBehavior("TopDownMovement", false);
 }
+}{for(var i = 0, len = gdjs.OverworldCode.GDPlayerObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDPlayerObjects2[i].activateBehavior("TopDownMovementAnimator", false);
 }
+}{for(var i = 0, len = gdjs.OverworldCode.GDPlayerObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDPlayerObjects2[i].getBehavior("Animation").pauseAnimation();
 }
-
+}{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber(runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber());
+}{for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(((gdjs.OverworldCode.GDNPC_95953Objects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPC_95953Objects2[0].getVariables()).getFromIndex(2).getChild(0).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(6).getAsString(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
-
-
-};gdjs.OverworldCode.eventsList19 = function(runtimeScene) {
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("TallGrass"), gdjs.OverworldCode.GDTallGrassObjects1);
-
-for (gdjs.OverworldCode.forEachIndex2 = 0;gdjs.OverworldCode.forEachIndex2 < gdjs.OverworldCode.GDTallGrassObjects1.length;++gdjs.OverworldCode.forEachIndex2) {
-gdjs.OverworldCode.GDTallGrassObjects2.length = 0;
-
-
-gdjs.OverworldCode.forEachTemporary2 = gdjs.OverworldCode.GDTallGrassObjects1[gdjs.OverworldCode.forEachIndex2];
-gdjs.OverworldCode.GDTallGrassObjects2.push(gdjs.OverworldCode.forEachTemporary2);
-let isConditionTrue_0 = false;
-if (true) {
-
-{ //Subevents: 
-gdjs.OverworldCode.eventsList18(runtimeScene);} //Subevents end.
+}{for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDTextDialogObjects2[i].SetShowSkipText(true, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
-}
+}}
 
 }
 
 
-};gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.OverworldCode.GDPlayerObjects1});
-gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDTreasure_95959595ChestObjects1Objects = Hashtable.newFrom({"Treasure_Chest": gdjs.OverworldCode.GDTreasure_9595ChestObjects1});
-gdjs.OverworldCode.asyncCallback16155292 = function (runtimeScene, asyncObjectsList) {
+};gdjs.OverworldCode.asyncCallback13639660 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.OverworldCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Finish", false);
+}gdjs.OverworldCode.localVariables.length = 0;
 }
-gdjs.OverworldCode.localVariables.length = 0;
-}
-gdjs.OverworldCode.eventsList20 = function(runtimeScene, asyncObjectsList) {
+gdjs.OverworldCode.eventsList35 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -1177,30 +2415,28 @@ const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(gdjs.OverworldCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1.25), (runtimeScene) => (gdjs.OverworldCode.asyncCallback16155292(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1.25), (runtimeScene) => (gdjs.OverworldCode.asyncCallback13639660(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.OverworldCode.asyncCallback16153772 = function (runtimeScene, asyncObjectsList) {
+};gdjs.OverworldCode.asyncCallback16193484 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.OverworldCode.localVariables);
 gdjs.copyArray(runtimeScene.getObjects("Transition"), gdjs.OverworldCode.GDTransitionObjects2);
 {for(var i = 0, len = gdjs.OverworldCode.GDTransitionObjects2.length ;i < len;++i) {
     gdjs.OverworldCode.GDTransitionObjects2[i].hide(false);
 }
+}{for(var i = 0, len = gdjs.OverworldCode.GDTransitionObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDTransitionObjects2[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 1, "Circular", "Forward", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
-{for(var i = 0, len = gdjs.OverworldCode.GDTransitionObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTransitionObjects2[i].getBehavior("FlashTransitionPainter").PaintEffect("157;146;146", 1, "Circular", "Forward", 0, null);
 }
-}
-
 { //Subevents
-gdjs.OverworldCode.eventsList20(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.OverworldCode.eventsList35(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.OverworldCode.localVariables.length = 0;
 }
-gdjs.OverworldCode.eventsList21 = function(runtimeScene) {
+gdjs.OverworldCode.eventsList36 = function(runtimeScene) {
 
 {
 
@@ -1209,19 +2445,37 @@ gdjs.OverworldCode.eventsList21 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.OverworldCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "SendFinishScore", runtimeScene.getScene().getVariables().getFromIndex(2), null), (runtimeScene) => (gdjs.OverworldCode.asyncCallback16153772(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "SendFinishScore", runtimeScene.getScene().getVariables().getFromIndex(2), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.OverworldCode.asyncCallback16193484(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.OverworldCode.eventsList22 = function(runtimeScene) {
+};gdjs.OverworldCode.eventsList37 = function(runtimeScene) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.OverworldCode.GDPlayerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Treasure_Chest"), gdjs.OverworldCode.GDTreasure_9595ChestObjects1);
+gdjs.copyArray(runtimeScene.getObjects("NPC_3"), gdjs.OverworldCode.GDNPC_95953Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(7).getAsNumber() < (gdjs.RuntimeObject.getVariableChildCount(((gdjs.OverworldCode.GDNPC_95953Objects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPC_95953Objects2[0].getVariables()).getFromIndex(2))));
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.OverworldCode.GDNPC_95953Objects2 */
+gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextDialogObjects2);
+{for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
+    gdjs.OverworldCode.GDTextDialogObjects2[i].SetMainTextValue(((gdjs.OverworldCode.GDNPC_95953Objects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPC_95953Objects2[0].getVariables()).getFromIndex(2).getChild(runtimeScene.getScene().getVariables().getFromIndex(7).getAsNumber()).getAsString(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("NPC_3"), gdjs.OverworldCode.GDNPC_95953Objects1);
 
 {
 const variables = new gdjs.VariablesContainer();
@@ -1239,50 +2493,98 @@ gdjs.OverworldCode.localVariables.push(variables);
 }
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects1Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDTreasure_95959595ChestObjects1Objects, false, runtimeScene, false);
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(7).getAsNumber() >= (gdjs.RuntimeObject.getVariableChildCount(((gdjs.OverworldCode.GDNPC_95953Objects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPC_95953Objects1[0].getVariables()).getFromIndex(2))));
+}
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.OverworldCode.GDTreasure_9595ChestObjects1.length;i<l;++i) {
-    if ( gdjs.OverworldCode.GDTreasure_9595ChestObjects1[i].getVariableBoolean(gdjs.OverworldCode.GDTreasure_9595ChestObjects1[i].getVariables().get("IsSent"), false, false) ) {
+for (var i = 0, k = 0, l = gdjs.OverworldCode.GDNPC_95953Objects1.length;i<l;++i) {
+    if ( gdjs.OverworldCode.GDNPC_95953Objects1[i].getVariableBoolean(gdjs.OverworldCode.GDNPC_95953Objects1[i].getVariables().get("IsSent"), false, false) ) {
         isConditionTrue_0 = true;
-        gdjs.OverworldCode.GDTreasure_9595ChestObjects1[k] = gdjs.OverworldCode.GDTreasure_9595ChestObjects1[i];
+        gdjs.OverworldCode.GDNPC_95953Objects1[k] = gdjs.OverworldCode.GDNPC_95953Objects1[i];
         ++k;
     }
 }
-gdjs.OverworldCode.GDTreasure_9595ChestObjects1.length = k;
+gdjs.OverworldCode.GDNPC_95953Objects1.length = k;
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.OverworldCode.GDTreasure_9595ChestObjects1 */
-{for(var i = 0, len = gdjs.OverworldCode.GDTreasure_9595ChestObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTreasure_9595ChestObjects1[i].returnVariable(gdjs.OverworldCode.GDTreasure_9595ChestObjects1[i].getVariables().get("IsSent")).setBoolean(true);
+/* Reuse gdjs.OverworldCode.GDNPC_95953Objects1 */
+{for(var i = 0, len = gdjs.OverworldCode.GDNPC_95953Objects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDNPC_95953Objects1[i].returnVariable(gdjs.OverworldCode.GDNPC_95953Objects1[i].getVariables().get("IsSent")).setBoolean(true);
 }
+}{runtimeScene.getScene().getVariables().getFromIndex(3).getChild("sessionId").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(4)));
+}{runtimeScene.getScene().getVariables().getFromIndex(3).getChild("timeElapsed").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)));
+}{gdjs.evtsExt__AdvancedHTTP__CreateRequest.func(runtimeScene, "SendFinishScore", "https://lcthnghtpgwbeamphgey.supabase.co/functions/v1/game-complete", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__AdvancedHTTP__SetRequestMethod.func(runtimeScene, "SendFinishScore", "POST", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getAsString() + gdjs.OverworldCode.localVariables[0].getFromIndex(0).getAsString() + runtimeScene.getScene().getVariables().getFromIndex(4).getAsString() + runtimeScene.getGame().getVariables().getFromIndex(5).getAsString() + gdjs.OverworldCode.localVariables[0].getFromIndex(1).getAsString() + runtimeScene.getScene().getVariables().getFromIndex(5).getAsString(), "SendFinishScore", "Authorization", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, "application/json", "SendFinishScore", "Content-Type", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__AdvancedHTTP__SetJSONRequestBody.func(runtimeScene, "SendFinishScore", runtimeScene.getScene().getVariables().getFromIndex(3), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
-{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber(runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber());
-}
-{runtimeScene.getScene().getVariables().getFromIndex(3).getChild("sessionId").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(4)));
-}
-{runtimeScene.getScene().getVariables().getFromIndex(3).getChild("timeElapsed").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)));
-}
-{gdjs.evtsExt__AdvancedHTTP__CreateRequest.func(runtimeScene, "SendFinishScore", "https://lcthnghtpgwbeamphgey.supabase.co/functions/v1/game-complete", null);
-}
-{gdjs.evtsExt__AdvancedHTTP__SetRequestMethod.func(runtimeScene, "SendFinishScore", "POST", null);
-}
-{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getAsString() + gdjs.OverworldCode.localVariables[0].getFromIndex(0).getAsString() + runtimeScene.getScene().getVariables().getFromIndex(4).getAsString() + runtimeScene.getGame().getVariables().getFromIndex(5).getAsString() + gdjs.OverworldCode.localVariables[0].getFromIndex(1).getAsString() + runtimeScene.getScene().getVariables().getFromIndex(5).getAsString(), "SendFinishScore", "Authorization", null);
-}
-{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, "application/json", "SendFinishScore", "Content-Type", null);
-}
-{gdjs.evtsExt__AdvancedHTTP__SetJSONRequestBody.func(runtimeScene, "SendFinishScore", runtimeScene.getScene().getVariables().getFromIndex(3), null);
-}
-
 { //Subevents
-gdjs.OverworldCode.eventsList21(runtimeScene);} //End of subevents
+gdjs.OverworldCode.eventsList36(runtimeScene);} //End of subevents
 }
 gdjs.OverworldCode.localVariables.pop();
 
 }
 
 
-};gdjs.OverworldCode.eventsList23 = function(runtimeScene) {
+};gdjs.OverworldCode.eventsList38 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21833588);
+}
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(7).add(1);
+}
+{ //Subevents
+gdjs.OverworldCode.eventsList37(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.OverworldCode.eventsList39 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("NPC_3"), gdjs.OverworldCode.GDNPC_95953Objects2);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.OverworldCode.GDPlayerObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects2Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDNPC_959595953Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.OverworldCode.eventsList34(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(6).getAsString()) >= 1;
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.OverworldCode.eventsList38(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.OverworldCode.eventsList40 = function(runtimeScene) {
 
 {
 
@@ -1291,25 +2593,30 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Boulder"), gdjs.OverworldCode.GDBoulderObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Bridge"), gdjs.OverworldCode.GDBridgeObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Bush1"), gdjs.OverworldCode.GDBush1Objects1);
-gdjs.copyArray(runtimeScene.getObjects("House1"), gdjs.OverworldCode.GDHouse1Objects1);
-gdjs.copyArray(runtimeScene.getObjects("House2"), gdjs.OverworldCode.GDHouse2Objects1);
-gdjs.copyArray(runtimeScene.getObjects("NPC"), gdjs.OverworldCode.GDNPCObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NPClvl2"), gdjs.OverworldCode.GDNPClvl2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Bush2"), gdjs.OverworldCode.GDBush2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("NPC_1"), gdjs.OverworldCode.GDNPC_95951Objects1);
+gdjs.copyArray(runtimeScene.getObjects("NPC_2"), gdjs.OverworldCode.GDNPC_95952Objects1);
+gdjs.copyArray(runtimeScene.getObjects("NPC_3"), gdjs.OverworldCode.GDNPC_95953Objects1);
 gdjs.copyArray(runtimeScene.getObjects("NameText"), gdjs.OverworldCode.GDNameTextObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Sign_1"), gdjs.OverworldCode.GDSign_95951Objects1);
+gdjs.copyArray(runtimeScene.getObjects("RuggedTerrain"), gdjs.OverworldCode.GDRuggedTerrainObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Server1"), gdjs.OverworldCode.GDServer1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Server2"), gdjs.OverworldCode.GDServer2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Server3"), gdjs.OverworldCode.GDServer3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sign_Left"), gdjs.OverworldCode.GDSign_9595LeftObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Sign_Left_Right"), gdjs.OverworldCode.GDSign_9595Left_9595RightObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Sign_Right"), gdjs.OverworldCode.GDSign_9595RightObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Stone1"), gdjs.OverworldCode.GDStone1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Stone2"), gdjs.OverworldCode.GDStone2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextDialogObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Tilemap_Ground"), gdjs.OverworldCode.GDTilemap_9595GroundObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Token"), gdjs.OverworldCode.GDTokenObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Treasure_Chest"), gdjs.OverworldCode.GDTreasure_9595ChestObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Tree1"), gdjs.OverworldCode.GDTree1Objects1);
 gdjs.copyArray(runtimeScene.getObjects("Tree2"), gdjs.OverworldCode.GDTree2Objects1);
-gdjs.copyArray(runtimeScene.getObjects("Vines"), gdjs.OverworldCode.GDVinesObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Wall"), gdjs.OverworldCode.GDWallObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Tree3"), gdjs.OverworldCode.GDTree3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Tree4"), gdjs.OverworldCode.GDTree4Objects1);
 {gdjs.evtTools.camera.setCameraZoom(runtimeScene, 4, "", 0);
-}
-{for(var i = 0, len = gdjs.OverworldCode.GDTree1Objects1.length ;i < len;++i) {
+}{for(var i = 0, len = gdjs.OverworldCode.GDTree1Objects1.length ;i < len;++i) {
     gdjs.OverworldCode.GDTree1Objects1[i].setZOrder((gdjs.OverworldCode.GDTree1Objects1[i].getY()));
 }
 for(var i = 0, len = gdjs.OverworldCode.GDBush1Objects1.length ;i < len;++i) {
@@ -1318,55 +2625,68 @@ for(var i = 0, len = gdjs.OverworldCode.GDBush1Objects1.length ;i < len;++i) {
 for(var i = 0, len = gdjs.OverworldCode.GDTree2Objects1.length ;i < len;++i) {
     gdjs.OverworldCode.GDTree2Objects1[i].setZOrder((gdjs.OverworldCode.GDTree2Objects1[i].getY()));
 }
-for(var i = 0, len = gdjs.OverworldCode.GDHouse1Objects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDHouse1Objects1[i].setZOrder((gdjs.OverworldCode.GDHouse1Objects1[i].getY()));
-}
-for(var i = 0, len = gdjs.OverworldCode.GDHouse2Objects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDHouse2Objects1[i].setZOrder((gdjs.OverworldCode.GDHouse2Objects1[i].getY()));
-}
-for(var i = 0, len = gdjs.OverworldCode.GDNPCObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDNPCObjects1[i].setZOrder((gdjs.OverworldCode.GDNPCObjects1[i].getY()));
+for(var i = 0, len = gdjs.OverworldCode.GDNPC_95951Objects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDNPC_95951Objects1[i].setZOrder((gdjs.OverworldCode.GDNPC_95951Objects1[i].getY()));
 }
 for(var i = 0, len = gdjs.OverworldCode.GDTilemap_9595GroundObjects1.length ;i < len;++i) {
     gdjs.OverworldCode.GDTilemap_9595GroundObjects1[i].setZOrder((gdjs.OverworldCode.GDTilemap_9595GroundObjects1[i].getY()));
 }
-for(var i = 0, len = gdjs.OverworldCode.GDNPClvl2Objects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDNPClvl2Objects1[i].setZOrder((gdjs.OverworldCode.GDNPClvl2Objects1[i].getY()));
+for(var i = 0, len = gdjs.OverworldCode.GDNPC_95952Objects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDNPC_95952Objects1[i].setZOrder((gdjs.OverworldCode.GDNPC_95952Objects1[i].getY()));
 }
-for(var i = 0, len = gdjs.OverworldCode.GDTokenObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTokenObjects1[i].setZOrder((gdjs.OverworldCode.GDTokenObjects1[i].getY()));
+for(var i = 0, len = gdjs.OverworldCode.GDSign_9595Left_9595RightObjects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDSign_9595Left_9595RightObjects1[i].setZOrder((gdjs.OverworldCode.GDSign_9595Left_9595RightObjects1[i].getY()));
 }
-for(var i = 0, len = gdjs.OverworldCode.GDBoulderObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDBoulderObjects1[i].setZOrder((gdjs.OverworldCode.GDBoulderObjects1[i].getY()));
+for(var i = 0, len = gdjs.OverworldCode.GDTree3Objects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDTree3Objects1[i].setZOrder((gdjs.OverworldCode.GDTree3Objects1[i].getY()));
 }
-for(var i = 0, len = gdjs.OverworldCode.GDVinesObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDVinesObjects1[i].setZOrder((gdjs.OverworldCode.GDVinesObjects1[i].getY()));
+for(var i = 0, len = gdjs.OverworldCode.GDTree4Objects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDTree4Objects1[i].setZOrder((gdjs.OverworldCode.GDTree4Objects1[i].getY()));
 }
-for(var i = 0, len = gdjs.OverworldCode.GDSign_95951Objects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDSign_95951Objects1[i].setZOrder((gdjs.OverworldCode.GDSign_95951Objects1[i].getY()));
+for(var i = 0, len = gdjs.OverworldCode.GDSign_9595LeftObjects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDSign_9595LeftObjects1[i].setZOrder((gdjs.OverworldCode.GDSign_9595LeftObjects1[i].getY()));
 }
-for(var i = 0, len = gdjs.OverworldCode.GDWallObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDWallObjects1[i].setZOrder((gdjs.OverworldCode.GDWallObjects1[i].getY()));
+for(var i = 0, len = gdjs.OverworldCode.GDSign_9595RightObjects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDSign_9595RightObjects1[i].setZOrder((gdjs.OverworldCode.GDSign_9595RightObjects1[i].getY()));
 }
-for(var i = 0, len = gdjs.OverworldCode.GDTreasure_9595ChestObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTreasure_9595ChestObjects1[i].setZOrder((gdjs.OverworldCode.GDTreasure_9595ChestObjects1[i].getY()));
+for(var i = 0, len = gdjs.OverworldCode.GDBush2Objects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBush2Objects1[i].setZOrder((gdjs.OverworldCode.GDBush2Objects1[i].getY()));
 }
+for(var i = 0, len = gdjs.OverworldCode.GDStone1Objects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDStone1Objects1[i].setZOrder((gdjs.OverworldCode.GDStone1Objects1[i].getY()));
 }
-{for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects1.length ;i < len;++i) {
+for(var i = 0, len = gdjs.OverworldCode.GDStone2Objects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDStone2Objects1[i].setZOrder((gdjs.OverworldCode.GDStone2Objects1[i].getY()));
+}
+for(var i = 0, len = gdjs.OverworldCode.GDBridgeObjects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDBridgeObjects1[i].setZOrder((gdjs.OverworldCode.GDBridgeObjects1[i].getY()));
+}
+for(var i = 0, len = gdjs.OverworldCode.GDRuggedTerrainObjects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDRuggedTerrainObjects1[i].setZOrder((gdjs.OverworldCode.GDRuggedTerrainObjects1[i].getY()));
+}
+for(var i = 0, len = gdjs.OverworldCode.GDNPC_95953Objects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDNPC_95953Objects1[i].setZOrder((gdjs.OverworldCode.GDNPC_95953Objects1[i].getY()));
+}
+for(var i = 0, len = gdjs.OverworldCode.GDServer1Objects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer1Objects1[i].setZOrder((gdjs.OverworldCode.GDServer1Objects1[i].getY()));
+}
+for(var i = 0, len = gdjs.OverworldCode.GDServer2Objects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer2Objects1[i].setZOrder((gdjs.OverworldCode.GDServer2Objects1[i].getY()));
+}
+for(var i = 0, len = gdjs.OverworldCode.GDServer3Objects1.length ;i < len;++i) {
+    gdjs.OverworldCode.GDServer3Objects1[i].setZOrder((gdjs.OverworldCode.GDServer3Objects1[i].getY()));
+}
+}{for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects1.length ;i < len;++i) {
     gdjs.OverworldCode.GDTextDialogObjects1[i].hide();
 }
-}
-{runtimeScene.getGame().getVariables().getFromIndex(2).setString(gdjs.evtsExt__URLTools__URLQueryStringParameter.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, null), "playerName", null));
-}
-{runtimeScene.getGame().getVariables().getFromIndex(4).setString(gdjs.evtsExt__URLTools__URLQueryStringParameter.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, null), "sessionId", null));
-}
-{for(var i = 0, len = gdjs.OverworldCode.GDNameTextObjects1.length ;i < len;++i) {
+}{runtimeScene.getGame().getVariables().getFromIndex(2).setString(gdjs.evtsExt__URLTools__URLQueryStringParameter.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "playerName", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}{runtimeScene.getGame().getVariables().getFromIndex(4).setString(gdjs.evtsExt__URLTools__URLQueryStringParameter.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "sessionId", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}{for(var i = 0, len = gdjs.OverworldCode.GDNameTextObjects1.length ;i < len;++i) {
     gdjs.OverworldCode.GDNameTextObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(2).getAsString());
 }
 }
-
 { //Subevents
-gdjs.OverworldCode.eventsList2(runtimeScene);} //End of subevents
+gdjs.OverworldCode.eventsList8(runtimeScene);} //End of subevents
 }
 
 }
@@ -1377,28 +2697,32 @@ gdjs.OverworldCode.eventsList2(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("Boulder"), gdjs.OverworldCode.GDBoulderObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Bridge"), gdjs.OverworldCode.GDBridgeObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Bush1"), gdjs.OverworldCode.GDBush1Objects1);
-gdjs.copyArray(runtimeScene.getObjects("House1"), gdjs.OverworldCode.GDHouse1Objects1);
-gdjs.copyArray(runtimeScene.getObjects("House2"), gdjs.OverworldCode.GDHouse2Objects1);
-gdjs.copyArray(runtimeScene.getObjects("NPC"), gdjs.OverworldCode.GDNPCObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NPClvl2"), gdjs.OverworldCode.GDNPClvl2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Bush2"), gdjs.OverworldCode.GDBush2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("NPC_1"), gdjs.OverworldCode.GDNPC_95951Objects1);
+gdjs.copyArray(runtimeScene.getObjects("NPC_2"), gdjs.OverworldCode.GDNPC_95952Objects1);
+gdjs.copyArray(runtimeScene.getObjects("NPC_3"), gdjs.OverworldCode.GDNPC_95953Objects1);
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.OverworldCode.GDPlayerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Sign_1"), gdjs.OverworldCode.GDSign_95951Objects1);
+gdjs.copyArray(runtimeScene.getObjects("RuggedTerrain"), gdjs.OverworldCode.GDRuggedTerrainObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Server1"), gdjs.OverworldCode.GDServer1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Server2"), gdjs.OverworldCode.GDServer2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Server3"), gdjs.OverworldCode.GDServer3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sign_Left"), gdjs.OverworldCode.GDSign_9595LeftObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Sign_Left_Right"), gdjs.OverworldCode.GDSign_9595Left_9595RightObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Sign_Right"), gdjs.OverworldCode.GDSign_9595RightObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Stone1"), gdjs.OverworldCode.GDStone1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Stone2"), gdjs.OverworldCode.GDStone2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("Tilemap_Ground"), gdjs.OverworldCode.GDTilemap_9595GroundObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Token"), gdjs.OverworldCode.GDTokenObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Treasure_Chest"), gdjs.OverworldCode.GDTreasure_9595ChestObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Tree1"), gdjs.OverworldCode.GDTree1Objects1);
 gdjs.copyArray(runtimeScene.getObjects("Tree2"), gdjs.OverworldCode.GDTree2Objects1);
-gdjs.copyArray(runtimeScene.getObjects("Vines"), gdjs.OverworldCode.GDVinesObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Wall"), gdjs.OverworldCode.GDWallObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Tree3"), gdjs.OverworldCode.GDTree3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Tree4"), gdjs.OverworldCode.GDTree4Objects1);
 {for(var i = 0, len = gdjs.OverworldCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.OverworldCode.GDPlayerObjects1[i].separateFromObjectsList(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDTree1Objects1ObjectsGDgdjs_9546OverworldCode_9546GDBush1Objects1ObjectsGDgdjs_9546OverworldCode_9546GDTree2Objects1ObjectsGDgdjs_9546OverworldCode_9546GDHouse1Objects1ObjectsGDgdjs_9546OverworldCode_9546GDHouse2Objects1ObjectsGDgdjs_9546OverworldCode_9546GDNPCObjects1ObjectsGDgdjs_9546OverworldCode_9546GDTilemap_95959595GroundObjects1ObjectsGDgdjs_9546OverworldCode_9546GDNPClvl2Objects1ObjectsGDgdjs_9546OverworldCode_9546GDTokenObjects1ObjectsGDgdjs_9546OverworldCode_9546GDBoulderObjects1ObjectsGDgdjs_9546OverworldCode_9546GDVinesObjects1ObjectsGDgdjs_9546OverworldCode_9546GDSign_959595951Objects1ObjectsGDgdjs_9546OverworldCode_9546GDWallObjects1ObjectsGDgdjs_9546OverworldCode_9546GDTreasure_95959595ChestObjects1Objects, false);
+    gdjs.OverworldCode.GDPlayerObjects1[i].separateFromObjectsList(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDTree1Objects1ObjectsGDgdjs_9546OverworldCode_9546GDBush1Objects1ObjectsGDgdjs_9546OverworldCode_9546GDTree2Objects1ObjectsGDgdjs_9546OverworldCode_9546GDNPC_959595951Objects1ObjectsGDgdjs_9546OverworldCode_9546GDTilemap_95959595GroundObjects1ObjectsGDgdjs_9546OverworldCode_9546GDNPC_959595952Objects1ObjectsGDgdjs_9546OverworldCode_9546GDSign_95959595Left_95959595RightObjects1ObjectsGDgdjs_9546OverworldCode_9546GDTree3Objects1ObjectsGDgdjs_9546OverworldCode_9546GDTree4Objects1ObjectsGDgdjs_9546OverworldCode_9546GDSign_95959595LeftObjects1ObjectsGDgdjs_9546OverworldCode_9546GDSign_95959595RightObjects1ObjectsGDgdjs_9546OverworldCode_9546GDBush2Objects1ObjectsGDgdjs_9546OverworldCode_9546GDStone1Objects1ObjectsGDgdjs_9546OverworldCode_9546GDStone2Objects1ObjectsGDgdjs_9546OverworldCode_9546GDBridgeObjects1ObjectsGDgdjs_9546OverworldCode_9546GDRuggedTerrainObjects1ObjectsGDgdjs_9546OverworldCode_9546GDNPC_959595953Objects1ObjectsGDgdjs_9546OverworldCode_9546GDServer1Objects1ObjectsGDgdjs_9546OverworldCode_9546GDServer2Objects1ObjectsGDgdjs_9546OverworldCode_9546GDServer3Objects1Objects, false);
 }
-}
-{gdjs.evtTools.camera.centerCamera(runtimeScene, (gdjs.OverworldCode.GDPlayerObjects1.length !== 0 ? gdjs.OverworldCode.GDPlayerObjects1[0] : null), true, "", 0);
-}
-}
+}{gdjs.evtTools.camera.centerCamera(runtimeScene, (gdjs.OverworldCode.GDPlayerObjects1.length !== 0 ? gdjs.OverworldCode.GDPlayerObjects1[0] : null), true, "", 0);
+}}
 
 }
 
@@ -1422,44 +2746,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.OverworldCode.GDPlayerObjects1.length ;i < len;++i) {
     gdjs.OverworldCode.GDPlayerObjects1[i].setAnimationFrame(0);
 }
-}
-}
+}}
 
-}
-
-
-{
-
-
-gdjs.OverworldCode.eventsList4(runtimeScene);
-}
-
-
-{
-
-
-gdjs.OverworldCode.eventsList12(runtimeScene);
-}
-
-
-{
-
-
-gdjs.OverworldCode.eventsList13(runtimeScene);
-}
-
-
-{
-
-
-gdjs.OverworldCode.eventsList15(runtimeScene);
-}
-
-
-{
-
-
-gdjs.OverworldCode.eventsList17(runtimeScene);
 }
 
 
@@ -1473,7 +2761,35 @@ gdjs.OverworldCode.eventsList19(runtimeScene);
 {
 
 
-gdjs.OverworldCode.eventsList22(runtimeScene);
+gdjs.OverworldCode.eventsList27(runtimeScene);
+}
+
+
+{
+
+
+gdjs.OverworldCode.eventsList29(runtimeScene);
+}
+
+
+{
+
+
+gdjs.OverworldCode.eventsList31(runtimeScene);
+}
+
+
+{
+
+
+gdjs.OverworldCode.eventsList33(runtimeScene);
+}
+
+
+{
+
+
+gdjs.OverworldCode.eventsList39(runtimeScene);
 }
 
 
@@ -1494,12 +2810,12 @@ gdjs.OverworldCode.GDPlayerObjects3.length = 0;
 gdjs.OverworldCode.GDPlayerObjects4.length = 0;
 gdjs.OverworldCode.GDPlayerObjects5.length = 0;
 gdjs.OverworldCode.GDPlayerObjects6.length = 0;
-gdjs.OverworldCode.GDNPCObjects1.length = 0;
-gdjs.OverworldCode.GDNPCObjects2.length = 0;
-gdjs.OverworldCode.GDNPCObjects3.length = 0;
-gdjs.OverworldCode.GDNPCObjects4.length = 0;
-gdjs.OverworldCode.GDNPCObjects5.length = 0;
-gdjs.OverworldCode.GDNPCObjects6.length = 0;
+gdjs.OverworldCode.GDNPC_95951Objects1.length = 0;
+gdjs.OverworldCode.GDNPC_95951Objects2.length = 0;
+gdjs.OverworldCode.GDNPC_95951Objects3.length = 0;
+gdjs.OverworldCode.GDNPC_95951Objects4.length = 0;
+gdjs.OverworldCode.GDNPC_95951Objects5.length = 0;
+gdjs.OverworldCode.GDNPC_95951Objects6.length = 0;
 gdjs.OverworldCode.GDTree1Objects1.length = 0;
 gdjs.OverworldCode.GDTree1Objects2.length = 0;
 gdjs.OverworldCode.GDTree1Objects3.length = 0;
@@ -1518,18 +2834,6 @@ gdjs.OverworldCode.GDBush1Objects3.length = 0;
 gdjs.OverworldCode.GDBush1Objects4.length = 0;
 gdjs.OverworldCode.GDBush1Objects5.length = 0;
 gdjs.OverworldCode.GDBush1Objects6.length = 0;
-gdjs.OverworldCode.GDHouse1Objects1.length = 0;
-gdjs.OverworldCode.GDHouse1Objects2.length = 0;
-gdjs.OverworldCode.GDHouse1Objects3.length = 0;
-gdjs.OverworldCode.GDHouse1Objects4.length = 0;
-gdjs.OverworldCode.GDHouse1Objects5.length = 0;
-gdjs.OverworldCode.GDHouse1Objects6.length = 0;
-gdjs.OverworldCode.GDHouse2Objects1.length = 0;
-gdjs.OverworldCode.GDHouse2Objects2.length = 0;
-gdjs.OverworldCode.GDHouse2Objects3.length = 0;
-gdjs.OverworldCode.GDHouse2Objects4.length = 0;
-gdjs.OverworldCode.GDHouse2Objects5.length = 0;
-gdjs.OverworldCode.GDHouse2Objects6.length = 0;
 gdjs.OverworldCode.GDShadedDarkJoystickObjects1.length = 0;
 gdjs.OverworldCode.GDShadedDarkJoystickObjects2.length = 0;
 gdjs.OverworldCode.GDShadedDarkJoystickObjects3.length = 0;
@@ -1548,72 +2852,48 @@ gdjs.OverworldCode.GDTilemap_9595GroundObjects3.length = 0;
 gdjs.OverworldCode.GDTilemap_9595GroundObjects4.length = 0;
 gdjs.OverworldCode.GDTilemap_9595GroundObjects5.length = 0;
 gdjs.OverworldCode.GDTilemap_9595GroundObjects6.length = 0;
-gdjs.OverworldCode.GDNPClvl2Objects1.length = 0;
-gdjs.OverworldCode.GDNPClvl2Objects2.length = 0;
-gdjs.OverworldCode.GDNPClvl2Objects3.length = 0;
-gdjs.OverworldCode.GDNPClvl2Objects4.length = 0;
-gdjs.OverworldCode.GDNPClvl2Objects5.length = 0;
-gdjs.OverworldCode.GDNPClvl2Objects6.length = 0;
-gdjs.OverworldCode.GDTokenObjects1.length = 0;
-gdjs.OverworldCode.GDTokenObjects2.length = 0;
-gdjs.OverworldCode.GDTokenObjects3.length = 0;
-gdjs.OverworldCode.GDTokenObjects4.length = 0;
-gdjs.OverworldCode.GDTokenObjects5.length = 0;
-gdjs.OverworldCode.GDTokenObjects6.length = 0;
-gdjs.OverworldCode.GDBoulderObjects1.length = 0;
-gdjs.OverworldCode.GDBoulderObjects2.length = 0;
-gdjs.OverworldCode.GDBoulderObjects3.length = 0;
-gdjs.OverworldCode.GDBoulderObjects4.length = 0;
-gdjs.OverworldCode.GDBoulderObjects5.length = 0;
-gdjs.OverworldCode.GDBoulderObjects6.length = 0;
+gdjs.OverworldCode.GDNPC_95952Objects1.length = 0;
+gdjs.OverworldCode.GDNPC_95952Objects2.length = 0;
+gdjs.OverworldCode.GDNPC_95952Objects3.length = 0;
+gdjs.OverworldCode.GDNPC_95952Objects4.length = 0;
+gdjs.OverworldCode.GDNPC_95952Objects5.length = 0;
+gdjs.OverworldCode.GDNPC_95952Objects6.length = 0;
 gdjs.OverworldCode.GDInventorySlotObjects1.length = 0;
 gdjs.OverworldCode.GDInventorySlotObjects2.length = 0;
 gdjs.OverworldCode.GDInventorySlotObjects3.length = 0;
 gdjs.OverworldCode.GDInventorySlotObjects4.length = 0;
 gdjs.OverworldCode.GDInventorySlotObjects5.length = 0;
 gdjs.OverworldCode.GDInventorySlotObjects6.length = 0;
-gdjs.OverworldCode.GDSwordObjects1.length = 0;
-gdjs.OverworldCode.GDSwordObjects2.length = 0;
-gdjs.OverworldCode.GDSwordObjects3.length = 0;
-gdjs.OverworldCode.GDSwordObjects4.length = 0;
-gdjs.OverworldCode.GDSwordObjects5.length = 0;
-gdjs.OverworldCode.GDSwordObjects6.length = 0;
-gdjs.OverworldCode.GDHammerObjects1.length = 0;
-gdjs.OverworldCode.GDHammerObjects2.length = 0;
-gdjs.OverworldCode.GDHammerObjects3.length = 0;
-gdjs.OverworldCode.GDHammerObjects4.length = 0;
-gdjs.OverworldCode.GDHammerObjects5.length = 0;
-gdjs.OverworldCode.GDHammerObjects6.length = 0;
-gdjs.OverworldCode.GDRingObjects1.length = 0;
-gdjs.OverworldCode.GDRingObjects2.length = 0;
-gdjs.OverworldCode.GDRingObjects3.length = 0;
-gdjs.OverworldCode.GDRingObjects4.length = 0;
-gdjs.OverworldCode.GDRingObjects5.length = 0;
-gdjs.OverworldCode.GDRingObjects6.length = 0;
+gdjs.OverworldCode.GDBootsObjects1.length = 0;
+gdjs.OverworldCode.GDBootsObjects2.length = 0;
+gdjs.OverworldCode.GDBootsObjects3.length = 0;
+gdjs.OverworldCode.GDBootsObjects4.length = 0;
+gdjs.OverworldCode.GDBootsObjects5.length = 0;
+gdjs.OverworldCode.GDBootsObjects6.length = 0;
+gdjs.OverworldCode.GDAxeObjects1.length = 0;
+gdjs.OverworldCode.GDAxeObjects2.length = 0;
+gdjs.OverworldCode.GDAxeObjects3.length = 0;
+gdjs.OverworldCode.GDAxeObjects4.length = 0;
+gdjs.OverworldCode.GDAxeObjects5.length = 0;
+gdjs.OverworldCode.GDAxeObjects6.length = 0;
+gdjs.OverworldCode.GDBackpackObjects1.length = 0;
+gdjs.OverworldCode.GDBackpackObjects2.length = 0;
+gdjs.OverworldCode.GDBackpackObjects3.length = 0;
+gdjs.OverworldCode.GDBackpackObjects4.length = 0;
+gdjs.OverworldCode.GDBackpackObjects5.length = 0;
+gdjs.OverworldCode.GDBackpackObjects6.length = 0;
 gdjs.OverworldCode.GDInventoryIconObjects1.length = 0;
 gdjs.OverworldCode.GDInventoryIconObjects2.length = 0;
 gdjs.OverworldCode.GDInventoryIconObjects3.length = 0;
 gdjs.OverworldCode.GDInventoryIconObjects4.length = 0;
 gdjs.OverworldCode.GDInventoryIconObjects5.length = 0;
 gdjs.OverworldCode.GDInventoryIconObjects6.length = 0;
-gdjs.OverworldCode.GDVinesObjects1.length = 0;
-gdjs.OverworldCode.GDVinesObjects2.length = 0;
-gdjs.OverworldCode.GDVinesObjects3.length = 0;
-gdjs.OverworldCode.GDVinesObjects4.length = 0;
-gdjs.OverworldCode.GDVinesObjects5.length = 0;
-gdjs.OverworldCode.GDVinesObjects6.length = 0;
-gdjs.OverworldCode.GDSign_95951Objects1.length = 0;
-gdjs.OverworldCode.GDSign_95951Objects2.length = 0;
-gdjs.OverworldCode.GDSign_95951Objects3.length = 0;
-gdjs.OverworldCode.GDSign_95951Objects4.length = 0;
-gdjs.OverworldCode.GDSign_95951Objects5.length = 0;
-gdjs.OverworldCode.GDSign_95951Objects6.length = 0;
-gdjs.OverworldCode.GDWallObjects1.length = 0;
-gdjs.OverworldCode.GDWallObjects2.length = 0;
-gdjs.OverworldCode.GDWallObjects3.length = 0;
-gdjs.OverworldCode.GDWallObjects4.length = 0;
-gdjs.OverworldCode.GDWallObjects5.length = 0;
-gdjs.OverworldCode.GDWallObjects6.length = 0;
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects1.length = 0;
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects2.length = 0;
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects3.length = 0;
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects4.length = 0;
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects5.length = 0;
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects6.length = 0;
 gdjs.OverworldCode.GDNameTextObjects1.length = 0;
 gdjs.OverworldCode.GDNameTextObjects2.length = 0;
 gdjs.OverworldCode.GDNameTextObjects3.length = 0;
@@ -1626,36 +2906,150 @@ gdjs.OverworldCode.GDTimerObjects3.length = 0;
 gdjs.OverworldCode.GDTimerObjects4.length = 0;
 gdjs.OverworldCode.GDTimerObjects5.length = 0;
 gdjs.OverworldCode.GDTimerObjects6.length = 0;
-gdjs.OverworldCode.GDTreasure_9595ChestObjects1.length = 0;
-gdjs.OverworldCode.GDTreasure_9595ChestObjects2.length = 0;
-gdjs.OverworldCode.GDTreasure_9595ChestObjects3.length = 0;
-gdjs.OverworldCode.GDTreasure_9595ChestObjects4.length = 0;
-gdjs.OverworldCode.GDTreasure_9595ChestObjects5.length = 0;
-gdjs.OverworldCode.GDTreasure_9595ChestObjects6.length = 0;
-gdjs.OverworldCode.GDSwordSpawnPointObjects1.length = 0;
-gdjs.OverworldCode.GDSwordSpawnPointObjects2.length = 0;
-gdjs.OverworldCode.GDSwordSpawnPointObjects3.length = 0;
-gdjs.OverworldCode.GDSwordSpawnPointObjects4.length = 0;
-gdjs.OverworldCode.GDSwordSpawnPointObjects5.length = 0;
-gdjs.OverworldCode.GDSwordSpawnPointObjects6.length = 0;
-gdjs.OverworldCode.GDRingSpawnPointObjects1.length = 0;
-gdjs.OverworldCode.GDRingSpawnPointObjects2.length = 0;
-gdjs.OverworldCode.GDRingSpawnPointObjects3.length = 0;
-gdjs.OverworldCode.GDRingSpawnPointObjects4.length = 0;
-gdjs.OverworldCode.GDRingSpawnPointObjects5.length = 0;
-gdjs.OverworldCode.GDRingSpawnPointObjects6.length = 0;
-gdjs.OverworldCode.GDHammerSpawnPointObjects1.length = 0;
-gdjs.OverworldCode.GDHammerSpawnPointObjects2.length = 0;
-gdjs.OverworldCode.GDHammerSpawnPointObjects3.length = 0;
-gdjs.OverworldCode.GDHammerSpawnPointObjects4.length = 0;
-gdjs.OverworldCode.GDHammerSpawnPointObjects5.length = 0;
-gdjs.OverworldCode.GDHammerSpawnPointObjects6.length = 0;
-gdjs.OverworldCode.GDTallGrassObjects1.length = 0;
-gdjs.OverworldCode.GDTallGrassObjects2.length = 0;
-gdjs.OverworldCode.GDTallGrassObjects3.length = 0;
-gdjs.OverworldCode.GDTallGrassObjects4.length = 0;
-gdjs.OverworldCode.GDTallGrassObjects5.length = 0;
-gdjs.OverworldCode.GDTallGrassObjects6.length = 0;
+gdjs.OverworldCode.GDTree3Objects1.length = 0;
+gdjs.OverworldCode.GDTree3Objects2.length = 0;
+gdjs.OverworldCode.GDTree3Objects3.length = 0;
+gdjs.OverworldCode.GDTree3Objects4.length = 0;
+gdjs.OverworldCode.GDTree3Objects5.length = 0;
+gdjs.OverworldCode.GDTree3Objects6.length = 0;
+gdjs.OverworldCode.GDTree4Objects1.length = 0;
+gdjs.OverworldCode.GDTree4Objects2.length = 0;
+gdjs.OverworldCode.GDTree4Objects3.length = 0;
+gdjs.OverworldCode.GDTree4Objects4.length = 0;
+gdjs.OverworldCode.GDTree4Objects5.length = 0;
+gdjs.OverworldCode.GDTree4Objects6.length = 0;
+gdjs.OverworldCode.GDSign_9595LeftObjects1.length = 0;
+gdjs.OverworldCode.GDSign_9595LeftObjects2.length = 0;
+gdjs.OverworldCode.GDSign_9595LeftObjects3.length = 0;
+gdjs.OverworldCode.GDSign_9595LeftObjects4.length = 0;
+gdjs.OverworldCode.GDSign_9595LeftObjects5.length = 0;
+gdjs.OverworldCode.GDSign_9595LeftObjects6.length = 0;
+gdjs.OverworldCode.GDSign_9595RightObjects1.length = 0;
+gdjs.OverworldCode.GDSign_9595RightObjects2.length = 0;
+gdjs.OverworldCode.GDSign_9595RightObjects3.length = 0;
+gdjs.OverworldCode.GDSign_9595RightObjects4.length = 0;
+gdjs.OverworldCode.GDSign_9595RightObjects5.length = 0;
+gdjs.OverworldCode.GDSign_9595RightObjects6.length = 0;
+gdjs.OverworldCode.GDNPC_95953Objects1.length = 0;
+gdjs.OverworldCode.GDNPC_95953Objects2.length = 0;
+gdjs.OverworldCode.GDNPC_95953Objects3.length = 0;
+gdjs.OverworldCode.GDNPC_95953Objects4.length = 0;
+gdjs.OverworldCode.GDNPC_95953Objects5.length = 0;
+gdjs.OverworldCode.GDNPC_95953Objects6.length = 0;
+gdjs.OverworldCode.GDServer1Objects1.length = 0;
+gdjs.OverworldCode.GDServer1Objects2.length = 0;
+gdjs.OverworldCode.GDServer1Objects3.length = 0;
+gdjs.OverworldCode.GDServer1Objects4.length = 0;
+gdjs.OverworldCode.GDServer1Objects5.length = 0;
+gdjs.OverworldCode.GDServer1Objects6.length = 0;
+gdjs.OverworldCode.GDBush2Objects1.length = 0;
+gdjs.OverworldCode.GDBush2Objects2.length = 0;
+gdjs.OverworldCode.GDBush2Objects3.length = 0;
+gdjs.OverworldCode.GDBush2Objects4.length = 0;
+gdjs.OverworldCode.GDBush2Objects5.length = 0;
+gdjs.OverworldCode.GDBush2Objects6.length = 0;
+gdjs.OverworldCode.GDStone1Objects1.length = 0;
+gdjs.OverworldCode.GDStone1Objects2.length = 0;
+gdjs.OverworldCode.GDStone1Objects3.length = 0;
+gdjs.OverworldCode.GDStone1Objects4.length = 0;
+gdjs.OverworldCode.GDStone1Objects5.length = 0;
+gdjs.OverworldCode.GDStone1Objects6.length = 0;
+gdjs.OverworldCode.GDStone2Objects1.length = 0;
+gdjs.OverworldCode.GDStone2Objects2.length = 0;
+gdjs.OverworldCode.GDStone2Objects3.length = 0;
+gdjs.OverworldCode.GDStone2Objects4.length = 0;
+gdjs.OverworldCode.GDStone2Objects5.length = 0;
+gdjs.OverworldCode.GDStone2Objects6.length = 0;
+gdjs.OverworldCode.GDServer2Objects1.length = 0;
+gdjs.OverworldCode.GDServer2Objects2.length = 0;
+gdjs.OverworldCode.GDServer2Objects3.length = 0;
+gdjs.OverworldCode.GDServer2Objects4.length = 0;
+gdjs.OverworldCode.GDServer2Objects5.length = 0;
+gdjs.OverworldCode.GDServer2Objects6.length = 0;
+gdjs.OverworldCode.GDServer3Objects1.length = 0;
+gdjs.OverworldCode.GDServer3Objects2.length = 0;
+gdjs.OverworldCode.GDServer3Objects3.length = 0;
+gdjs.OverworldCode.GDServer3Objects4.length = 0;
+gdjs.OverworldCode.GDServer3Objects5.length = 0;
+gdjs.OverworldCode.GDServer3Objects6.length = 0;
+gdjs.OverworldCode.GDAxeSpawnPointObjects1.length = 0;
+gdjs.OverworldCode.GDAxeSpawnPointObjects2.length = 0;
+gdjs.OverworldCode.GDAxeSpawnPointObjects3.length = 0;
+gdjs.OverworldCode.GDAxeSpawnPointObjects4.length = 0;
+gdjs.OverworldCode.GDAxeSpawnPointObjects5.length = 0;
+gdjs.OverworldCode.GDAxeSpawnPointObjects6.length = 0;
+gdjs.OverworldCode.GDBootsSpawnPointObjects1.length = 0;
+gdjs.OverworldCode.GDBootsSpawnPointObjects2.length = 0;
+gdjs.OverworldCode.GDBootsSpawnPointObjects3.length = 0;
+gdjs.OverworldCode.GDBootsSpawnPointObjects4.length = 0;
+gdjs.OverworldCode.GDBootsSpawnPointObjects5.length = 0;
+gdjs.OverworldCode.GDBootsSpawnPointObjects6.length = 0;
+gdjs.OverworldCode.GDBackpackSpawnPointObjects1.length = 0;
+gdjs.OverworldCode.GDBackpackSpawnPointObjects2.length = 0;
+gdjs.OverworldCode.GDBackpackSpawnPointObjects3.length = 0;
+gdjs.OverworldCode.GDBackpackSpawnPointObjects4.length = 0;
+gdjs.OverworldCode.GDBackpackSpawnPointObjects5.length = 0;
+gdjs.OverworldCode.GDBackpackSpawnPointObjects6.length = 0;
+gdjs.OverworldCode.GDServerSpawnPointObjects1.length = 0;
+gdjs.OverworldCode.GDServerSpawnPointObjects2.length = 0;
+gdjs.OverworldCode.GDServerSpawnPointObjects3.length = 0;
+gdjs.OverworldCode.GDServerSpawnPointObjects4.length = 0;
+gdjs.OverworldCode.GDServerSpawnPointObjects5.length = 0;
+gdjs.OverworldCode.GDServerSpawnPointObjects6.length = 0;
+gdjs.OverworldCode.GDBottleSpawnPointObjects1.length = 0;
+gdjs.OverworldCode.GDBottleSpawnPointObjects2.length = 0;
+gdjs.OverworldCode.GDBottleSpawnPointObjects3.length = 0;
+gdjs.OverworldCode.GDBottleSpawnPointObjects4.length = 0;
+gdjs.OverworldCode.GDBottleSpawnPointObjects5.length = 0;
+gdjs.OverworldCode.GDBottleSpawnPointObjects6.length = 0;
+gdjs.OverworldCode.GDBottleObjects1.length = 0;
+gdjs.OverworldCode.GDBottleObjects2.length = 0;
+gdjs.OverworldCode.GDBottleObjects3.length = 0;
+gdjs.OverworldCode.GDBottleObjects4.length = 0;
+gdjs.OverworldCode.GDBottleObjects5.length = 0;
+gdjs.OverworldCode.GDBottleObjects6.length = 0;
+gdjs.OverworldCode.GDBridgeObjects1.length = 0;
+gdjs.OverworldCode.GDBridgeObjects2.length = 0;
+gdjs.OverworldCode.GDBridgeObjects3.length = 0;
+gdjs.OverworldCode.GDBridgeObjects4.length = 0;
+gdjs.OverworldCode.GDBridgeObjects5.length = 0;
+gdjs.OverworldCode.GDBridgeObjects6.length = 0;
+gdjs.OverworldCode.GDRuggedTerrainObjects1.length = 0;
+gdjs.OverworldCode.GDRuggedTerrainObjects2.length = 0;
+gdjs.OverworldCode.GDRuggedTerrainObjects3.length = 0;
+gdjs.OverworldCode.GDRuggedTerrainObjects4.length = 0;
+gdjs.OverworldCode.GDRuggedTerrainObjects5.length = 0;
+gdjs.OverworldCode.GDRuggedTerrainObjects6.length = 0;
+gdjs.OverworldCode.GDClose_9595ButtonObjects1.length = 0;
+gdjs.OverworldCode.GDClose_9595ButtonObjects2.length = 0;
+gdjs.OverworldCode.GDClose_9595ButtonObjects3.length = 0;
+gdjs.OverworldCode.GDClose_9595ButtonObjects4.length = 0;
+gdjs.OverworldCode.GDClose_9595ButtonObjects5.length = 0;
+gdjs.OverworldCode.GDClose_9595ButtonObjects6.length = 0;
+gdjs.OverworldCode.GDCableObjects1.length = 0;
+gdjs.OverworldCode.GDCableObjects2.length = 0;
+gdjs.OverworldCode.GDCableObjects3.length = 0;
+gdjs.OverworldCode.GDCableObjects4.length = 0;
+gdjs.OverworldCode.GDCableObjects5.length = 0;
+gdjs.OverworldCode.GDCableObjects6.length = 0;
+gdjs.OverworldCode.GDButtonSpawnpointObjects1.length = 0;
+gdjs.OverworldCode.GDButtonSpawnpointObjects2.length = 0;
+gdjs.OverworldCode.GDButtonSpawnpointObjects3.length = 0;
+gdjs.OverworldCode.GDButtonSpawnpointObjects4.length = 0;
+gdjs.OverworldCode.GDButtonSpawnpointObjects5.length = 0;
+gdjs.OverworldCode.GDButtonSpawnpointObjects6.length = 0;
+gdjs.OverworldCode.GDBatteriesObjects1.length = 0;
+gdjs.OverworldCode.GDBatteriesObjects2.length = 0;
+gdjs.OverworldCode.GDBatteriesObjects3.length = 0;
+gdjs.OverworldCode.GDBatteriesObjects4.length = 0;
+gdjs.OverworldCode.GDBatteriesObjects5.length = 0;
+gdjs.OverworldCode.GDBatteriesObjects6.length = 0;
+gdjs.OverworldCode.GDBatterySpawnPointObjects1.length = 0;
+gdjs.OverworldCode.GDBatterySpawnPointObjects2.length = 0;
+gdjs.OverworldCode.GDBatterySpawnPointObjects3.length = 0;
+gdjs.OverworldCode.GDBatterySpawnPointObjects4.length = 0;
+gdjs.OverworldCode.GDBatterySpawnPointObjects5.length = 0;
+gdjs.OverworldCode.GDBatterySpawnPointObjects6.length = 0;
 gdjs.OverworldCode.GDTransitionObjects1.length = 0;
 gdjs.OverworldCode.GDTransitionObjects2.length = 0;
 gdjs.OverworldCode.GDTransitionObjects3.length = 0;
@@ -1663,7 +3057,7 @@ gdjs.OverworldCode.GDTransitionObjects4.length = 0;
 gdjs.OverworldCode.GDTransitionObjects5.length = 0;
 gdjs.OverworldCode.GDTransitionObjects6.length = 0;
 
-gdjs.OverworldCode.eventsList23(runtimeScene);
+gdjs.OverworldCode.eventsList40(runtimeScene);
 gdjs.OverworldCode.GDTextDialogObjects1.length = 0;
 gdjs.OverworldCode.GDTextDialogObjects2.length = 0;
 gdjs.OverworldCode.GDTextDialogObjects3.length = 0;
@@ -1676,12 +3070,12 @@ gdjs.OverworldCode.GDPlayerObjects3.length = 0;
 gdjs.OverworldCode.GDPlayerObjects4.length = 0;
 gdjs.OverworldCode.GDPlayerObjects5.length = 0;
 gdjs.OverworldCode.GDPlayerObjects6.length = 0;
-gdjs.OverworldCode.GDNPCObjects1.length = 0;
-gdjs.OverworldCode.GDNPCObjects2.length = 0;
-gdjs.OverworldCode.GDNPCObjects3.length = 0;
-gdjs.OverworldCode.GDNPCObjects4.length = 0;
-gdjs.OverworldCode.GDNPCObjects5.length = 0;
-gdjs.OverworldCode.GDNPCObjects6.length = 0;
+gdjs.OverworldCode.GDNPC_95951Objects1.length = 0;
+gdjs.OverworldCode.GDNPC_95951Objects2.length = 0;
+gdjs.OverworldCode.GDNPC_95951Objects3.length = 0;
+gdjs.OverworldCode.GDNPC_95951Objects4.length = 0;
+gdjs.OverworldCode.GDNPC_95951Objects5.length = 0;
+gdjs.OverworldCode.GDNPC_95951Objects6.length = 0;
 gdjs.OverworldCode.GDTree1Objects1.length = 0;
 gdjs.OverworldCode.GDTree1Objects2.length = 0;
 gdjs.OverworldCode.GDTree1Objects3.length = 0;
@@ -1700,18 +3094,6 @@ gdjs.OverworldCode.GDBush1Objects3.length = 0;
 gdjs.OverworldCode.GDBush1Objects4.length = 0;
 gdjs.OverworldCode.GDBush1Objects5.length = 0;
 gdjs.OverworldCode.GDBush1Objects6.length = 0;
-gdjs.OverworldCode.GDHouse1Objects1.length = 0;
-gdjs.OverworldCode.GDHouse1Objects2.length = 0;
-gdjs.OverworldCode.GDHouse1Objects3.length = 0;
-gdjs.OverworldCode.GDHouse1Objects4.length = 0;
-gdjs.OverworldCode.GDHouse1Objects5.length = 0;
-gdjs.OverworldCode.GDHouse1Objects6.length = 0;
-gdjs.OverworldCode.GDHouse2Objects1.length = 0;
-gdjs.OverworldCode.GDHouse2Objects2.length = 0;
-gdjs.OverworldCode.GDHouse2Objects3.length = 0;
-gdjs.OverworldCode.GDHouse2Objects4.length = 0;
-gdjs.OverworldCode.GDHouse2Objects5.length = 0;
-gdjs.OverworldCode.GDHouse2Objects6.length = 0;
 gdjs.OverworldCode.GDShadedDarkJoystickObjects1.length = 0;
 gdjs.OverworldCode.GDShadedDarkJoystickObjects2.length = 0;
 gdjs.OverworldCode.GDShadedDarkJoystickObjects3.length = 0;
@@ -1730,72 +3112,48 @@ gdjs.OverworldCode.GDTilemap_9595GroundObjects3.length = 0;
 gdjs.OverworldCode.GDTilemap_9595GroundObjects4.length = 0;
 gdjs.OverworldCode.GDTilemap_9595GroundObjects5.length = 0;
 gdjs.OverworldCode.GDTilemap_9595GroundObjects6.length = 0;
-gdjs.OverworldCode.GDNPClvl2Objects1.length = 0;
-gdjs.OverworldCode.GDNPClvl2Objects2.length = 0;
-gdjs.OverworldCode.GDNPClvl2Objects3.length = 0;
-gdjs.OverworldCode.GDNPClvl2Objects4.length = 0;
-gdjs.OverworldCode.GDNPClvl2Objects5.length = 0;
-gdjs.OverworldCode.GDNPClvl2Objects6.length = 0;
-gdjs.OverworldCode.GDTokenObjects1.length = 0;
-gdjs.OverworldCode.GDTokenObjects2.length = 0;
-gdjs.OverworldCode.GDTokenObjects3.length = 0;
-gdjs.OverworldCode.GDTokenObjects4.length = 0;
-gdjs.OverworldCode.GDTokenObjects5.length = 0;
-gdjs.OverworldCode.GDTokenObjects6.length = 0;
-gdjs.OverworldCode.GDBoulderObjects1.length = 0;
-gdjs.OverworldCode.GDBoulderObjects2.length = 0;
-gdjs.OverworldCode.GDBoulderObjects3.length = 0;
-gdjs.OverworldCode.GDBoulderObjects4.length = 0;
-gdjs.OverworldCode.GDBoulderObjects5.length = 0;
-gdjs.OverworldCode.GDBoulderObjects6.length = 0;
+gdjs.OverworldCode.GDNPC_95952Objects1.length = 0;
+gdjs.OverworldCode.GDNPC_95952Objects2.length = 0;
+gdjs.OverworldCode.GDNPC_95952Objects3.length = 0;
+gdjs.OverworldCode.GDNPC_95952Objects4.length = 0;
+gdjs.OverworldCode.GDNPC_95952Objects5.length = 0;
+gdjs.OverworldCode.GDNPC_95952Objects6.length = 0;
 gdjs.OverworldCode.GDInventorySlotObjects1.length = 0;
 gdjs.OverworldCode.GDInventorySlotObjects2.length = 0;
 gdjs.OverworldCode.GDInventorySlotObjects3.length = 0;
 gdjs.OverworldCode.GDInventorySlotObjects4.length = 0;
 gdjs.OverworldCode.GDInventorySlotObjects5.length = 0;
 gdjs.OverworldCode.GDInventorySlotObjects6.length = 0;
-gdjs.OverworldCode.GDSwordObjects1.length = 0;
-gdjs.OverworldCode.GDSwordObjects2.length = 0;
-gdjs.OverworldCode.GDSwordObjects3.length = 0;
-gdjs.OverworldCode.GDSwordObjects4.length = 0;
-gdjs.OverworldCode.GDSwordObjects5.length = 0;
-gdjs.OverworldCode.GDSwordObjects6.length = 0;
-gdjs.OverworldCode.GDHammerObjects1.length = 0;
-gdjs.OverworldCode.GDHammerObjects2.length = 0;
-gdjs.OverworldCode.GDHammerObjects3.length = 0;
-gdjs.OverworldCode.GDHammerObjects4.length = 0;
-gdjs.OverworldCode.GDHammerObjects5.length = 0;
-gdjs.OverworldCode.GDHammerObjects6.length = 0;
-gdjs.OverworldCode.GDRingObjects1.length = 0;
-gdjs.OverworldCode.GDRingObjects2.length = 0;
-gdjs.OverworldCode.GDRingObjects3.length = 0;
-gdjs.OverworldCode.GDRingObjects4.length = 0;
-gdjs.OverworldCode.GDRingObjects5.length = 0;
-gdjs.OverworldCode.GDRingObjects6.length = 0;
+gdjs.OverworldCode.GDBootsObjects1.length = 0;
+gdjs.OverworldCode.GDBootsObjects2.length = 0;
+gdjs.OverworldCode.GDBootsObjects3.length = 0;
+gdjs.OverworldCode.GDBootsObjects4.length = 0;
+gdjs.OverworldCode.GDBootsObjects5.length = 0;
+gdjs.OverworldCode.GDBootsObjects6.length = 0;
+gdjs.OverworldCode.GDAxeObjects1.length = 0;
+gdjs.OverworldCode.GDAxeObjects2.length = 0;
+gdjs.OverworldCode.GDAxeObjects3.length = 0;
+gdjs.OverworldCode.GDAxeObjects4.length = 0;
+gdjs.OverworldCode.GDAxeObjects5.length = 0;
+gdjs.OverworldCode.GDAxeObjects6.length = 0;
+gdjs.OverworldCode.GDBackpackObjects1.length = 0;
+gdjs.OverworldCode.GDBackpackObjects2.length = 0;
+gdjs.OverworldCode.GDBackpackObjects3.length = 0;
+gdjs.OverworldCode.GDBackpackObjects4.length = 0;
+gdjs.OverworldCode.GDBackpackObjects5.length = 0;
+gdjs.OverworldCode.GDBackpackObjects6.length = 0;
 gdjs.OverworldCode.GDInventoryIconObjects1.length = 0;
 gdjs.OverworldCode.GDInventoryIconObjects2.length = 0;
 gdjs.OverworldCode.GDInventoryIconObjects3.length = 0;
 gdjs.OverworldCode.GDInventoryIconObjects4.length = 0;
 gdjs.OverworldCode.GDInventoryIconObjects5.length = 0;
 gdjs.OverworldCode.GDInventoryIconObjects6.length = 0;
-gdjs.OverworldCode.GDVinesObjects1.length = 0;
-gdjs.OverworldCode.GDVinesObjects2.length = 0;
-gdjs.OverworldCode.GDVinesObjects3.length = 0;
-gdjs.OverworldCode.GDVinesObjects4.length = 0;
-gdjs.OverworldCode.GDVinesObjects5.length = 0;
-gdjs.OverworldCode.GDVinesObjects6.length = 0;
-gdjs.OverworldCode.GDSign_95951Objects1.length = 0;
-gdjs.OverworldCode.GDSign_95951Objects2.length = 0;
-gdjs.OverworldCode.GDSign_95951Objects3.length = 0;
-gdjs.OverworldCode.GDSign_95951Objects4.length = 0;
-gdjs.OverworldCode.GDSign_95951Objects5.length = 0;
-gdjs.OverworldCode.GDSign_95951Objects6.length = 0;
-gdjs.OverworldCode.GDWallObjects1.length = 0;
-gdjs.OverworldCode.GDWallObjects2.length = 0;
-gdjs.OverworldCode.GDWallObjects3.length = 0;
-gdjs.OverworldCode.GDWallObjects4.length = 0;
-gdjs.OverworldCode.GDWallObjects5.length = 0;
-gdjs.OverworldCode.GDWallObjects6.length = 0;
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects1.length = 0;
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects2.length = 0;
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects3.length = 0;
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects4.length = 0;
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects5.length = 0;
+gdjs.OverworldCode.GDSign_9595Left_9595RightObjects6.length = 0;
 gdjs.OverworldCode.GDNameTextObjects1.length = 0;
 gdjs.OverworldCode.GDNameTextObjects2.length = 0;
 gdjs.OverworldCode.GDNameTextObjects3.length = 0;
@@ -1808,36 +3166,150 @@ gdjs.OverworldCode.GDTimerObjects3.length = 0;
 gdjs.OverworldCode.GDTimerObjects4.length = 0;
 gdjs.OverworldCode.GDTimerObjects5.length = 0;
 gdjs.OverworldCode.GDTimerObjects6.length = 0;
-gdjs.OverworldCode.GDTreasure_9595ChestObjects1.length = 0;
-gdjs.OverworldCode.GDTreasure_9595ChestObjects2.length = 0;
-gdjs.OverworldCode.GDTreasure_9595ChestObjects3.length = 0;
-gdjs.OverworldCode.GDTreasure_9595ChestObjects4.length = 0;
-gdjs.OverworldCode.GDTreasure_9595ChestObjects5.length = 0;
-gdjs.OverworldCode.GDTreasure_9595ChestObjects6.length = 0;
-gdjs.OverworldCode.GDSwordSpawnPointObjects1.length = 0;
-gdjs.OverworldCode.GDSwordSpawnPointObjects2.length = 0;
-gdjs.OverworldCode.GDSwordSpawnPointObjects3.length = 0;
-gdjs.OverworldCode.GDSwordSpawnPointObjects4.length = 0;
-gdjs.OverworldCode.GDSwordSpawnPointObjects5.length = 0;
-gdjs.OverworldCode.GDSwordSpawnPointObjects6.length = 0;
-gdjs.OverworldCode.GDRingSpawnPointObjects1.length = 0;
-gdjs.OverworldCode.GDRingSpawnPointObjects2.length = 0;
-gdjs.OverworldCode.GDRingSpawnPointObjects3.length = 0;
-gdjs.OverworldCode.GDRingSpawnPointObjects4.length = 0;
-gdjs.OverworldCode.GDRingSpawnPointObjects5.length = 0;
-gdjs.OverworldCode.GDRingSpawnPointObjects6.length = 0;
-gdjs.OverworldCode.GDHammerSpawnPointObjects1.length = 0;
-gdjs.OverworldCode.GDHammerSpawnPointObjects2.length = 0;
-gdjs.OverworldCode.GDHammerSpawnPointObjects3.length = 0;
-gdjs.OverworldCode.GDHammerSpawnPointObjects4.length = 0;
-gdjs.OverworldCode.GDHammerSpawnPointObjects5.length = 0;
-gdjs.OverworldCode.GDHammerSpawnPointObjects6.length = 0;
-gdjs.OverworldCode.GDTallGrassObjects1.length = 0;
-gdjs.OverworldCode.GDTallGrassObjects2.length = 0;
-gdjs.OverworldCode.GDTallGrassObjects3.length = 0;
-gdjs.OverworldCode.GDTallGrassObjects4.length = 0;
-gdjs.OverworldCode.GDTallGrassObjects5.length = 0;
-gdjs.OverworldCode.GDTallGrassObjects6.length = 0;
+gdjs.OverworldCode.GDTree3Objects1.length = 0;
+gdjs.OverworldCode.GDTree3Objects2.length = 0;
+gdjs.OverworldCode.GDTree3Objects3.length = 0;
+gdjs.OverworldCode.GDTree3Objects4.length = 0;
+gdjs.OverworldCode.GDTree3Objects5.length = 0;
+gdjs.OverworldCode.GDTree3Objects6.length = 0;
+gdjs.OverworldCode.GDTree4Objects1.length = 0;
+gdjs.OverworldCode.GDTree4Objects2.length = 0;
+gdjs.OverworldCode.GDTree4Objects3.length = 0;
+gdjs.OverworldCode.GDTree4Objects4.length = 0;
+gdjs.OverworldCode.GDTree4Objects5.length = 0;
+gdjs.OverworldCode.GDTree4Objects6.length = 0;
+gdjs.OverworldCode.GDSign_9595LeftObjects1.length = 0;
+gdjs.OverworldCode.GDSign_9595LeftObjects2.length = 0;
+gdjs.OverworldCode.GDSign_9595LeftObjects3.length = 0;
+gdjs.OverworldCode.GDSign_9595LeftObjects4.length = 0;
+gdjs.OverworldCode.GDSign_9595LeftObjects5.length = 0;
+gdjs.OverworldCode.GDSign_9595LeftObjects6.length = 0;
+gdjs.OverworldCode.GDSign_9595RightObjects1.length = 0;
+gdjs.OverworldCode.GDSign_9595RightObjects2.length = 0;
+gdjs.OverworldCode.GDSign_9595RightObjects3.length = 0;
+gdjs.OverworldCode.GDSign_9595RightObjects4.length = 0;
+gdjs.OverworldCode.GDSign_9595RightObjects5.length = 0;
+gdjs.OverworldCode.GDSign_9595RightObjects6.length = 0;
+gdjs.OverworldCode.GDNPC_95953Objects1.length = 0;
+gdjs.OverworldCode.GDNPC_95953Objects2.length = 0;
+gdjs.OverworldCode.GDNPC_95953Objects3.length = 0;
+gdjs.OverworldCode.GDNPC_95953Objects4.length = 0;
+gdjs.OverworldCode.GDNPC_95953Objects5.length = 0;
+gdjs.OverworldCode.GDNPC_95953Objects6.length = 0;
+gdjs.OverworldCode.GDServer1Objects1.length = 0;
+gdjs.OverworldCode.GDServer1Objects2.length = 0;
+gdjs.OverworldCode.GDServer1Objects3.length = 0;
+gdjs.OverworldCode.GDServer1Objects4.length = 0;
+gdjs.OverworldCode.GDServer1Objects5.length = 0;
+gdjs.OverworldCode.GDServer1Objects6.length = 0;
+gdjs.OverworldCode.GDBush2Objects1.length = 0;
+gdjs.OverworldCode.GDBush2Objects2.length = 0;
+gdjs.OverworldCode.GDBush2Objects3.length = 0;
+gdjs.OverworldCode.GDBush2Objects4.length = 0;
+gdjs.OverworldCode.GDBush2Objects5.length = 0;
+gdjs.OverworldCode.GDBush2Objects6.length = 0;
+gdjs.OverworldCode.GDStone1Objects1.length = 0;
+gdjs.OverworldCode.GDStone1Objects2.length = 0;
+gdjs.OverworldCode.GDStone1Objects3.length = 0;
+gdjs.OverworldCode.GDStone1Objects4.length = 0;
+gdjs.OverworldCode.GDStone1Objects5.length = 0;
+gdjs.OverworldCode.GDStone1Objects6.length = 0;
+gdjs.OverworldCode.GDStone2Objects1.length = 0;
+gdjs.OverworldCode.GDStone2Objects2.length = 0;
+gdjs.OverworldCode.GDStone2Objects3.length = 0;
+gdjs.OverworldCode.GDStone2Objects4.length = 0;
+gdjs.OverworldCode.GDStone2Objects5.length = 0;
+gdjs.OverworldCode.GDStone2Objects6.length = 0;
+gdjs.OverworldCode.GDServer2Objects1.length = 0;
+gdjs.OverworldCode.GDServer2Objects2.length = 0;
+gdjs.OverworldCode.GDServer2Objects3.length = 0;
+gdjs.OverworldCode.GDServer2Objects4.length = 0;
+gdjs.OverworldCode.GDServer2Objects5.length = 0;
+gdjs.OverworldCode.GDServer2Objects6.length = 0;
+gdjs.OverworldCode.GDServer3Objects1.length = 0;
+gdjs.OverworldCode.GDServer3Objects2.length = 0;
+gdjs.OverworldCode.GDServer3Objects3.length = 0;
+gdjs.OverworldCode.GDServer3Objects4.length = 0;
+gdjs.OverworldCode.GDServer3Objects5.length = 0;
+gdjs.OverworldCode.GDServer3Objects6.length = 0;
+gdjs.OverworldCode.GDAxeSpawnPointObjects1.length = 0;
+gdjs.OverworldCode.GDAxeSpawnPointObjects2.length = 0;
+gdjs.OverworldCode.GDAxeSpawnPointObjects3.length = 0;
+gdjs.OverworldCode.GDAxeSpawnPointObjects4.length = 0;
+gdjs.OverworldCode.GDAxeSpawnPointObjects5.length = 0;
+gdjs.OverworldCode.GDAxeSpawnPointObjects6.length = 0;
+gdjs.OverworldCode.GDBootsSpawnPointObjects1.length = 0;
+gdjs.OverworldCode.GDBootsSpawnPointObjects2.length = 0;
+gdjs.OverworldCode.GDBootsSpawnPointObjects3.length = 0;
+gdjs.OverworldCode.GDBootsSpawnPointObjects4.length = 0;
+gdjs.OverworldCode.GDBootsSpawnPointObjects5.length = 0;
+gdjs.OverworldCode.GDBootsSpawnPointObjects6.length = 0;
+gdjs.OverworldCode.GDBackpackSpawnPointObjects1.length = 0;
+gdjs.OverworldCode.GDBackpackSpawnPointObjects2.length = 0;
+gdjs.OverworldCode.GDBackpackSpawnPointObjects3.length = 0;
+gdjs.OverworldCode.GDBackpackSpawnPointObjects4.length = 0;
+gdjs.OverworldCode.GDBackpackSpawnPointObjects5.length = 0;
+gdjs.OverworldCode.GDBackpackSpawnPointObjects6.length = 0;
+gdjs.OverworldCode.GDServerSpawnPointObjects1.length = 0;
+gdjs.OverworldCode.GDServerSpawnPointObjects2.length = 0;
+gdjs.OverworldCode.GDServerSpawnPointObjects3.length = 0;
+gdjs.OverworldCode.GDServerSpawnPointObjects4.length = 0;
+gdjs.OverworldCode.GDServerSpawnPointObjects5.length = 0;
+gdjs.OverworldCode.GDServerSpawnPointObjects6.length = 0;
+gdjs.OverworldCode.GDBottleSpawnPointObjects1.length = 0;
+gdjs.OverworldCode.GDBottleSpawnPointObjects2.length = 0;
+gdjs.OverworldCode.GDBottleSpawnPointObjects3.length = 0;
+gdjs.OverworldCode.GDBottleSpawnPointObjects4.length = 0;
+gdjs.OverworldCode.GDBottleSpawnPointObjects5.length = 0;
+gdjs.OverworldCode.GDBottleSpawnPointObjects6.length = 0;
+gdjs.OverworldCode.GDBottleObjects1.length = 0;
+gdjs.OverworldCode.GDBottleObjects2.length = 0;
+gdjs.OverworldCode.GDBottleObjects3.length = 0;
+gdjs.OverworldCode.GDBottleObjects4.length = 0;
+gdjs.OverworldCode.GDBottleObjects5.length = 0;
+gdjs.OverworldCode.GDBottleObjects6.length = 0;
+gdjs.OverworldCode.GDBridgeObjects1.length = 0;
+gdjs.OverworldCode.GDBridgeObjects2.length = 0;
+gdjs.OverworldCode.GDBridgeObjects3.length = 0;
+gdjs.OverworldCode.GDBridgeObjects4.length = 0;
+gdjs.OverworldCode.GDBridgeObjects5.length = 0;
+gdjs.OverworldCode.GDBridgeObjects6.length = 0;
+gdjs.OverworldCode.GDRuggedTerrainObjects1.length = 0;
+gdjs.OverworldCode.GDRuggedTerrainObjects2.length = 0;
+gdjs.OverworldCode.GDRuggedTerrainObjects3.length = 0;
+gdjs.OverworldCode.GDRuggedTerrainObjects4.length = 0;
+gdjs.OverworldCode.GDRuggedTerrainObjects5.length = 0;
+gdjs.OverworldCode.GDRuggedTerrainObjects6.length = 0;
+gdjs.OverworldCode.GDClose_9595ButtonObjects1.length = 0;
+gdjs.OverworldCode.GDClose_9595ButtonObjects2.length = 0;
+gdjs.OverworldCode.GDClose_9595ButtonObjects3.length = 0;
+gdjs.OverworldCode.GDClose_9595ButtonObjects4.length = 0;
+gdjs.OverworldCode.GDClose_9595ButtonObjects5.length = 0;
+gdjs.OverworldCode.GDClose_9595ButtonObjects6.length = 0;
+gdjs.OverworldCode.GDCableObjects1.length = 0;
+gdjs.OverworldCode.GDCableObjects2.length = 0;
+gdjs.OverworldCode.GDCableObjects3.length = 0;
+gdjs.OverworldCode.GDCableObjects4.length = 0;
+gdjs.OverworldCode.GDCableObjects5.length = 0;
+gdjs.OverworldCode.GDCableObjects6.length = 0;
+gdjs.OverworldCode.GDButtonSpawnpointObjects1.length = 0;
+gdjs.OverworldCode.GDButtonSpawnpointObjects2.length = 0;
+gdjs.OverworldCode.GDButtonSpawnpointObjects3.length = 0;
+gdjs.OverworldCode.GDButtonSpawnpointObjects4.length = 0;
+gdjs.OverworldCode.GDButtonSpawnpointObjects5.length = 0;
+gdjs.OverworldCode.GDButtonSpawnpointObjects6.length = 0;
+gdjs.OverworldCode.GDBatteriesObjects1.length = 0;
+gdjs.OverworldCode.GDBatteriesObjects2.length = 0;
+gdjs.OverworldCode.GDBatteriesObjects3.length = 0;
+gdjs.OverworldCode.GDBatteriesObjects4.length = 0;
+gdjs.OverworldCode.GDBatteriesObjects5.length = 0;
+gdjs.OverworldCode.GDBatteriesObjects6.length = 0;
+gdjs.OverworldCode.GDBatterySpawnPointObjects1.length = 0;
+gdjs.OverworldCode.GDBatterySpawnPointObjects2.length = 0;
+gdjs.OverworldCode.GDBatterySpawnPointObjects3.length = 0;
+gdjs.OverworldCode.GDBatterySpawnPointObjects4.length = 0;
+gdjs.OverworldCode.GDBatterySpawnPointObjects5.length = 0;
+gdjs.OverworldCode.GDBatterySpawnPointObjects6.length = 0;
 gdjs.OverworldCode.GDTransitionObjects1.length = 0;
 gdjs.OverworldCode.GDTransitionObjects2.length = 0;
 gdjs.OverworldCode.GDTransitionObjects3.length = 0;
