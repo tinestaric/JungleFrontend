@@ -92,6 +92,7 @@ function LeaderboardContent() {
         headers: {
           'Content-Type': 'application/json',
         },
+        body: JSON.stringify({ existingSessionId: sessionId }),
       })
 
       if (!response.ok) {
@@ -100,9 +101,9 @@ function LeaderboardContent() {
 
       const result = await response.json()
 
-      if (result.success && result.sessionId) {
+      if (result.success && result.redirectUrl) {
         // Redirect to the game with the new session
-        window.location.href = `/game?sessionId=${result.sessionId}`
+        window.location.href = result.redirectUrl
       } else {
         throw new Error('Failed to create new session')
       }
