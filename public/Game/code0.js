@@ -2125,7 +2125,7 @@ gdjs.OverworldCode.eventsList28 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 /* Reuse gdjs.OverworldCode.GDTextDialogObjects2 */
 {for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {

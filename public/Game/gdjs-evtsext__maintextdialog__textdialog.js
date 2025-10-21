@@ -606,7 +606,7 @@ if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("ContinueText"), gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects1);
 {eventsFunctionContext.getObjects("Object")[0]._setShowSkipText(true)
 }{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText("Click to hide");
+    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText("Click to continue");
 }
 }}
 
