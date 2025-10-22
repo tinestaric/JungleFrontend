@@ -120,6 +120,7 @@ export async function GET(request: Request) {
     return NextResponse.json({ 
       success: true,
       playerEntry,
+      currentSessionTime: sessionData.time_elapsed, // The time from this specific session
       hasCompleted: true,
       totalPlayers: allPlayers.length
     })

@@ -9,6 +9,7 @@ import { LeaderboardEntry } from '@/types'
 function LeaderboardContent() {
   const [leaderboard, setLeaderboard] = useState<LeaderboardEntry[]>([])
   const [currentPlayer, setCurrentPlayer] = useState<LeaderboardEntry | null>(null)
+  const [currentSessionTime, setCurrentSessionTime] = useState<number | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [hasCompleted, setHasCompleted] = useState(false)
@@ -54,6 +55,7 @@ function LeaderboardContent() {
 
       if (data.success) {
         setCurrentPlayer(data.playerEntry)
+        setCurrentSessionTime(data.currentSessionTime || null)
         setHasCompleted(data.hasCompleted)
         setTotalPlayers(data.totalPlayers || 0)
       }
@@ -126,6 +128,46 @@ function LeaderboardContent() {
           </div>
         ) : (
           <>
+            {/* Your Stats (shown for all players) */}
+            {currentPlayer && hasCompleted && (
+              <div className="leaderboard-your-section">
+                <div className="leaderboard-your-heading">Your Stats</div>
+                <div className="leaderboard-your-stats">
+                  <div className="leaderboard-your-stat">
+                    <div className="leaderboard-stat-label">This Run</div>
+                    <div className="leaderboard-stat-value leaderboard-stat-current">
+                      {formatTime(currentSessionTime || 0)}
+                    </div>
+                  </div>
+                  <div className="leaderboard-your-stat">
+                    <div className="leaderboard-stat-label">Personal Best</div>
+                    <div className="leaderboard-stat-value leaderboard-stat-best">
+                      {formatTime(currentPlayer.bestTime)}
+                      {currentSessionTime && currentSessionTime === currentPlayer.bestTime && (
+                        <span className="leaderboard-stat-badge">🎉 New!</span>
+                      )}
+                    </div>
+                  </div>
+                  <div className="leaderboard-your-stat">
+                    <div className="leaderboard-stat-label">Your Rank</div>
+                    <div className="leaderboard-stat-value leaderboard-stat-rank">
+                      {currentPlayer.rank <= 3 ? (
+                        <span>
+                          {currentPlayer.rank === 1 && '🥇'}
+                          {currentPlayer.rank === 2 && '🥈'}
+                          {currentPlayer.rank === 3 && '🥉'}
+                        </span>
+                      ) : (
+                        `#${currentPlayer.rank}`
+                      )}
+                    </div>
+                    <div className="leaderboard-stat-sublabel">Based on personal best</div>
+                  </div>
+                </div>
+                <div className="leaderboard-your-meta">Out of {totalPlayers} players</div>
+              </div>
+            )}
+
             {/* Leaderboard Table */}
             <table className="leaderboard-table">
               <thead>
@@ -166,31 +208,6 @@ function LeaderboardContent() {
                 ))}
               </tbody>
             </table>
-
-            {/* Your Position (outside top 10) */}
-            {currentPlayer && hasCompleted && currentPlayer.rank > 10 && (
-              <div className="leaderboard-your-section">
-                <div className="leaderboard-your-heading">Your Position</div>
-                <div className="leaderboard-your-row">
-                  <div className="leaderboard-your-cell leaderboard-your-rank">
-                    #{currentPlayer.rank}
-                  </div>
-                  <div className="leaderboard-your-cell leaderboard-your-name">
-                    {currentPlayer.name}
-                  </div>
-                  <div className="leaderboard-your-cell leaderboard-your-company">
-                    {currentPlayer.company || 'N/A'}
-                  </div>
-                  <div className="leaderboard-your-cell leaderboard-your-time">
-                    {formatTime(currentPlayer.bestTime)}
-                  </div>
-                  <div className="leaderboard-your-cell leaderboard-your-date hide-on-tablet-and-down">
-                    {new Date(currentPlayer.completedAt).toLocaleDateString()}
-                  </div>
-                </div>
-                <div className="leaderboard-your-meta">Out of {totalPlayers} players</div>
-              </div>
-            )}
 
             {/* Action Buttons */}
             <div className="leaderboard-buttons">
