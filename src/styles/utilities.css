@@ -1,9 +1,6 @@
 /* Utilities used across pages */
 .hide-on-tablet-and-down { display: none; }
 
-@media (min-width: 1400px) { /* desktop */
-  .hide-on-tablet-and-down { display: table-cell !important; }
-}
 
 .overlay-card {
   background-color: var(--bg-overlay);

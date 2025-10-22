@@ -62,17 +62,12 @@ function LeaderboardContent() {
     }
   }
 
-  const formatTime = (seconds: number, rank: number) => {
+  const formatTime = (seconds: number) => {
     const minutes = Math.floor(seconds / 60)
     const remainingSeconds = seconds % 60
     
-    if (rank <= 3) {
-      // Top 3: show 2 decimal places
-      return `${minutes}:${remainingSeconds.toFixed(2).padStart(5, '0')}`
-    } else {
-      // Others: no decimal places
-      return `${minutes}:${Math.floor(remainingSeconds).toString().padStart(2, '0')}`
-    }
+    // All ranks: no decimal places
+    return `${minutes}:${Math.floor(remainingSeconds).toString().padStart(2, '0')}`
   }
 
   const handlePlayButton = async () => {
@@ -165,7 +160,7 @@ function LeaderboardContent() {
                     )}
                     </td>
                     <td>{entry.company || 'N/A'}</td>
-                    <td className="leaderboard-time">{formatTime(entry.bestTime, entry.rank)}</td>
+                    <td className="leaderboard-time">{formatTime(entry.bestTime)}</td>
                     <td className="hide-on-tablet-and-down">{new Date(entry.completedAt).toLocaleDateString()}</td>
                   </tr>
                 ))}
@@ -187,7 +182,7 @@ function LeaderboardContent() {
                     {currentPlayer.company || 'N/A'}
                   </div>
                   <div className="leaderboard-your-cell leaderboard-your-time">
-                    {formatTime(currentPlayer.bestTime, currentPlayer.rank)}
+                    {formatTime(currentPlayer.bestTime)}
                   </div>
                   <div className="leaderboard-your-cell leaderboard-your-date hide-on-tablet-and-down">
                     {new Date(currentPlayer.completedAt).toLocaleDateString()}
