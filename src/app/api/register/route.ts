@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
 import { registrationSchema } from '@/lib/validation'
+import { transliterate } from '@/lib/transliterate'
 import { RegistrationResponse } from '@/types'
 
 // Generate a unique session ID
@@ -107,8 +108,10 @@ export async function POST(request: Request) {
       )
     }
 
-    // Create redirect URL
-    const redirectUrl = `/Game/index.html?playerName=${encodeURIComponent(name)}&sessionId=${encodeURIComponent(sessionId)}`
+    // Create redirect URL with transliterated name for game compatibility
+    // Original name is preserved in the database for leaderboard display
+    const gamePlayerName = transliterate(name)
+    const redirectUrl = `/Game/index.html?playerName=${encodeURIComponent(gamePlayerName)}&sessionId=${encodeURIComponent(sessionId)}`
 
     const response: RegistrationResponse = {
       success: true,
