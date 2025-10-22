@@ -6,6 +6,7 @@ if (typeof gdjs.evtsExt__AdvancedHTTP__ResponseHeader !== "undefined") {
 }
 
 gdjs.evtsExt__AdvancedHTTP__ResponseHeader = {};
+gdjs.evtsExt__AdvancedHTTP__ResponseHeader.idToCallbackMap = new Map();
 
 
 gdjs.evtsExt__AdvancedHTTP__ResponseHeader.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -15,10 +16,10 @@ gdjs.evtsExt__AdvancedHTTP__ResponseHeader.eventsList0 = function(runtimeScene, 
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') {
-gdjs.Variable.copy(eventsFunctionContext.getArgument("Response"), runtimeScene.getScene().getVariables().get("__AdvancedHTTP").getChild("Response"), false);
+{gdjs.Variable.copy(eventsFunctionContext.getArgument("Response"), runtimeScene.getScene().getVariables().get("__AdvancedHTTP").getChild("Response"), false);
 }
-}{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("__AdvancedHTTP").getChild("Response").getChild("headers").getChild(eventsFunctionContext.getArgument("Header"))); }}}
+{eventsFunctionContext.returnValue = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("__AdvancedHTTP").getChild("Response").getChild("headers").getChild(eventsFunctionContext.getArgument("Header")));}
+}
 
 }
 
@@ -26,6 +27,7 @@ gdjs.Variable.copy(eventsFunctionContext.getArgument("Response"), runtimeScene.g
 };
 
 gdjs.evtsExt__AdvancedHTTP__ResponseHeader.func = function(runtimeScene, Response, Header, parentEventsFunctionContext) {
+let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -48,14 +50,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -63,7 +66,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }

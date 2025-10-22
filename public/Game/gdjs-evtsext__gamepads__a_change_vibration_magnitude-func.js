@@ -6,9 +6,10 @@ if (typeof gdjs.evtsExt__Gamepads__A_Change_Vibration_Magnitude !== "undefined")
 }
 
 gdjs.evtsExt__Gamepads__A_Change_Vibration_Magnitude = {};
+gdjs.evtsExt__Gamepads__A_Change_Vibration_Magnitude.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Gamepads__A_Change_Vibration_Magnitude.userFunc0xbed490 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__A_Change_Vibration_Magnitude.userFunc0x893048 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {Gamepad[]} */
 //Vibration work only on game in browser.
@@ -59,7 +60,7 @@ gdjs.evtsExt__Gamepads__A_Change_Vibration_Magnitude.eventsList0 = function(runt
 {
 
 
-gdjs.evtsExt__Gamepads__A_Change_Vibration_Magnitude.userFunc0xbed490(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Gamepads__A_Change_Vibration_Magnitude.userFunc0x893048(runtimeScene, eventsFunctionContext);
 
 }
 
@@ -67,6 +68,7 @@ gdjs.evtsExt__Gamepads__A_Change_Vibration_Magnitude.userFunc0xbed490(runtimeSce
 };
 
 gdjs.evtsExt__Gamepads__A_Change_Vibration_Magnitude.func = function(runtimeScene, Player_ID, StrongMagnitude, WeakMagnitude, parentEventsFunctionContext) {
+let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -89,14 +91,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -104,7 +107,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }

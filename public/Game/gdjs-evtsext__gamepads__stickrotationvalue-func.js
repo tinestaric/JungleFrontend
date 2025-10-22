@@ -6,6 +6,7 @@ if (typeof gdjs.evtsExt__Gamepads__StickRotationValue !== "undefined") {
 }
 
 gdjs.evtsExt__Gamepads__StickRotationValue = {};
+gdjs.evtsExt__Gamepads__StickRotationValue.idToCallbackMap = new Map();
 
 
 gdjs.evtsExt__Gamepads__StickRotationValue.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -15,7 +16,8 @@ gdjs.evtsExt__Gamepads__StickRotationValue.eventsList0 = function(runtimeScene, 
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = gdjs.evtsExt__Gamepads__StickAngle.func(runtimeScene, eventsFunctionContext.getArgument("player_ID"), eventsFunctionContext.getArgument("stick"), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)); }}}
+{eventsFunctionContext.returnValue = gdjs.evtsExt__Gamepads__StickAngle.func(runtimeScene, eventsFunctionContext.getArgument("player_ID"), eventsFunctionContext.getArgument("stick"), eventsFunctionContext);}
+}
 
 }
 
@@ -23,6 +25,7 @@ let isConditionTrue_0 = false;
 };
 
 gdjs.evtsExt__Gamepads__StickRotationValue.func = function(runtimeScene, player_ID, stick, parentEventsFunctionContext) {
+let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -45,14 +48,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -60,7 +64,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }

@@ -26,16 +26,16 @@ gdjs.evtsExt__YSort__YSort.YSort = class YSort extends gdjs.RuntimeBehavior {
   }
 
   // Network sync:
-  getNetworkSyncData() {
+  getNetworkSyncData(syncOptions) {
     return {
-      ...super.getNetworkSyncData(),
+      ...super.getNetworkSyncData(syncOptions),
       props: {
         
       }
     };
   }
-  updateFromNetworkSyncData(networkSyncData) {
-    super.updateFromNetworkSyncData(networkSyncData);
+  updateFromNetworkSyncData(networkSyncData, options) {
+    super.updateFromNetworkSyncData(networkSyncData, options);
     
   }
 
@@ -69,6 +69,7 @@ gdjs.evtsExt__YSort__YSort.YSort.getSharedData = function(instanceContainer, beh
 
 // Methods:
 gdjs.evtsExt__YSort__YSort.YSort.prototype.doStepPostEventsContext = {};
+gdjs.evtsExt__YSort__YSort.YSort.prototype.doStepPostEventsContext.idToCallbackMap = new Map();
 gdjs.evtsExt__YSort__YSort.YSort.prototype.doStepPostEventsContext.GDObjectObjects1= [];
 gdjs.evtsExt__YSort__YSort.YSort.prototype.doStepPostEventsContext.GDObjectObjects2= [];
 
@@ -91,7 +92,8 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__YSort__
 {for(var i = 0, len = gdjs.evtsExt__YSort__YSort.YSort.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__YSort__YSort.YSort.prototype.doStepPostEventsContext.GDObjectObjects1[i].setZOrder((gdjs.evtsExt__YSort__YSort.YSort.prototype.doStepPostEventsContext.GDObjectObjects1[i].getY()));
 }
-}}
+}
+}
 
 }
 
@@ -102,6 +104,7 @@ gdjs.evtsExt__YSort__YSort.YSort.prototype.doStepPostEvents = function(parentEve
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -130,14 +133,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -145,7 +149,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }

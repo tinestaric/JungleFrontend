@@ -6,6 +6,7 @@ if (typeof gdjs.evtsExt__Flash__ToggleVisibility !== "undefined") {
 }
 
 gdjs.evtsExt__Flash__ToggleVisibility = {};
+gdjs.evtsExt__Flash__ToggleVisibility.idToCallbackMap = new Map();
 gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1= [];
 gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects2= [];
 
@@ -21,7 +22,8 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Flash__
 {for(var i = 0, len = gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1[i].setVariableBoolean(gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1[i].getVariables().get("__Flash_VisibilityToggled"), false);
 }
-}}
+}
+}
 
 }
 
@@ -45,10 +47,12 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1[i].hide();
 }
-}{for(var i = 0, len = gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1[i].setVariableBoolean(gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1[i].getVariables().get("__Flash_VisibilityToggled"), true);
 }
-}}
+}
+}
 
 }
 
@@ -83,7 +87,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1[i].hide(false);
 }
-}}
+}
+}
 
 }
 
@@ -91,6 +96,7 @@ if (isConditionTrue_0) {
 };
 
 gdjs.evtsExt__Flash__ToggleVisibility.func = function(runtimeScene, Object, parentEventsFunctionContext) {
+let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -115,14 +121,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -130,7 +137,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
