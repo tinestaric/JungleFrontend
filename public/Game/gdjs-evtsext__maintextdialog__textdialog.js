@@ -212,7 +212,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("MainText"), gdjs.evtsExt__MainT
 {eventsFunctionContext.getObjects("Object")[0]._setMainTextValue(eventsFunctionContext.getArgument("Value"))
 }
 {for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDMainTextObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDMainTextObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText(eventsFunctionContext.getObjects("Object")[0]._getMainTextValue());
+    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDMainTextObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText(gdjs.evtTools.string.strReplaceAll(eventsFunctionContext.getObjects("Object")[0]._getMainTextValue(), "<br>", gdjs.evtTools.string.newLine()));
 }
 }
 {for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDContinueTextObjects1.length ;i < len;++i) {
