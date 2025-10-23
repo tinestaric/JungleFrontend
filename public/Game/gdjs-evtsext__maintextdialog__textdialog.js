@@ -73,8 +73,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueConte
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDMainTextObjects2= [];
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDTextBackgroundBlackObjects1= [];
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDTextBackgroundBlackObjects2= [];
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDContinueTextObjects1= [];
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDContinueTextObjects2= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDFingerPressObjects1= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDFingerPressObjects2= [];
 
 
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -103,20 +103,20 @@ var thisGDMainTextObjectsList = [...runtimeScene.getObjects("MainText")];
 var GDMainTextObjects = Hashtable.newFrom({"MainText": thisGDMainTextObjectsList});
 var thisGDTextBackgroundBlackObjectsList = [...runtimeScene.getObjects("TextBackgroundBlack")];
 var GDTextBackgroundBlackObjects = Hashtable.newFrom({"TextBackgroundBlack": thisGDTextBackgroundBlackObjectsList});
-var thisGDContinueTextObjectsList = [...runtimeScene.getObjects("ContinueText")];
-var GDContinueTextObjects = Hashtable.newFrom({"ContinueText": thisGDContinueTextObjectsList});
+var thisGDFingerPressObjectsList = [...runtimeScene.getObjects("FingerPress")];
+var GDFingerPressObjects = Hashtable.newFrom({"FingerPress": thisGDFingerPressObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
 , "MainText": GDMainTextObjects
 , "TextBackgroundBlack": GDTextBackgroundBlackObjects
-, "ContinueText": GDContinueTextObjects
+, "FingerPress": GDFingerPressObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
 , "MainText": thisGDMainTextObjectsList
 , "TextBackgroundBlack": thisGDTextBackgroundBlackObjectsList
-, "ContinueText": thisGDContinueTextObjectsList
+, "FingerPress": thisGDFingerPressObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -172,8 +172,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueConte
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDMainTextObjects2.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDTextBackgroundBlackObjects1.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDTextBackgroundBlackObjects2.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDContinueTextObjects1.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDContinueTextObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDFingerPressObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDFingerPressObjects2.length = 0;
 
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDObjectObjects1.length = 0;
@@ -182,8 +182,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueConte
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDMainTextObjects2.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDTextBackgroundBlackObjects1.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDTextBackgroundBlackObjects2.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDContinueTextObjects1.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDContinueTextObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDFingerPressObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.MainTextValueContext.GDFingerPressObjects2.length = 0;
 
 
 return "" + eventsFunctionContext.returnValue;
@@ -196,8 +196,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueCo
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDMainTextObjects2= [];
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDTextBackgroundBlackObjects1= [];
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDTextBackgroundBlackObjects2= [];
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDContinueTextObjects1= [];
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDContinueTextObjects2= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDFingerPressObjects1= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDFingerPressObjects2= [];
 
 
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -207,7 +207,7 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueCo
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("ContinueText"), gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDContinueTextObjects1);
+gdjs.copyArray(eventsFunctionContext.getObjects("FingerPress"), gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDFingerPressObjects1);
 gdjs.copyArray(eventsFunctionContext.getObjects("MainText"), gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDMainTextObjects1);
 {eventsFunctionContext.getObjects("Object")[0]._setMainTextValue(eventsFunctionContext.getArgument("Value"))
 }
@@ -215,8 +215,8 @@ gdjs.copyArray(eventsFunctionContext.getObjects("MainText"), gdjs.evtsExt__MainT
     gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDMainTextObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText(gdjs.evtTools.string.strReplaceAll(eventsFunctionContext.getObjects("Object")[0]._getMainTextValue(), "<br>", gdjs.evtTools.string.newLine()));
 }
 }
-{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDContinueTextObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDContinueTextObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText("");
+{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDFingerPressObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDFingerPressObjects1[i].hide();
 }
 }
 }
@@ -237,20 +237,20 @@ var thisGDMainTextObjectsList = [...runtimeScene.getObjects("MainText")];
 var GDMainTextObjects = Hashtable.newFrom({"MainText": thisGDMainTextObjectsList});
 var thisGDTextBackgroundBlackObjectsList = [...runtimeScene.getObjects("TextBackgroundBlack")];
 var GDTextBackgroundBlackObjects = Hashtable.newFrom({"TextBackgroundBlack": thisGDTextBackgroundBlackObjectsList});
-var thisGDContinueTextObjectsList = [...runtimeScene.getObjects("ContinueText")];
-var GDContinueTextObjects = Hashtable.newFrom({"ContinueText": thisGDContinueTextObjectsList});
+var thisGDFingerPressObjectsList = [...runtimeScene.getObjects("FingerPress")];
+var GDFingerPressObjects = Hashtable.newFrom({"FingerPress": thisGDFingerPressObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
 , "MainText": GDMainTextObjects
 , "TextBackgroundBlack": GDTextBackgroundBlackObjects
-, "ContinueText": GDContinueTextObjects
+, "FingerPress": GDFingerPressObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
 , "MainText": thisGDMainTextObjectsList
 , "TextBackgroundBlack": thisGDTextBackgroundBlackObjectsList
-, "ContinueText": thisGDContinueTextObjectsList
+, "FingerPress": thisGDFingerPressObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -307,8 +307,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueCo
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDMainTextObjects2.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDTextBackgroundBlackObjects1.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDTextBackgroundBlackObjects2.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDContinueTextObjects1.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDContinueTextObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDFingerPressObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDFingerPressObjects2.length = 0;
 
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDObjectObjects1.length = 0;
@@ -317,8 +317,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueCo
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDMainTextObjects2.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDTextBackgroundBlackObjects1.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDTextBackgroundBlackObjects2.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDContinueTextObjects1.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDContinueTextObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDFingerPressObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetMainTextValueContext.GDFingerPressObjects2.length = 0;
 
 
 return;
@@ -331,8 +331,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDMainTextObjects2= [];
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDTextBackgroundBlackObjects1= [];
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDTextBackgroundBlackObjects2= [];
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDContinueTextObjects1= [];
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDContinueTextObjects2= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDFingerPressObjects1= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDFingerPressObjects2= [];
 
 
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -371,20 +371,20 @@ var thisGDMainTextObjectsList = [...runtimeScene.getObjects("MainText")];
 var GDMainTextObjects = Hashtable.newFrom({"MainText": thisGDMainTextObjectsList});
 var thisGDTextBackgroundBlackObjectsList = [...runtimeScene.getObjects("TextBackgroundBlack")];
 var GDTextBackgroundBlackObjects = Hashtable.newFrom({"TextBackgroundBlack": thisGDTextBackgroundBlackObjectsList});
-var thisGDContinueTextObjectsList = [...runtimeScene.getObjects("ContinueText")];
-var GDContinueTextObjects = Hashtable.newFrom({"ContinueText": thisGDContinueTextObjectsList});
+var thisGDFingerPressObjectsList = [...runtimeScene.getObjects("FingerPress")];
+var GDFingerPressObjects = Hashtable.newFrom({"FingerPress": thisGDFingerPressObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
 , "MainText": GDMainTextObjects
 , "TextBackgroundBlack": GDTextBackgroundBlackObjects
-, "ContinueText": GDContinueTextObjects
+, "FingerPress": GDFingerPressObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
 , "MainText": thisGDMainTextObjectsList
 , "TextBackgroundBlack": thisGDTextBackgroundBlackObjectsList
-, "ContinueText": thisGDContinueTextObjectsList
+, "FingerPress": thisGDFingerPressObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -442,8 +442,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDMainTextObjects2.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDTextBackgroundBlackObjects1.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDTextBackgroundBlackObjects2.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDContinueTextObjects1.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDContinueTextObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDFingerPressObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDFingerPressObjects2.length = 0;
 
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDObjectObjects1.length = 0;
@@ -452,8 +452,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDMainTextObjects2.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDTextBackgroundBlackObjects1.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDTextBackgroundBlackObjects2.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDContinueTextObjects1.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDContinueTextObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDFingerPressObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext.GDFingerPressObjects2.length = 0;
 
 
 return;
@@ -466,8 +466,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContex
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDMainTextObjects2= [];
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDTextBackgroundBlackObjects1= [];
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDTextBackgroundBlackObjects2= [];
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDContinueTextObjects1= [];
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDContinueTextObjects2= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDFingerPressObjects1= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDFingerPressObjects2= [];
 
 
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -499,20 +499,20 @@ var thisGDMainTextObjectsList = [...runtimeScene.getObjects("MainText")];
 var GDMainTextObjects = Hashtable.newFrom({"MainText": thisGDMainTextObjectsList});
 var thisGDTextBackgroundBlackObjectsList = [...runtimeScene.getObjects("TextBackgroundBlack")];
 var GDTextBackgroundBlackObjects = Hashtable.newFrom({"TextBackgroundBlack": thisGDTextBackgroundBlackObjectsList});
-var thisGDContinueTextObjectsList = [...runtimeScene.getObjects("ContinueText")];
-var GDContinueTextObjects = Hashtable.newFrom({"ContinueText": thisGDContinueTextObjectsList});
+var thisGDFingerPressObjectsList = [...runtimeScene.getObjects("FingerPress")];
+var GDFingerPressObjects = Hashtable.newFrom({"FingerPress": thisGDFingerPressObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
 , "MainText": GDMainTextObjects
 , "TextBackgroundBlack": GDTextBackgroundBlackObjects
-, "ContinueText": GDContinueTextObjects
+, "FingerPress": GDFingerPressObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
 , "MainText": thisGDMainTextObjectsList
 , "TextBackgroundBlack": thisGDTextBackgroundBlackObjectsList
-, "ContinueText": thisGDContinueTextObjectsList
+, "FingerPress": thisGDFingerPressObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -568,8 +568,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContex
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDMainTextObjects2.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDTextBackgroundBlackObjects1.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDTextBackgroundBlackObjects2.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDContinueTextObjects1.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDContinueTextObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDFingerPressObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDFingerPressObjects2.length = 0;
 
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDObjectObjects1.length = 0;
@@ -578,8 +578,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContex
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDMainTextObjects2.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDTextBackgroundBlackObjects1.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDTextBackgroundBlackObjects2.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDContinueTextObjects1.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDContinueTextObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDFingerPressObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDFingerPressObjects2.length = 0;
 
 
 return !!eventsFunctionContext.returnValue;
@@ -592,8 +592,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextCon
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDMainTextObjects2= [];
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDTextBackgroundBlackObjects1= [];
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDTextBackgroundBlackObjects2= [];
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects1= [];
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects2= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDFingerPressObjects1= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDFingerPressObjects2= [];
 
 
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -606,11 +606,11 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = !eventsFunctionContext.getArgument("Value");
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(eventsFunctionContext.getObjects("ContinueText"), gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects1);
+gdjs.copyArray(eventsFunctionContext.getObjects("FingerPress"), gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDFingerPressObjects1);
 {eventsFunctionContext.getObjects("Object")[0]._setShowSkipText(false)
 }
-{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText("");
+{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDFingerPressObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDFingerPressObjects1[i].hide();
 }
 }
 }
@@ -626,11 +626,11 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = eventsFunctionContext.getArgument("Value");
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(eventsFunctionContext.getObjects("ContinueText"), gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects1);
+gdjs.copyArray(eventsFunctionContext.getObjects("FingerPress"), gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDFingerPressObjects1);
 {eventsFunctionContext.getObjects("Object")[0]._setShowSkipText(true)
 }
-{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText("Click to continue");
+{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDFingerPressObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDFingerPressObjects1[i].hide(false);
 }
 }
 }
@@ -651,20 +651,20 @@ var thisGDMainTextObjectsList = [...runtimeScene.getObjects("MainText")];
 var GDMainTextObjects = Hashtable.newFrom({"MainText": thisGDMainTextObjectsList});
 var thisGDTextBackgroundBlackObjectsList = [...runtimeScene.getObjects("TextBackgroundBlack")];
 var GDTextBackgroundBlackObjects = Hashtable.newFrom({"TextBackgroundBlack": thisGDTextBackgroundBlackObjectsList});
-var thisGDContinueTextObjectsList = [...runtimeScene.getObjects("ContinueText")];
-var GDContinueTextObjects = Hashtable.newFrom({"ContinueText": thisGDContinueTextObjectsList});
+var thisGDFingerPressObjectsList = [...runtimeScene.getObjects("FingerPress")];
+var GDFingerPressObjects = Hashtable.newFrom({"FingerPress": thisGDFingerPressObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
 , "MainText": GDMainTextObjects
 , "TextBackgroundBlack": GDTextBackgroundBlackObjects
-, "ContinueText": GDContinueTextObjects
+, "FingerPress": GDFingerPressObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
 , "MainText": thisGDMainTextObjectsList
 , "TextBackgroundBlack": thisGDTextBackgroundBlackObjectsList
-, "ContinueText": thisGDContinueTextObjectsList
+, "FingerPress": thisGDFingerPressObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -721,8 +721,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextCon
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDMainTextObjects2.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDTextBackgroundBlackObjects1.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDTextBackgroundBlackObjects2.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects1.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDFingerPressObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDFingerPressObjects2.length = 0;
 
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDObjectObjects1.length = 0;
@@ -731,8 +731,8 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextCon
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDMainTextObjects2.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDTextBackgroundBlackObjects1.length = 0;
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDTextBackgroundBlackObjects2.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects1.length = 0;
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDContinueTextObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDFingerPressObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.SetShowSkipTextContext.GDFingerPressObjects2.length = 0;
 
 
 return;
