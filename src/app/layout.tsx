@@ -4,9 +4,6 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Dynamics Explorer",
   description: "Start your journey to the cloud!",
-  icons: {
-    icon: "/landing/images/explorer-ICON.png",
-  },
   openGraph: {
     title: "Dynamics Explorer",
     description: "Start your journey to the cloud!",
