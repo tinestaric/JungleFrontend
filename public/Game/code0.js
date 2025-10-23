@@ -1754,7 +1754,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects3Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDCableButtonObjects3Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16668564);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18032764);
 }
 }
 if (isConditionTrue_0) {
@@ -1781,7 +1781,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects2Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDCableButtonObjects2Objects, true, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16673724);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18040940);
 }
 }
 if (isConditionTrue_0) {
@@ -1811,7 +1811,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects2Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDServerButtonObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16674828);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18042580);
 }
 }
 if (isConditionTrue_0) {
@@ -1849,7 +1849,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects1Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDServerButtonObjects1Objects, true, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16676852);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18045252);
 }
 }
 if (isConditionTrue_0) {
@@ -2573,7 +2573,7 @@ for (var i = 0, k = 0, l = gdjs.OverworldCode.GDNPC_95953Objects2.length;i<l;++i
 gdjs.OverworldCode.GDNPC_95953Objects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16693524);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18070180);
 }
 }
 if (isConditionTrue_0) {
@@ -2607,13 +2607,13 @@ gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextD
 }
 
 
-};gdjs.OverworldCode.asyncCallback16701284 = function (runtimeScene, asyncObjectsList) {
+};gdjs.OverworldCode.asyncCallback18083388 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.OverworldCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Finish", false);
 }
 gdjs.OverworldCode.localVariables.length = 0;
 }
-gdjs.OverworldCode.idToCallbackMap.set(16701284, gdjs.OverworldCode.asyncCallback16701284);
+gdjs.OverworldCode.idToCallbackMap.set(18083388, gdjs.OverworldCode.asyncCallback18083388);
 gdjs.OverworldCode.eventsList38 = function(runtimeScene, asyncObjectsList) {
 
 {
@@ -2624,14 +2624,14 @@ const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(gdjs.OverworldCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1.25), (runtimeScene) => (gdjs.OverworldCode.asyncCallback16701284(runtimeScene, asyncObjectsList)), 16701284, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1.25), (runtimeScene) => (gdjs.OverworldCode.asyncCallback18083388(runtimeScene, asyncObjectsList)), 18083388, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.OverworldCode.asyncCallback16700844 = function (runtimeScene, asyncObjectsList) {
+};gdjs.OverworldCode.asyncCallback18082652 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.OverworldCode.localVariables);
 gdjs.copyArray(runtimeScene.getObjects("Transition"), gdjs.OverworldCode.GDTransitionObjects2);
 {for(var i = 0, len = gdjs.OverworldCode.GDTransitionObjects2.length ;i < len;++i) {
@@ -2647,7 +2647,7 @@ gdjs.copyArray(runtimeScene.getObjects("Transition"), gdjs.OverworldCode.GDTrans
 gdjs.OverworldCode.eventsList38(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.OverworldCode.localVariables.length = 0;
 }
-gdjs.OverworldCode.idToCallbackMap.set(16700844, gdjs.OverworldCode.asyncCallback16700844);
+gdjs.OverworldCode.idToCallbackMap.set(18082652, gdjs.OverworldCode.asyncCallback18082652);
 gdjs.OverworldCode.eventsList39 = function(runtimeScene) {
 
 {
@@ -2657,7 +2657,7 @@ gdjs.OverworldCode.eventsList39 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.OverworldCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "SendFinishScore", runtimeScene.getScene().getVariables().getFromIndex(2), null), (runtimeScene) => (gdjs.OverworldCode.asyncCallback16700844(runtimeScene, asyncObjectsList)), 16700844, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "SendFinishScore", runtimeScene.getScene().getVariables().getFromIndex(2), null), (runtimeScene) => (gdjs.OverworldCode.asyncCallback18082652(runtimeScene, asyncObjectsList)), 18082652, asyncObjectsList);
 }
 }
 
@@ -2758,7 +2758,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16695796);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18074108);
 }
 }
 if (isConditionTrue_0) {
