@@ -4,12 +4,15 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Dynamics Explorer",
   description: "Start your journey to the cloud!",
+  icons: {
+    icon: "/landing/images/explorer-ICON.png",
+  },
   openGraph: {
     title: "Dynamics Explorer",
     description: "Start your journey to the cloud!",
     images: [
       {
-        url: "/landing/images/Dynamics explorer.png",
+        url: "/landing/images/Thumbnail.png",
         width: 1200,
         height: 630,
         alt: "Dynamics Explorer",
@@ -21,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dynamics Explorer",
     description: "Start your journey to the cloud!",
-    images: ["/landing/images/Dynamics explorer.png"],
+    images: ["/landing/images/Thumbnail.png"],
   },
 };
 
