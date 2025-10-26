@@ -13,13 +13,13 @@ gdjs.IntroCode.GDTransitionObjects1= [];
 gdjs.IntroCode.GDTransitionObjects2= [];
 
 
-gdjs.IntroCode.asyncCallback24208956 = function (runtimeScene, asyncObjectsList) {
+gdjs.IntroCode.asyncCallback10048356 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.IntroCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Overworld", false);
 }
 gdjs.IntroCode.localVariables.length = 0;
 }
-gdjs.IntroCode.idToCallbackMap.set(24208956, gdjs.IntroCode.asyncCallback24208956);
+gdjs.IntroCode.idToCallbackMap.set(10048356, gdjs.IntroCode.asyncCallback10048356);
 gdjs.IntroCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -29,7 +29,7 @@ gdjs.IntroCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.IntroCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1.25), (runtimeScene) => (gdjs.IntroCode.asyncCallback24208956(runtimeScene, asyncObjectsList)), 24208956, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1.25), (runtimeScene) => (gdjs.IntroCode.asyncCallback10048356(runtimeScene, asyncObjectsList)), 10048356, asyncObjectsList);
 }
 }
 
