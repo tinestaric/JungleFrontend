@@ -9,7 +9,7 @@ gdjs.evtsExt__URLTools__CurrentURL = {};
 gdjs.evtsExt__URLTools__CurrentURL.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__URLTools__CurrentURL.userFunc0x14189c8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__URLTools__CurrentURL.userFunc0x1423de8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = location.toString();
 
@@ -19,7 +19,7 @@ gdjs.evtsExt__URLTools__CurrentURL.eventsList0 = function(runtimeScene, eventsFu
 {
 
 
-gdjs.evtsExt__URLTools__CurrentURL.userFunc0x14189c8(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__URLTools__CurrentURL.userFunc0x1423de8(runtimeScene, eventsFunctionContext);
 
 }
 
