@@ -458,6 +458,370 @@ gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayTextContext
 
 return;
 }
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext = {};
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.idToCallbackMap = new Map();
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDObjectObjects1= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDObjectObjects2= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDMainTextObjects1= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDMainTextObjects2= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDTextBackgroundBlackObjects1= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDTextBackgroundBlackObjects2= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDFingerPressObjects1= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDFingerPressObjects2= [];
+
+
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDObjectObjects1);
+{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDObjectObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDObjectObjects1[i].hide();
+}
+}
+{gdjs.evtTools.runtimeScene.removeTimer(runtimeScene, eventsFunctionContext.getArgument("TimerName"));
+}
+}
+
+}
+
+
+};
+
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBox = function(TimerName, parentEventsFunctionContext) {
+
+var that = this;
+var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
+var thisObjectList = [this];
+var Object = Hashtable.newFrom({Object: thisObjectList});
+var thisGDMainTextObjectsList = [...runtimeScene.getObjects("MainText")];
+var GDMainTextObjects = Hashtable.newFrom({"MainText": thisGDMainTextObjectsList});
+var thisGDTextBackgroundBlackObjectsList = [...runtimeScene.getObjects("TextBackgroundBlack")];
+var GDTextBackgroundBlackObjects = Hashtable.newFrom({"TextBackgroundBlack": thisGDTextBackgroundBlackObjectsList});
+var thisGDFingerPressObjectsList = [...runtimeScene.getObjects("FingerPress")];
+var GDFingerPressObjects = Hashtable.newFrom({"FingerPress": thisGDFingerPressObjectsList});
+var eventsFunctionContext = {
+  _objectsMap: {
+"Object": Object
+, "MainText": GDMainTextObjects
+, "TextBackgroundBlack": GDTextBackgroundBlackObjects
+, "FingerPress": GDFingerPressObjects
+},
+  _objectArraysMap: {
+"Object": thisObjectList
+, "MainText": thisGDMainTextObjectsList
+, "TextBackgroundBlack": thisGDTextBackgroundBlackObjectsList
+, "FingerPress": thisGDFingerPressObjectsList
+},
+  _behaviorNamesMap: {
+},
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("MainTextDialog"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("MainTextDialog"),
+  localVariables: [],
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;
+    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+if (argName === "TimerName") return TimerName;
+    return "";
+  },
+  getOnceTriggers: function() { return that._onceTriggers; }
+};
+
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDObjectObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDMainTextObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDMainTextObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDTextBackgroundBlackObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDTextBackgroundBlackObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDFingerPressObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDFingerPressObjects2.length = 0;
+
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDObjectObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDMainTextObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDMainTextObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDTextBackgroundBlackObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDTextBackgroundBlackObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDFingerPressObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.HideTextBoxContext.GDFingerPressObjects2.length = 0;
+
+
+return;
+}
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext = {};
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.idToCallbackMap = new Map();
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDObjectObjects1= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDObjectObjects2= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDObjectObjects3= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects2= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects3= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDTextBackgroundBlackObjects1= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDTextBackgroundBlackObjects2= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDTextBackgroundBlackObjects3= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDFingerPressObjects1= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDFingerPressObjects2= [];
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDFingerPressObjects3= [];
+
+
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+gdjs.copyArray(gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1, gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects2);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects2.length;i<l;++i) {
+    if ( gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects2[i].getVariableBoolean(gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects2[i].getVariables().get("IsDoneTyping"), true) ) {
+        isConditionTrue_0 = true;
+        gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects2[k] = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects2[i];
+        ++k;
+    }
+}
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects2.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDObjectObjects2);
+{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDObjectObjects2.length ;i < len;++i) {
+    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDObjectObjects2[i].HideTextBox(eventsFunctionContext.getArgument("TimerName"), eventsFunctionContext);
+}
+}
+}
+
+}
+
+
+{
+
+/* Reuse gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1 */
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1.length;i<l;++i) {
+    if ( gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1[i].getVariableBoolean(gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1[i].getVariables().get("IsDoneTyping"), false) ) {
+        isConditionTrue_0 = true;
+        gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1[k] = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1[i];
+        ++k;
+    }
+}
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1 */
+{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("AutoTyping")).RestartFromBeginning(eventsFunctionContext);
+}
+}
+{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("AutoTyping")).ShowFullText(eventsFunctionContext);
+}
+}
+{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1[i].setVariableBoolean(gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1[i].getVariables().get("IsDoneTyping"), true);
+}
+}
+}
+
+}
+
+
+};gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.eventsList1 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+gdjs.copyArray(eventsFunctionContext.getObjects("MainText"), gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1.length;i<l;++i) {
+    if ( gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("AutoTyping")).IsFinished(eventsFunctionContext) ) {
+        isConditionTrue_0 = true;
+        gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1[k] = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1[i];
+        ++k;
+    }
+}
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDObjectObjects1);
+{for(var i = 0, len = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDObjectObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDObjectObjects1[i].HideTextBox(eventsFunctionContext.getArgument("TimerName"), eventsFunctionContext);
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(eventsFunctionContext.getObjects("MainText"), gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1.length;i<l;++i) {
+    if ( !(gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("AutoTyping")).IsFinished(eventsFunctionContext)) ) {
+        isConditionTrue_0 = true;
+        gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1[k] = gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1[i];
+        ++k;
+    }
+}
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1.length = k;
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+}
+
+}
+
+
+};
+
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.Function = function(TimerName, parentEventsFunctionContext) {
+
+var that = this;
+var runtimeScene = this._instanceContainer;
+let scopeInstanceContainer = this._instanceContainer;
+var thisObjectList = [this];
+var Object = Hashtable.newFrom({Object: thisObjectList});
+var thisGDMainTextObjectsList = [...runtimeScene.getObjects("MainText")];
+var GDMainTextObjects = Hashtable.newFrom({"MainText": thisGDMainTextObjectsList});
+var thisGDTextBackgroundBlackObjectsList = [...runtimeScene.getObjects("TextBackgroundBlack")];
+var GDTextBackgroundBlackObjects = Hashtable.newFrom({"TextBackgroundBlack": thisGDTextBackgroundBlackObjectsList});
+var thisGDFingerPressObjectsList = [...runtimeScene.getObjects("FingerPress")];
+var GDFingerPressObjects = Hashtable.newFrom({"FingerPress": thisGDFingerPressObjectsList});
+var eventsFunctionContext = {
+  _objectsMap: {
+"Object": Object
+, "MainText": GDMainTextObjects
+, "TextBackgroundBlack": GDTextBackgroundBlackObjects
+, "FingerPress": GDFingerPressObjects
+},
+  _objectArraysMap: {
+"Object": thisObjectList
+, "MainText": thisGDMainTextObjectsList
+, "TextBackgroundBlack": thisGDTextBackgroundBlackObjectsList
+, "FingerPress": thisGDFingerPressObjectsList
+},
+  _behaviorNamesMap: {
+},
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("MainTextDialog"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("MainTextDialog"),
+  localVariables: [],
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;
+    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+if (argName === "TimerName") return TimerName;
+    return "";
+  },
+  getOnceTriggers: function() { return that._onceTriggers; }
+};
+
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDObjectObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDObjectObjects3.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects3.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDTextBackgroundBlackObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDTextBackgroundBlackObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDTextBackgroundBlackObjects3.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDFingerPressObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDFingerPressObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDFingerPressObjects3.length = 0;
+
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.eventsList1(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDObjectObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDObjectObjects3.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDMainTextObjects3.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDTextBackgroundBlackObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDTextBackgroundBlackObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDTextBackgroundBlackObjects3.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDFingerPressObjects1.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDFingerPressObjects2.length = 0;
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.FunctionContext.GDFingerPressObjects3.length = 0;
+
+
+return;
+}
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext = {};
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.idToCallbackMap = new Map();
 gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.ShowSkipTextContext.GDObjectObjects1= [];

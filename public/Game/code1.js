@@ -68,7 +68,7 @@ gdjs.copyArray(runtimeScene.getObjects("ScoreboardName"), gdjs.FinishCode.GDScor
 gdjs.copyArray(runtimeScene.getObjects("ScoreboardTime"), gdjs.FinishCode.GDScoreboardTimeObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Transition"), gdjs.FinishCode.GDTransitionObjects1);
 {for(var i = 0, len = gdjs.FinishCode.GDTransitionObjects1.length ;i < len;++i) {
-    gdjs.FinishCode.GDTransitionObjects1[i].getBehavior("FlashTransitionPainter").PaintEffect("157;146;146", 1, "Circular", "Backward", 0, null);
+    gdjs.FinishCode.GDTransitionObjects1[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 1, "Circular", "Backward", 0, null);
 }
 }
 {gdjs.evtTools.camera.setCameraZoom(runtimeScene, 4, "", 0);
