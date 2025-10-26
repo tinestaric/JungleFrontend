@@ -11,6 +11,7 @@ export default function RegisterPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [submitPressed, setSubmitPressed] = useState(false)
+  const [isDisclaimerExpanded, setIsDisclaimerExpanded] = useState(false)
 
   const {
     register,
@@ -130,6 +131,72 @@ export default function RegisterPage() {
                   {error}
                 </p>
               </div>
+            )}
+
+            {/* GDPR Disclaimer - Collapsible */}
+            <div className="landing-disclaimer">
+              <button
+                type="button"
+                onClick={() => setIsDisclaimerExpanded(!isDisclaimerExpanded)}
+                className="landing-disclaimer-toggle"
+                aria-expanded={isDisclaimerExpanded}
+              >
+                <span className="landing-disclaimer-title">
+                  Privacy & Data Processing Notice
+                </span>
+                <span className="landing-disclaimer-icon">
+                  {isDisclaimerExpanded ? '▼' : '▶'}
+                </span>
+              </button>
+              
+              {isDisclaimerExpanded && (
+                <div className="landing-disclaimer-content">
+                  <p className="landing-disclaimer-text">
+                    By registering, you acknowledge that this activity is part of Companial&apos;s marketing engagement. 
+                    Your contact details will be used to follow up with you after the event about our products, services, 
+                    and future events. We process your personal data in accordance with our{' '}
+                    <a 
+                      href="/data-protection-notice" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="landing-disclaimer-link"
+                    >
+                      Data Protection Notice
+                    </a>
+                    , where you can learn how we handle your data, who we share it with, and how you can withdraw your 
+                    consent at any time. Please note: participation in the game requires providing your contact details 
+                    for this purpose.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* Consent Checkbox */}
+            <div className="landing-consent">
+              <input
+                type="checkbox"
+                id="consent"
+                {...register('consent')}
+                className="landing-consent-checkbox"
+              />
+              <label htmlFor="consent" className="landing-consent-label">
+                I agree that Companial may contact me by email about its products, services, and events, 
+                in accordance with the{' '}
+                <a 
+                  href="/data-protection-notice" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="landing-disclaimer-link"
+                >
+                  Data Protection Notice
+                </a>
+                .
+              </label>
+            </div>
+            {errors.consent && (
+              <p className="landing-consent-error">
+                {errors.consent.message}
+              </p>
             )}
 
             {/* Submit Button */}

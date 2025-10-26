@@ -33,11 +33,39 @@
 .landing-form-error { color: #ef4444; font-size: 0.875rem; margin: 0.25rem 0 0 0; font-family: 'BoldPixels', sans-serif; }
 .landing-form-field { margin-bottom: 1.5rem; width: 100%; max-width: 400px; }
 
+/* GDPR Disclaimer - Collapsible */
+.landing-disclaimer { width: 100%; max-width: 400px; margin: 0.75rem 0 0.5rem 0; background-color: rgba(0, 0, 0, 0.6); border-radius: 8px; overflow: hidden; }
+.landing-disclaimer-toggle { width: 100%; background: none; border: none; padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; color: white; font-family: 'BoldPixels', sans-serif; font-size: 0.9rem; transition: background-color 0.2s; }
+.landing-disclaimer-toggle:hover { background-color: rgba(255, 165, 0, 0.1); }
+.landing-disclaimer-title { text-align: left; flex: 1; }
+.landing-disclaimer-icon { color: #ffa500; margin-left: 0.5rem; font-size: 0.75rem; }
+.landing-disclaimer-content { padding: 0 1rem 0.75rem 1rem; animation: slideDown 0.3s ease-out; }
+.landing-disclaimer-text { color: white; font-size: 0.875rem; line-height: 1.6; margin: 0; font-family: 'BoldPixels', sans-serif; text-align: left; }
+.landing-disclaimer-link { color: #ffa500; text-decoration: underline; cursor: pointer; }
+.landing-disclaimer-link:hover { color: #ff8c00; }
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Consent Checkbox */
+.landing-consent { width: 100%; max-width: 400px; margin: 0.5rem 0 1rem 0; padding: 0.75rem 1rem; background-color: rgba(0, 0, 0, 0.6); border-radius: 8px; display: flex; align-items: flex-start; gap: 0.75rem; }
+.landing-consent-checkbox { width: 20px; height: 20px; margin-top: 2px; cursor: pointer; flex-shrink: 0; accent-color: #ffa500; }
+.landing-consent-label { color: white; font-size: 0.875rem; line-height: 1.6; margin: 0; font-family: 'BoldPixels', sans-serif; text-align: left; cursor: pointer; flex: 1; }
+.landing-consent-error { color: #ef4444; font-size: 0.875rem; margin: 0.5rem 0 0 2rem; font-family: 'BoldPixels', sans-serif; }
+
 @media (max-width: 768px) { /* phone */
   .landing-container { max-width: 320px !important; }
   .landing-title { max-width: 280px !important; }
   .landing-button { max-width: 280px !important; }
   .landing-button-text { font-size: 1.5rem !important; }
+  .landing-disclaimer { max-width: 280px !important; }
+  .landing-disclaimer-toggle { font-size: 0.875rem !important; }
+  .landing-disclaimer-text { font-size: 0.75rem !important; }
+  .landing-consent { max-width: 280px !important; }
+  .landing-consent-label { font-size: 0.75rem !important; }
+  .landing-consent-checkbox { width: 18px !important; height: 18px !important; }
 }
 
 @media (min-width: 769px) and (max-width: 1400px) { /* tablet */
@@ -46,6 +74,8 @@
   .landing-button { max-width: 450px !important; }
   .landing-form-input { max-width: 450px !important; }
   .landing-form-field { max-width: 450px !important; }
+  .landing-disclaimer { max-width: 450px !important; }
+  .landing-consent { max-width: 450px !important; }
 }
 
 
