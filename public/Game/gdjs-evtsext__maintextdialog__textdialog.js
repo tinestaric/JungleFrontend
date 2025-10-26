@@ -584,7 +584,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__MainTex
 
 };
 
-gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayText = function(TextToShow, TimerName, parentEventsFunctionContext) {
+gdjs.evtsExt__MainTextDialog__TextDialog.TextDialog.prototype.DisplayText = function(TextToShow, TimerName, PrintAll, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._instanceContainer;
@@ -655,6 +655,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
   getArgument: function(argName) {
 if (argName === "TextToShow") return TextToShow;
 if (argName === "TimerName") return TimerName;
+if (argName === "PrintAll") return PrintAll;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }

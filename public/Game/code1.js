@@ -925,6 +925,10 @@ for(var i = 0, len = gdjs.OverworldCode.GDRuggedTerrainObjects4.length ;i < len;
     gdjs.OverworldCode.GDRuggedTerrainObjects4[i].returnVariable(gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getVariables().get("CanPass")).setBoolean(true);
 }
 }
+{for(var i = 0, len = gdjs.OverworldCode.GDRuggedTerrainObjects4.length ;i < len;++i) {
+    gdjs.OverworldCode.GDRuggedTerrainObjects4[i].getBehavior("Animation").setAnimationName("Passable");
+}
+}
 }
 
 }
@@ -984,7 +988,7 @@ gdjs.copyArray(gdjs.OverworldCode.GDRuggedTerrainObjects3, gdjs.OverworldCode.GD
 
 gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextDialogObjects4);
 {for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects4.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTextDialogObjects4[i].DisplayText(gdjs.OverworldCode.localVariables[0].getFromIndex(0).getAsString(), "TextDialogTimer", null);
+    gdjs.OverworldCode.GDTextDialogObjects4[i].DisplayText(gdjs.OverworldCode.localVariables[0].getFromIndex(0).getAsString(), "TextDialogTimer", false, null);
 }
 }
 {runtimeScene.getScene().getVariables().getFromIndex(8).setNumber(((gdjs.OverworldCode.GDRuggedTerrainObjects4.length === 0 ) ? ((gdjs.OverworldCode.GDBridgeObjects4.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDBridgeObjects4[0].getVariables()) : gdjs.OverworldCode.GDRuggedTerrainObjects4[0].getVariables()).get("MaxTextTimer").getAsNumber());
@@ -1805,7 +1809,7 @@ if (isConditionTrue_0) {
 /* Reuse gdjs.OverworldCode.GDBottleObjects2 */
 gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextDialogObjects2);
 {for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(((gdjs.OverworldCode.GDBatteriesObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDBottleObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDBootsObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDAxeObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDBackpackObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDBackpackObjects2[0].getVariables()) : gdjs.OverworldCode.GDAxeObjects2[0].getVariables()) : gdjs.OverworldCode.GDBootsObjects2[0].getVariables()) : gdjs.OverworldCode.GDBottleObjects2[0].getVariables()) : gdjs.OverworldCode.GDBatteriesObjects2[0].getVariables()).get("PickupText").getAsString(), "TextDialogTimer", null);
+    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(((gdjs.OverworldCode.GDBatteriesObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDBottleObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDBootsObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDAxeObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDBackpackObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDBackpackObjects2[0].getVariables()) : gdjs.OverworldCode.GDAxeObjects2[0].getVariables()) : gdjs.OverworldCode.GDBootsObjects2[0].getVariables()) : gdjs.OverworldCode.GDBottleObjects2[0].getVariables()) : gdjs.OverworldCode.GDBatteriesObjects2[0].getVariables()).get("PickupText").getAsString(), "TextDialogTimer", false, null);
 }
 }
 {runtimeScene.getScene().getVariables().getFromIndex(8).setNumber(((gdjs.OverworldCode.GDBatteriesObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDBottleObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDBootsObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDAxeObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDBackpackObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDBackpackObjects2[0].getVariables()) : gdjs.OverworldCode.GDAxeObjects2[0].getVariables()) : gdjs.OverworldCode.GDBootsObjects2[0].getVariables()) : gdjs.OverworldCode.GDBottleObjects2[0].getVariables()) : gdjs.OverworldCode.GDBatteriesObjects2[0].getVariables()).get("MaxTextTimer").getAsNumber());
@@ -2050,7 +2054,7 @@ gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextD
 {runtimeScene.getScene().getVariables().getFromIndex(8).setNumber(((gdjs.OverworldCode.GDServer3Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDServer2Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDServer1Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDSign_9595RightObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDSign_9595LeftObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDSign_9595Left_9595RightObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDNPC_95952Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDNPC_95951Objects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPC_95951Objects2[0].getVariables()) : gdjs.OverworldCode.GDNPC_95952Objects2[0].getVariables()) : gdjs.OverworldCode.GDSign_9595Left_9595RightObjects2[0].getVariables()) : gdjs.OverworldCode.GDSign_9595LeftObjects2[0].getVariables()) : gdjs.OverworldCode.GDSign_9595RightObjects2[0].getVariables()) : gdjs.OverworldCode.GDServer1Objects2[0].getVariables()) : gdjs.OverworldCode.GDServer2Objects2[0].getVariables()) : gdjs.OverworldCode.GDServer3Objects2[0].getVariables()).get("MaxTextTimer").getAsNumber());
 }
 {for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(((gdjs.OverworldCode.GDServer3Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDServer2Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDServer1Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDSign_9595RightObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDSign_9595LeftObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDSign_9595Left_9595RightObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDNPC_95952Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDNPC_95951Objects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPC_95951Objects2[0].getVariables()) : gdjs.OverworldCode.GDNPC_95952Objects2[0].getVariables()) : gdjs.OverworldCode.GDSign_9595Left_9595RightObjects2[0].getVariables()) : gdjs.OverworldCode.GDSign_9595LeftObjects2[0].getVariables()) : gdjs.OverworldCode.GDSign_9595RightObjects2[0].getVariables()) : gdjs.OverworldCode.GDServer1Objects2[0].getVariables()) : gdjs.OverworldCode.GDServer2Objects2[0].getVariables()) : gdjs.OverworldCode.GDServer3Objects2[0].getVariables()).get("Text").getAsString(), "TextDialogTimer", null);
+    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(((gdjs.OverworldCode.GDServer3Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDServer2Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDServer1Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDSign_9595RightObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDSign_9595LeftObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDSign_9595Left_9595RightObjects2.length === 0 ) ? ((gdjs.OverworldCode.GDNPC_95952Objects2.length === 0 ) ? ((gdjs.OverworldCode.GDNPC_95951Objects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPC_95951Objects2[0].getVariables()) : gdjs.OverworldCode.GDNPC_95952Objects2[0].getVariables()) : gdjs.OverworldCode.GDSign_9595Left_9595RightObjects2[0].getVariables()) : gdjs.OverworldCode.GDSign_9595LeftObjects2[0].getVariables()) : gdjs.OverworldCode.GDSign_9595RightObjects2[0].getVariables()) : gdjs.OverworldCode.GDServer1Objects2[0].getVariables()) : gdjs.OverworldCode.GDServer2Objects2[0].getVariables()) : gdjs.OverworldCode.GDServer3Objects2[0].getVariables()).get("Text").getAsString(), "TextDialogTimer", true, null);
 }
 }
 }
@@ -2410,11 +2414,18 @@ for (var i = 0, k = 0, l = gdjs.OverworldCode.GDNPC_95953Objects3.length;i<l;++i
 }
 gdjs.OverworldCode.GDNPC_95953Objects3.length = k;
 if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(17587676);
+}
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.OverworldCode.GDNPC_95953Objects3 */
 gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextDialogObjects3);
 {for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects3.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTextDialogObjects3[i].DisplayText(((gdjs.OverworldCode.GDNPC_95953Objects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPC_95953Objects3[0].getVariables()).getFromIndex(3).getChild((( gdjs.OverworldCode.GDNPC_95953Objects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDNPC_95953Objects3[0].getBehavior("Animation").getAnimationIndex())).getAsString(), "TextDialogTimer", null);
+    gdjs.OverworldCode.GDTextDialogObjects3[i].DisplayText(((gdjs.OverworldCode.GDNPC_95953Objects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPC_95953Objects3[0].getVariables()).getFromIndex(3).getChild((( gdjs.OverworldCode.GDNPC_95953Objects3.length === 0 ) ? 0 :gdjs.OverworldCode.GDNPC_95953Objects3[0].getBehavior("Animation").getAnimationIndex())).getAsString(), "TextDialogTimer", false, null);
 }
+}
+{runtimeScene.getScene().getVariables().getFromIndex(8).setNumber(0.5);
 }
 }
 
@@ -2459,7 +2470,7 @@ gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextD
 {runtimeScene.getGame().getVariables().getFromIndex(3).setNumber(runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber());
 }
 {for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
-    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(((gdjs.OverworldCode.GDNPC_95953Objects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPC_95953Objects2[0].getVariables()).getFromIndex(2).getChild(0).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(6).getAsString(), null);
+    gdjs.OverworldCode.GDTextDialogObjects2[i].DisplayText(((gdjs.OverworldCode.GDNPC_95953Objects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.OverworldCode.GDNPC_95953Objects2[0].getVariables()).getFromIndex(2).getChild(0).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(6).getAsString(), false, null);
 }
 }
 {for(var i = 0, len = gdjs.OverworldCode.GDTextDialogObjects2.length ;i < len;++i) {
@@ -2647,6 +2658,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDPlayerObjects2Objects, gdjs.OverworldCode.mapOfGDgdjs_9546OverworldCode_9546GDNPC_959595953Objects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "TextDialogTimer");
+}
 
 { //Subevents
 gdjs.OverworldCode.eventsList44(runtimeScene);} //End of subevents
