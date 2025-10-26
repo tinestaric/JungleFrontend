@@ -8,6 +8,7 @@
 @import '../styles/utilities.css';
 @import '../styles/landing.css';
 @import '../styles/leaderboard.css';
+@import '../styles/tv-leaderboard.css';
 
 /* Custom fonts */
 @font-face {

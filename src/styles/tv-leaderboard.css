@@ -1,0 +1,320 @@
+/* TV Display Leaderboard - Optimized for large screens */
+.tv-leaderboard-page {
+  min-height: 100vh;
+  height: 100vh;
+  background-image: url('/landing/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'BoldPixels', monospace;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Header */
+.tv-leaderboard-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+}
+
+.tv-leaderboard-title {
+  color: #ffa500;
+  font-size: 3.5rem;
+  margin: 0 0 1rem 0;
+  font-family: 'BoldPixels', monospace;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8);
+  letter-spacing: 2px;
+}
+
+.tv-stats {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+
+.tv-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 165, 0, 0.5);
+}
+
+.tv-stat-label {
+  color: #e6e6e6;
+  font-size: 1.25rem;
+  font-family: 'BoldPixels', monospace;
+}
+
+.tv-stat-value {
+  color: #ffa500;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'BoldPixels', monospace;
+}
+
+/* Table Wrapper */
+.tv-table-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 16px;
+  border: 3px solid rgba(255, 165, 0, 0.6);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Fixed Header Table */
+.tv-header-table {
+  flex-shrink: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.tv-header-table thead {
+  background-color: rgb(0, 0, 0);
+}
+
+.tv-header-table th {
+  padding: 1.25rem 1rem;
+  text-align: left;
+  color: #ffa500;
+  font-family: 'BoldPixels', monospace;
+  font-size: 1.75rem;
+  border-bottom: 3px solid rgba(255, 165, 0, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: rgb(0, 0, 0);
+}
+
+/* Header column widths (must match body) */
+.tv-header-table th:nth-child(1) { width: 12%; text-align: center; }
+.tv-header-table th:nth-child(2) { width: 28%; }
+.tv-header-table th:nth-child(3) { width: 35%; }
+.tv-header-table th:nth-child(4) { width: 25%; text-align: right; }
+
+/* Table Container - Scrollable */
+.tv-table-container {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  min-height: 0; /* Important for flex children with overflow */
+  
+  /* Hide scrollbar but keep functionality */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.tv-table-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Table */
+.tv-leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  height: auto;
+}
+
+.tv-leaderboard-table tbody {
+  display: table-row-group;
+}
+
+.tv-leaderboard-table td {
+  padding: 1rem;
+  text-align: left;
+  color: #e6e6e6;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+}
+
+.tv-leaderboard-table tbody tr {
+  transition: background-color 0.2s;
+}
+
+.tv-leaderboard-table tbody tr:hover {
+  background-color: rgba(255, 165, 0, 0.1);
+}
+
+/* Podium rows (top 3) */
+.tv-row-podium {
+  background: linear-gradient(90deg, rgba(255, 184, 28, 0.2), rgba(255, 184, 28, 0.08));
+}
+
+.tv-row-podium td {
+  border-bottom-color: rgba(255, 184, 28, 0.4);
+}
+
+/* Column specific styles */
+.tv-rank {
+  text-align: center !important;
+  font-weight: bold;
+  color: #ffa500;
+  width: 12%;
+}
+
+.tv-medal {
+  font-size: 2.5rem;
+  display: inline-block;
+}
+
+.tv-player {
+  font-weight: 600;
+  width: 28%;
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: left !important;
+}
+
+.tv-company {
+  width: 35%;
+  color: #b3b3b3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left !important;
+}
+
+.tv-time {
+  text-align: right !important;
+  font-weight: bold;
+  color: #4ade80;
+  font-family: 'BoldPixels', monospace;
+  font-size: 1.75rem;
+  width: 25%;
+}
+
+/* Footer */
+.tv-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  flex-shrink: 0;
+}
+
+.tv-footer-text {
+  color: #ffa500;
+  font-size: 2rem;
+  font-family: 'BoldPixels', monospace;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Loading and Error States */
+.tv-loading, .tv-error {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #e6e6e6;
+  font-family: 'BoldPixels', monospace;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+  padding: 3rem;
+}
+
+.tv-error {
+  color: #ef4444;
+}
+
+/* Responsive adjustments for different TV sizes */
+@media (max-width: 1920px) {
+  .tv-leaderboard-title {
+    font-size: 3rem;
+  }
+  .tv-header-table th {
+    font-size: 1.5rem;
+  }
+  .tv-leaderboard-table td {
+    font-size: 1.25rem;
+  }
+  .tv-time {
+    font-size: 1.5rem;
+  }
+  .tv-footer-text {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .tv-leaderboard-title {
+    font-size: 2.5rem;
+  }
+  .tv-stats {
+    gap: 2rem;
+  }
+  .tv-stat-label {
+    font-size: 1rem;
+  }
+  .tv-stat-value {
+    font-size: 1.25rem;
+  }
+  .tv-header-table th {
+    font-size: 1.25rem;
+    padding: 1rem 0.75rem;
+  }
+  .tv-leaderboard-table td {
+    font-size: 1.1rem;
+    padding: 0.875rem 0.75rem;
+  }
+  .tv-medal {
+    font-size: 2rem;
+  }
+  .tv-time {
+    font-size: 1.25rem;
+  }
+  .tv-footer-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* Ultra-wide displays */
+@media (min-width: 2560px) {
+  .tv-leaderboard-title {
+    font-size: 4.5rem;
+  }
+  .tv-stat-label {
+    font-size: 1.75rem;
+  }
+  .tv-stat-value {
+    font-size: 2rem;
+  }
+  .tv-header-table th {
+    font-size: 2.25rem;
+    padding: 1.5rem 1.25rem;
+  }
+  .tv-leaderboard-table td {
+    font-size: 2rem;
+    padding: 1.25rem;
+  }
+  .tv-medal {
+    font-size: 3rem;
+  }
+  .tv-time {
+    font-size: 2.25rem;
+  }
+  .tv-footer-text {
+    font-size: 2.5rem;
+  }
+}
+
