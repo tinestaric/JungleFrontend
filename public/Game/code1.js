@@ -2350,18 +2350,11 @@ gdjs.copyArray(runtimeScene.getObjects("TextDialog"), gdjs.OverworldCode.GDTextD
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("NPC_3"), gdjs.OverworldCode.GDNPC_95953Objects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.OverworldCode.GDNPC_95953Objects1.length;i<l;++i) {
-    if ( gdjs.OverworldCode.GDNPC_95953Objects1[i].getBehavior("Animation").getAnimationIndex() < 3 ) {
-        isConditionTrue_0 = true;
-        gdjs.OverworldCode.GDNPC_95953Objects1[k] = gdjs.OverworldCode.GDNPC_95953Objects1[i];
-        ++k;
-    }
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(3).getAsNumber() == 0);
 }
-gdjs.OverworldCode.GDNPC_95953Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
