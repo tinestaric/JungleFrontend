@@ -1,8 +1,8 @@
 {
-  "name": "Companial Jungle v1.6",
-  "short_name": "Companial Jungle v1.6",
+  "name": "Dynamics Explorer v1.6",
+  "short_name": "Dynamics Explorer v1.6",
   "id": "com.example.topdownrpg",
-  "description": "A monster tamer style top down rpg game example. Including top down movement, scrolling text during chat, camera controls, and a simple battle sequence.",
+  "description": "A short adventure through the Jungle of Legacy Systems — powered by Companial’s modernization magic.",
   "orientation": "landscape",
   "start_url": "./index.html",
   "display": "standalone",
