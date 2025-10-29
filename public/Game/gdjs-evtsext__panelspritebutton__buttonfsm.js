@@ -594,6 +594,23 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsC
 }
 
 
+};gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.eventsList10 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.func(runtimeScene, eventsFunctionContext));
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.eventsList9(runtimeScene, eventsFunctionContext);} //End of subevents
+}
+
+}
+
+
 };
 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEvents = function(parentEventsFunctionContext) {
@@ -666,7 +683,7 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsC
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4.length = 0;
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5.length = 0;
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.eventsList9(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.eventsList10(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = 0;

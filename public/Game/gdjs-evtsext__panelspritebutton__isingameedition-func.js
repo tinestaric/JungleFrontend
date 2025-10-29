@@ -1,48 +1,32 @@
 
-if (typeof gdjs.evtsExt__Gamepads__GamepadType !== "undefined") {
-  gdjs.evtsExt__Gamepads__GamepadType.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__PanelSpriteButton__IsInGameEdition !== "undefined") {
+  gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__Gamepads__GamepadType = {};
-gdjs.evtsExt__Gamepads__GamepadType.idToCallbackMap = new Map();
+gdjs.evtsExt__PanelSpriteButton__IsInGameEdition = {};
+gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Gamepads__GamepadType.userFunc0x14a07d8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.userFunc0xc306f0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
-/** @type {Gamepad[]} */
-const gamepads = navigator.getGamepads ? navigator.getGamepads() : (navigator.webkitGetGamepads ? navigator.webkitGetGamepads() : []);
-
-//Get function parameter
-const playerId = eventsFunctionContext.getArgument("player_ID") - 1;
-
-if (playerId < 0 || playerId > 4) {
-    console.error('Parameter gamepad identifier in string expression: "Gamepad type", is not valid number, must be between 0 and 4');
-    return;
-}
-
-const gamepad = gamepads[playerId];
-
-//we need keep this condition because when use have not yet plug her controller we can't get the controller in the gamepad variable.
-if (gamepad == null) return;
-
-eventsFunctionContext.returnValue = (gamepad && gamepad.id) ? gamepad.id : "No information for player " + (playerId + 1)
-
+const game = runtimeScene.getGame();
+eventsFunctionContext.returnValue = game.isInGameEdition && game.isInGameEdition();
 };
-gdjs.evtsExt__Gamepads__GamepadType.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__Gamepads__GamepadType.userFunc0x14a07d8(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.userFunc0xc306f0(runtimeScene, eventsFunctionContext);
 
 }
 
 
 };
 
-gdjs.evtsExt__Gamepads__GamepadType.func = function(runtimeScene, player_ID, parentEventsFunctionContext) {
+gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.func = function(runtimeScene, parentEventsFunctionContext) {
 let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
@@ -51,8 +35,8 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
-  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Gamepads"),
-  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Gamepads"),
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PanelSpriteButton"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PanelSpriteButton"),
   localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
@@ -92,17 +76,16 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "player_ID") return player_ID;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__Gamepads__GamepadType.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.eventsList0(runtimeScene, eventsFunctionContext);
 
 
-return "" + eventsFunctionContext.returnValue;
+return !!eventsFunctionContext.returnValue;
 }
 
-gdjs.evtsExt__Gamepads__GamepadType.registeredGdjsCallbacks = [];
+gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.registeredGdjsCallbacks = [];
