@@ -82,6 +82,15 @@ export default function Home() {
           </Link>
         </div>
 
+        {/* Prize Banner */}
+        <Image 
+          src="/landing/images/Baner-win.png" 
+          alt="Play for a chance to win €250 hiking gear"
+          className="landing-banner"
+          width={450}
+          height={100}
+        />
+
       </div>
     </div>
   );
