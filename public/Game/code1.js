@@ -544,7 +544,7 @@ if (isConditionTrue_0) {
 }
 }
 {for(var i = 0, len = gdjs.OverworldCode.GDCableButtonObjects5.length ;i < len;++i) {
-    gdjs.OverworldCode.GDCableButtonObjects5[i].setZOrder(-(700));
+    gdjs.OverworldCode.GDCableButtonObjects5[i].setZOrder(-(1000));
 }
 }
 }
